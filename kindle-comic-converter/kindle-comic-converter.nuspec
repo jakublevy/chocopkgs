@@ -3,12 +3,12 @@
   <metadata>
     <id>kindle-comic-converter</id>
     <version>5.5.2</version>
-    <packageSourceUrl>https://github.com/Kubikola/chocopkgs/tree/master/kindle-comic-converter</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/kindle-comic-converter</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Kindle Comic Converter</title>
     <authors>Ciro Mattia Gonano,Paweł Jastrzębski</authors>
     <projectUrl>https://kcc.iosphe.re</projectUrl>
-    <iconUrl>https://kcc.iosphe.re/Static/KCC.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/KCC.png</iconUrl>
     <copyright>Copyright (c) 2012-2019 Ciro Mattia Gonano and Paweł Jastrzębski</copyright>
     <licenseUrl>https://github.com/ciromattia/kcc/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
