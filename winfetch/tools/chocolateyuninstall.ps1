@@ -6,8 +6,5 @@ $packageArgs = @{
   softwareName  = 'winfetch*'
 }
 
-Uninstall-BinFile `
-  -Name 'winfetch' `
-  -Path "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe"
-
+Remove-Item "$env:ChocolateyInstall\bin\winfetch.bat" -Force
 Uninstall-ChocolateyZipPackage @packageArgs
