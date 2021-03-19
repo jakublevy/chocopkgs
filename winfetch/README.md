@@ -1,6 +1,6 @@
-**NOTE:** The following text is for the most part an excerpt from the official [README.md](https://github.com/lptstr/winfetch/blob/master/README.md).
+**NOTE:** The following text is an excerpt from the official [README.md](https://github.com/lptstr/winfetch/blob/master/README.md).
 
-![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/winfetch.png)
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/winfetch/logo.png)
 
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/winfetch/preview.png)
 
