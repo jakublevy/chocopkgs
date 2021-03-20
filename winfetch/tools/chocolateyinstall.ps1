@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop'
+﻿$ErrorActionPreference = 'Stop';
 $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $version               = '2.0.0'
 $executableFullPath    = "$toolsDir\winfetch-$version\winfetch.ps1"
@@ -9,10 +9,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   url           = $url
-  url64         = $url
   softwareName  = 'winfetch*'
   checksum      = $checksum
-  checksum64    = $checksum
   checksumType  = 'sha256' 
 }
 
