@@ -16,7 +16,7 @@
     <docsUrl>https://github.com/lptstr/winfetch/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/lptstr/winfetch/issues</bugTrackerUrl>
     <tags>winfetch neofetch commandline systeminfo screenshot</tags>
-    <summary>Winfetch is a command-line system information utility written in PowerShell 5+. Winfetch displays information about your operating system, software and hardware in an aesthetic and visually pleasing way.</summary>
+    <summary>🛠 A command-line system information utility written in PowerShell. Like Neofetch, but for Windows.</summary>
     <description>
 **NOTE:** The following text is an excerpt from the official [README.md](https://github.com/lptstr/winfetch/blob/master/README.md).
 
