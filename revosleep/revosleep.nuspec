@@ -3,7 +3,7 @@
   <metadata>
     <id>revosleep</id>
     <version>0.4.0</version>
-    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/revosleep-beta</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/revosleep</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>revoSleep (beta)</title>
     <authors>Aldo Mühlhause</authors>
@@ -13,7 +13,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://www.meinfach.net/revosleep/#revosleep/faq</docsUrl>
     <bugTrackerUrl>https://revosleep.bboard.de/board/f-84104086nx10681-2.html</bugTrackerUrl>
-    <tags>revosleep-beta hdd disk sleep spindown beta</tags>
+    <tags>revosleep hdd disk sleep spindown beta</tags>
     <summary>Utility to spindown ununsed HDDs</summary>
     <description>
 **NOTE:** The following text is an excerpt from the [official website](https://www.meinfach.net/revosleep/).
