@@ -6,14 +6,11 @@ $checksum64            = 'E79A61803992083808ECC653896581A285A88D18EC63556E0122B8
 
 # Required – download links contain session id
 $page          = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.meinfach.net/revosleep/'
-$downloadLinks = $page.Links     | Where-Object href -match $version 
+$downloadLinks = $page.Links     | Where-Object href  -match $version 
 $url           = ($downloadLinks | Where-Object class -match "revoSleepx86" | Select-Object -First 1 -exp href) -Replace ';', '&'
 $url64         = ($downloadLinks | Where-Object class -match "revoSleepx64" | Select-Object -First 1 -exp href) -Replace ';', '&'
 
-$extractedFullPath = "$toolsDir\revoSleep_v${version}_BETA (x64)"
-if(Get-OSArchitectureWidth -Compare 32) {
-  $extractedFullPath = "$toolsDir\revoSleep_v${version}_BETA (x86)"
-}
+$extractedFullPath = Get-ChildItem "$toolsDir\revoSleep*" | Select-Object -exp Name
 
 Install-ChocolateyZipPackage `
   -PackageName    $env:ChocolateyPackageName `
@@ -28,7 +25,7 @@ Install-ChocolateyZipPackage `
 
 Install-ChocolateyInstallPackage `
   -PackageName $env:ChocolateyPackageName `
-  -SoftwareName 'revosleep-beta*' `
+  -SoftwareName 'revoSleep*' `
   -File "$extractedFullPath\setup.msi" `
   -FileType 'MSI' `
   -SilentArgs "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" `
