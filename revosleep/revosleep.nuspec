@@ -57,6 +57,9 @@ Several bugs have been fixed. The major changes are:
 - The command line parameter handling has been updated in order to reflect the specific lock settings
 - The user interface has been improved (e.g. scrolling) and some minor bugs have been fixed 
     </releaseNotes>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
