@@ -24,8 +24,8 @@ To support output to MOBI files, you have to download KindleGen manually and pla
 
 ## Parameters
 * `/InstallationPath:` - where to install the binaries
-    - Default value: `"$env:SystemDrive\Program Files\Kindle Comic Converter"`
-* `/CreateDesktopIcon` - creates a desktop icon with the installation 
+    - Default value: `"$env:ProgramFiles\Kindle Comic Converter"`
+* `/CreateDesktopIcon` - creates a desktop icon
     - Not created by default
 * `/CBZassociation` - associates KCC as the default app for *.cbz files
     - Not associated by default

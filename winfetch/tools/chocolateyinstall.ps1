@@ -17,5 +17,5 @@ $packageArgs = @{
 Install-ChocolateyZipPackage @packageArgs
 
 Install-ChocolateyPowershellCommand `
-  -PackageName    "$packageArgs.$packageName.powershell" `
+  -PackageName    "$($packageArgs['packageName']).powershell" `
   -PsFileFullPath $executableFullPath
