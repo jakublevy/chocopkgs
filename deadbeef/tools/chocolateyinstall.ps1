@@ -1,5 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
-$url64      = 'https://sourceforge.net/projects/deadbeef/files/travis/windows/1.8.7/deadbeef-1.8.7-windows-x86_64.exe'
+$version    = '1.8.7'
+$url64      = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$version/deadbeef-$version-windows-x86_64.exe"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
