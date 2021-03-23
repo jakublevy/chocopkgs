@@ -1,4 +1,4 @@
-**NOTE:** The following text is an excerpt from the [official website](https://www.meinfach.net/revosleep/).
+**NOTE:** The following text is an excerpt from [the official website](https://www.meinfach.net/revosleep/).
 
 # revoSleep
 revoSleep lets your hard disk sleep in few seconds. You can lock different hard disks, so you can be sure they won't wake up.

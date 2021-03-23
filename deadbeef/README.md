@@ -1,4 +1,4 @@
-**NOTE:** The following text is for the most part an excerpt from the [official website](https://deadbeef.sourceforge.io).
+**NOTE:** The following text is for the most part an excerpt from [the official website](https://deadbeef.sourceforge.io).
 
 # DeaDBeeF
 DeaDBeeF (as in [0xDEADBEEF](http://en.wikipedia.org/wiki/Hexspeak)) is a modular multiple-platform audio player for desktop operating systems.
