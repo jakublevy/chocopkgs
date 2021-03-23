@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>deadbeef</id>
+    <version>1.8.7</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/deadbeef</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>DeaDBeeF - The Ultimate Music Player</title>
+    <authors>Alexey Yakovenko,Viktor Semykin,contributors</authors>
+    <projectUrl>https://deadbeef.sourceforge.io</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/deadbeef.png</iconUrl>
+    <copyright>Copyright (C) 2009-2020 Alexey Yakovenko and contributors</copyright>
+    <licenseUrl>https://github.com/DeaDBeeF-Player/deadbeef/blob/master/COPYING</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/DeaDBeeF-Player/deadbeef</projectSourceUrl>
+    <docsUrl>https://github.com/DeaDBeeF-Player/deadbeef/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/DeaDBeeF-Player/deadbeef/issues</bugTrackerUrl>
+    <tags>audio player media flac mp3 gtk</tags>
+    <summary>♫ DeaDBeeF (as in 0xDEADBEEF) is a modular audio player.</summary>
+    <description>
+**NOTE:** The following text is for the most part an excerpt from the [official website](https://deadbeef.sourceforge.io).
+
+# DeaDBeeF
+DeaDBeeF (as in [0xDEADBEEF](http://en.wikipedia.org/wiki/Hexspeak)) is a modular multiple-platform audio player for desktop operating systems.
+
+DeaDBeeF lets you play variety of audio formats, convert between them, customize the UI almost any way you want, and use many [additional plugins](https://deadbeef.sourceforge.io/plugins.html) which can extend it even more.
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/deadbeef/preview.png)
+The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux with several additional plugins
+
+## Parameters
+* `/InstallationPath:` - where to install the binaries
+  - Default value: `"$env:ProgramFiles\DeaDBeeF"`
+* `/CreateDesktopIcon` - creates a desktop icon
+  - Not created by default
+* `/AssociateAudioFiles` - associates DeaDBeef as the default app for all supported audio files
+  - Not associated by default
+
+### Examples
+* Install into `D:\deadbeef` directory and create a desktop icon
+  ```
+  choco install deadbeef --params "/InstallationPath:"D:\deadbeef" /CreateDesktopIcon"
+  ```
+
+* Install with audio file associations
+  ```
+  choco install deadbeef --params "/AssociateAudioFiles"
+  ```
+
+* Install with audio file associations and create desktop icon
+  ```
+  choco install deadbeef --params "/AssociateAudioFiles /CreateDesktopIcon"
+  ```
+    </description>
+    <releaseNotes>https://github.com/DeaDBeeF-Player/deadbeef/blob/master/ChangeLog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
