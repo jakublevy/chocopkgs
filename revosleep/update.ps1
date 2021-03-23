@@ -19,7 +19,7 @@ function global:au_GetLatest {
 
     $file_name64   = ([regex]::Match($url64, '\?file=(.*\.zip).*')).Groups[1]
     $file_name     = ([regex]::Match($url, '\?file=(.*\.zip).*')).Groups[1]
-    $version       = ([regex]::Match($file_name, 'v(\d+\.\d+.\d+)_.+.zip')).Groups[1].Value
+    $version       = ([regex]::Match($file_name, 'v(\d+\.\d+(\.\d+)*)_.+.zip')).Groups[1].Value
     [System.IO.File]::WriteAllBytes("$(pwd | select -exp Path)\$file_name64", $response64.Content)
     [System.IO.File]::WriteAllBytes("$(pwd | select -exp Path)\$file_name", $response.Content)
 

@@ -5,7 +5,7 @@
     <version>1.8.7</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/deadbeef</packageSourceUrl>
     <owners>Jakub Levý</owners>
-    <title>DeaDBeeF - The Ultimate Music Player</title>
+    <title>DeaDBeeF</title>
     <authors>Alexey Yakovenko,Viktor Semykin,contributors</authors>
     <projectUrl>https://deadbeef.sourceforge.io</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/deadbeef.png</iconUrl>
