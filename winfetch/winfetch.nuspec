@@ -30,7 +30,7 @@ The overall purpose of Winfetch is to be used in screenshots of your system. Win
 
 The information by default is displayed alongside your operating system's logo. You can further configure Winfetch to instead use an image, your wallpaper or nothing at all.
 
-According to benchmarks done with Hyperfine, Winfetch on Windows is faster than Neofetch running on Bash emulators like MSYS (Git Bash) or Cygwin.
+According to benchmarks done with Hyperfine, Winfetch on Windows is faster than Neofetch running on Bash emulators like MSYS (Git Bash) or Cygwin.      
 </description>
 <releaseNotes>
 ### Fixed

@@ -16,6 +16,8 @@
     <tags>network limiter admin internet monitor bandwith filter block</tags>
     <summary>NetLimiter is an ultimate internet traffic control and monitoring tool.</summary>
     <description>
+**NOTE:** The following text is for the most part an excerpt from [the official website](https://www.netlimiter.com/products/nl4).
+
 # NetLimiter
 NetLimiter is an ultimate internet **traffic control** and **monitoring tool** designed for Windows. You can use NetLimiter to set download/upload transfer rate limits for applications or even single connection and monitor their internet traffic.
 
@@ -29,7 +31,7 @@ Along with this unique feature, Netlimiter offers comprehensive set of **interne
 * Install into `D:\netlimiter` directory
   ```
   choco install netlimiter --params "/InstallationPath:"D:\netlimiter""
-  ```
+  ```      
     </description>
     <releaseNotes>https://www.netlimiter.com/releases/nl4/4-1-7-0</releaseNotes>
   </metadata>
