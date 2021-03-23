@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>netlimiter</id>
+    <version>4.1.7.0</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/netlimiter</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>NetLimiter</title>
+    <authors>Locktime Software s.r.o.</authors>
+    <projectUrl>https://www.netlimiter.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/netlimiter.png</iconUrl>
+    <copyright>Copyright (c) 2005-2021 Locktime Software s.r.o.</copyright>
+    <licenseUrl>https://www.netlimiter.com/pages/netlimiter-eula</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.netlimiter.com/docs/netlimiter-overview</docsUrl>
+    <tags>network limiter admin internet monitor bandwith filter block</tags>
+    <summary>NetLimiter is an ultimate internet traffic control and monitoring tool.</summary>
+    <description>
+# NetLimiter
+NetLimiter is an ultimate internet **traffic control** and **monitoring tool** designed for Windows. You can use NetLimiter to set download/upload transfer rate limits for applications or even single connection and monitor their internet traffic.
+
+Along with this unique feature, Netlimiter offers comprehensive set of **internet statistical tools**. It includes real-time traffic measurement and long-term per-application internet traffic statistics. 
+
+## Parameters
+* `/InstallationPath:` - where to install the binaries
+  - Default value: `"$env:ProgramFiles\Locktime Software\NetLimiter 4"`
+
+### Examples
+* Install into `D:\netlimiter` directory
+  ```
+  choco install netlimiter --params "/InstallationPath:"D:\netlimiter""
+  ```
+    </description>
+    <releaseNotes>https://www.netlimiter.com/releases/nl4/4-1-7-0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
