@@ -68,10 +68,7 @@ To support output to MOBI files, you have to download KindleGen manually and pla
    choco install kindle-comic-converter --params "/CreateDesktopIcon"
    ```
     </description>
-<releaseNotes>
-* Fixed KindleGen detection on macOS 10.15
-* Fixed multiple smaller issues
-</releaseNotes>
+<releaseNotes>https://github.com/ciromattia/kcc/blob/5.5.2/CHANGELOG.md</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />

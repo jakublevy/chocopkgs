@@ -1,7 +1,7 @@
 import-module au
 
 function global:au_SearchReplace {
-    $url64 = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$version/deadbeef-$version-windows-x86_64.exe"
+    $url64 = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$($Latest.Version)/deadbeef-$($Latest.Version)-windows-x86_64.exe"
     Invoke-WebRequest -Uri $url64 -OutFile '_deadbeef.exe'
     $checksum64 = (Get-FileHash '_deadbeef.exe' -Algorithm SHA256).Hash
     Remove-Item '_deadbeef.exe' -Force

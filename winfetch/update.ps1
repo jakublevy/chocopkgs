@@ -1,9 +1,9 @@
 import-module au
 
 function global:au_SearchReplace {
-    Invoke-WebRequest -UseBasicParsing "https://github.com$($Latest.RelativeUrl)" -OutFile '_winfetch.zip'
-    $checksum = (Get-FileHash '_winfetch.zip' -Algorithm SHA256).Hash
-    Remove-Item '_winfetch.zip' -Force
+    Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/lptstr/winfetch/v$($Latest.Version)/winfetch.ps1" -OutFile '_winfetch.ps1'
+    $checksum = (Get-FileHash '_winfetch.ps1' -Algorithm SHA256).Hash
+    Remove-Item '_winfetch.ps1' -Force
 
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
@@ -23,7 +23,6 @@ function global:au_GetLatest {
     @{
         Version      = $version
         ReleaseNotes = "https://github.com/lptstr/winfetch/releases/tag/v$version"
-        RelativeUrl  = $relative_url
     }
 }
 
