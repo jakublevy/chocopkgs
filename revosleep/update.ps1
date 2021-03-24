@@ -2,7 +2,7 @@ import-module au
 
 function global:au_SearchReplace {
     @{
-        ".\tools\chocolateyInstall.ps1"     = @{
+        ".\tools\chocolateyinstall.ps1"     = @{
             "(^[$]checksum\s*=\s*)('.*')"   = "`$1'$($Latest.Checksum)'"
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
             "(^[$]version\s*=\s*)('.*')"    = "`$1'$($Latest.Version)'"
