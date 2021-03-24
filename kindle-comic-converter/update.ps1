@@ -5,6 +5,9 @@ function global:au_SearchReplace {
         ".\tools\chocolateyInstall.ps1"   = @{
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
+        ".\kindle-comic-converter.nuspec"   = @{
+            "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
+        }
     }
 }
 
@@ -20,6 +23,7 @@ function global:au_GetLatest {
     @{
         Checksum64 = $checksum64
         Version  = $version
+        ReleaseNotes = "https://github.com/ciromattia/kcc/blob/$version/CHANGELOG.md"
     }
 }
 
