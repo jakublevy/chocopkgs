@@ -1,13 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop';
 $version    = '1.8.7'
-$url64      = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$version/deadbeef-$version-windows-x86_64.exe"
+$checksum64 = 'F219BF62C23739D59CFAB15CBA2B2BF9A9135064320E054EF27B0C0158F9597D'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
-  url64bit      = $url64
+  url64bit      = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$version/deadbeef-$version-windows-x86_64.exe"
   softwareName  = "$env:ChocolateyPackageName*"
-  checksum64    = 'F219BF62C23739D59CFAB15CBA2B2BF9A9135064320E054EF27B0C0158F9597D'
+  checksum64    = $checksum64
   checksumType64= 'sha256'
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes= @(0)
