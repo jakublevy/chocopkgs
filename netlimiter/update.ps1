@@ -6,6 +6,9 @@ function global:au_SearchReplace {
             "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum)'"
         }
+        ".\netlimiter.nuspec"   = @{
+            "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
+        }
     }
 }
 
@@ -18,8 +21,9 @@ function global:au_GetLatest {
     Remove-Item '_netlimiter.exe' -Force
 
     @{
-        Version  = $version
-        Checksum = $checksum
+        Version      = $version
+        Checksum     = $checksum
+        ReleaseNotes = "https://www.netlimiter.com/releases/nl4/$($version -replace '\.', '-')"
     }
 }
 

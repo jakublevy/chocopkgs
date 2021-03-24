@@ -6,6 +6,9 @@ function global:au_SearchReplace {
             "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
+        ".\deadbeef.nuspec"   = @{
+            "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
+        }
     }
 }
 
@@ -22,6 +25,7 @@ function global:au_GetLatest {
     @{
         Version  = $version
         Checksum64 = $checksum64
+        ReleaseNotes = "https://github.com/DeaDBeeF-Player/deadbeef/blob/$version/ChangeLog"
     }
 }
 
