@@ -1,12 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop';
-$checksum              = 'E465225BEDC50523397F9094914722897DC56509C7FCB6861AC815A94D638DDE'
+$toolsDir   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+$checksum64 = 'E465225BEDC50523397F9094914722897DC56509C7FCB6861AC815A94D638DDE'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
   url64bit       = 'https://kcc.iosphe.re/Windows/'
   softwareName   = 'Kindle Comic Converter*'
-  checksum64     = $checksum
+  checksum64     = $checksum64
   checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes = @(0)
@@ -19,22 +20,20 @@ if($addionalArgs['InstallationPath']) {
   $packageArgs['silentArgs'] += " /DIR=""$path"""
 }
 
-$tasks = [System.Collections.ArrayList]@()
-if($addionalArgs['CreateDesktopIcon']) {
-  $tasks.Add('desktopicon')
+$tasks = @('desktopicon', 'cbzassociation', 'cb7association', 'cbrassociation')
+if(!$addionalArgs['CreateDesktopIcon']) {
+  $tasks[0] = '!' + $tasks[0]
 }
-
 if(!$addionalArgs['CBZassociation']) {
-  $tasks.Add('!cbzassociation')
+  $tasks[1] = '!' + $tasks[1]
 }
-
 if(!$addionalArgs['CB7association']) {
-  $tasks.Add('!cb7association')
+  $tasks[2] = '!' + $tasks[2]
 }
-
 if(!$addionalArgs['CBRassociation']) {
-  $tasks.Add('!cbrassociation')
+  $tasks[3] = '!' + $tasks[3]
 }
-$packageArgs['silentArgs'] += " /MERGETASKS=""$($tasks -join ' ')"""
+$packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 
 Install-ChocolateyPackage @packageArgs
+& "$toolsDir\chocolateybeforemodify.ps1"

@@ -3,7 +3,7 @@ import-module au
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyInstall.ps1"   = @{
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum)'"
+            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
@@ -14,11 +14,11 @@ function global:au_GetLatest {
     $version     = ([regex]::Match($file_name, '(\d+\.\d+(\.\d+)*)\.exe')).Groups[1].Value
     [System.IO.File]::WriteAllBytes("$(pwd | select -exp Path)\$file_name", $response.Content)
 
-    $checksum    = (Get-FileHash $file_name -Algorithm SHA256).Hash
+    $checksum64    = (Get-FileHash $file_name -Algorithm SHA256).Hash
     Remove-Item $file_name -Force
 
     @{
-        Checksum = $checksum
+        Checksum64 = $checksum64
         Version  = $version
     }
 }
