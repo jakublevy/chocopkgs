@@ -1,10 +1,9 @@
 import-module au
 
 function global:au_SearchReplace {
-    $response = Invoke-WebRequest -UseBasicParsing -Uri 'https://kcc.iosphe.re/Windows/'
-    [System.IO.File]::WriteAllBytes("$(pwd | select -exp Path)\$($Latest.FileName)", $response.Content)
-    $checksum64 = (Get-FileHash $file_name -Algorithm SHA256).Hash
-    Remove-Item $file_name -Force
+    Invoke-WebRequest -UseBasicParsing -Uri 'https://kcc.iosphe.re/Windows/' -OutFile '_kcc.exe'
+    $checksum64 = (Get-FileHash '_kcc.exe' -Algorithm SHA256).Hash
+    Remove-Item '_kcc.exe' -Force
 
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
@@ -23,7 +22,6 @@ function global:au_GetLatest {
     @{
         Version  = $version
         ReleaseNotes = "https://github.com/ciromattia/kcc/blob/$version/CHANGELOG.md"
-        FileName = $file_name
     }
 }
 

@@ -1,20 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop';
-$toolsDir              = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$version               = '2.0.0'
-$checksum              = '53EDA3231F7A556076E65B098FF48619739BA0FBEA518E4998B3615A318A218A'
-$executableFullPath    = "$toolsDir\winfetch-$version\winfetch.ps1"
+$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)         
+$version  = '2.0.0'
+$checksum = 'EF7CADAB4CEC7E1BFE6CFABEF3AF36E3F0F8ABC1F53DCF5E3B6E06AB4FE94179'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
-  url           = "https://github.com/lptstr/winfetch/archive/refs/tags/v$version.zip"
-  softwareName  = 'winfetch*'
+  url           = "https://raw.githubusercontent.com/lptstr/winfetch/v$version/winfetch.ps1"
   checksum      = $checksum
   checksumType  = 'sha256' 
+  psFileFullPath= "$toolsDir\winfetch.ps1"
 }
 
-Install-ChocolateyZipPackage @packageArgs
-
-Install-ChocolateyPowershellCommand `
-  -PackageName    "$($packageArgs['packageName']).powershell" `
-  -PsFileFullPath $executableFullPath
+Install-ChocolateyPowershellCommand @packageArgs
