@@ -6,10 +6,10 @@
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/winfetch</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>winfetch</title>
-    <authors>Kied Llaentenn,contributors</authors>
+    <authors>Kiëd Llaentenn,contributors</authors>
     <projectUrl>https://github.com/lptstr/winfetch</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/winfetch.png</iconUrl>
-    <copyright>Copyright (c) 2019-2021 Kied Llaentenn and contributors</copyright>
+    <copyright>Copyright (c) 2019-2021 Kiëd Llaentenn and contributors</copyright>
     <licenseUrl>https://github.com/lptstr/winfetch/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/lptstr/winfetch</projectSourceUrl>

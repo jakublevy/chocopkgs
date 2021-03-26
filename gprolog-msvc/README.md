@@ -1,3 +1,5 @@
+**NOTE:** The following text is for the most part an excerpt from [the official website](http://www.gprolog.org).
+
 # GNU Prolog
 
 GNU Prolog is a free Prolog compiler with constraint solving over finite domains developed by [Daniel Diaz](https://cri-dist.univ-paris1.fr/diaz).

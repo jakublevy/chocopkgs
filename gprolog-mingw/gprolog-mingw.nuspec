@@ -19,6 +19,8 @@
     <tags>prolog solver prover constraint logic programming language</tags>
     <summary>GNU Prolog is a free Prolog compiler with constraint solving over finite domains.</summary>
     <description> 
+**NOTE:** The following text is for the most part an excerpt from [the official website](http://www.gprolog.org).
+
 # GNU Prolog
 
 GNU Prolog is a free Prolog compiler with constraint solving over finite domains developed by [Daniel Diaz](https://cri-dist.univ-paris1.fr/diaz).
@@ -53,9 +55,9 @@ GNU Prolog also includes an efficient constraint solver over Finite Domains (FD)
     choco install gprolog-mingw --params "/AssocPl /AssocPro /AssocProlog"
     ```
 * Install and create desktop icon
-   ```
-   choco install gprolog-mingw --params "/CreateDesktopIcon"
-   ```
+    ```
+    choco install gprolog-mingw --params "/CreateDesktopIcon"
+    ```        
     </description>
 <releaseNotes>http://www.gprolog.org/NEWS</releaseNotes>
 </metadata>
