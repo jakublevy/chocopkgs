@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop';
-$version = '1.4.5'
+$version    = '1.4.5'
 $checksum   = 'E625DECC0CEFBCB598CF6F0F88045C9B815F4F3864B260070395F1FF3D7E88CE'
 $checksum64 = '66B3A5322A3BC483BAA4680B70CC6112BCA3B5329D42E6EA0096BC26B14D2CBA'
 
@@ -18,10 +18,8 @@ $packageArgs = @{
 }
 
 $addionalArgs = Get-PackageParameters
-
 if($addionalArgs['InstallationPath']) {
-  $path = $addionalArgs['InstallationPath']
-  $packageArgs['silentArgs'] += " /DIR=""$path"""
+  $packageArgs['silentArgs'] += " /DIR=`"$($addionalArgs['InstallationPath'])`""
 }
 
 $tasks = @('desktopicon', 'assocPl', 'assocPro', 'assocProlog')
