@@ -8,7 +8,6 @@ $packageArgs = @{
   checksum      = $checksum
   checksumType  = 'sha256'
   unzipLocation = "$toolsDir\bin"
-  silentArgs    = "/S"
   validExitCodes= @(0)
 }
 

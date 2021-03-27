@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>glpk</id>
+    <version>4.65</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/glpk</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>GNU Linear Programming Kit</title>
+    <authors>Andrew Makhorin</authors>
+    <projectUrl>https://www.gnu.org/software/glpk</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/glpk.png</iconUrl>
+    <copyright>Copyright (c) 2000-2012 Andrew Makhorin, Department for Applied Informatics, Moscow Aviation Institute, Moscow, Russia. All rights reserved.</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://ftp.gnu.org/gnu/glpk</projectSourceUrl>
+    <docsUrl>https://www.gnu.org/software/glpk/glpk.html#documentation</docsUrl>
+    <mailingListUrl>https://www.gnu.org/software/glpk/glpk.html#lists</mailingListUrl>
+    <bugTrackerUrl>https://www.gnu.org/software/glpk/glpk.html#bug</bugTrackerUrl>
+    <tags>mathprog linear-programming LP MIP optimization solver gnu</tags>
+    <summary>GLPK is intended for solving large-scale linear programming (LP), mixed integer programming (MIP), and other related problems.</summary>
+    <description>
+**NOTE:** The following text is an excerpt from [the official website](https://www.gnu.org/software/glpk).
+
+# GLPK (GNU Linear Programming Kit)
+
+The GLPK (GNU Linear Programming Kit) package is intended for solving large-scale linear programming (LP), mixed integer programming (MIP), and other related problems. It is a set of routines written in ANSI C and organized in the form of a callable library.
+
+GLPK supports the GNU MathProg modeling language, which is a subset of the AMPL language.
+
+The GLPK package includes the following main components:
+* primal and dual simplex methods
+* primal-dual interior-point method
+* branch-and-cut method
+* translator for GNU MathProg
+* application program interface (API)
+* stand-alone LP/MIP solver         
+    </description>
+    <releaseNotes>
+# GLPK 4.65 (release date: Feb 16, 2018)
+
+The following new API routines for LP/MIP preprocessing were
+added:
+
+* `glp_npp_alloc_wksp`  allocate the preprocessor workspace
+* `glp_npp_load_prob`     load original problem instance
+* `glp_npp_preprocess1`   perform basic LP/MIP preprocessing
+* `glp_npp_build_prob`    build resultant problem instance
+* `glp_npp_postprocess`   postprocess solution to resultant problem
+* `glp_npp_obtain_sol`    obtain solution to original problem
+* `glp_npp_free_wksp`     free the preprocessor workspace
+
+See doc/npp.txt for detailed description of these API routines.
+
+A new, more robust implementation of locally valid simple cover
+cuts was included in the MIP solver.
+
+The API routine `glp_init_iocp` was changed to enable long-step
+option of the dual simplex by default.
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
