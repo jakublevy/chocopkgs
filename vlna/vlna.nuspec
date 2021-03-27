@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vlna</id>
+    <version>1.2</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/vlna</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>vlna</title>
+    <authors>Petr Olšák</authors>
+    <projectUrl>http://petr.olsak.net/ftp/olsak/vlna</projectUrl>
+    <copyright>Copyright (c) 1995, 2002, 2009, 2010 Petr Olšák</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>http://petr.olsak.net/ftp/olsak/vlna/vlna-1.2.tar.gz</projectSourceUrl>
+    <tags>vlna tex latex czech slovak typesetting</tags>
+    <summary>Adds ties after nonsyllabic prepositions (instead of spaces) in the TeX source files. This prevents line breaks at undesirable spaces.</summary>
+    <description>
+# vlna
+Program vlna adds ties (Czech vlna or vlnka) after nonsyllabic prepositions
+(instead of spaces) in the TeX source files. This prevents line breaks
+at undesirable spaces.
+## Preface
+There  exists  a  special  Czech  and Slovak typographical rule: you cannot leave the non-syllabic preposition on the end of one line and continue writing text on next  line.  For
+example, you cannot write down the text "v lese" (in a forest) like "v[new-line]lese". The
+program vlna adds the ASCII tilde between such preposition and the next  word  and  removes
+the  space(s) in this place.  It means the program converts "v lese" to "v~lese". You can
+use this program as a preprocessor  before TeXing. Moreover, you can set  another  sequence
+to store instead ASCII tilde (see the -x option).
+
+## Options
+The options are optional and can be written in arbitrarty order separated by space.
+```
+-f     Filter. The [filenames] are treated as follows:
+
+        vlna -f filename1 filename2
+            Input is filename1, output is filename2.
+
+        vlna -f filename1
+            Input is filename1, output is stdout.
+
+        vlna -f
+            Input is stdin, output is stdout.
+
+        vlna filename1 [filename2 [filename3 ...]]
+            If the -f option is omitted then each file is processed independently and it is
+            re-written.
+
+-s     The silent mode. No messages, warnings, statistics are printed.  Only errors  which
+        terminates  the  program  untimely  are printed.  If this parameter is omitted then
+        banner, warnings and statistics are printed to stderr.
+
+-r     Do not create the backups. The option -r is irrelevant if the -f option is used. If
+        the  -f  and  -r  options  aren't used then each re-written file is stored with its
+        original contents to a backup file  (the  name  of  backup  file  is  the  same  as
+        filename, only the tilde is used instead of the last character).
+
+-v characters
+        The  set  of  characters  treated  as non-syllabic prepositions is declared by this
+        option. Default:  -v KkSsVvZzOoUuAI.   The  space  between  -v  and  characters  is
+        required.
+
+-x code
+        The  code  is  a  string  written  in  hexadecimal  notation  (even  hexa digits is
+        required). This string will be saved after prepositions instead asciitilde which is
+        default.   The  example:  -x  C2A0  two  bytes  are  stored after each non-syllabic
+        preposition, first byte has C2 code and second byte has A0 code. This example means
+        that  NO-BREAK  SPACE  in  UTF8  encoding will be used after prepositions.  Another
+        example: -x 00A0 the  NO-BREAK  SPACE  in  UTF16  encoding.   Another  example:  -x
+        48454C4C4F  the  string  HELLO  will  be  used.   The  space between -x and code is
+        required.
+
+-m     The math-modes ($...$  and  $$...$$)  are  ignored.   It  means  that  non-syllabic
+        prepositions is searched in math-mode too.  Default (without -m option): no changes
+        in math modes are done because (for example)  "v"  is  variable  in  math-mode,  no
+        preposition.
+
+-n     The  verbatim mode (\verb[char]...[char], \begtt...\endtt) is ignored, it means the
+        program can do a changes in verbatim environment.  Default (without -n option):  no
+        changes in verbatim mode are done.
+
+-l     The   LaTeX   mode.  The  following  environments  are  treated  as  display  mode:
+        \begin{display}...\end{display}  and  \begin{equation}...\end{equation}   and   the
+        following       environment       is       treated      as      verbatim      mode:
+        \begin{verbatim}...\end{verbatim}.
+
+-w     The web mode (Knuth's web, no  www:-).
+```
+
+## Examples
+```
+vlna *.tex
+        All files with .tex suffix in current directory will  be  processed  (and  possibly
+        changed). (The "*" is UNIX-shell feature).
+
+vlna -f file > /dev/null
+        Only  the consistence checking of math and verbatim modes is processed.  No changes
+        are done.
+```
+    </description>
+    <releaseNotes>
+      * bug fix "v[space][cr]lese" -> "v~~lese"
+      * added pattern for "\uv{v lese}" -> "\uv{v~lese}"
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
