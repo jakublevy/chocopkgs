@@ -16,7 +16,7 @@
     <docsUrl>http://www.gprolog.org/manual/gprolog.html</docsUrl>
     <mailingListUrl>http://www.gprolog.org/#maillist</mailingListUrl>
     <bugTrackerUrl>http://www.gprolog.org/#bug</bugTrackerUrl>
-    <tags>prolog solver prover constraint logic programming language</tags>
+    <tags>prolog solver prover constraint logic programming language gnu</tags>
     <summary>GNU Prolog is a free Prolog compiler with constraint solving over finite domains.</summary>
     <description>
 **NOTE:** The following text is for the most part an excerpt from [the official website](http://www.gprolog.org).
