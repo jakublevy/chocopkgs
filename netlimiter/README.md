@@ -1,3 +1,5 @@
+**NOTE:** This is commercial software with 28-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://www.netlimiter.com/buy/nl4pro).
+
 **NOTE:** The following text is for the most part an excerpt from [the official website](https://www.netlimiter.com/products/nl4).
 
 # NetLimiter
