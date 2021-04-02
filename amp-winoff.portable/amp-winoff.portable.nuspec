@@ -10,8 +10,6 @@
     <projectUrl>http://www.ampsoft.net/utilities/WinOFF.php</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/WinOFF.png</iconUrl>
     <copyright>Copyright (c) 1997-2010 Alberto Martinez Perez</copyright>
-    <licenseUrl>file:///legal/LICENSE.txt</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <tags>shutdown sleep admin control schedule</tags>
     <summary>AMP WinOFF is an utility for scheduling the shutdown of Windows computers, with several shutdown conditions and fully configurable.</summary>
     <description>
@@ -42,6 +40,5 @@ AMP WinOFF is an utility for scheduling the shutdown of Windows computers, with 
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>

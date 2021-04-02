@@ -1,9 +1,0 @@
-This file contains the Terms of Use.
-The content of Terms of Use can be verified by running the installer http://www.ampsoft.net/files/WinOFFSetup.exe and comparing to the "License Agreement" with the following text:
-
-
-This software is freeware, but only for PERSONAL AND NON-PROFIT USE. For commercial, corporate, educational or government use, or inclusion in any distribution made for profit (software compilations, cover DVD's, etc.) you must contact the author for authorization.
-
-This software is provided "as is", WITHOUT ANY WARRANTY OF ANY KIND. The author declines responsibility for any damages arising out of the use of this program.
-
-You can redistribute this software freely, as long as you don't charge any money, and only if you use the original setup package, which you can be obtained from the AMPsoft web site at http://www.ampsoft.net/.
