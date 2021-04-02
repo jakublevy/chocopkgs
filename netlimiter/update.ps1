@@ -1,7 +1,7 @@
 import-module au
 
 function global:au_SearchReplace {
-    $url = "https://www.netlimiter.com/files/download/nl4/netlimiter-$version.exe"
+    $url = "https://www.netlimiter.com/files/download/nl4/netlimiter-$($Latest.Version).exe"
     Invoke-WebRequest -Uri $url -OutFile '_netlimiter.exe'
     $checksum = (Get-FileHash '_netlimiter.exe' -Algorithm SHA256).Hash
     Remove-Item '_netlimiter.exe' -Force
