@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>netlimiter</id>
-    <version>4.1.7.0</version>
+    <version>4.1.8.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/netlimiter</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>NetLimiter</title>
@@ -13,7 +13,7 @@
     <licenseUrl>https://www.netlimiter.com/pages/netlimiter-eula</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://www.netlimiter.com/docs/netlimiter-overview</docsUrl>
-    <tags>network limiter admin internet monitor bandwith filter block</tags>
+    <tags>network limiter admin internet monitor bandwith filter block trial</tags>
     <summary>NetLimiter is an ultimate internet traffic control and monitoring tool.</summary>
     <description>
 **NOTE:** This is commercial software with 28-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://www.netlimiter.com/buy/nl4pro).
@@ -35,7 +35,7 @@ Along with this unique feature, Netlimiter offers comprehensive set of **interne
   choco install netlimiter --params "/InstallationPath:"D:\netlimiter""
   ```       
     </description>
-    <releaseNotes>https://www.netlimiter.com/releases/nl4/4-1-7-0</releaseNotes>
+    <releaseNotes>https://www.netlimiter.com/releases/nl4/4-1-8-0</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.6.2.0" />
       <dependency id="vcredist140" version="14.20.27508.1" />
