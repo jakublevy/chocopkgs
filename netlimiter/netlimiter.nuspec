@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>netlimiter</id>
-    <version>4.1.8.0</version>
+    <version>4.1.9.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/netlimiter</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>NetLimiter</title>
@@ -15,10 +15,7 @@
     <docsUrl>https://www.netlimiter.com/docs/netlimiter-overview</docsUrl>
     <tags>network limiter admin internet monitor bandwith filter block trial</tags>
     <summary>NetLimiter is an ultimate internet traffic control and monitoring tool.</summary>
-    <description>
-**NOTE:** This is commercial software with 28-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://www.netlimiter.com/buy/nl4pro).
-
-**NOTE:** The following text is for the most part an excerpt from [the official website](https://www.netlimiter.com/products/nl4).
+    <description><![CDATA[**NOTE:** The following text is for the most part an excerpt from [the official website](https://www.netlimiter.com/products/nl4).
 
 # NetLimiter
 NetLimiter is an ultimate internet **traffic control** and **monitoring tool** designed for Windows. You can use NetLimiter to set download/upload transfer rate limits for applications or even single connection and monitor their internet traffic.
@@ -33,9 +30,9 @@ Along with this unique feature, Netlimiter offers comprehensive set of **interne
 * Install into `D:\netlimiter` directory
   ```
   choco install netlimiter --params "/InstallationPath:"D:\netlimiter""
-  ```       
-    </description>
-    <releaseNotes>https://www.netlimiter.com/releases/nl4/4-1-8-0</releaseNotes>
+  ```
+]]></description>
+    <releaseNotes>https://www.netlimiter.com/releases/nl4/4-1-9-0</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.6.2.0" />
       <dependency id="vcredist140" version="14.20.27508.1" />
