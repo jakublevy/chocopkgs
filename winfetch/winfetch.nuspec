@@ -7,18 +7,18 @@
     <owners>Jakub Levý</owners>
     <title>winfetch</title>
     <authors>Kiëd Llaentenn,contributors</authors>
-    <projectUrl>https://github.com/lptstr/winfetch</projectUrl>
+    <projectUrl>https://github.com/kiedtl/winfetch</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/winfetch.png</iconUrl>
     <copyright>Copyright (c) 2019-2021 Kiëd Llaentenn and contributors</copyright>
-    <licenseUrl>https://github.com/lptstr/winfetch/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/kiedtl/winfetch/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/lptstr/winfetch</projectSourceUrl>
-    <docsUrl>https://github.com/lptstr/winfetch/wiki</docsUrl>
-    <bugTrackerUrl>https://github.com/lptstr/winfetch/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/kiedtl/winfetch</projectSourceUrl>
+    <docsUrl>https://github.com/kiedtl/winfetch/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/kiedtl/winfetch/issues</bugTrackerUrl>
     <tags>neofetch screenfetch commandline cli systeminfo screenshot</tags>
     <summary>🛠 A command-line system information utility written in PowerShell. Like Neofetch, but for Windows.</summary>
     <description>
-**NOTE:** The following text is an excerpt from the official [README.md](https://github.com/lptstr/winfetch/blob/master/README.md).
+**NOTE:** The following text is an excerpt from the official [README.md](https://github.com/kiedtl/winfetch/blob/master/README.md).
 
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/winfetch/logo.png)
 
@@ -32,7 +32,7 @@ The information by default is displayed alongside your operating system's logo. 
 
 According to benchmarks done with Hyperfine, Winfetch on Windows is faster than Neofetch running on Bash emulators like MSYS (Git Bash) or Cygwin.      
 </description>
-<releaseNotes>https://github.com/lptstr/winfetch/releases/tag/v2.0.0</releaseNotes>
+<releaseNotes>https://github.com/kiedtl/winfetch/releases/tag/v2.0.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -1,7 +1,7 @@
 import-module au
 
 function global:au_SearchReplace {
-    Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/lptstr/winfetch/v$($Latest.Version)/winfetch.ps1" -OutFile '_winfetch.ps1'
+    Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/kiedtl/winfetch/v$($Latest.Version)/winfetch.ps1" -OutFile '_winfetch.ps1'
     $checksum = (Get-FileHash '_winfetch.ps1' -Algorithm SHA256).Hash
     Remove-Item '_winfetch.ps1' -Force
 
@@ -17,12 +17,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/lptstr/winfetch/releases/'
-    $relative_url  = $download_page.links | Where-Object href -match '/lptstr/winfetch/archive/refs/tags/v\d+\.\d+(\.\d+)*\.zip' | Select-Object -First 1 -expand href
+    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/kiedtl/winfetch/releases/'
+    $relative_url  = $download_page.links | Where-Object href -match '/kiedtl/winfetch/archive/refs/tags/v\d+\.\d+(\.\d+)*\.zip' | Select-Object -First 1 -expand href
     $version = ([regex]::Match($relative_url, '(\d+\.\d+(\.\d+)*)\.zip')).Groups[1].Value
     @{
         Version      = $version
-        ReleaseNotes = "https://github.com/lptstr/winfetch/releases/tag/v$version"
+        ReleaseNotes = "https://github.com/kiedtl/winfetch/releases/tag/v$version"
     }
 }
 
