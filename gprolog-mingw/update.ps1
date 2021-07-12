@@ -2,7 +2,7 @@ import-module au
 
 function global:au_SearchReplace {
     $url64 = "http://www.gprolog.org/setup-gprolog-$($Latest.Version)-mingw-x64.exe"
-    $url64 = "http://www.gprolog.org/setup-gprolog-$($Latest.Version)-mingw-x86.exe"
+    $url = "http://www.gprolog.org/setup-gprolog-$($Latest.Version)-mingw-x86.exe"
     Invoke-WebRequest -Uri $url64 -OutFile '_gprolog-x64.exe'
     Invoke-WebRequest -Uri $url -OutFile '_gprolog-x86.exe'
     $checksum64 = (Get-FileHash '_gprolog-x64.exe' -Algorithm SHA256).Hash
