@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>netlimiter</id>
-    <version>4.1.10.0</version>
+    <version>4.1.11.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/netlimiter</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>NetLimiter</title>
@@ -32,7 +32,7 @@ Along with this unique feature, Netlimiter offers comprehensive set of **interne
   choco install netlimiter --params "/InstallationPath:"D:\netlimiter""
   ```
 ]]></description>
-    <releaseNotes>https://www.netlimiter.com/releases/nl4/4-1-10-0</releaseNotes>
+    <releaseNotes>https://www.netlimiter.com/releases/nl4/4-1-11-0</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.6.2.0" />
       <dependency id="vcredist140" version="14.20.27508.1" />
