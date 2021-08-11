@@ -1,4 +1,4 @@
-﻿$kcc = Get-Process -Name "proficad" -ErrorAction SilentlyContinue
-if($kcc) {
-    Stop-Process $kcc -Force
+﻿$proficad = Get-Process -Name "proficad" -ErrorAction SilentlyContinue
+if($proficad) {
+    Stop-Process $proficad -Force
 }
