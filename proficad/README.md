@@ -18,7 +18,7 @@ The title block designed in accordance with ISO 7200 can be easily adapted, for 
 
 The program was translated into [many languages](https://gallery.proficad.com/pages/translate.aspx)​​, which will facilitate cooperation with international partners. Drawings can be [exported into the DXF](https://www.proficad.com/help/reports/export-dxf.htm) format. 
 
-he non-commercial (home) edition is distributed [free of charge](https://www.proficad.com/download.aspx) and has [some limitations](https://www.proficad.com/Editions.aspx): it does not support the bill of material, netlist, list of wires, reference grid, title block editor and some other limitations. 
+The non-commercial (home) edition is distributed [free of charge](https://www.proficad.com/download.aspx) and has [some limitations](https://www.proficad.com/Editions.aspx): it does not support the bill of material, netlist, list of wires, reference grid, title block editor and some other limitations. 
 
 ## Parameters
 * `/InstallationPath:` - where to install the binaries
