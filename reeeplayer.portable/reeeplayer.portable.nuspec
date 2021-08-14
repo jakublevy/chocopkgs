@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>reeeplayer.portable</id>
+    <version>0.1</version>
+    <packageSourceUrl>https://github.com/FilippVolodin/ReeePlayer</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>ReeePlayer (Portable)</title>
+    <authors>Filipp Volodin</authors>
+    <projectUrl>https://github.com/FilippVolodin/ReeePlayer</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/reeeplayer.png</iconUrl>
+    <copyright>Copyright (c) 2021 Filipp Volodin</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <docsUrl>https://github.com/FilippVolodin/ReeePlayer/tree/main/doc</docsUrl>
+    <bugTrackerUrl>https://github.com/FilippVolodin/ReeePlayer/issues</bugTrackerUrl>
+    <tags>learning education flashcards language-learning audio video spaced-repetition SRS anki</tags>
+    <summary>The ReeePlayer application is designed for spaced repetition of fragments (clips) of video and audio files with similar principle as in Anki.</summary>
+    <description>
+# ReeePlayer
+The ReeePlayer application is designed for spaced repetition of fragments (clips) of video and audio files with similar principle as in Anki.
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/reeeplayer.portable/watching.png)
+
+For more information see [README.MD (English)](https://github.com/FilippVolodin/ReeePlayer/blob/main/README.md) or [README.MD (Russian)](https://github.com/FilippVolodin/ReeePlayer/blob/main/doc/README.ru.md).
+    </description>
+    <releaseNotes>https://github.com/FilippVolodin/ReeePlayer/releases/tag/v0.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

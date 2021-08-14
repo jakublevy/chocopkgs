@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gprolog-msvc</id>
@@ -18,7 +18,10 @@
     <bugTrackerUrl>http://www.gprolog.org/#bug</bugTrackerUrl>
     <tags>prolog solver prover constraint logic programming language gnu</tags>
     <summary>GNU Prolog is a free Prolog compiler with constraint solving over finite domains.</summary>
-    <description><![CDATA[**NOTE:** The following text is for the most part an excerpt from [the official website](http://www.gprolog.org).
+    <description>
+**Note:** This package installs a version compiled with MSVC. The version compiled with MinGW is available as a [gprolog-mingw](https://community.chocolatey.org/packages/gprolog-mingw) package.
+
+**NOTE:** The following text is for the most part an excerpt from [the official website](http://www.gprolog.org).
 
 # GNU Prolog
 
@@ -54,11 +57,11 @@ GNU Prolog also includes an efficient constraint solver over Finite Domains (FD)
     choco install gprolog-msvc --params "/AssocPl /AssocPro /AssocProlog"
     ```
 * Install and create desktop icon
-   ```
-   choco install gprolog-msvc --params "/CreateDesktopIcon"
-   ```
-   
-]]></description>
+    ```
+    choco install gprolog-msvc --params "/CreateDesktopIcon"
+    ```
+    
+    </description>
 <releaseNotes>http://www.gprolog.org/NEWS</releaseNotes>
 </metadata>
   <files>
