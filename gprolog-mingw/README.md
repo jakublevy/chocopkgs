@@ -1,4 +1,4 @@
-**Note:** This package installs a version compiled with MinGW. Version compiled with MSVC is available as a [gprolog-msvc](https://community.chocolatey.org/packages/gprolog-msvc) package.
+**Note:** This package installs a version compiled with MinGW. The version compiled with MSVC is available as a [gprolog-msvc](https://community.chocolatey.org/packages/gprolog-msvc) package.
 
 **NOTE:** The following text is for the most part an excerpt from [the official website](http://www.gprolog.org).
 
