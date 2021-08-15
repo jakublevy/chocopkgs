@@ -1,21 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
-  <metadata>
-    <id>proficad</id>
-    <version>11.2.2</version>
-    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/proficad</packageSourceUrl>
-    <owners>Jakub Levý</owners>
-    <title>ProfiCAD</title>
-    <authors>Václav Jedlička</authors>
-    <projectUrl>https://www.proficad.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/proficad.png</iconUrl>
-    <copyright>Copyright (c) Václav Jedlička</copyright>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <docsUrl>https://www.proficad.com/ProfiCAD.pdf</docsUrl>
-    <tags>CAD drawing schematic diagram electronic circuit</tags>
-    <summary>App designed for drawing of electrical and electronic diagrams, schematics, control circuit diagrams and can also be used for pneumatics, hydraulics and other types of technical diagrams.</summary>
-    <description>
-**NOTE:** The following text is for the most part an excerpt from [the official website](https://www.proficad.com).
+﻿**NOTE:** The following text is for the most part an excerpt from [the official website](https://www.proficad.com).
 
 # ProfiCAD
 ProfiCAD is designed for drawing of [electrical and electronic diagrams](https://www.proficad.com/screenshots.aspx), schematics, control circuit diagrams and can also be used for pneumatics, hydraulics and other types of technical diagrams. 
@@ -36,25 +19,3 @@ The title block designed in accordance with ISO 7200 can be easily adapted, for 
 The program was translated into [many languages](https://gallery.proficad.com/pages/translate.aspx)​​, which will facilitate cooperation with international partners. Drawings can be [exported into the DXF](https://www.proficad.com/help/reports/export-dxf.htm) format. 
 
 The non-commercial (home) edition is distributed [free of charge](https://www.proficad.com/download.aspx) and has [some limitations](https://www.proficad.com/Editions.aspx): it does not support the bill of material, netlist, list of wires, reference grid, title block editor and some other limitations. 
-
-## Parameters
-* `/InstallationPath:` - where to install the binaries
-    - Default value: 
-        - `"${env:ProgramFiles(x86)}\ProfiCAD"` on 64-bit Windows
-        - `"$env:ProgramFiles\ProfiCAD"` on 32-bit Windows
-
-### Examples
-* Install into `D:\ProfiCAD` directory
-    ```
-    choco install proficad --params "/InstallationPath:"D:\ProfiCAD""
-    ```
-    </description>
-<releaseNotes>https://www.proficad.com/news.aspx</releaseNotes>
-<dependencies>
-  <dependency id="proficad.install" version="11.2.2" />
-</dependencies>
-</metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
-</package>
