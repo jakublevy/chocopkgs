@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>proficad</id>
+    <id>proficad.install</id>
     <version>11.2.2</version>
-    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/proficad</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/proficad.install</packageSourceUrl>
     <owners>Jakub Levý</owners>
-    <title>ProfiCAD</title>
+    <title>ProfiCAD (Install)</title>
     <authors>Václav Jedlička</authors>
     <projectUrl>https://www.proficad.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/proficad.png</iconUrl>
@@ -50,9 +50,6 @@ The non-commercial (home) edition is distributed [free of charge](https://www.pr
     ```
     </description>
 <releaseNotes>https://www.proficad.com/news.aspx</releaseNotes>
-<dependencies>
-  <dependency id="proficad.install" version="11.2.2" />
-</dependencies>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
