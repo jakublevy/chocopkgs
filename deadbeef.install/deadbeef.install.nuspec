@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>deadbeef</id>
+    <id>deadbeef.install</id>
     <version>1.8.8</version>
-    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/deadbeef</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/deadbeef.install</packageSourceUrl>
     <owners>Jakub Levý</owners>
-    <title>DeaDBeeF</title>
+    <title>DeaDBeeF (Install)</title>
     <authors>Alexey Yakovenko,Viktor Semykin,contributors</authors>
     <projectUrl>https://deadbeef.sourceforge.io</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/deadbeef.png</iconUrl>
@@ -53,9 +53,6 @@ The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux
   ```
     </description>
     <releaseNotes>https://github.com/DeaDBeeF-Player/deadbeef/blob/1.8.8/ChangeLog</releaseNotes>
-    <dependencies>
-      <dependency id="deadbeef.install" version="1.8.8" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

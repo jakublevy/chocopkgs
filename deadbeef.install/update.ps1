@@ -1,8 +1,17 @@
 import-module au
 
 function global:au_SearchReplace {
-    @{  ".\deadbeef.nuspec" = @{
-            "(?i)(\<dependency id=""deadbeef.install"" version="").*("" /\>)" = "`${1}$($Latest.Version)`${2}"
+    $url64 = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$($Latest.Version)/deadbeef-$($Latest.Version)-windows-x86_64.exe"
+    Invoke-WebRequest -Uri $url64 -OutFile '_deadbeef.exe'
+    $checksum64 = (Get-FileHash '_deadbeef.exe' -Algorithm SHA256).Hash
+    Remove-Item '_deadbeef.exe' -Force
+
+    @{
+        ".\tools\chocolateyinstall.ps1"   = @{
+            "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
+            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$checksum64'"
+        }
+        ".\deadbeef.install.nuspec"   = @{
             "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
         }
     }

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>deadbeef</id>
+    <id>deadbeef.portable</id>
     <version>1.8.8</version>
-    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/deadbeef</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/deadbeef.portable</packageSourceUrl>
     <owners>Jakub Levý</owners>
-    <title>DeaDBeeF</title>
+    <title>DeaDBeeF (Portable)</title>
     <authors>Alexey Yakovenko,Viktor Semykin,contributors</authors>
     <projectUrl>https://deadbeef.sourceforge.io</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/deadbeef.png</iconUrl>
@@ -27,35 +27,8 @@ DeaDBeeF lets you play variety of audio formats, convert between them, customize
 
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/deadbeef/preview.png)
 The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux with several additional plugins
-
-## Parameters
-* `/InstallationPath:` - where to install the binaries
-  - Default value: `"$env:ProgramFiles\DeaDBeeF"`
-* `/CreateDesktopIcon` - creates a desktop icon
-  - Not created by default
-* `/AssociateAudioFiles` - associates DeaDBeef as the default app for all supported audio files
-  - Not associated by default
-
-### Examples
-* Install into `D:\deadbeef` directory and create a desktop icon
-  ```
-  choco install deadbeef --params "/InstallationPath:"D:\deadbeef" /CreateDesktopIcon"
-  ```
-
-* Install with audio file associations
-  ```
-  choco install deadbeef --params "/AssociateAudioFiles"
-  ```
-
-* Install with audio file associations and create desktop icon
-  ```
-  choco install deadbeef --params "/AssociateAudioFiles /CreateDesktopIcon"
-  ```
     </description>
     <releaseNotes>https://github.com/DeaDBeeF-Player/deadbeef/blob/1.8.8/ChangeLog</releaseNotes>
-    <dependencies>
-      <dependency id="deadbeef.install" version="1.8.8" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
