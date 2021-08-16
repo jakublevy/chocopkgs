@@ -3,7 +3,7 @@ $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = "$env:ChocolateyPackageName*"
+  softwareName  = "DeaDBeeF*"
   fileType      = 'EXE'
   file64        = Join-Path $toolsDir 'deadbeef-1.8.8-windows-x86_64.exe'
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
@@ -24,6 +24,4 @@ if(!$additionalArgs['AssociateAudioFiles']) {
 }
 $packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 
-Install-ChocolateyPackage @packageArgs
-
-Remove-Item -Path $packageArgs['file64'] -Force
+Install-ChocolateyInstallPackage @packageArgs

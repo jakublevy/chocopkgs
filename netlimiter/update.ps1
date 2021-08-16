@@ -18,13 +18,8 @@ function global:au_GetLatest {
     @{
         Url32        = "https://www.netlimiter.com/files/download/nl4/netlimiter-$version.exe"
         Version      = $version
-        Checksum     = $checksum
         ReleaseNotes = "https://www.netlimiter.com/releases/nl4/$($version -replace '\.', '-')"
     }
 }
 
-function global:au_BeforeUpdate {
-    Get-RemoteFiles -NoSuffix -Purge
-}
-
-Update-Package -ChecksumFor None
+Update-Package

@@ -18,14 +18,14 @@ function global:au_GetLatest {
     $version       = ([regex]::Match($file_name, 'v(\d+\.\d+(\.\d+)*)_.+.zip')).Groups[1].Value
     @{
         Version    = $version
-        Url        = $url
+        Url32      = $url
         Url64      = $url64 
     }
 }
 
 function global:au_BeforeUpdate {
     Invoke-WebRequest -UseBasicParsing -Uri $Latest.Url64 -OutFile '_revosleep_64.zip'
-    Invoke-WebRequest -UseBasicParsing -Uri $Latest.Url -OutFile '_revosleep_32.zip'
+    Invoke-WebRequest -UseBasicParsing -Uri $Latest.Url32 -OutFile '_revosleep_32.zip'
     $global:Latest.Checksum64 = (Get-FileHash '_revosleep_64.zip' -Algorithm SHA256).Hash
     $global:Latest.Checksum32 = (Get-FileHash '_revosleep_32.zip' -Algorithm SHA256).Hash
     Remove-Item '_revosleep_64.zip' -Force

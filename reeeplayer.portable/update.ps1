@@ -22,8 +22,5 @@ function global:au_GetLatest {
         ReleaseNotes = "https://github.com/FilippVolodin/ReeePlayer/releases/tag/v$version"
     }
 }
-function global:au_BeforeUpdate {
-    Get-RemoteFiles -NoSuffix -Purge
-}
 
-Update-Package -ChecksumFor None
+Update-Package

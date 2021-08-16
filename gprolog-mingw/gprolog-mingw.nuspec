@@ -62,7 +62,7 @@ GNU Prolog also includes an efficient constraint solver over Finite Domains (FD)
     ```
     
     </description>
-<releaseNotes></releaseNotes>
+<releaseNotes>http://www.gprolog.org/NEWS</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
