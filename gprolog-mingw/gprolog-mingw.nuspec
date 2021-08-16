@@ -9,7 +9,7 @@
     <authors>Daniel Diaz</authors>
     <projectUrl>http://www.gprolog.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/gprolog.png</iconUrl>
-    <copyright>Copyright (C) 1999-2018 Daniel Diaz </copyright>
+    <copyright>Copyright (C) 1999-2021 Daniel Diaz </copyright>
     <licenseUrl>http://www.gprolog.org/manual/html_node/gprolog003.html</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://sourceforge.net/p/gprolog/code/ci/master/tree/</projectSourceUrl>
@@ -19,7 +19,7 @@
     <tags>prolog solver prover constraint logic programming language gnu</tags>
     <summary>GNU Prolog is a free Prolog compiler with constraint solving over finite domains.</summary>
     <description>
-**Note:** This package installs a version compiled with MinGW. The version compiled with MSVC is available as a [gprolog-msvc](https://community.chocolatey.org/packages/gprolog-msvc) package.
+**NOTE:** This package installs a version compiled with MinGW. The version compiled with MSVC is available as a [gprolog-msvc](https://community.chocolatey.org/packages/gprolog-msvc) package.
 
 **NOTE:** The following text is for the most part an excerpt from [the official website](http://www.gprolog.org).
 
@@ -60,11 +60,12 @@ GNU Prolog also includes an efficient constraint solver over Finite Domains (FD)
     ```
     choco install gprolog-mingw --params "/CreateDesktopIcon"
     ```
-           
+    
     </description>
-<releaseNotes>http://www.gprolog.org/NEWS</releaseNotes>
+<releaseNotes></releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

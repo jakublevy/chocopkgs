@@ -3,15 +3,13 @@ import-module au
 # Release notes not fully automatic
 
 function global:au_SearchReplace {
-    $url = "https://sourceforge.net/projects/winglpk/files/winglpk/GLPK-$($Latest.Version)/winglpk-$($Latest.Version).zip"
-    Invoke-WebRequest -Uri $url -OutFile '_glpk.zip'
-    $checksum = (Get-FileHash '_glpk.zip' -Algorithm SHA256).Hash
-    Remove-Item '_glpk.zip' -Force
-
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
-            "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$checksum'"
+            "(?i)(^\s*fileFullPath\s*=\s*)(.*)" = "`${1}Join-Path `$toolsDir '$($Latest.FileName32)'"
+        }
+        ".\legal\VERIFICATION.txt" = @{
+            "(?i)(\s+Go to).*"         = "`${1} $($Latest.Url32)"
+            "(?i)(\s+checksum32:).*"     = "`${1} $($Latest.Checksum32)"
         }
     }
 }
@@ -23,8 +21,12 @@ function global:au_GetLatest {
     $versions = $relative_urls | % { ([regex]::Match($_, '.*/GLPK-(\d+\.\d+(\.\d+)*)/$')).Groups[1].Value }
     $version = $versions | sort -Descending {[version] $_ } | select -First 1
     @{
+        Url32    = "https://sourceforge.net/projects/winglpk/files/winglpk/GLPK-$version/winglpk-$version.zip"
         Version  = $version
     }
 }
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -Purge -NoSuffix
+}
 
-update
+Update-Package -ChecksumFor None

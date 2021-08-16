@@ -1,14 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-$checksum64 = 'E465225BEDC50523397F9094914722897DC56509C7FCB6861AC815A94D638DDE'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url64bit       = 'https://kcc.iosphe.re/Windows/'
+  file64         = Join-Path $toolsDir 'KindleComicConverter_win_5.5.2.exe'
   softwareName   = 'Kindle Comic Converter*'
-  checksum64     = $checksum64
-  checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes = @(0)
 }
@@ -36,4 +33,6 @@ if(!$addionalArgs['CBRassociation']) {
 $packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 
 Install-ChocolateyPackage @packageArgs
+Remove-Item -Path $packageArgs['file64'] -Force
+
 & "$toolsDir\chocolateybeforemodify.ps1"

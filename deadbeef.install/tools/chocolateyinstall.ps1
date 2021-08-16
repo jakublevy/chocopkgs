@@ -1,14 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
-$version    = '1.8.8'
-$checksum64 = 'BABA51057247F64020C6F59078ED4E44FB46A585C29AB5028ABB86BAFCB5F6E1'
+$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  fileType      = 'EXE'
-  url64bit      = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$version/deadbeef-$version-windows-x86_64.exe"
   softwareName  = "$env:ChocolateyPackageName*"
-  checksum64    = $checksum64
-  checksumType64= 'sha256'
+  fileType      = 'EXE'
+  file64        = Join-Path $toolsDir 'deadbeef-1.8.8-windows-x86_64.exe'
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes= @(0)
 }
@@ -28,3 +25,5 @@ if(!$additionalArgs['AssociateAudioFiles']) {
 $packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 
 Install-ChocolateyPackage @packageArgs
+
+Remove-Item -Path $packageArgs['file64'] -Force

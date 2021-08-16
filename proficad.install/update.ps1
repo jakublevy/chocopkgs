@@ -1,13 +1,9 @@
 import-module au
 
 function global:au_SearchReplace {
-    Invoke-WebRequest -UseBasicParsing -Uri "https://www.proficad.com/down/$($Latest.Version.Split('.')[0])/setup_full.exe" -OutFile '_proficad.exe'
-    $checksum = (Get-FileHash '_proficad.exe' -Algorithm SHA256).Hash
-    Remove-Item '_proficad.exe' -Force
-
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$checksum'"
+            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
             "(^[$]version\s*=\s*)('.*')" = "`$1'$($Latest.Version)'"
         }
     }
@@ -18,8 +14,13 @@ function global:au_GetLatest {
     $response    = $response.Content.Substring($response.Content.IndexOf('id="info'))
     $version     = ([regex]::Match($response, '(\d+\.\d+(\.\d+)*)')).Groups[1].Value
     @{
+        Url32    = "https://www.proficad.com/down/$($version.Split('.')[0])/setup_full.exe"
         Version  = $version
     }
 }
 
-update
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -NoSuffix -Purge
+}
+
+Update-Package -ChecksumFor None

@@ -50,7 +50,7 @@ AMP WinOFF is an utility for scheduling the shutdown of Windows computers, with 
     </description>
     <releaseNotes>http://www.ampsoft.net/utilities/ChangeLog.php?app=AMP%20WinOFF</releaseNotes>
     <dependencies>
-      <dependency id="amp-winoff.install" version="5.0.1" />
+      <dependency id="amp-winoff.install" version="[5.0.1]" />
     </dependencies>
   </metadata>
 </package>

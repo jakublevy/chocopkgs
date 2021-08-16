@@ -2,7 +2,7 @@ import-module au
 
 function global:au_SearchReplace {
     @{  ".\deadbeef.nuspec" = @{
-            "(?i)(\<dependency id=""deadbeef.install"" version="").*("" /\>)" = "`${1}$($Latest.Version)`${2}"
+            "(?i)(\<dependency id=""deadbeef.install"" version=""\[).*(""\] /\>)" = "`${1}$($Latest.Version)`${2}"
             "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
         }
     }

@@ -51,7 +51,7 @@ The non-commercial (home) edition is distributed [free of charge](https://www.pr
     </description>
 <releaseNotes>https://www.proficad.com/news.aspx</releaseNotes>
 <dependencies>
-  <dependency id="proficad.install" version="11.2.2" />
+  <dependency id="proficad.install" version="[11.2.2]" />
 </dependencies>
 </metadata>
   <files>
