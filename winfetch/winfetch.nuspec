@@ -33,5 +33,6 @@ According to benchmarks done with Hyperfine, Winfetch on Windows is faster than 
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

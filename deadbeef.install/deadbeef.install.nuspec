@@ -56,5 +56,6 @@ The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

@@ -1,15 +1,21 @@
 ﻿$ErrorActionPreference = 'Stop';
-$toolsDir   = $(Split-Path -Parent $MyInvocation.MyCommand.Definition)
-$version    = '1.8.8'
-$checksum64 = 'AD3C3651562AD7D3F8BD4086E4ED3F695D41F03555AB795A040C7CFB6F11E932'
+$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  url64Bit      = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$version/deadbeef-$version-windows-x86_64.zip"
-  checksum64    = $checksum64
-  checksumType64= 'sha256'
-  unzipLocation = $toolsDir
+  fileFullPath64= Join-Path $toolsDir 'deadbeef-1.8.8-windows-x86_64.zip'
+  destination   = Get-ToolsLocation
   validExitCodes= @(0)
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
+Remove-Item -Path $packageArgs['fileFullPath64'] -Force
+
+$addionalArgs = Get-PackageParameters
+if($addionalArgs['AddToSystemPath'] -eq 'yes') {
+  Install-ChocolateyPath -PathToInstall "$($packageArgs['destination'])\deadbeef-x86_64" -PathType Machine
+}
+
+if($null -eq $addionalArgs['AddToUserPath'] -or $addionalArgs['AddToUserPath'] -eq 'yes') {
+  Install-ChocolateyPath -PathToInstall "$($packageArgs['destination'])\deadbeef-x86_64" -PathType User
+}

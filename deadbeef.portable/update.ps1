@@ -1,18 +1,16 @@
 import-module au
 
 function global:au_SearchReplace {
-    $url64 = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$($Latest.Version)/deadbeef-$($Latest.Version)-windows-x86_64.zip"
-    Invoke-WebRequest -Uri $url64 -OutFile '_deadbeef.zip'
-    $checksum64 = (Get-FileHash '_deadbeef.zip' -Algorithm SHA256).Hash
-    Remove-Item '_deadbeef.zip' -Force
-
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
-            "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
-            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$checksum64'"
+            "(?i)(^\s*fileFullPath64\s*=\s*)(.*)" = "`${1}Join-Path `$toolsDir '$($Latest.FileName64)'"
         }
         ".\deadbeef.portable.nuspec"   = @{
             "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
+        }
+        ".\legal\VERIFICATION.txt" = @{
+            "(?i)(\s+checksum64:).*"     = "`${1} $($Latest.Checksum64)"
+            "(?i)(\s+Go to).*"         = "`${1} $($Latest.Url64)"
         }
     }
 }
@@ -23,9 +21,13 @@ function global:au_GetLatest {
     $versions = $relative_urls | % { ([regex]::Match($_, '.*/(\d+\.\d+(\.\d+)*)/$')).Groups[1].Value }
     $version = $versions | sort -Descending {[version] $_ } | select -First 1
     @{
-        Version  = $version
+        Url64        = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$version/deadbeef-$version-windows-x86_64.zip"
+        Version      = $version
         ReleaseNotes = "https://github.com/DeaDBeeF-Player/deadbeef/blob/$version/ChangeLog"
     }
 }
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -NoSuffix -Purge
+}
 
-update
+Update-Package -ChecksumFor None -NoCheckChocoVersion

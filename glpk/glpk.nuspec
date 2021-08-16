@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>glpk</id>
@@ -33,7 +33,7 @@ The GLPK package includes the following main components:
 * branch-and-cut method
 * translator for GNU MathProg
 * application program interface (API)
-* stand-alone LP/MIP solver         
+* stand-alone LP/MIP solver      
     </description>
     <releaseNotes>
 # GLPK 4.65 (release date: Feb 16, 2018)
@@ -60,5 +60,6 @@ option of the dual simplex by default.
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

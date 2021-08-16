@@ -1,18 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop';
-$version    = '1.5.0'
-$checksum   = '9C7AACD3D47DA7603069B995E2FABFF0288DC308CEA2461D439EDD8992004C3B'
-$checksum64 = 'B32B9C6BDE2CB97D459C197762AB8ADE98DAD19D64E6BFB4FF68F035BBF7BA20'
+$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  url            = "http://www.gprolog.org/setup-gprolog-$version-mingw-x86.exe"
-  url64bit       = "http://www.gprolog.org/setup-gprolog-$version-mingw-x64.exe"
+  file           = Join-Path $toolsDir 'setup-gprolog-1.5.0-mingw-x86.exe'
+  file64         = Join-Path $toolsDir 'setup-gprolog-1.5.0-mingw-x64.exe'
   softwareName   = 'GNU Prolog*'
-  checksum       = $checksum
-  checksumType   = 'sha256'
-  checksum64     = $checksum64
-  checksumType64 = 'sha256'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes = @(0)
 }
@@ -38,3 +32,5 @@ if(!$addionalArgs['AssocProlog']) {
 $packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 
 Install-ChocolateyPackage @packageArgs
+Remove-Item -Path $packageArgs['file'] -Force
+Remove-Item -Path $packageArgs['file64'] -Force

@@ -1,20 +1,19 @@
 import-module au
 
 function global:au_SearchReplace {
-    $url64 = "http://www.gprolog.org/setup-gprolog-$($Latest.Version)-mingw-x64.exe"
-    $url = "http://www.gprolog.org/setup-gprolog-$($Latest.Version)-mingw-x86.exe"
-    Invoke-WebRequest -Uri $url64 -OutFile '_gprolog-x64.exe'
-    Invoke-WebRequest -Uri $url -OutFile '_gprolog-x86.exe'
-    $checksum64 = (Get-FileHash '_gprolog-x64.exe' -Algorithm SHA256).Hash
-    $checksum = (Get-FileHash '_gprolog-x86.exe' -Algorithm SHA256).Hash
-    Remove-Item '_gprolog-x64.exe' -Force
-    Remove-Item '_gprolog-x86.exe' -Force
-
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
-            "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$checksum'"
-            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$checksum64'"
+            "(?i)(^\s*file\s*=\s*)(.*)"  = "`${1}Join-Path `$toolsDir '$($Latest.FileName32)'"
+            "(?i)(^\s*file64\s*=\s*)(.*)"  = "`${1}Join-Path `$toolsDir '$($Latest.FileName64)'"
+        }
+        ".\gprolog-mingw.nuspec"   = @{
+            "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
+        }
+        ".\legal\VERIFICATION.txt" = @{
+            "(?i)(\s+x86:).*"          = "`${1} $($Latest.Url32)"
+            "(?i)(\s+x64:).*"          = "`${1} $($Latest.Url64)"
+            "(?i)(\s+checksum32:).*"   = "`${1} $($Latest.Checksum32)"
+            "(?i)(\s+checksum64:).*"   = "`${1} $($Latest.Checksum64)"
         }
     }
 }
@@ -26,7 +25,13 @@ function global:au_GetLatest {
     $version = $versions | sort -Descending {[version] $_ } | select -First 1 
     @{
         Version = $version
+        Url32   = "http://www.gprolog.org/setup-gprolog-$version-mingw-x86.exe"
+        Url64   = "http://www.gprolog.org/setup-gprolog-$version-mingw-x64.exe"
     }
 }
 
-update
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -NoSuffix -Purge
+}
+
+Update-Package -ChecksumFor None

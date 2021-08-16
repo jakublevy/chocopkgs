@@ -54,7 +54,7 @@ The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux
     </description>
     <releaseNotes>https://github.com/DeaDBeeF-Player/deadbeef/blob/1.8.8/ChangeLog</releaseNotes>
     <dependencies>
-      <dependency id="deadbeef.install" version="1.8.8" />
+      <dependency id="deadbeef.install" version="[1.8.8]" />
     </dependencies>
   </metadata>
   <files>

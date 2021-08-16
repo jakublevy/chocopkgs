@@ -1,4 +1,4 @@
-﻿**NOTE:** The following text is for the most part an excerpt from [the official website](https://www.proficad.com).
+﻿**NOTE:** The following text is an excerpt from [the official website](https://www.proficad.com).
 
 # ProfiCAD
 ProfiCAD is designed for drawing of [electrical and electronic diagrams](https://www.proficad.com/screenshots.aspx), schematics, control circuit diagrams and can also be used for pneumatics, hydraulics and other types of technical diagrams. 

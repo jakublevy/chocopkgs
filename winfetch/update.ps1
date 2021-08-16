@@ -1,17 +1,14 @@
 import-module au
 
 function global:au_SearchReplace {
-    Invoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/kiedtl/winfetch/v$($Latest.Version)/winfetch.ps1" -OutFile '_winfetch.ps1'
-    $checksum = (Get-FileHash '_winfetch.ps1' -Algorithm SHA256).Hash
-    Remove-Item '_winfetch.ps1' -Force
-
     @{
-        ".\tools\chocolateyinstall.ps1"   = @{
-            "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$checksum'"
-        }
-        ".\winfetch.nuspec"   = @{
+        ".\winfetch.nuspec" = @{
             "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
+        }
+
+        ".\legal\VERIFICATION.txt" = @{
+            "(?i)(\s+Go to).*"         = "`${1} $($Latest.Url32)"
+            "(?i)(\s+checksum32:).*"   = "`${1} $($Latest.Checksum32)"
         }
     }
 }
@@ -22,8 +19,13 @@ function global:au_GetLatest {
     $version = ([regex]::Match($relative_url, '(\d+\.\d+(\.\d+)*)\.zip')).Groups[1].Value
     @{
         Version      = $version
+        Url32        = "https://raw.githubusercontent.com/kiedtl/winfetch/v$version/winfetch.ps1"
         ReleaseNotes = "https://github.com/kiedtl/winfetch/releases/tag/v$version"
     }
 }
 
-update
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -NoSuffix
+}
+
+Update-Package -ChecksumFor None
