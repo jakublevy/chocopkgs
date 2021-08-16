@@ -32,7 +32,6 @@ if(!$addionalArgs['CBRassociation']) {
 }
 $packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 
-Install-ChocolateyPackage @packageArgs
-Remove-Item -Path $packageArgs['file64'] -Force
+Install-ChocolateyInstallPackage @packageArgs
 
 & "$toolsDir\chocolateybeforemodify.ps1"

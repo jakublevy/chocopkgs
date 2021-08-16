@@ -31,6 +31,4 @@ if(!$addionalArgs['AssocProlog']) {
 }
 $packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 
-Install-ChocolateyPackage @packageArgs
-Remove-Item -Path $packageArgs['file'] -Force
-Remove-Item -Path $packageArgs['file64'] -Force
+Install-ChocolateyInstallPackage @packageArgs

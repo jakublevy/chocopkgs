@@ -21,5 +21,5 @@ The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux
     ```
 * Install and do not add anything to environment variables
     ```
-    choco install deadbeef.portable --params "/AddToSystemPath:no /AddToUserPath:no'"
+    choco install deadbeef.portable --params "'/AddToSystemPath:no /AddToUserPath:no'"
     ```

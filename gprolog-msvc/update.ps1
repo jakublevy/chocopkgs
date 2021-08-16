@@ -6,9 +6,6 @@ function global:au_SearchReplace {
             "(?i)(^\s*file\s*=\s*)(.*)"  = "`${1}Join-Path `$toolsDir '$($Latest.FileName32)'"
             "(?i)(^\s*file64\s*=\s*)(.*)"  = "`${1}Join-Path `$toolsDir '$($Latest.FileName64)'"
         }
-        ".\gprolog-msvc.nuspec"   = @{
-            "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
-        }
         ".\legal\VERIFICATION.txt" = @{
             "(?i)(\s+x86:).*"          = "`${1} $($Latest.Url32)"
             "(?i)(\s+x64:).*"          = "`${1} $($Latest.Url64)"

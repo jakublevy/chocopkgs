@@ -9,7 +9,6 @@ $packageArgs = @{
 }
 
 Get-ChocolateyUnzip @packageArgs
-Remove-Item -Path $packageArgs['fileFullPath64'] -Force
 
 $addionalArgs = Get-PackageParameters
 if($addionalArgs['AddToSystemPath'] -eq 'yes') {
