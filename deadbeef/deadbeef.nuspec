@@ -9,7 +9,7 @@
     <authors>Alexey Yakovenko,Viktor Semykin,contributors</authors>
     <projectUrl>https://deadbeef.sourceforge.io</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/deadbeef.png</iconUrl>
-    <copyright>Copyright (C) 2009-2021 Alexey Yakovenko and contributors</copyright>
+    <copyright>Copyright (C) 2009-2020 Alexey Yakovenko and contributors</copyright>
     <licenseUrl>https://github.com/DeaDBeeF-Player/deadbeef/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/DeaDBeeF-Player/deadbeef</projectSourceUrl>
