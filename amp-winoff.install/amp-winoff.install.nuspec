@@ -52,6 +52,5 @@ AMP WinOFF is an utility for scheduling the shutdown of Windows computers, with 
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>

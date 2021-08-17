@@ -10,7 +10,6 @@
     <projectUrl>https://www.proficad.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/proficad.png</iconUrl>
     <copyright>Copyright (c) Václav Jedlička</copyright>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <docsUrl>https://www.proficad.com/ProfiCAD.pdf</docsUrl>
     <tags>CAD drawing schematic diagram electronic circuit</tags>
     <summary>App designed for drawing of electrical and electronic diagrams, schematics, control circuit diagrams and can also be used for pneumatics, hydraulics and other types of technical diagrams.</summary>
