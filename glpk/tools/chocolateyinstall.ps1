@@ -10,6 +10,11 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
+Remove-Item `
+  -Path $packageArgs['fileFullPath'] `
+  -ErrorAction SilentlyContinue `
+  -Force
+
 $installedDir = "$($packageArgs['destination'])\glpk-$version"
 $parentKeepList = @("w$(Get-OSArchitectureWidth)", 'doc', 'examples', 'NEWS', 'README', 'README.md', 'THANKS', 'COPYING', 'INSTALL', 'AUTHORS', 'ChangeLog')
 Write-Output 'Removing unnecessary compilation left-overs.'

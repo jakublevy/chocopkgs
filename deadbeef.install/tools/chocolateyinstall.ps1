@@ -25,3 +25,8 @@ if(!$additionalArgs['AssociateAudioFiles']) {
 $packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 
 Install-ChocolateyInstallPackage @packageArgs
+
+Remove-Item `
+  -Path $packageArgs['file64'] `
+  -ErrorAction SilentlyContinue `
+  -Force 
