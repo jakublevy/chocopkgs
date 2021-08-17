@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>memento.portable</id>
+    <version>0.5.0.1</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/memento.portable</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Memento (Portable)</title>
+    <authors>Ripose</authors>
+    <projectUrl>https://ripose-jp.github.io/Memento</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/memento.png</iconUrl>
+    <copyright>Copyright (c) 2021 Ripose</copyright>
+    <licenseUrl>https://github.com/ripose-jp/Memento/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/ripose-jp/Memento</projectSourceUrl>
+    <docsUrl>https://github.com/ripose-jp/Memento/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/ripose-jp/Memento/issues</bugTrackerUrl>
+    <tags>learning education flashcards language-learning audio video mpv japanese spaced-repetition SRS anki yomichan</tags>
+    <summary>Memento is a FOSS, mpv-based video player for studying Japanese.</summary>
+    <description>
+**NOTE:** The following text is an excerpt from [the official website](https://ripose-jp.github.io/Memento).
+
+# Memento
+A FOSS, mpv-based video player for studying Japanese.
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/memento.portable/example.png)
+
+## Overview
+Memento is a free and open source, mpv-based video player that makes studying Japanese easier with a built in popup dictionary, Anki integration, and more.
+
+### Yomichan Dictionaries
+Memento uses Yomichan's dictionary format and supports all the same [dictionaries](https://foosoft.net/projects/yomichan/#dictionaries)
+
+### Anki Integration
+Automates Anki card creation through [AnkiConnect](https://ankiweb.net/shared/info/2055492159).
+
+### Grammar Aware Search
+Matches terms in subtitles regardless of most inflections.
+
+### Scripting
+Supports mpv plugins, upscalers, and shaders.
+
+### Configurable
+Supports mpv configuration files such as input.conf for rebinding keys and mpv.conf for configuring mpv.
+
+
+### Streaming
+Supports streaming from many websites through [youtube-dl](https://community.chocolatey.org/packages/youtube-dl).
+      
+    </description>
+    <releaseNotes>https://github.com/ripose-jp/Memento/releases/tag/v0.5.0-1-beta</releaseNotes>
+    <dependencies>
+      <dependency id="mpv" version="2020.1.27" />
+      <dependency id="vcredist2010" version="10.0.40219.325"/>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
