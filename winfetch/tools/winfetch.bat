@@ -7,8 +7,8 @@ if %errorlevel% neq 0 goto :isPowershell
 :isPowershellCore
 where pwsh >nul 2>&1
 if %errorlevel% neq 0 goto :isPowershell
-pwsh -NoProfile -ExecutionPolicy Unrestricted -Command "& $env:ChocolateyInstall'\bin\winfetch.ps1' %*"
+pwsh -NoProfile -ExecutionPolicy Unrestricted -Command "& 'winfetch.ps1' %*"
 exit /b
 
 :isPowershell
-powershell -NoProfile -ExecutionPolicy Unrestricted -Command "& $env:ChocolateyInstall'\bin\winfetch.ps1' %*"
+powershell -NoProfile -ExecutionPolicy Unrestricted -Command "& 'winfetch.ps1' %*"
