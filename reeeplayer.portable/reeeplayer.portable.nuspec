@@ -11,6 +11,7 @@
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/reeeplayer.png</iconUrl>
     <copyright>Copyright (c) 2021 Filipp Volodin</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/FilippVolodin/ReeePlayer</projectSourceUrl>
     <docsUrl>https://github.com/FilippVolodin/ReeePlayer/tree/main/doc</docsUrl>
     <bugTrackerUrl>https://github.com/FilippVolodin/ReeePlayer/issues</bugTrackerUrl>
     <tags>learning education flashcards language-learning audio video spaced-repetition SRS anki</tags>
