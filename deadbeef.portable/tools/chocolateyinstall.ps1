@@ -10,6 +10,11 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
+Remove-Item `
+  -Path $packageArgs['fileFullPath64'] `
+  -ErrorAction SilentlyContinue `
+  -Force
+
 $addionalArgs = Get-PackageParameters
 if($addionalArgs['AddToSystemPath'] -eq 'yes') {
   Install-ChocolateyPath -PathToInstall "$($packageArgs['destination'])\deadbeef-x86_64" -PathType Machine

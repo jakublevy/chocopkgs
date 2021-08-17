@@ -9,3 +9,8 @@ $packageArgs = @{
 }
 
 Get-ChocolateyUnzip @packageArgs
+
+Remove-Item `
+  -Path $packageArgs['fileFullPath64'] `
+  -ErrorAction SilentlyContinue `
+  -Force

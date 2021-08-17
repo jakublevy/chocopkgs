@@ -35,3 +35,8 @@ $packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 Install-ChocolateyInstallPackage @packageArgs
 
 & "$toolsDir\chocolateybeforemodify.ps1"
+
+Remove-Item `
+  -Path $packageArgs['file64'] `
+  -ErrorAction SilentlyContinue `
+  -Force
