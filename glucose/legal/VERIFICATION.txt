@@ -1,0 +1,16 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to https://github.com/jakublevy/glucose-win/releases/download/v4.1/glucose-4.1-win-x64.zip
+
+   to download the installer.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum64: 5048DF6B077C3B32767F954F24DE056E8CC37E2A628E31040621A2602AFA2D7B
