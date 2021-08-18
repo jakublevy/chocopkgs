@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>glucose</id>
+    <version>4.1</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/glucose</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>The Glucose SAT Solver</title>
+    <authors>Gilles Audemard,Laurent Simon</authors>
+    <projectUrl>https://www.labri.fr/perso/lsimon/glucose</projectUrl>
+    <copyright>
+      Glucose -- Copyright (c) 2009-2017, Gilles Audemard, Laurent Simon
+        CRIL - Univ. Artois, France
+        LRI  - Univ. Paris Sud, France (2009-2013)
+        Labri - Univ. Bordeaux, France
+
+      Syrup (Glucose Parallel) -- Copyright (c) 2013-2014, Gilles Audemard, Laurent Simon
+        CRIL - Univ. Artois, France
+        Labri - Univ. Bordeaux, France
+    </copyright>
+    <licenseUrl>https://github.com/jakublevy/glucose-win/blob/master/LICENCE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/jakublevy/glucose-win</projectSourceUrl>
+    <tags>sat solver sat-solver sat-solving solver minisat cnf dimacs</tags>
+    <summary>Glucose is award-winning modern SAT Solver heavily based on Minisat with multi-threading support.</summary>
+    <description>  
+# The Glucose SAT Solver
+Glucose is based on a new scoring scheme for the clause learning mechanism of so called "Modern" SAT solvers (it is based on [this paper](https://www.ijcai.org/Proceedings/09/Papers/074.pdf)). 
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/glucose/glue.png)
+
+Glucose is designed to be parallel since 2014. The name of the Solver is a contraction of the concept of "glue clauses", a particular kind of clauses that glucose detects and preserves during search.
+
+### For more information about Glucose see [the official page](https://www.labri.fr/perso/lsimon/glucose).
+    </description>
+    <releaseNotes>https://github.com/jakublevy/glucose-win/releases/tag/v4.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
