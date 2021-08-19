@@ -24,7 +24,7 @@ The following documents are available. (all in Japanese)
     - Default value: `no`
 
 ### Examples
-* Install and start only after the current user logins
+* Install and auto-start only after the current user logins
     ```
     choco install tclocklight-kt --params "'/AddToSystemStartup:no /AddToUserStartup:yes'"
     ```

@@ -13,7 +13,10 @@
       Copyright(C) 2009 Rem
       Copyright(C) 2009-2018 K.Takata
     </copyright>
-    <tags>shell extension tag ID3 editor unicode mp3 mp4 wav wmv wma avi ogg ape k-takata</tags>
+    <licenseUrl>https://www.gnu.org/licenses/lgpl-3.0.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <bugTrackerUrl>https://github.com/k-takata/mp3infp/issues</bugTrackerUrl>
+    <tags>shell extension tag ID3 metadata editor unicode mp3 mp4 vqf wav wmv wma avi ogg ape k-takata</tags>
     <summary>mp3infp/u is a Shell extension type tag editor.</summary>
     <description>
 # mp3infp/u
