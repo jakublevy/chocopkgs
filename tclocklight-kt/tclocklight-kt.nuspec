@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>tclocklight-kt</id>
+    <version>18.09.04</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/tclocklight-kt</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>TClock Light kt</title>
+    <authors>K.Takata</authors>
+    <projectUrl>https://github.com/k-takata/TClockLight</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/tclocklight-kt.png</iconUrl>
+    <copyright>Copyright (c) 2012-2018 K.Takata</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/k-takata/TClockLight</projectSourceUrl>
+    <docsUrl>https://github.com/k-takata/TClockLight/blob/master/readme-kt.txt</docsUrl>
+    <bugTrackerUrl>https://github.com/k-takata/TClockLight/issues</bugTrackerUrl>
+    <tags>t-clock tclock clock calendar taskbar display clock alarm alarm-clock date time k-takata</tags>
+    <summary>TClock Light kt is a modified version of TClock Light by K.Takata.</summary>
+    <description>
+# TClock Light kt
+
+TClock Light kt is a modified version of TClock Light by [K.Takata](https://github.com/k-takata).
+
+## New features
+* Supports Windows Vista and later (x86/x64).
+* Increases the precision of SNTP.
+* Supports some new text formats.
+* etc.
+
+## Documentation
+The following documents are available. (all in Japanese)
+* [readme-kt.txt](https://github.com/k-takata/TClockLight/blob/master/readme-kt.txt): Readme for the "kt" version
+* [config-kt.txt](https://github.com/k-takata/TClockLight/blob/master/config-kt.txt): How to configure TClock Light kt
+* [format-kt.txt](https://github.com/k-takata/TClockLight/blob/master/format-kt.txt): Format strings that can be used in TClock Light kt
+* [readme.html](https://github.com/k-takata/TClockLight/blob/master/readme.html): The original readme by Kazubon
+
+
+
+## Parameters
+* `/AddToSystemStartup:` - should TClock start after bootup
+    - Default value: `yes`
+* `/AddToUserStartup:` - should TClock start after the current user logins
+    - Default value: `no`
+
+### Examples
+* Install and start only after the current user logins
+    ```
+    choco install tclocklight-kt --params "'/AddToSystemStartup:no /AddToUserStartup:yes'"
+    ```
+* Install and never start automatically
+    ```
+    choco install tclocklight-kt --params "'/AddToSystemStartup:no /AddToUserStartup:no'"
+    ```
+    </description>
+<releaseNotes>https://github.com/k-takata/TClockLight/releases/tag/tclocklight-kt180904</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
