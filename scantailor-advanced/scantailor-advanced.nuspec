@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>scantailor-advanced</id>
+    <version>2019.8.16</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/scantailor-advanced</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>ScanTailor Advanced</title>
+    <authors>4lex4</authors>
+    <projectUrl>https://github.com/4lex4/scantailor-advanced</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/scantailor.png</iconUrl>
+    <copyright>
+        Copyright (C) 2007-2014 Joseph Artsimovich 
+        Copyright (C) 2014-2016 Nate Craun
+        Copyright (C) 2016-2020 4lex4
+    </copyright>
+    <licenseUrl>https://github.com/4lex4/scantailor-advanced/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/4lex4/scantailor-advanced</projectSourceUrl>
+    <docsUrl>https://github.com/4lex4/scantailor-advanced/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/4lex4/scantailor-advanced/issues</bugTrackerUrl>
+    <tags>scantailor scan book book-scanner post-processing page deskew dewarp tiff pdf djvu QT</tags>
+    <summary>ScanTailor Advanced is the ScanTailor fork that merges the features of the ScanTailor Featured and ScanTailor Enhanced versions, brings new ones and fixes.</summary>
+    <description>
+# ScanTailor Advanced
+The ScanTailor version that merges the features of the ScanTailor Featured and ScanTailor Enhanced versions, brings new ones and fixes.
+
+ScanTailor Advaned is an interactive post-processing tool for scanned pages. It performs operations such as:
+* [page splitting](https://github.com/scantailor/scantailor/wiki/Split-Pages),
+* [deskewing](https://github.com/scantailor/scantailor/wiki/Deskew),
+* [adding/removing borders](https://github.com/scantailor/scantailor/wiki/Page-Layout),
+* [selecting content](https://github.com/scantailor/scantailor/wiki/Select-Content)
+* ... and others.
+
+You give it raw scans, and you get pages ready to be printed or assembled into a PDF or [DjVu](http://elpa.gnu.org/packages/djvu.html) file. Scanning, optical character recognition, and assembling multi-page documents are out of scope of this project.
+
+For more information about ScanTailor Advanced see [the official README.me](https://github.com/4lex4/scantailor-advanced/blob/master/README.md).
+
+## Parameters
+* `/InstallationPath:` - where to install the binaries
+    - Default value: `"$env:ProgramFiles\ScanTailor Advanced"`
+
+### Examples
+* Install into `D:\scantailor-advanced` directory
+    ```
+    choco install scantailor-advanced --params "/InstallationPath:D:\scantailor-advanced"
+    ```
+    </description>
+<releaseNotes>https://github.com/4lex4/scantailor-advanced/releases/tag/2019.8.16_EA</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

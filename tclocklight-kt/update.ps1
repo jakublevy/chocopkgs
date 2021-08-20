@@ -20,7 +20,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/k-takata/TClockLight/releases'
-    $relative_url  = $download_page.links | Where-Object href -match '/k-takata/TClockLight/releases/download/tclocklight-kt\d{6}/tclocklight-kt\d{6}-x64.zip' | Select-Object -First 1 -expand href
+    $relative_url  = $download_page.links | Where-Object href -match '/k-takata/TClockLight/releases/download/tclocklight-kt\d{6}/tclocklight-kt\d{6}-x64\.zip' | Select-Object -First 1 -expand href
     $versionOriginal = ([regex]::Match($relative_url, 'tclocklight-kt(\d{6})')).Groups[1].Value
     $version = $versionOriginal.ToString().Substring(0,2) + '.' + $versionOriginal.ToString().Substring(2,2) + '.' + $versionOriginal.ToString().Substring(4,2)
     @{
