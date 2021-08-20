@@ -8,7 +8,7 @@
     <title>lp_solve</title>
     <authors>Michel Berkelaar, Kjell Eikland, Peter Notebaert</authors>
     <projectUrl>http://lpsolve.sourceforge.net</projectUrl>
-    <copyright>Copyright (c) 2004-2021 Michel Berkelaar, Kjell Eikland, Peter Notebaert</copyright>
+    <copyright>Copyright (C) 1991, 2020 Free Software Foundation, Inc.</copyright>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://sourceforge.net/projects/lpsolve/files/lpsolve/5.5.2.11/lp_solve_5.5.2.11_source.tar.gz</projectSourceUrl>
