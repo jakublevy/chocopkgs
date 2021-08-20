@@ -8,11 +8,7 @@
     <title>mp3infp/u</title>
     <authors>T-Matsuo,Rem,K.Takata</authors>
     <projectUrl>https://github.com/k-takata/mp3infp</projectUrl>
-    <copyright>
-      Copyright(C) 1998-2007 T-Matsuo (win32lab.com)
-      Copyright(C) 2009 Rem
-      Copyright(C) 2009-2018 K.Takata
-    </copyright>
+    <copyright>Copyright (C) 1998-2007 T-Matsuo (win32lab.com), 2009 Rem, 2009-2018 K.Takata</copyright>
     <licenseUrl>https://www.gnu.org/licenses/lgpl-3.0.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <bugTrackerUrl>https://github.com/k-takata/mp3infp/issues</bugTrackerUrl>

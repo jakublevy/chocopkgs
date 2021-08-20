@@ -9,17 +9,13 @@
     <authors>4lex4</authors>
     <projectUrl>https://github.com/4lex4/scantailor-advanced</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/scantailor.png</iconUrl>
-    <copyright>
-        Copyright (C) 2007-2014 Joseph Artsimovich 
-        Copyright (C) 2014-2016 Nate Craun
-        Copyright (C) 2016-2020 4lex4
-    </copyright>
+    <copyright>Copyright (C) 2007-2014 Joseph Artsimovich, 2014-2016 Nate Craun, 2016-2020 4lex4</copyright>
     <licenseUrl>https://github.com/4lex4/scantailor-advanced/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/4lex4/scantailor-advanced</projectSourceUrl>
     <docsUrl>https://github.com/4lex4/scantailor-advanced/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/4lex4/scantailor-advanced/issues</bugTrackerUrl>
-    <tags>scantailor scan book book-scanner post-processing page deskew dewarp tiff pdf djvu QT</tags>
+    <tags>scantailor scan book book-scanner image-processing post-processing digitalization binarization page deskew dewarp tiff pdf djvu qt</tags>
     <summary>ScanTailor Advanced is the ScanTailor fork that merges the features of the ScanTailor Featured and ScanTailor Enhanced versions, brings new ones and fixes.</summary>
     <description>
 # ScanTailor Advanced
