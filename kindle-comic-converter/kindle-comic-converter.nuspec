@@ -57,11 +57,11 @@ To support output to MOBI files, you have to download KindleGen manually and pla
 ### Examples
 * Install into `D:\KCC` directory
     ```
-    choco install kindle-comic-converter --params "/InstallationPath:"D:\KCC""
+    choco install kindle-comic-converter --params "/InstallationPath:D:\KCC"
     ```
 * Install with all file associations
     ```
-    choco install kindle-comic-converter --params "/CBZassociation /CBRassociation /CB7association"
+    choco install kindle-comic-converter --params "'/CBZassociation /CBRassociation /CB7association'"
     ```
 * Install and create desktop icon
     ```

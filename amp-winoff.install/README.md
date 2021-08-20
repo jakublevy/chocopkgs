@@ -30,5 +30,5 @@ AMP WinOFF is an utility for scheduling the shutdown of Windows computers, with 
 ### Examples
 * Install into `D:\winoff` directory
   ```
-  choco install amp-winoff --params "/InstallationPath:"D:\winoff""
+  choco install amp-winoff --params "/InstallationPath:D:\winoff"
   ```

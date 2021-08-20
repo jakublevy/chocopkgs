@@ -15,7 +15,7 @@
     <docsUrl>http://lpsolve.sourceforge.net</docsUrl>
     <mailingListUrl>https://groups.google.com/g/lp_solve</mailingListUrl>
     <bugTrackerUrl>https://groups.google.com/g/lp_solve</bugTrackerUrl>
-    <tags>linear-programming LP MIP MILP optimization solver mps</tags>
+    <tags>lp_solve lpsolve linear-programming LP MIP MILP optimization solver mps</tags>
     <summary>lp_solve is a Mixed Integer Linear Programming (MILP) solver.</summary>
     <description>
 **NOTE:** The following text is an excerpt from [the official website](http://lpsolve.sourceforge.net).

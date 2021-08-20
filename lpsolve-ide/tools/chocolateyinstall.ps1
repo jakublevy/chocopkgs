@@ -4,39 +4,28 @@ $toolsDir   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'EXE'
-  file64         = Join-Path $toolsDir 'KindleComicConverter_win_5.5.2.exe'
-  softwareName   = 'Kindle Comic Converter*'
+  file           = Join-Path $toolsDir 'lp_solve_5.5.2.11_IDE_Setup.exe'
+  softwareName   = 'LPSolve IDE*'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes = @(0)
 }
 
 $addionalArgs = Get-PackageParameters
 
-if($addionalArgs['InstallationPath']) {
-  $path = $addionalArgs['InstallationPath']
+if($addionalArgs['DIR']) {
+  $path = $addionalArgs['DIR']
   $packageArgs['silentArgs'] += " /DIR=""$path"""
 }
 
-$tasks = @('desktopicon', 'cbzassociation', 'cb7association', 'cbrassociation')
-if(!$addionalArgs['CreateDesktopIcon']) {
-  $tasks[0] = '!' + $tasks[0]
+if($addionalArgs['Tasks']) {
+  $packageArgs['silentArgs'] += " /MERGETASKS=`"$($addionalArgs['Tasks'])`""
 }
-if(!$addionalArgs['CBZassociation']) {
-  $tasks[1] = '!' + $tasks[1]
-}
-if(!$addionalArgs['CB7association']) {
-  $tasks[2] = '!' + $tasks[2]
-}
-if(!$addionalArgs['CBRassociation']) {
-  $tasks[3] = '!' + $tasks[3]
-}
-$packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 
 Install-ChocolateyInstallPackage @packageArgs
 
 & "$toolsDir\chocolateybeforemodify.ps1"
 
 Remove-Item `
-  -Path $packageArgs['file64'] `
+  -Path $packageArgs['file'] `
   -ErrorAction SilentlyContinue `
   -Force
