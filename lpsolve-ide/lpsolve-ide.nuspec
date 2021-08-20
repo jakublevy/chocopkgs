@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>lpsolve-ide</id>
+    <version>5.5.2.11</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/lpsolve-ide</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>LPSolve IDE</title>
+    <authors>Henri Gourvest</authors>
+    <projectUrl>http://lpsolve.sourceforge.net</projectUrl>
+    <copyright>Copyright (C) 1991, 2016 Free Software Foundation, Inc.</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://sourceforge.net/projects/lpsolve/files/lpsolve/5.5.2.11/lp_solve_5.5.2.11_IDE_source.zip</projectSourceUrl>
+    <docsUrl>http://lpsolve.sourceforge.net</docsUrl>
+    <mailingListUrl>https://groups.google.com/g/lp_solve</mailingListUrl>
+    <bugTrackerUrl>https://groups.google.com/g/lp_solve</bugTrackerUrl>
+    <tags>lp_solve lpsolve IDE interface display UI GUI</tags>
+    <summary>The LPSolve IDE is a very user friendly Windows interface to the lpsolve API. All functionality of lpsolve can be accessed via a graphical and very user friendly application.</summary>
+    <description>
+    </description>
+    <releaseNotes>https://sourceforge.net/projects/lpsolve/files/lpsolve/5.5.2.11/README.txt</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
