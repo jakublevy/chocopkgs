@@ -14,5 +14,5 @@ Along with this unique feature, Netlimiter offers comprehensive set of **interne
 ### Examples
 * Install into `D:\netlimiter` directory
   ```
-  choco install netlimiter --params "/InstallationPath:"D:\netlimiter""
+  choco install netlimiter --params "/InstallationPath:D:\netlimiter"
   ```

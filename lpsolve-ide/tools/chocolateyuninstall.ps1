@@ -2,7 +2,7 @@
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = 'Kindle Comic Converter*'
+  softwareName  = 'LPSolve IDE*'
   fileType      = 'EXE'
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes= @(0)

@@ -31,7 +31,7 @@ InfoBar needs working [NetLimiter](https://community.chocolatey.org/packages/net
 ### Examples
 * Install into `D:\netlimiter-infobar` directory
   ```
-  choco install netlimiter --params "/InstallationPath:"D:\netlimiter-infobar""
+  choco install netlimiter --params "/InstallationPath:D:\netlimiter-infobar"
   ```
 
 ## After Installation
@@ -51,8 +51,7 @@ With *InfoBar* users can keep [NetLimiter client](https://www.netlimiter.com/doc
 * It displays current **transfer rates** for selected [Zone](https://www.netlimiter.com/docs/basic-concepts/zones).
 * In case of any problem it shows **an alert**.
 * It alerts user when any Blocker request needs his attention.
-* Using a **context menu** user can open [NetLimiter client](https://www.netlimiter.com/docs/user-gui-client) or quickly **enable/disable** [Limiter](https://www.netlimiter.com/docs/basic-concepts/limits), [Blocker](https://www.netlimiter.com/docs/basic-concepts/blocker) or [Priorities](https://www.netlimiter.com/docs/basic-concepts/priorities).
-      
+* Using a **context menu** user can open [NetLimiter client](https://www.netlimiter.com/docs/user-gui-client) or quickly **enable/disable** [Limiter](https://www.netlimiter.com/docs/basic-concepts/limits), [Blocker](https://www.netlimiter.com/docs/basic-concepts/blocker) or [Priorities](https://www.netlimiter.com/docs/basic-concepts/priorities).     
     </description>
     <dependencies>
       <dependency id="netlimiter" version="4.1.7.0" />

@@ -46,22 +46,17 @@ The LPSolve IDE (Integrated Development Interface) is a very user friendly Windo
         - Associate .lpx
     - DIMACSFile
         - Associate .net
-### Inno Setup Tasks
-* `/desktopicon` - creates a desktop icon
-    - Not created by default
-* `/CBZassociation` - associates KCC as the default app for *.cbz files
-    - Not associated by default
-* `/CBRassociation` - associates KCC as the default app for *.cbr files
-    - Not associated by default
-* `/CB7association` - associates KCC as the default app for *.cb7 files
-    - Not associated by default
 
 ### Examples
 * Install into `D:\lpsolve-ide` directory
     ```
-    choco install lpsolve-ide --params "/DIR:"D:\lpsolve-ide""
+    choco install lpsolve-ide --params "/DIR:D:\lpsolve-ide"
     ```
 * Install, do not create anything and do not associate anything
    ```
-   choco install lpsolve-ide --params "/CreateDesktopIcon"
+   choco install lpsolve-ide --params "/Tasks:!desktopicon !quicklaunchicon !LPFile !MPSFile !MathProgFile !ZIMPLFile !CPLEXFile !LINDOFILE !XpressFile !DIMACSFile"
    ```
+* Install and do not create Desktop icon and Quick Launch icon
+    ```
+    choco install lpsolve-ide --params "/Tasks:!desktopicon !quicklaunchicon"
+    ```

@@ -29,11 +29,11 @@ GNU Prolog also includes an efficient constraint solver over Finite Domains (FD)
 ### Examples
 * Install into `D:\gprolog` directory
     ```
-    choco install gprolog-msvc --params "/InstallationPath:"D:\gprolog""
+    choco install gprolog-msvc --params "/InstallationPath:D:\gprolog"
     ```
 * Install with all file associations
     ```
-    choco install gprolog-msvc --params "/AssocPl /AssocPro /AssocProlog"
+    choco install gprolog-msvc --params "'/AssocPl /AssocPro /AssocProlog'"
     ```
 * Install and create desktop icon
    ```

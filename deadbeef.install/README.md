@@ -19,7 +19,7 @@ The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux
 ### Examples
 * Install into `D:\deadbeef` directory and create a desktop icon
   ```
-  choco install deadbeef --params "/InstallationPath:"D:\deadbeef" /CreateDesktopIcon"
+  choco install deadbeef --params "'/InstallationPath:D:\deadbeef /CreateDesktopIcon'"
   ```
 
 * Install with audio file associations
@@ -29,5 +29,5 @@ The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux
 
 * Install with audio file associations and create desktop icon
   ```
-  choco install deadbeef --params "/AssociateAudioFiles /CreateDesktopIcon"
+  choco install deadbeef --params "'/AssociateAudioFiles /CreateDesktopIcon'"
   ```
