@@ -3,7 +3,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = "NetLimiter InfoBar*"
   fileType      = 'MSI'
-  silentArgs    = "/qn /norestart NL_CLEAN_SETTINGS=1"
+  silentArgs    = "/qn /norestart"
   validExitCodes= @(0, 3010, 1605, 1614, 1641)
 }
 
