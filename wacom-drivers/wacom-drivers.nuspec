@@ -13,7 +13,7 @@
     <licenseUrl>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/eulas/en.pdf</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://developer-docs.wacom.com/faqs/docs/q-tablet/tablet-driver</docsUrl>
-    <bugTrackerUrl>https://support.wacom.com/hc/en-us</bugTrackerUrl>
+    <bugTrackerUrl>https://support.wacom.com/hc</bugTrackerUrl>
     <tags>wacom tablet art drawing painting pen graphics design drivers</tags>
     <summary>Drivers for Wacom devices.</summary>
     <description>
