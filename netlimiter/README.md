@@ -7,7 +7,7 @@ NetLimiter is an ultimate internet **traffic control** and **monitoring tool** d
 
 Along with this unique feature, Netlimiter offers comprehensive set of **internet statistical tools**. It includes real-time traffic measurement and long-term per-application internet traffic statistics. 
 
-## Parameters
+## Installation Parameters
 * `/InstallationPath:` - where to install the binaries
   - Default value: `"$env:ProgramFiles\Locktime Software\NetLimiter 4"`
 
@@ -15,4 +15,14 @@ Along with this unique feature, Netlimiter offers comprehensive set of **interne
 * Install into `D:\netlimiter` directory
   ```
   choco install netlimiter --params "/InstallationPath:D:\netlimiter"
+  ```
+
+## Uninstallation Parameters
+* `/CleanSettings` - should NetLimiter settings be erased with uninstallation
+  - Not cleaned by default
+
+### Examples
+* Uninstall and delete NetLimiter settings
+  ```
+  choco uninstall netlimiter --params "/CleanSettings"
   ```
