@@ -10,7 +10,10 @@ $packageArgs = @{
   checksum64    = $checksum64
   checksumType64= 'sha256'
   silentArgs    = '/S'
-  validExitCodes= @(0, 2)
+  validExitCodes= @(0, 1, 2)
+  # 0 installed (nothing more, nothing less)
+  # 1 installed, but reboot is required now (prior installation no pending reboot)
+  # 2 installed, but there was already a pending reboot prior to installation
 }
 
 Install-ChocolateyPackage @packageArgs
