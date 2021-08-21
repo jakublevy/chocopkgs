@@ -3,8 +3,13 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = "$env:ChocolateyPackageName*"
   fileType      = 'MSI'
-  silentArgs    = "/qn /norestart NL_CLEAN_SETTINGS=1"
+  silentArgs    = "/qn /norestart"
   validExitCodes= @(0, 3010, 1605, 1614, 1641)
+}
+
+$additionalArgs = Get-PackageParameters
+if($additionalArgs['CleanSettings']) {
+  $packageArgs['silentArgs'] += " NL_CLEAN_SETTINGS=1"
 }
 
 [array]$keys = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
