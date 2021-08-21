@@ -5,7 +5,7 @@
     <version>1.5.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/gprolog-msvc</packageSourceUrl>
     <owners>Jakub Levý</owners>
-    <title>GNU Prolog (MSVC)</title>
+    <title>GNU Prolog (compiled with MSVC)</title>
     <authors>Daniel Diaz</authors>
     <projectUrl>http://www.gprolog.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/gprolog.png</iconUrl>
