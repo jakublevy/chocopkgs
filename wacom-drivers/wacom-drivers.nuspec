@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>wacom-drivers</id>
+    <version>6.3.44.1</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/wacom-drivers</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Wacom Drivers</title>
+    <authors>Wacom Co. Ltd.</authors>
+    <projectUrl>https://www.wacom.com/en-us/support/product-support/drivers</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/wacom.png</iconUrl>
+    <copyright>Copyright (c) 2021 Wacom Co., Ltd. All rights reserved.</copyright>
+    <licenseUrl>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/eulas/en.pdf</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://developer-docs.wacom.com/faqs/docs/q-tablet/tablet-driver</docsUrl>
+    <bugTrackerUrl>https://support.wacom.com/hc/en-us</bugTrackerUrl>
+    <tags>wacom tablet art drawing painting pen graphics design drivers</tags>
+    <summary>Drivers for Wacom devices.</summary>
+    <description>
+      Windows drivers for [Wacom](https://www.wacom.com) tablet devices. See release notes for compatible products.
+    </description>
+    <releaseNotes>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/Windows_6.3.44.html</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
