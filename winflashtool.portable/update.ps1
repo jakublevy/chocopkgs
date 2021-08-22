@@ -9,10 +9,6 @@ function global:au_SearchReplace {
             "(?i)(\s+Go to).*"           = "`${1} $($Latest.Url64)"
             "(?i)(\s+checksum64:).*"     = "`${1} $($Latest.Checksum64)"
         }
-        ".\winflashtool.nuspec" = @{
-            "(?i)(\<dependency id=""winflashtool.portable"" version=""\[).*(""\] /\>)" = "`${1}$($Latest.Version)`${2}"
-            "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
-        }
     }
 }
 
@@ -24,6 +20,10 @@ function global:au_GetLatest {
         Version      = $version
         Url64        = "https://sysprogs.com/getfile/1087/WinFLASHTool-$version.exe"
     }
+}
+
+function global:au_BeforeUpdate {
+    Get-RemoteFiles -NoSuffix -Purge
 }
 
 Update-Package -ChecksumFor None

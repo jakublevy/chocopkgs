@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>winflashtool</id>
+    <id>winflashtool.portable</id>
     <version>3.0</version>
-    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/winflashtool</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/winflashtool.portable</packageSourceUrl>
     <owners>Jakub Levý</owners>
-    <title>WinFLASHTool</title>
+    <title>WinFLASHTool (Portable)</title>
     <authors>Sysprogs OÜ</authors>
     <projectUrl>https://sysprogs.com/winflashtool</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/winflashtool.png</iconUrl>
@@ -23,11 +23,9 @@ WinFLASHTool is a small utility that writes raw disk images to memory cards and 
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/winflashtool/screenshot.png)
     </description>
     <releaseNotes>https://sysprogs.com/winflashtool</releaseNotes>
-    <dependencies>
-      <dependency id="winflashtool.portable" version="[3.0]" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
