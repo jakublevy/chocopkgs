@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>memento.portable</id>
+    <id>memento</id>
     <version>0.5.0.1</version>
-    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/memento.portable</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/memento</packageSourceUrl>
     <owners>Jakub Levý</owners>
-    <title>Memento (Portable)</title>
+    <title>Memento</title>
     <authors>Ripose</authors>
     <projectUrl>https://ripose-jp.github.io/Memento</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/memento.png</iconUrl>
@@ -50,11 +50,10 @@ Supports streaming from many websites through [youtube-dl](https://community.cho
     </description>
     <releaseNotes>https://github.com/ripose-jp/Memento/releases/tag/v0.5.0-1-beta</releaseNotes>
     <dependencies>
-      <dependency id="vcredist2010" version="10.0.40219.325"/>
+      <dependency id="memento.portable" version="[0.5.0.1]" />
     </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>
