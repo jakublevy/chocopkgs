@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>reeeplayer.portable</id>
+    <id>reeeplayer</id>
     <version>0.1</version>
-    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/reeeplayer.portable</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/reeeplayer</packageSourceUrl>
     <owners>Jakub Levý</owners>
-    <title>ReeePlayer (Portable)</title>
+    <title>ReeePlayer</title>
     <authors>Filipp Volodin</authors>
     <projectUrl>https://github.com/FilippVolodin/ReeePlayer</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/reeeplayer.png</iconUrl>
@@ -25,6 +25,9 @@ The ReeePlayer application is designed for spaced repetition of fragments (clips
 For more information see [README.MD (English)](https://github.com/FilippVolodin/ReeePlayer/blob/main/README.md) or [README.MD (Russian)](https://github.com/FilippVolodin/ReeePlayer/blob/main/doc/README.ru.md).
     </description>
     <releaseNotes>https://github.com/FilippVolodin/ReeePlayer/releases/tag/v0.1</releaseNotes>
+    <dependencies>
+      <dependency id="reeeplayer.portable" version="[0.1]" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
