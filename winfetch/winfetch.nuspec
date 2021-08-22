@@ -15,7 +15,7 @@
     <projectSourceUrl>https://github.com/kiedtl/winfetch</projectSourceUrl>
     <docsUrl>https://github.com/kiedtl/winfetch/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/kiedtl/winfetch/issues</bugTrackerUrl>
-    <tags>neofetch screenfetch commandline cli systeminfo screenshot</tags>
+    <tags>neofetch screenfetch commandline cli systeminfo info screenshot</tags>
     <summary>🛠 A command-line system information utility written in PowerShell. Like Neofetch, but for Windows.</summary>
     <description>
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/winfetch/logo.png)

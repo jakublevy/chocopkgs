@@ -16,7 +16,7 @@
     <docsUrl>https://www.gnu.org/software/glpk/glpk.html#documentation</docsUrl>
     <mailingListUrl>https://www.gnu.org/software/glpk/glpk.html#lists</mailingListUrl>
     <bugTrackerUrl>https://www.gnu.org/software/glpk/glpk.html#bug</bugTrackerUrl>
-    <tags>mathprog linear-programming LP MIP optimization solver gnu</tags>
+    <tags>mathprog linear-programming LP MIP optimization solver gnu commandline</tags>
     <summary>GLPK is intended for solving large-scale linear programming (LP), mixed integer programming (MIP), and other related problems.</summary>
     <description>
 **NOTE:** The following text is an excerpt from [the official website](https://www.gnu.org/software/glpk).

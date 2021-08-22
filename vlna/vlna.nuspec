@@ -11,7 +11,7 @@
     <copyright>Copyright (c) 1995, 2002, 2009, 2010 Petr Olšák</copyright>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>http://petr.olsak.net/ftp/olsak/vlna/vlna-1.2.tar.gz</projectSourceUrl>
-    <tags>vlna tex latex czech slovak typesetting</tags>
+    <tags>vlna tex latex czech slovak typesetting commandline</tags>
     <summary>Adds ties after nonsyllabic prepositions (instead of spaces) in the TeX source files. This prevents line breaks at undesirable spaces.</summary>
     <description>
 # vlna
