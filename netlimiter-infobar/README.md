@@ -13,7 +13,7 @@ InfoBar needs working [NetLimiter](https://community.chocolatey.org/packages/net
 ### Examples
 * Install into `D:\netlimiter-infobar` directory
   ```
-  choco install netlimiter --params "/InstallationPath:D:\netlimiter-infobar"
+  choco install netlimiter-infobar --params "/InstallationPath:D:\netlimiter-infobar"
   ```
 
 ## After Installation
