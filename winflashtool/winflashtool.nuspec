@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>winflashtool</id>
+    <version>3.0</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/winflashtool</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>WinFLASHTool</title>
+    <authors>Sysprogs OÜ</authors>
+    <projectUrl>https://sysprogs.com/winflashtool</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/winflashtool.png</iconUrl>
+    <copyright>Copyright (c) Sysprogs 2015-2020</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/gpl-3.0.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/sysprogs/WinFLASHTool</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/sysprogs/WinFLASHTool/issues</bugTrackerUrl>
+    <tags>disk raw image flash SD memory card partition</tags>
+    <summary>Small utility that writes images to memory cards and flash drives.</summary>
+    <description> 
+# WinFLASHTool
+WinFLASHTool is a small utility that writes raw disk images to memory cards and flash drives. It also supports multi-partition images and allows previewing erased partitions before overwriting. 
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/winflashtool/screenshot.png)
+    </description>
+    <releaseNotes>https://sysprogs.com/winflashtool/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
