@@ -13,7 +13,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/brechtsanders/ADReports</projectSourceUrl>
     <bugTrackerUrl>https://github.com/brechtsanders/ADReports/issues</bugTrackerUrl>
-    <tags>active-directory AD report manage state info information export data</tags>
+    <tags>active-directory AD report manage state info information export data commandline</tags>
     <summary>Command-line tools to generate reports from Active Directory (AD).</summary>
     <description><![CDATA[ 
 # ADReports

@@ -21,7 +21,7 @@
     <licenseUrl>https://github.com/jakublevy/glucose-win/blob/master/LICENCE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/jakublevy/glucose-win</projectSourceUrl>
-    <tags>sat solver sat-solver sat-solving solver minisat cnf dimacs</tags>
+    <tags>sat solver sat-solver sat-solving solver minisat cnf dimacs commandline</tags>
     <summary>Glucose is award-winning modern SAT Solver heavily based on Minisat with multi-threading support.</summary>
     <description>  
 # The Glucose SAT Solver
