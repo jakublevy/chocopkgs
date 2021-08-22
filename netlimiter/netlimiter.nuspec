@@ -12,7 +12,8 @@
     <copyright>Copyright (c) 2005-2021 Locktime Software s.r.o.</copyright>
     <licenseUrl>https://www.netlimiter.com/pages/netlimiter-eula</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://www.netlimiter.com/docs/netlimiter-overview</docsUrl>
+    <docsUrl>https://www.netlimiter.com/docs</docsUrl>
+    <bugTrackerUrl>https://www.netlimiter.com/support</bugTrackerUrl>
     <tags>netlimiter network limiter admin internet monitor bandwith filter block trial</tags>
     <summary>NetLimiter is an ultimate internet traffic control and monitoring tool.</summary>
     <description>
