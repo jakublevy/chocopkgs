@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>visualkernel</id>
+    <version>3.1.9</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/visualkernel</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>VisualKernel</title>
+    <authors>Sysprogs OÜ</authors>
+    <projectUrl>https://sysprogs.com/VisualKernel</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/visualkernel.png</iconUrl>
+    <copyright>Copyright (c) Sysprogs 2014-2021</copyright>
+    <docsUrl>https://sysprogs.com/VisualKernel/?features=docs</docsUrl>
+    <bugTrackerUrl>https://sysprogs.com/support</bugTrackerUrl>
+    <tags>visual studio VS cross-platform debug linux kernel space c dev sysprogs trial</tags>
+    <summary>VisualKernel integrates Linux kernel debugging into Visual Studio.</summary>
+    <description> 
+**NOTE:** This is commercial software with 30-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://sysprogs.com/VisualKernel).
+
+# VisualKernel
+VisualKernel integrates Linux kernel debugging into Visual Studio.
+## Features
+* Debug Linux Kernel with Visual Studio
+* Support for Raspberry Pi 3, i.MX6 and other devices
+* IntelliSense support even for GNU extensions
+* Automatic symbol management
+* ...
+    </description>
+    <releaseNotes>https://sysprogs.com/VisualKernel/history</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
