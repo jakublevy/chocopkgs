@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>visualgdb</id>
+    <version>5.5.5</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/visualgdb</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>VisualGDB</title>
+    <authors>Sysprogs OÜ</authors>
+    <projectUrl>https://visualgdb.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/visualgdb.png</iconUrl>
+    <copyright>Copyright (c) Sysprogs 2012-2021</copyright>
+    <bugTrackerUrl>https://sysprogs.com/support</bugTrackerUrl>
+    <tags>visual studio VS cross-platform gdb linux c c++ native dev IOT sysprogs trial</tags>
+    <summary>Serious Cross-Platform for Visual Studio!</summary>
+    <description> 
+# VisualGDB
+VisualGDB integrates the GNU toolchain (GCC/GDB) into Visual Studio. With VisualGDB installed, Visual Studio can be used for the development and debugging of many applications based on GNU tools: embedded firmware, native Android code, MacOS drivers, Linux drivers, Linux applications, and many more...      
+    </description>
+    <releaseNotes>https://visualgdb.com/history</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

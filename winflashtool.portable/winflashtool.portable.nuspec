@@ -14,7 +14,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/sysprogs/WinFLASHTool</projectSourceUrl>
     <bugTrackerUrl>https://github.com/sysprogs/WinFLASHTool/issues</bugTrackerUrl>
-    <tags>disk raw image flash SD memory card partition</tags>
+    <tags>disk raw image flash SD memory card partition sysprogs</tags>
     <summary>Small utility that writes images to memory cards and flash drives.</summary>
     <description> 
 # WinFLASHTool
