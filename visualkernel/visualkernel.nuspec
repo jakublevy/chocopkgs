@@ -9,13 +9,15 @@
     <authors>Sysprogs OÜ</authors>
     <projectUrl>https://sysprogs.com/VisualKernel</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/visualkernel.png</iconUrl>
-    <copyright>Copyright (c) Sysprogs 2014-2021</copyright>
+    <copyright>Copyright (c) 2012-2021 Sysprogs OÜ. All rights reserved.</copyright>
     <docsUrl>https://sysprogs.com/VisualKernel/?features=docs</docsUrl>
     <bugTrackerUrl>https://sysprogs.com/support</bugTrackerUrl>
     <tags>visual studio VS cross-platform debug linux kernel space c dev sysprogs trial</tags>
     <summary>VisualKernel integrates Linux kernel debugging into Visual Studio.</summary>
     <description> 
 **NOTE:** This is commercial software with 30-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://sysprogs.com/VisualKernel).
+
+**NOTE:** VisualKernel requires Microsoft Visual Studio as a dependency, see [system requirements](https://sysprogs.com/VisualKernel/download).
 
 # VisualKernel
 VisualKernel integrates Linux kernel debugging into Visual Studio.
