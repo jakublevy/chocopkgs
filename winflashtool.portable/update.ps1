@@ -14,11 +14,11 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://sysprogs.com/winflashtool/download/'
-    $relative_url  = $download_page.Links | Where-Object href -match 'WinFLASHTool-' | Select-Object -First 1 -expand href
-    $version     = ([regex]::Match($relative_url, '/WinFLASHTool-(\d+\.\d+(\.\d+)*)\.exe')).Groups[1].Value
+    $absoluteUrl  = $download_page.Links | Where-Object href -match 'WinFLASHTool-' | Select-Object -First 1 -expand href
+    $version     = ([regex]::Match($absoluteUrl, '/WinFLASHTool-(\d+\.\d+(\.\d+)*)\.exe')).Groups[1].Value
     @{
         Version      = $version
-        Url64        = "https://sysprogs.com/getfile/1087/WinFLASHTool-$version.exe"
+        Url64        = $absoluteUrl
     }
 }
 
