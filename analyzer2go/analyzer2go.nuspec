@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>analyzer2go</id>
+    <version>2.2</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/analyzer2go</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Analyzer2Go</title>
+    <authors>Sysprogs OÜ</authors>
+    <projectUrl>https://sysprogs.com/analyzer2go</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/analyzer2go.png</iconUrl>
+    <copyright>Copyright (c) 2012-2021 Sysprogs OÜ. All rights reserved.</copyright>
+    <docsUrl>https://sysprogs.com/analyzer2go/?page=docs</docsUrl>
+    <bugTrackerUrl>https://sysprogs.com/support</bugTrackerUrl>
+    <tags>logic analyzer devkit development board IOT sysprogs trial</tags>
+    <summary>Turn your development board into a logic analyzer!</summary>
+    <description> 
+**NOTE:** This is commercial software with 15-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://sysprogs.com/analyzer2go).
+
+# Analyzer2Go
+Analyzer2Go is an application that turns your development board into a logic analyzer.
+
+## Supported boards
+* https://sysprogs.com/analyzer2go/?page=boards
+
+## Features
+* https://sysprogs.com/analyzer2go
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
