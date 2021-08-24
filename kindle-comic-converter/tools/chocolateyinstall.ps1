@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
@@ -10,24 +10,24 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
-$addionalArgs = Get-PackageParameters
+$additionalArgs = Get-PackageParameters
 
-if($addionalArgs['InstallationPath']) {
-  $path = $addionalArgs['InstallationPath']
+if($additionalArgs['InstallationPath']) {
+  $path = $additionalArgs['InstallationPath']
   $packageArgs['silentArgs'] += " /DIR=""$path"""
 }
 
 $tasks = @('desktopicon', 'cbzassociation', 'cb7association', 'cbrassociation')
-if(!$addionalArgs['CreateDesktopIcon']) {
+if(!$additionalArgs['CreateDesktopIcon']) {
   $tasks[0] = '!' + $tasks[0]
 }
-if(!$addionalArgs['CBZassociation']) {
+if(!$additionalArgs['CBZassociation']) {
   $tasks[1] = '!' + $tasks[1]
 }
-if(!$addionalArgs['CB7association']) {
+if(!$additionalArgs['CB7association']) {
   $tasks[2] = '!' + $tasks[2]
 }
-if(!$addionalArgs['CBRassociation']) {
+if(!$additionalArgs['CBRassociation']) {
   $tasks[3] = '!' + $tasks[3]
 }
 $packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""

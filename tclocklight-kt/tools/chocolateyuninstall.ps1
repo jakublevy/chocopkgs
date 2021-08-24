@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 
 $shortcut = 'tclocklight-kt.lnk'
 $existsStartup = $false

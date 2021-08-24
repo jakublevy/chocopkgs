@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 
 $binaryLocation = "$(Get-ToolsLocation)\winfetch"
 

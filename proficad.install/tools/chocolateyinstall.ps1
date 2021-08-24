@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $checksum = 'D82E5273C7A7AC85F9CF46DEF6EDC458C5A2CBE8D129AB202969D15219E639AB'
 $version  = '11.2.2'
 
@@ -13,10 +13,10 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
-$addionalArgs = Get-PackageParameters
+$additionalArgs = Get-PackageParameters
 
-if($addionalArgs['InstallationPath']) {
-  $path = $addionalArgs['InstallationPath']
+if($additionalArgs['InstallationPath']) {
+  $path = $additionalArgs['InstallationPath']
   $packageArgs['silentArgs'] += " /DIR=""$path"""
 }
 

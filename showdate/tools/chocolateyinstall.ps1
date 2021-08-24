@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
@@ -11,12 +11,5 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-Remove-Item `
-  -Path $packageArgs['fileFullPath'] `
-  -ErrorAction SilentlyContinue `
-  -Force
-
-Remove-Item `
-  -Path $packageArgs['fileFullPath64'] `
-  -ErrorAction SilentlyContinue `
-  -Force
+$filesToRemove = @($packageArgs['fileFullPath'], $packageArgs['fileFullPath64'])
+$filesToRemove | % { Remove-Item -Path $_ -ErrorAction SilentlyContinue -Force }

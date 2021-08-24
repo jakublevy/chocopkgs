@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
@@ -11,34 +11,27 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
-$addionalArgs = Get-PackageParameters
-if($addionalArgs['InstallationPath']) {
-  $packageArgs['silentArgs'] += " /DIR=`"$($addionalArgs['InstallationPath'])`""
+$additionalArgs = Get-PackageParameters
+if($additionalArgs['InstallationPath']) {
+  $packageArgs['silentArgs'] += " /DIR=`"$($additionalArgs['InstallationPath'])`""
 }
 
 $tasks = @('desktopicon', 'assocPl', 'assocPro', 'assocProlog')
-if(!$addionalArgs['CreateDesktopIcon']) {
+if(!$additionalArgs['CreateDesktopIcon']) {
   $tasks[0] = '!' + $tasks[0]
 }
-if(!$addionalArgs['AssocPl']) {
+if(!$additionalArgs['AssocPl']) {
   $tasks[1] = '!' + $tasks[1]
 }
-if(!$addionalArgs['AssocPro']) {
+if(!$additionalArgs['AssocPro']) {
   $tasks[2] = '!' + $tasks[2]
 }
-if(!$addionalArgs['AssocProlog']) {
+if(!$additionalArgs['AssocProlog']) {
   $tasks[3] = '!' + $tasks[3]
 }
 $packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 
 Install-ChocolateyInstallPackage @packageArgs
 
-Remove-Item `
-  -Path $packageArgs['file'] `
-  -ErrorAction SilentlyContinue `
-  -Force
-
-Remove-Item `
-  -Path $packageArgs['file64'] `
-  -ErrorAction SilentlyContinue `
-  -Force
+$filesToRemove = @($packageArgs['file'], $packageArgs['file64'])
+$filesToRemove | % { Remove-Item -Path $_ -ErrorAction SilentlyContinue -Force }

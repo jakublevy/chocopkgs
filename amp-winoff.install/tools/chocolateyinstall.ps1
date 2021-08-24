@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $checksum = '2891D5CD484791A8482865255333B8CF432A9D6DFB8705D724A825B85B64C891'
 
 $packageArgs = @{

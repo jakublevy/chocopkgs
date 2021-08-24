@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = $(Split-Path -Parent $MyInvocation.MyCommand.Definition)
 $checksum = 'AF0637EBC5122A93C4DA49EFB2E29CAF999EBBE0C4352A7628732F612893F43D'
 
@@ -19,18 +19,5 @@ $shimArgs = @{
   errorAction= 'SilentlyContinue'
 }
 
-New-Item `
-  -Name 'WinOFF.exe.gui' `
-  @shimArgs
-
-New-Item `
-  -Name 'WinOFF_admin.exe.ignore' `
-  @shimArgs
-
-New-Item `
-  -Name 'WinOFF_guardian.exe.ignore' `
-  @shimArgs
-
-New-Item `
-  -Name 'WinOFF_launcher.exe.ignore' `
-  @shimArgs
+$createItemList = @('WinOFF.exe.gui', 'WinOFF_admin.exe.ignore', 'WinOFF_guardian.exe.ignore', 'WinOFF_launcher.exe.ignore')
+$createItemList | % { New-Item -Name $_ @shimArgs }

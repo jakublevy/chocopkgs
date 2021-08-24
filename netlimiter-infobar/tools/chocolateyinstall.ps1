@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $version  = '1.2'
 $checksum = '8CB416909934BB821246C95B8B8669826AC45AF303871FBE0ACAF01A6DF40463'
 

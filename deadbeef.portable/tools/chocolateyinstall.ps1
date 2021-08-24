@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
@@ -15,11 +15,11 @@ Remove-Item `
   -ErrorAction SilentlyContinue `
   -Force
 
-$addionalArgs = Get-PackageParameters
-if($addionalArgs['AddToSystemPath'] -eq 'yes') {
+$additionalArgs = Get-PackageParameters
+if($additionalArgs['AddToSystemPath'] -eq 'yes') {
   Install-ChocolateyPath -PathToInstall "$($packageArgs['destination'])\deadbeef-x86_64" -PathType Machine
 }
 
-if($null -eq $addionalArgs['AddToUserPath'] -or $addionalArgs['AddToUserPath'] -eq 'yes') {
+if($null -eq $additionalArgs['AddToUserPath'] -or $additionalArgs['AddToUserPath'] -eq 'yes') {
   Install-ChocolateyPath -PathToInstall "$($packageArgs['destination'])\deadbeef-x86_64" -PathType User
 }
