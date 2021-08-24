@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>csvtk</id>
+    <version>0.23.0</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/csvtk</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>csvtk</title>
+    <authors>Wei Shen</authors>
+    <projectUrl>https://github.com/shenwei356/csvtk</projectUrl>
+    <copyright>Copyright (c) 2016-2019 Wei Shen, 2019 Oxford Nanopore Technologies.</copyright>
+    <licenseUrl>https://github.com/shenwei356/csvtk/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/shenwei356/csvtk</projectSourceUrl>
+    <docsUrl>https://github.com/shenwei356/csvtk/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/shenwei356/csvtk/issues</bugTrackerUrl>
+    <tags>cross-platform efficient practical csv tsv toolkit commandline</tags>
+    <summary>A cross-platform, efficient and practical CSV/TSV toolkit.</summary>
+    <description>
+# csvtk
+`csvtk` is a cross-platform, efficient and practical CSV/TSV toolkit.
+
+## Features
+- **Cross-platform** (Linux/Windows/Mac OS X/OpenBSD/FreeBSD)
+- **Light weight and out-of-the-box, no dependencies, no compilation, no configuration**
+- **Fast**,  **multiple-CPUs supported** (some commands)
+- **Practical functions provided by N subcommands**
+- **Support STDIN and gziped input/output file, easy being used in pipe**
+- Most of the subcommands support ***unselecting fields*** and ***fuzzy fields***,
+  e.g. `-f "-id,-name"` for all fields except "id" and "name",
+  `-F -f "a.*"` for all fields with prefix "a.".
+- **Support some common plots** (see [usage](http://bioinf.shenwei.me/csvtk/usage/#plot))
+
+### For more information about csvtk see [the official README.md](https://github.com/shenwei356/csvtk/blob/master/README.md).
+    </description>
+<releaseNotes>https://github.com/shenwei356/csvtk/releases/tag/v0.23.0</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
