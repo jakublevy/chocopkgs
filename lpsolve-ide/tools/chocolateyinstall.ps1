@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir   = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
@@ -10,15 +10,15 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
-$addionalArgs = Get-PackageParameters
+$additionalArgs = Get-PackageParameters
 
-if($addionalArgs['DIR']) {
-  $path = $addionalArgs['DIR']
+if($additionalArgs['DIR']) {
+  $path = $additionalArgs['DIR']
   $packageArgs['silentArgs'] += " /DIR=""$path"""
 }
 
-if($addionalArgs['Tasks']) {
-  $packageArgs['silentArgs'] += " /MERGETASKS=`"$($addionalArgs['Tasks'])`""
+if($additionalArgs['Tasks']) {
+  $packageArgs['silentArgs'] += " /MERGETASKS=`"$($additionalArgs['Tasks'])`""
 }
 
 Install-ChocolateyInstallPackage @packageArgs

@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $absUrl   = 'https://sysprogs.com/getfile/1528/VisualGDB-5.5r5-trial.msi'
 $checksum = 'EADDCEC714CEF5A0D76C56DA8CCD6FD2CAC76A72283FA42324DB2DDE3F5D5A56'
 

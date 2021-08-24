@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $version = '3.0'
 

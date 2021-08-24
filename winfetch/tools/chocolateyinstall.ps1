@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $binaryLocation = "$(Get-ToolsLocation)\winfetch"
@@ -8,22 +8,15 @@ New-Item `
   -ItemType Directory `
   -Force
 
-Move-Item `
-  -Path "$toolsDir\winfetch.ps1" `
-  -Destination $binaryLocation `
-  -Force
+$filesToMove = @('winfetch.ps1', 'winfetch.bat')
+$filesToMove | % { Move-Item -Path "$toolsDir\$_" -Destination $binaryLocation -Force }
 
-Move-Item `
-  -Path "$toolsDir\winfetch.bat" `
-  -Destination $binaryLocation `
-  -Force
+$additionalArgs = Get-PackageParameters
 
-$addionalArgs = Get-PackageParameters
-
-if($null -eq $addionalArgs['AddToSystemPath'] -or $addionalArgs['AddToSystemPath'] -eq 'yes') {
+if($null -eq $additionalArgs['AddToSystemPath'] -or $additionalArgs['AddToSystemPath'] -eq 'yes') {
   Install-ChocolateyPath -PathToInstall $binaryLocation -PathType Machine
 }
 
-if($addionalArgs['AddToUserPath'] -eq 'yes') {
+if($additionalArgs['AddToUserPath'] -eq 'yes') {
   Install-ChocolateyPath -PathToInstall $binaryLocation -PathType User
 }

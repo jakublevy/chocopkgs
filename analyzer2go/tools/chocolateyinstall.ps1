@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $absUrl   = 'https://sysprogs.com/getfile/986/Analyzer2Go-2.2-trial.msi'
 $checksum = 'FD3CF65A5F18A34A8581CBCD8E083A71DF95625D83A5AE80677897D69AF2C794'
 

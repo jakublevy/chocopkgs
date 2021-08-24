@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
@@ -11,11 +11,11 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
-$addionalArgs = Get-PackageParameters
+$additionalArgs = Get-PackageParameters
 $targetDir = $null
 
-if($addionalArgs['InstallationPath']) {
-  $targetDir = $addionalArgs['InstallationPath']
+if($additionalArgs['InstallationPath']) {
+  $targetDir = $additionalArgs['InstallationPath']
   $packageArgs['silentArgs'] += " /D=$targetDir"
 }
 

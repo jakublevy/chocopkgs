@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
@@ -11,20 +11,13 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-Remove-Item `
-  -Path $packageArgs['fileFullPath'] `
-  -ErrorAction SilentlyContinue `
-  -Force
-
-Remove-Item `
-  -Path $packageArgs['fileFullPath64'] `
-  -ErrorAction SilentlyContinue `
-  -Force
+$filesToRemove = @($packageArgs['fileFullPath'], $packageArgs['fileFullPath64'])
+$filesToRemove | % { Remove-Item -Path $_ -ErrorAction SilentlyContinue -Force }
 
 $shortcut = 'tclocklight-kt.lnk'
 $targetBin = "$toolsDir\bin\tclock.exe"
-$addionalArgs = Get-PackageParameters
-if($addionalArgs['AddToUserStartup'] -eq 'yes') {
+$additionalArgs = Get-PackageParameters
+if($additionalArgs['AddToUserStartup'] -eq 'yes') {
   Install-ChocolateyShortcut `
     -ShortcutFilePath "$env:AppData\Microsoft\Windows\Start Menu\Programs\Startup\$shortcut" `
     -TargetPath $targetBin
@@ -32,7 +25,7 @@ if($addionalArgs['AddToUserStartup'] -eq 'yes') {
   Write-Output 'TClock Light kt is automatically started on this user login.'
 }
 
-if($null -eq $addionalArgs['AddToSystemStartup'] -or $addionalArgs['AddToSystemStartup'] -eq 'yes') {
+if($null -eq $additionalArgs['AddToSystemStartup'] -or $additionalArgs['AddToSystemStartup'] -eq 'yes') {
   Install-ChocolateyShortcut `
     -ShortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\$shortcut" `
     -TargetPath $targetBin
