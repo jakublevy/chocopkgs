@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>brename</id>
+    <version>2.11.1</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/brename</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>brename</title>
+    <authors>Wei Shen</authors>
+    <projectUrl>https://github.com/shenwei356/brename</projectUrl>
+    <copyright>Copyright (c) 2013-2019 Wei Shen</copyright>
+    <licenseUrl>https://github.com/shenwei356/brename/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/shenwei356/brename</projectSourceUrl>
+    <docsUrl>https://github.com/shenwei356/brename/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/shenwei356/brename/issues</bugTrackerUrl>
+    <tags>cross-platform batch rename file directory regex commandline</tags>
+    <summary>A cross-platform command-line tool for safely batch renaming files/directories via regular expression.</summary>
+    <description>
+# brename
+`brename` is a cross-platform command-line tool for safely batch renaming files/directories via regular expression.
+
+## Features
+- **Cross-platform**. Supporting Windows, Mac OS X and Linux.
+- **Safe**. By ***checking potential conflicts and errors***.
+- **Supporting Undo**.
+- **Overwrite can be detected and users can choose whether overwrite or leave it**.
+- **File filtering**. Supporting including and excluding files via regular expression.
+    No need to run commands like `find ./ -name "*.html" -exec CMD`.
+- **Renaming submatch with corresponding value via key-value file**.
+- **Renaming via ascending integer**.
+- **Recursively renaming both files and directories**.
+- **Supporting dry run**.
+- **Colorful output**.
+
+### For more information about brename see [the official README.md](https://github.com/shenwei356/brename/blob/master/README.md).
+    </description>
+<releaseNotes>https://github.com/shenwei356/brename/releases/tag/v2.11.1</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
