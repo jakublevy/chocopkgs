@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>clipstudio-modeler</id>
+    <version>1.10.13</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/clipstudio-modeler</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Clip Studio Modeler</title>
+    <authors>CELSYS Inc.</authors>
+    <projectUrl>https://www.clipstudio.net/en/modeler</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/clipstudio-modeler.png</iconUrl>
+    <copyright>Copyright (c) CELSYS, Inc. All Rights Reserved.</copyright>
+    <licenseUrl>https://www.clipstudio.net/modeler/en/eula</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.clip-studio.com/site/gd_en/csm/userguide</docsUrl>
+    <bugTrackerUrl>https://support.clip-studio.com/en-us/products/clip-studio-modeler</bugTrackerUrl>
+    <tags>3D modeling anime model object character art animation graphics design celsys</tags>
+    <summary>A freeware software for setting up 3D materials for use in Clip Studio Paint.</summary>
+    <description>
+# Clip Studio Modeler
+Clip Studio Modeler is a freeware software for setting up 3D materials for use in Clip Studio Paint. It supports many widely used formats for 3D models, which can then be used as materials in Clip Studio Paint.
+
+
+## Installation Parameters
+* `/DesktopIcon:` - should desktop icons be created
+  - Supported values: `yes`, `no`
+  - Default value: `no`
+* `/InstallDir:` - where to install the binaries
+  - Default value: `"$env:ProgramFiles\CELSYS"`
+* `/Language:` - which language edition to install
+  - Supported values: `english`, `japanese`
+  - Default value: `english`
+
+### Examples
+* Install into `D:\clipstudio-modeler` directory
+  ```
+  choco install clipstudio-modeler --params "/InstallDir:D:\clipstudio-modeler"
+  ```
+* Install Japanese language variant into `D:\clipstudio-modeler`
+  ```
+  choco install clipstudio-modeler --params "'/InstallDir:D:\clipstudio-modeler /Language:japanese'"
+  ```
+* Install and create desktop icons
+  ```
+  choco install clipstudio-modeler --params "/DesktopIcon:yes"
+  ```
+    </description>
+    <releaseNotes>https://www.clipstudio.net/modeler/en/release_note</releaseNotes>
+    <dependencies>
+      <dependency id="autohotkey.portable" version="1.1.30.00" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

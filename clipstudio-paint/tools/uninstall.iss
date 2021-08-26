@@ -1,0 +1,23 @@
+[InstallShield Silent]
+Version=v7.00
+File=Response File
+[File Transfer]
+OverwrittenReadOnly=NoToAll
+[{49274EB8-4598-47E6-8039-9BB7CE07627E}-DlgOrder]
+Dlg0={49274EB8-4598-47E6-8039-9BB7CE07627E}-MessageBox-0
+Count=3
+Dlg1={49274EB8-4598-47E6-8039-9BB7CE07627E}-AskYesNo-0
+Dlg2={49274EB8-4598-47E6-8039-9BB7CE07627E}-SdFinish-0
+[{49274EB8-4598-47E6-8039-9BB7CE07627E}-MessageBox-0]
+Result=6
+[{49274EB8-4598-47E6-8039-9BB7CE07627E}-AskYesNo-0]
+Result=1
+[Application]
+Name=CLIP STUDIO
+Version=1.10.13
+Company=CELSYS
+Lang=0409
+[{49274EB8-4598-47E6-8039-9BB7CE07627E}-SdFinish-0]
+Result=1
+bOpt1=0
+bOpt2=0
