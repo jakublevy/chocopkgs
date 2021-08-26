@@ -3,7 +3,6 @@ $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileFullPath   = Join-Path $toolsDir 'brename_windows_386.exe.tar.gz'
   fileFullPath64 = Join-Path $toolsDir 'brename_windows_amd64.exe.tar.gz'
   destination    = $toolsDir
   validExitCodes = @(0)
@@ -11,7 +10,6 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-$packageArgs['fileFullPath']   = $packageArgs['fileFullPath'].Replace('.gz', '')
 $packageArgs['fileFullPath64'] = $packageArgs['fileFullPath64'].Replace('.gz', '')
 $packageArgs['destination']    = "$toolsDir\bin"
 Get-ChocolateyUnzip @packageArgs
