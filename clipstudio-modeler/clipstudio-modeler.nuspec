@@ -46,9 +46,6 @@ Clip Studio Modeler is a freeware software for setting up 3D materials for use i
   ```
     </description>
     <releaseNotes>https://www.clipstudio.net/modeler/en/release_note</releaseNotes>
-    <dependencies>
-      <dependency id="autohotkey.portable" version="1.1.30.00" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

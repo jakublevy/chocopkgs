@@ -18,7 +18,7 @@ $packageArgs = @{
   softwareName  = "Clip Studio Modeler*"
   checksum      = $checksum64
   checksumType  = 'sha256'
-  silentArgs    = "/l0x0409 /f2`"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).InstallShield.install.log`" /s /f1`"$issFile`"" #skips everything except eula, GUI still visible
+  silentArgs    = "/l0x0409 /f2`"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).InstallShield.install.log`" /s /f1`"$issFile`""
   validExitCodes= @(0)
 }
 
