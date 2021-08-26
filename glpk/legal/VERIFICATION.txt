@@ -14,3 +14,11 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
 
    checksum32: A8C195B92682C3AC1F6DAE5F6CE2472C2478835F9873BE4A0C6771C37DB53C2D
+
+License text in LICENSE.txt file was obtained 
+   on 03/27/2021
+   from https://www.gnu.org/licenses/gpl-3.0.txt
+   
+License type was determined
+   on 03/27/2021
+   from http://winglpk.sourceforge.net

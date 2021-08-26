@@ -17,3 +17,7 @@ Package can be verified like this:
 
    checksum32: BA8BC2605F419FC6E72CFA13D20F3459FD2C492D6152648259AF1173C88CD59A
    checksum64: F6D3CE18FC739377CF002E53A9A660B1DDE62AC94B8EF95587A46B466A16735A
+
+License text in LICENSE.txt file was obtained 
+   on 03/26/2021
+   from http://www.gprolog.org/manual/html_node/gprolog003.html

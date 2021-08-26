@@ -17,3 +17,7 @@ Package can be verified like this:
 
    checksum32: EAF3C403C768A37FB5CC2D7D65320D242EEAA49BFC881985CC41E15F76A555C9
    checksum64: F41DA4C55AAAC450E199DD45566BCEE32B4CDBBB8FD844F1B2467D75E4485C78
+
+License text in LICENSE.txt file was obtained 
+   on 08/22/2021
+   from https://github.com/brechtsanders/ADReports/blob/master/COPYING.txt

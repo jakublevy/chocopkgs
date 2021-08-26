@@ -17,3 +17,7 @@ Package can be verified like this:
 
    checksum32: 897DE1C609F93BA95FE90DAE48C248B879B09338E4F19B09DE99EBD1F8A91103
    checksum64: D88DE638B5463FDCF2011A8968BFE084F466DFCA04F63AD5345522BC03DF5B57
+
+License text in LICENSE.txt file was obtained 
+   on 08/22/2021
+   from https://github.com/brechtsanders/showdate/blob/main/LICENSE

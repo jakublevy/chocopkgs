@@ -17,3 +17,7 @@ Package can be verified like this:
 
    checksum32: 3EB77A8BA9909D16154EA953350CCF45763CFBFF1DFF826DAAEBEF2237F90494
    checksum64: 2FCCF7F2E9319E72A31FAE18E3B4388A00CF18D0D21F2902B91A7F0B52AD5A9D
+
+License text in LICENSE.txt file was obtained 
+   on 08/24/2021
+   from https://github.com/shenwei356/dirsize/blob/master/LICENSE

@@ -14,3 +14,7 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
 
    checksum32: 8AF238C5932A83853A61B8016788CF6A2E2FFA1E41E0841D9B92BB529CC9E27A
+
+License text in LICENSE.txt file was obtained 
+   on 08/17/2021
+   from https://github.com/alitrack/undark/blob/master/LICENSE

@@ -17,3 +17,7 @@ Package can be verified like this:
 
    checksum32: 5F119254C2F6B4AB746131E666C3C52C5F96D657C202E91C42EDCF22F8D2FD43
    checksum64: 84105628C4FCA4A7FA9637D6DC16282378C71D545558C1B54988BE2ECFE0C1F5
+
+License text in LICENSE.txt file was obtained 
+   on 08/24/2021
+   from https://github.com/shenwei356/brename/blob/master/LICENSE

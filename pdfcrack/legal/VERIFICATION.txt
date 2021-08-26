@@ -14,3 +14,7 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
 
    checksum64: 7EC3E68D252986D3645123EE67DC59BA882C51567F839CC3F173CB432FD38CFB
+
+License text in LICENSE.txt file was obtained 
+   on 08/17/2021
+   from https://github.com/alitrack/PDFCrack/blob/master/LICENSE

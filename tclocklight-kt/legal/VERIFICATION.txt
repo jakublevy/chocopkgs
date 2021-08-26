@@ -17,3 +17,11 @@ Package can be verified like this:
 
    checksum32: 10B66621E56E297EFC5B8B864FFD2061B71D9A9B47E37D2A84DF9F688BF39D00
    checksum64: 54216FF1F7DD20FD780918676E8D615354FE0E9AA6C75DC6C0F5A476792800A9
+
+License text in LICENSE.txt file was obtained 
+   on 08/20/2021
+   from https://www.gnu.org/licenses/gpl-3.0.txt
+   
+License type was determined
+   on 08/20/2021
+   from https://github.com/k-takata/TClockLight/blob/master/README.md

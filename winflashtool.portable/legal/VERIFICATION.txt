@@ -14,3 +14,11 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
 
    checksum64: D2388B1748265FC78209531542AE1936DFFF7D2A3C3ACC7BACAA09B2CC3D4AAB
+
+License text in LICENSE.txt file was obtained 
+   on 08/23/2021
+   from https://www.gnu.org/licenses/gpl-3.0.txt
+   
+License type was determined
+   on 08/23/2021
+   from https://sysprogs.com/winflashtool/download/

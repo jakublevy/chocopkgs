@@ -14,3 +14,7 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
 
    checksum32: 569A4A9C87948A663540B93FBF3B8CC4E283A3F7E64C9A5D602C95B4FB38C3BC
+
+License text in LICENSE.txt file was obtained 
+   on 03/20/2021
+   from https://github.com/kiedtl/winfetch/blob/master/LICENSE
