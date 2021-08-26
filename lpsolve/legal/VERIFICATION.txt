@@ -19,3 +19,11 @@ Package can be verified like this:
    checksum32: C1A6D297051CC71C0CA02E2F0D3ED44FAA04D503336FF9916E3C8AB3DD7A7523
    checksum64: 37E886E8E2B8BBA3C17545B3199EAA8DCEB815D167887AF56F1F50B77C0E95F9
    checksum_chm: 89DCD06B6C43FACE0478A4ABDB6D8C5B143F4DA988782B4B086C6F3927A38378
+
+License text in LICENSE.txt file was obtained 
+   on 08/20/2021
+   from https://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt
+   
+License type was determined
+   on 08/20/2021
+   from https://sourceforge.net/projects/lpsolve/files/lpsolve/5.5.2.11/README.txt

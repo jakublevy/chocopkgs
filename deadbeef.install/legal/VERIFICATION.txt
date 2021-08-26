@@ -14,3 +14,7 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
 
    checksum64: BABA51057247F64020C6F59078ED4E44FB46A585C29AB5028ABB86BAFCB5F6E1
+
+License text in LICENSE.txt file was obtained 
+   on 08/17/2021
+   from https://github.com/DeaDBeeF-Player/deadbeef/blob/master/COPYING

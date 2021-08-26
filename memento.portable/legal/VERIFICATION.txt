@@ -14,3 +14,7 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
 
    checksum64: 6E66AE1DD632B827E3351546448392F1C416A0C547F3208A4EF54339BB6B14A7
+
+License type was determined
+   on 08/17/2021
+   from https://github.com/ripose-jp/Memento/blob/master/LICENSE

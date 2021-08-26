@@ -14,3 +14,7 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
 
    checksum64: 1CB5967D53263DE15A33B0865BE052AA5C7DC424D833CE2194C60238DFE0B67F
+
+License text in LICENSE.txt file was obtained 
+   on 08/22/2021
+   from https://www.labri.fr/perso/lsimon/downloads/softwares/glucose-syrup-4.1.tgz

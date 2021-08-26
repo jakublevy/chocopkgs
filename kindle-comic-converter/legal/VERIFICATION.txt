@@ -14,3 +14,7 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
 
    checksum64: E465225BEDC50523397F9094914722897DC56509C7FCB6861AC815A94D638DDE
+
+License text in LICENSE.txt file was obtained 
+   on 02/26/2021
+   from https://github.com/ciromattia/kcc/blob/master/LICENSE.txt

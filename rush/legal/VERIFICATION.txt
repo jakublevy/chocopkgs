@@ -17,3 +17,7 @@ Package can be verified like this:
 
    checksum32: FD792086464162350C0EC74C09501C87E4F9D0CDE417ECCBB3FF9F2CABEC8973
    checksum64: 23B82F65C1317892B61907622081DF784449654CFC2375D3ED1955C9D81FA32E
+
+License text in LICENSE.txt file was obtained 
+   on 08/24/2021
+   from https://github.com/shenwei356/rush/blob/master/LICENSE
