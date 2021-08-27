@@ -19,7 +19,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.labri.fr/perso/lsimon/glucose/'
     $links = $download_page.links | Where-Object href -match 'glucose' | select -exp href
     $versions = ([regex]::Matches($links, '(\d+\.\d+(\.\d+)*)')).Groups | ? success | select -exp value | Get-Unique
-    $version = $versions | sort -Descending {[version] $_ } | select -First 1
+    $version = $versions | Sort-Object -Descending {[version] $_ } | select -First 1
     @{
         Url64        = "https://github.com/jakublevy/glucose-win/releases/download/v$version/glucose-$version-win-x64.zip"
         Version      = $version
