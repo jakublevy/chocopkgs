@@ -19,7 +19,7 @@ function global:au_GetLatest {
 
     $relative_urls  = $download_page.links | ? href -match '.*/GLPK-\d+\.\d+(\.\d+)*/$' | select -exp href
     $versions = $relative_urls | % { ([regex]::Match($_, '.*/GLPK-(\d+\.\d+(\.\d+)*)/$')).Groups[1].Value }
-    $version = $versions | sort -Descending {[version] $_ } | select -First 1
+    $version = $versions | Sort-Object -Descending {[version] $_ } | select -First 1
     @{
         Url32    = "https://sourceforge.net/projects/winglpk/files/winglpk/GLPK-$version/winglpk-$version.zip"
         Version  = $version
