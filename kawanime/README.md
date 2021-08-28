@@ -24,7 +24,7 @@ Feel free to check the official website for [a demo of all the available feature
     - Default value: `$env:ProgramFiles\KawAnime`
 
 ### Examples
-* Install into `D:\kawanime` for the current user only
+* Install into `C:\Users\Joe\kawanime` for the current user (Joe) only
     ```
-    choco install kawanime --params "'/InstallForAllUsers:no /InstallDir:D:\kawanime'"
+    choco install kawanime --params "'/InstallForAllUsers:no /InstallDir:C:\Users\Joe\kawanime'"
     ```

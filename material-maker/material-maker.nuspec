@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>material-maker.portable</id>
+    <id>material-maker</id>
     <version>0.96</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/material-maker.portable</packageSourceUrl>
     <owners>Jakub Levý</owners>
-    <title>Material Maker (Portable)</title>
+    <title>Material Maker</title>
     <authors>Rodolphe Suescun,contributors</authors>
     <projectUrl>https://www.materialmaker.org</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/material-maker.png</iconUrl>
@@ -28,12 +28,14 @@ Its user interface is based on Godot's GraphEdit node: textures and brushes are 
 * [Material Maker subreddit](https://www.reddit.com/r/MaterialMaker)
 
 ## Screenshot
-![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/material-maker/screenshot.png)
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/material-maker.portable/screenshot.png)
     </description>
 <releaseNotes>https://github.com/RodZill4/material-maker/releases/tag/0.96</releaseNotes>
+<dependencies>
+  <dependency id="material-maker.portable" version="[0.96]" />
+</dependencies>
 </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
-  </files>
+<files>
+  <file src="tools\**" target="tools" />
+</files>
 </package>
