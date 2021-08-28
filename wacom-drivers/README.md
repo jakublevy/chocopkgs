@@ -1,1 +1,1 @@
-Windows drivers for [Wacom](https://www.wacom.com) tablet devices. See release notes for compatible products.
+Windows drivers for [Wacom](https://www.wacom.com) tablet devices. See [release notes](https://community.chocolatey.org/packages/wacom-drivers#releasenotes) for compatible products.
