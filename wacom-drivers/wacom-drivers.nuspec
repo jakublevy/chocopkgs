@@ -17,7 +17,7 @@
     <tags>wacom tablet art drawing painting pen graphics design drivers</tags>
     <summary>Drivers for Wacom devices.</summary>
     <description>
-      Windows drivers for [Wacom](https://www.wacom.com) tablet devices. See release notes for compatible products.
+      Windows drivers for [Wacom](https://www.wacom.com) tablet devices. See [release notes](https://community.chocolatey.org/packages/wacom-drivers#releasenotes) for compatible products.
     </description>
     <releaseNotes>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/Windows_6.3.44.html</releaseNotes>
   </metadata>
