@@ -1,0 +1,20 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to https://github.com/RodZill4/material-maker/releases/download/0.96/material_maker_0_96_windows.zip
+
+   to download the installer.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum64: F55B80415B8DB45C9C24FB9E580489CE804F4DC7E11DB27121A544348E95DB4B
+
+License text in LICENSE.txt file was obtained 
+   on 08/28/2021
+   from https://github.com/RodZill4/material-maker/blob/master/LICENSE.md
