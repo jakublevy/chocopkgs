@@ -53,7 +53,7 @@ The non-commercial (home) edition is distributed [free of charge](https://www.pr
   <dependency id="proficad.install" version="[11.2.2]" />
 </dependencies>
 </metadata>
-  <files>
-    <file src="tools\**" target="tools" />
-  </files>
+<files>
+  <file src="tools\**" target="tools" />
+</files>
 </package>

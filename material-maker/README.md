@@ -8,4 +8,4 @@ Its user interface is based on Godot's GraphEdit node: textures and brushes are 
 * [Material Maker subreddit](https://www.reddit.com/r/MaterialMaker)
 
 ## Screenshot
-![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/material-maker/screenshot.png)
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/material-maker.portable/screenshot.png)
