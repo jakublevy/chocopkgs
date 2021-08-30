@@ -20,7 +20,7 @@ The program was translated into [many languages](https://gallery.proficad.com/pa
 
 The non-commercial (home) edition is distributed [free of charge](https://www.proficad.com/download.aspx) and has [some limitations](https://www.proficad.com/Editions.aspx): it does not support the bill of material, netlist, list of wires, reference grid, title block editor and some other limitations. 
 
-## Parameters
+## Installation Parameters
 * `/InstallationPath:` - where to install the binaries
     - Default value: 
         - `"${env:ProgramFiles(x86)}\ProfiCAD"` on 64-bit Windows

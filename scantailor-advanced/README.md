@@ -12,7 +12,7 @@ You give it raw scans, and you get pages ready to be printed or assembled into a
 
 For more information about ScanTailor Advanced see [the official README.me](https://github.com/4lex4/scantailor-advanced/blob/master/README.md).
 
-## Parameters
+## Installation Parameters
 * `/InstallationPath:` - where to install the binaries
     - Default value: `"$env:ProgramFiles\ScanTailor Advanced"`
 

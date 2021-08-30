@@ -8,7 +8,7 @@ DeaDBeeF lets you play variety of audio formats, convert between them, customize
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/deadbeef/preview.png)
 The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux with several additional plugins
 
-## Parameters
+## Installation Parameters
 * `/AddToUserPath:` - should `"$(Get-ToolsLocation)\deadbeef-x86_64"` be added to the User Path variable
     - Default value: `yes`
 * `/AddToSystemPath:` - should `"$(Get-ToolsLocation)\deadbeef-x86_64"` be added to the System Path variable

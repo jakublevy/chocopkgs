@@ -41,7 +41,7 @@ The LPSolve IDE (Integrated Development Interface) is a very user friendly Windo
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/lpsolve-ide/IDE.png)
 
 
-## Parameters
+## Installation Parameters
 * `/DIR:` - where to install the binaries
     - Default value: 
         - `"${env:ProgramFiles(x86)}\LPSolve IDE"` on 64-bit Windows
