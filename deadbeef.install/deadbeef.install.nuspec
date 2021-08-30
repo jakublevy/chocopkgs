@@ -28,7 +28,7 @@ DeaDBeeF lets you play variety of audio formats, convert between them, customize
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/deadbeef/preview.png)
 The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux with several additional plugins
 
-## Parameters
+## Installation Parameters
 * `/InstallationPath:` - where to install the binaries
   - Default value: `"$env:ProgramFiles\DeaDBeeF"`
 * `/CreateDesktopIcon` - creates a desktop icon

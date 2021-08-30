@@ -35,7 +35,7 @@ The Prolog part conforms to the ISO standard for Prolog with many extensions ver
 
 GNU Prolog also includes an efficient constraint solver over Finite Domains (FD). This opens contraint logic programming to the user combining the power of constraint programming to the declarativity of logic programming.
 
-## Parameters
+## Installation Parameters
 * `/InstallationPath:` - where to install the binaries
     - Default value: `"$env:SystemDrive\GNU-Prolog"`
 * `/CreateDesktopIcon` - creates a desktop icon

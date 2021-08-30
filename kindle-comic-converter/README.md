@@ -22,7 +22,7 @@ KCC can understand and convert from, at the moment, the following input types:
 ## MOBI support
 Support for MOBI files is provided by [kindlegen](https://community.chocolatey.org/packages/kindlegen) dependency.
 
-## Parameters
+## Installation Parameters
 * `/InstallationPath:` - where to install the binaries
     - Default value: `"$env:ProgramFiles\Kindle Comic Converter"`
 * `/CreateDesktopIcon` - creates a desktop icon
