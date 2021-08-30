@@ -22,6 +22,12 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
+if((Get-OSArchitectureWidth -Compare 32) -or $env:ChocolateyForceX86) {
+  Write-Warning 'CELSYS has ended support for 32-bit operating systems.'
+  Write-Warning '32-bit users should specify version 1.9.1'
+  Write-Error '32-bit is no longer supported.'
+}
+
 $additionalArgs = Get-PackageParameters
 if($additionalArgs['InstallDir']) {
   $installDir = $additionalArgs['InstallDir']
