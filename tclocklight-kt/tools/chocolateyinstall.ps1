@@ -25,7 +25,7 @@ if($additionalArgs['AddToUserStartup'] -eq 'yes') {
   Write-Output 'TClock Light kt is automatically started on this user login.'
 }
 
-if($null -eq $additionalArgs['AddToSystemStartup'] -or $additionalArgs['AddToSystemStartup'] -eq 'yes') {
+if($null -eq $additionalArgs['AddToSystemStartup'] -or $additionalArgs['AddToSystemStartup'] -ne 'no') {
   Install-ChocolateyShortcut `
     -ShortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\$shortcut" `
     -TargetPath $targetBin
