@@ -20,6 +20,10 @@
       Windows drivers for [Wacom](https://www.wacom.com) tablet devices. See [release notes](https://community.chocolatey.org/packages/wacom-drivers#releasenotes) for compatible products.
     </description>
     <releaseNotes>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/Windows_6.3.44.html</releaseNotes>
+    <dependencies>
+      <dependency id="vcredist140" version="14.16.27024.1" />
+      <dependency id="dotnetfx" version="4.5.2.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

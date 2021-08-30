@@ -16,4 +16,10 @@ $packageArgs = @{
   # 2 installed, but there was already a pending reboot prior to installation
 }
 
+if((Get-OSArchitectureWidth -Compare 32) -or $env:ChocolateyForceX86) {
+  Write-Warning 'Wacom has ended support for 32-bit operating systems.'
+  Write-Warning '32-bit users should specify version 6.3.40.3'
+  Write-Error '32-bit is no longer supported.'
+}
+
 Install-ChocolateyPackage @packageArgs
