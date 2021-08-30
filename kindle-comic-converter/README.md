@@ -20,7 +20,7 @@ KCC can understand and convert from, at the moment, the following input types:
 * MOBI/AZW3 (see [MOBI support](#mobi-support))
 
 ## MOBI support
-To support output to MOBI files, you have to download KindleGen manually and place *kindlegen.exe* into directory where KCC is installed.
+Support for MOBI files is provided by [kindlegen](https://community.chocolatey.org/packages/kindlegen) dependency.
 
 ## Parameters
 * `/InstallationPath:` - where to install the binaries
