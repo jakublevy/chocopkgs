@@ -23,3 +23,5 @@ if((Get-OSArchitectureWidth -Compare 32) -or $env:ChocolateyForceX86) {
 }
 
 Install-ChocolateyPackage @packageArgs
+
+Write-Host 'Wacom recommends rebooting the computer prior to using a tablet.' -ForegroundColor Cyan
