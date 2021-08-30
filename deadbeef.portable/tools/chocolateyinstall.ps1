@@ -20,6 +20,6 @@ if($additionalArgs['AddToSystemPath'] -eq 'yes') {
   Install-ChocolateyPath -PathToInstall "$($packageArgs['destination'])\deadbeef-x86_64" -PathType Machine
 }
 
-if($null -eq $additionalArgs['AddToUserPath'] -or $additionalArgs['AddToUserPath'] -eq 'yes') {
+if($null -eq $additionalArgs['AddToUserPath'] -or $additionalArgs['AddToUserPath'] -ne 'no') {
   Install-ChocolateyPath -PathToInstall "$($packageArgs['destination'])\deadbeef-x86_64" -PathType User
 }

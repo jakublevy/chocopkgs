@@ -1,15 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop'
-
+$toolsDir       = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $binaryLocation = "$(Get-ToolsLocation)\winfetch"
+
+. "$toolsDir\Uninstall-ChocolateyPath.ps1"
 
 Remove-Item `
     -Path $binaryLocation `
     -Recurse -Force
 
-$machineScope = [EnvironmentVariableTarget]::Machine
-$newPath = [Environment]::GetEnvironmentVariable('Path', $machineScope).Replace(";$binaryLocation", '')
-[Environment]::SetEnvironmentVariable('Path', $newPath, $machineScope) | Out-Null
-
-$userScope = [EnvironmentVariableTarget]::User
-$newPath = [Environment]::GetEnvironmentVariable('Path', $userScope).Replace(";$binaryLocation", '')
-[Environment]::SetEnvironmentVariable('Path', $newPath, $userScope) | Out-Null
+Uninstall-ChocolateyPath `
+    -PathToUninstall $binaryLocation `
+    -PathType All `
+    -ErrorAction SilentlyContinue

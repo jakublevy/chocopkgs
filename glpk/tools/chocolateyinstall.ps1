@@ -20,7 +20,7 @@ if((Get-OSArchitectureWidth -Compare 32) -or $env:ChocolateyForceX86) {
   $bits = '32'
 }
 
-$installedDir = "$($packageArgs['destination'])\glpk-$version"
+$installedDir = (Get-ChildItem "$($packageArgs['destination'])\glpk*")[0].FullName
 $parentKeepList = @("w$bits", 'doc', 'examples', 'NEWS', 'README', 'README.md', 'THANKS', 'COPYING', 'INSTALL', 'AUTHORS', 'ChangeLog')
 Write-Output 'Removing unnecessary compilation left-overs.'
 Get-ChildItem $installedDir | ? { $parentKeepList -notcontains $_.Name } | Remove-Item -Recurse -Force
