@@ -8,3 +8,14 @@ Analyzer2Go is an application that turns your development board into a logic ana
 
 ## Features
 * https://sysprogs.com/analyzer2go
+
+## Installation Parameters
+* `/InstallDir:` - where to install the binaries
+  - `"${env:ProgramFiles(x86)}\Sysprogs\Analyzer2Go"` on 64-bit Windows
+  - `"$env:ProgramFiles\Sysprogs\Analyzer2Go"` on 32-bit Windows
+
+### Examples
+* Install into `D:\Analyzer2Go` directory
+  ```
+  choco install analyzer2go --params "/InstallDir:D:\Analyzer2Go"
+  ```

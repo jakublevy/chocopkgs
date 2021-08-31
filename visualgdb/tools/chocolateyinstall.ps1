@@ -13,4 +13,9 @@ $packageArgs = @{
   validExitCodes= @(0, 3010, 1641)
 }
 
+$additionalArgs = Get-PackageParameters
+if($additionalArgs['InstallDir']) {
+  $packageArgs['silentArgs'] += " INSTALLFOLDER=`"$($additionalArgs['InstallDir'])`""
+}
+
 Install-ChocolateyPackage @packageArgs
