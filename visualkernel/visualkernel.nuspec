@@ -27,6 +27,17 @@ VisualKernel integrates Linux kernel debugging into Visual Studio.
 * IntelliSense support even for GNU extensions
 * Automatic symbol management
 * ...
+
+## Installation Parameters
+* `/InstallDir:` - where to install the binaries
+  - `"${env:ProgramFiles(x86)}\Sysprogs\VisualKernel"` on 64-bit Windows
+  - `"$env:ProgramFiles\Sysprogs\VisualKernel"` on 32-bit Windows
+
+### Examples
+* Install into `D:\VisualKernel` directory
+  ```
+  choco install visualkernel --params "/InstallDir:D:\visualkernel"
+  ```
     </description>
     <releaseNotes>https://sysprogs.com/VisualKernel/history</releaseNotes>
   </metadata>
