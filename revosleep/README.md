@@ -30,3 +30,13 @@ When you get Error Code 1 you have to use the windows driver (pciide*.sys) for y
 **PLEASE NOTE: There might be issues with deactivating a hard disk as this can cause it to be woken up again (possibly since Windows 10). In this case, please only use the offline setting together with the sleep setting to avoid waking up a hard disk immediately.**
 
 For more information visit: [revoSleep board](https://revosleep.bboard.de).
+
+## Installation Parameters
+* `/InstallDir:` - where to install the binaries
+  - Default value: `"$env:ProgramFiles\revoSleep v0.4"`
+
+### Examples
+* Install into `D:\revoSleep` directory
+  ```
+  choco install revosleep --params "/InstallDir:D:\revosleep"
+  ```

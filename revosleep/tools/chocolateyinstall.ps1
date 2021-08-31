@@ -23,12 +23,17 @@ Install-ChocolateyZipPackage `
   -UnzipLocation  $toolsDir
 
 $extractedFullPath = Get-ChildItem "$toolsDir\$softwareName" | Select-Object -exp FullName
+$silentArgs = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+$additionalArgs = Get-PackageParameters
+if($additionalArgs['InstallDir']) {
+  $silentArgs += " TARGETDIR=`"$($additionalArgs['InstallDir'])`""
+}
 Install-ChocolateyInstallPackage `
-  -PackageName $env:ChocolateyPackageName `
-  -SoftwareName $softwareName `
-  -File "$extractedFullPath\setup.msi" `
-  -FileType 'MSI' `
-  -SilentArgs "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`"" `
+  -PackageName    $env:ChocolateyPackageName `
+  -SoftwareName   $softwareName `
+  -File           "$extractedFullPath\setup.msi" `
+  -FileType       'MSI' `
+  -SilentArgs     $silentArgs `
   -ValidExitCodes @(0, 3010, 1641)
 
 $installLocation = Get-AppInstallLocation $softwareName
