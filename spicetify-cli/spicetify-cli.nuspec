@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>spicetify-cli</id>
+    <version>2.6.1</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/spicetify-cli</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Spicetify</title>
+    <authors>khanhas</authors>
+    <projectUrl>https://github.com/khanhas/spicetify-cli</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/spicetify-cli.png</iconUrl>
+    <copyright>Copyright (c) 2018-2021 khanhas</copyright>
+    <licenseUrl>https://github.com/khanhas/spicetify-cli/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/khanhas/spicetify-cli</projectSourceUrl>
+    <docsUrl>https://github.com/khanhas/spicetify-cli/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/khanhas/spicetify-cli/issues</bugTrackerUrl>
+    <tags>spotify commandline customize cross-platform</tags>
+    <summary>A command-line tool to customize Spotify client.</summary>
+    <description>
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/spicetify-cli/logo.png)
+
+A command-line tool to customize new Spotify client (v1.1.58 or later). Supports Windows, MacOS and Linux.
+
+## Features
+* Change colors of whole UI
+* Inject CSS for advanced customization
+* Inject Extensions (Javascript script) to extend functionalities, manipulate UI and control player
+* Inject Custom apps
+* Remove bloated components to improve performance
+
+## Additional Resources
+* [Basic Usage](https://github.com/khanhas/spicetify-cli/wiki/Basic-Usage)
+* [Customization](https://github.com/khanhas/spicetify-cli/wiki/Customization)
+* [Extensions](https://github.com/khanhas/spicetify-cli/wiki/Extensions)
+* [Custom Apps](https://github.com/khanhas/spicetify-cli/wiki/Custom-Apps)
+* [Wiki](https://github.com/khanhas/spicetify-cli/wiki)
+    </description>
+<releaseNotes>https://github.com/khanhas/spicetify-cli/releases/tag/v2.6.1</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
