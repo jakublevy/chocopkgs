@@ -16,16 +16,10 @@ $packageArgs = @{
   fileType      = 'EXE'
   url64         = "https://vd.clipstudio.net/clipcontent/modeler/app/$version/CSM_$($version)w_setup.exe"
   softwareName  = "Clip Studio Modeler*"
-  checksum      = $checksum64
+  checksum64    = $checksum64
   checksumType  = 'sha256'
   silentArgs    = "/l0x0409 /f2`"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).InstallShield.install.log`" /s /f1`"$issFile`""
   validExitCodes= @(0)
-}
-
-if((Get-OSArchitectureWidth -Compare 32) -or $env:ChocolateyForceX86) {
-  Write-Warning 'CELSYS has ended support for 32-bit operating systems.'
-  Write-Warning '32-bit users should specify version 1.9.1'
-  Write-Error '32-bit is no longer supported.'
 }
 
 $additionalArgs = Get-PackageParameters
