@@ -1,0 +1,4 @@
+Different parts of the software use different licenses:
+
+-openSM2sync uses LGPL v3 (see LGPLv3.txt)
+-the rest of mnemosyne uses MNEMOSYNE-LICENSE.txt
