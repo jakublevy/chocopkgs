@@ -1,0 +1,20 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to https://github.com/Rigellute/spotify-tui/releases/download/v0.25.0/spotify-tui-windows.tar.gz
+
+   to download the installer.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum64: 423B7C1A842BB4CD847B492CAD2D1C724E00F92ED913226E9AC1AB0925B0B639
+
+License text in LICENSE.txt file was obtained 
+   on 09/04/2021
+   from https://github.com/Rigellute/spotify-tui/blob/master/LICENSE
