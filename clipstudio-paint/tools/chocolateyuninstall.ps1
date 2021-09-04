@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$toolsDir              = $(Split-Path -Parent $MyInvocation.MyCommand.Definition)
+$toolsDir              = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $defaultSilentArgs     = "/runfromtemp /l0x0409 /uninst /f2`"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).InstallShield.uninstall.log`" /s /f1"
 
 . "$toolsDir\utils.ps1"

@@ -1,5 +1,7 @@
 import-module au
 
+$dir = Split-Path -parent $MyInvocation.MyCommand.Definition
+
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1" = @{
@@ -26,10 +28,15 @@ function global:au_GetLatest {
 }
 
 function global:au_BeforeUpdate {
-    Get-ChildItem -Path ".\tools" -Filter '*.exe' | Remove-Item -Force
+    $toolsDir = Join-Path $dir "tools"
+    Get-ChildItem -Path $toolsDir -Filter '*.exe' | Remove-Item -Force
     $global:Latest.FileName64 = "KindleComicConverter_win_$($Latest.Version).exe"
-    Invoke-WebRequest -UseBasicParsing -Uri 'https://kcc.iosphe.re/Windows/' -OutFile (Join-Path "tools" $Latest.FileName64)
-    $global:Latest.Checksum64 = (Get-FileHash (Join-Path "tools" $Latest.FileName64) -Algorithm SHA256).Hash
+    Invoke-WebRequest -UseBasicParsing -Uri 'https://kcc.iosphe.re/Windows/' -OutFile (Join-Path $toolsDir $Latest.FileName64)
+    $global:Latest.Checksum64 = (Get-FileHash (Join-Path $toolsDir $Latest.FileName64) -Algorithm SHA256).Hash
+}
+
+function global:au_AfterUpdate($pkg) {
+    Set-DescriptionFromReadme $pkg
 }
 
 Update-Package -ChecksumFor None

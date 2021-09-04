@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$toolsDir              = $(Split-Path -Parent $MyInvocation.MyCommand.Definition)
+$toolsDir              = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $version               = '11013'
 $checksum64            = 'B8A9AEF757FC16010B11B187686628ECA64035DB08C41CD18F55EF64E8305517'
 $issFile               = "$toolsDir\install.iss"

@@ -33,4 +33,8 @@ function global:au_GetLatest {
     }
 }
 
-update
+function global:au_AfterUpdate($pkg) {
+    Set-DescriptionFromReadme $pkg
+}
+
+Update-Package

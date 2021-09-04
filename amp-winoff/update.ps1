@@ -15,4 +15,8 @@ function global:au_GetLatest {
     }
 }
 
+function global:au_AfterUpdate($pkg) {
+    Set-DescriptionFromReadme $pkg
+}
+
 Update-Package -ChecksumFor None
