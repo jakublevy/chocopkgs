@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+$toolsDir       = Split-Path -parent $MyInvocation.MyCommand.Definition
 $binaryLocation = "$(Get-ToolsLocation)\deadbeef-x86_64"
 
 . "$toolsDir\Uninstall-ChocolateyPath.ps1"

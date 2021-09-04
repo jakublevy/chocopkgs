@@ -1,5 +1,7 @@
 import-module au
 
+$dir = Split-Path -parent $MyInvocation.MyCommand.Definition
+
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
@@ -38,11 +40,15 @@ function global:au_GetLatest {
 
 function global:au_BeforeUpdate {
     Get-RemoteFiles -NoSuffix -Purge
-
-    Remove-Item -Path '.\*.chm' -Force
+    $toolsDir = Join-Path $dir "tools"
+    Get-ChildItem -Path $toolsDir -Filter '*.chm' | Remove-Item -Force
     $chmFileName = "lp_solve_$($Latest.Version).chm"
-    Invoke-WebRequest -UseBasicParsing -Uri "https://sourceforge.net/projects/lpsolve/files/lpsolve/$($Latest.Version)/$chmFileName" -OutFile $chmFileName -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::FireFox
-    $global:Latest.ChecksumChm = (Get-FileHash -Path $chmFileName -Algorithm SHA256).Hash
+    Invoke-WebRequest -UseBasicParsing -Uri "https://sourceforge.net/projects/lpsolve/files/lpsolve/$($Latest.Version)/$chmFileName" -OutFile (Join-Path $toolsDir $chmFileName) -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::FireFox
+    $global:Latest.ChecksumChm = (Get-FileHash -Path (Join-Path $toolsDir $chmFileName) -Algorithm SHA256).Hash
+}
+
+function global:au_AfterUpdate($pkg) {
+    Set-DescriptionFromReadme $pkg
 }
 
 Update-Package -ChecksumFor None

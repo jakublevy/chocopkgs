@@ -1,0 +1,9 @@
+*.exe
+*.tar
+*.gz
+*.zip
+*.7z
+*.xz
+*.rar
+*.nupkg
+winfetch/tools/winfetch.ps1

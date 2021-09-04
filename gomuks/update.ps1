@@ -27,4 +27,8 @@ function global:au_BeforeUpdate {
     Get-RemoteFiles -NoSuffix -Purge
 }
 
+function global:au_AfterUpdate($pkg) {
+    Set-DescriptionFromReadme $pkg
+}
+
 Update-Package -ChecksumFor None

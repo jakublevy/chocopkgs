@@ -1,5 +1,7 @@
 import-module au
 
+$dir = Split-Path -parent $MyInvocation.MyCommand.Definition
+
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1"     = @{
@@ -24,12 +26,18 @@ function global:au_GetLatest {
 }
 
 function global:au_BeforeUpdate {
-    Invoke-WebRequest -UseBasicParsing -Uri $Latest.Url64 -OutFile '_revosleep_64.zip'
-    Invoke-WebRequest -UseBasicParsing -Uri $Latest.Url32 -OutFile '_revosleep_32.zip'
-    $global:Latest.Checksum64 = (Get-FileHash '_revosleep_64.zip' -Algorithm SHA256).Hash
-    $global:Latest.Checksum32 = (Get-FileHash '_revosleep_32.zip' -Algorithm SHA256).Hash
-    Remove-Item '_revosleep_64.zip' -Force
-    Remove-Item '_revosleep_32.zip' -Force
+    $revo64Path = Join-Path $dir '_revosleep_64.zip'
+    $revo32Path = Join-Path $dir '_revosleep_32.zip'
+    Invoke-WebRequest -UseBasicParsing -Uri $Latest.Url64 -OutFile $revo64Path
+    Invoke-WebRequest -UseBasicParsing -Uri $Latest.Url32 -OutFile $revo32Path
+    $global:Latest.Checksum64 = (Get-FileHash $revo64Path -Algorithm SHA256).Hash
+    $global:Latest.Checksum32 = (Get-FileHash $revo32Path -Algorithm SHA256).Hash
+    Remove-Item $revo64Path -Force
+    Remove-Item $revo32Path -Force
+}
+
+function global:au_AfterUpdate($pkg) {
+    Set-DescriptionFromReadme $pkg
 }
 
 Update-Package -ChecksumFor None

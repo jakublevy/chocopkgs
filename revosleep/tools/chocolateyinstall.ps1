@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$toolsDir              = Split-Path -parent $MyInvocation.MyCommand.Definition
 $version               = '0.4.0'
 $checksum              = '010B45AFB2FCB0CD5ECD1241708F6E5792DFECA6A21160A243EE45217BBC9096'
 $checksum64            = 'E79A61803992083808ECC653896581A285A88D18EC63556E0122B83AC3142D94'
