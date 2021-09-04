@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mnemosyne</id>
+    <version>2.8</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/mnemosyne</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>The Mnemosyne Project</title>
+    <authors>Peter Bienstman</authors>
+    <projectUrl>https://mnemosyne-proj.org</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/mnemosyne.png</iconUrl>
+    <copyright>Copyright (c) 2003-2021 Peter Bienstman</copyright>
+    <licenseUrl>https://github.com/mnemosyne-proj/mnemosyne/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/mnemosyne-proj/mnemosyne</projectSourceUrl>
+    <docsUrl>https://mnemosyne-proj.org/help/index.php</docsUrl>
+    <mailingListUrl>https://groups.google.com/g/mnemosyne-proj-users</mailingListUrl>
+    <bugTrackerUrl>https://github.com/mnemosyne-proj/mnemosyne/issues</bugTrackerUrl>
+    <tags>flashcards efficient learning memory remember language SRS Anki</tags>
+    <summary>App for efficient learning with powerful digital flashcards.</summary>
+    <description>
+# The Mnemosyne Project
+The Mnemosyne Project consists of two parts:
+* A free flash-card tool which optimizes your learning process.
+* A research project into the nature of long-term memory.
+
+Mnemosyne aims to be a user-friendly flash card program, with a clean, deceptively simple interface that does not require you to wrap your head around complicated concepts before you can start using it. At the same time, under the hood it is very powerful, and its architecture allows infinite extensibility and customisibility through plugins and a scripting API, for the benefit of power users.
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/mnemosyne/review.png)
+
+## Features
+* https://mnemosyne-proj.org/features
+
+## Installation Parameters
+* `/InstallDir:` - where to install the binaries
+    - Default value: 
+        - `"${env:ProgramFiles(x86)}\Mnemosyne"` on 64-bit Windows
+        - `"$env:ProgramFiles\Mnemosyne"` on 32-bit Windows
+
+### Examples
+* Install into `D:\mnemosyne` directory
+    ```
+    choco install mnemosyne --params "/InstallDir:D:\mnemosyne"
+    ```
+    </description>
+<releaseNotes>https://mnemosyne-proj.org/whats-new</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
