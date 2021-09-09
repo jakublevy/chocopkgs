@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>painttoolsai</id>
+    <version>1.2.5</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/painttoolsai</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Paint Tool SAI</title>
+    <authors>SYSTEMAX Software Development</authors>
+    <projectUrl>https://www.systemax.jp/en/sai/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/painttoolsai.png</iconUrl>
+    <copyright>Copyright 1996-2021 SYSTEMAX Software Development</copyright>
+    <licenseUrl>https://www.systemax.jp/ja/sai/eula.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.systemax.jp/en/sai/faq.html</docsUrl>
+    <bugTrackerUrl>https://www.systemax.jp/en/contact.html</bugTrackerUrl>
+    <tags>art illustration draw drawing paint painting tablet pen graphics design systemax trial</tags>
+    <summary>PaintTool SAI is high quality and lightweight painting software for amazing anti-aliased paintings.</summary>
+    <description>
+**NOTE:** This is commercial software with a trial period, after expiration a valid license is required. You can purchase one from [the official website](https://www.systemax.jp/en/sai).
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/painttoolsai/sai_logo.png)
+
+PaintTool SAI is high quality and lightweight painting software for amazing anti-aliased paintings.
+
+## Features
+* Digitizers with pressure are fully supported.
+* Amazing anti-aliased drawings.
+* Highly accurate composition with 16-bit ARGB channels.
+* Simple but powerful user interface, easy to learn.
+* Intel MMX Technology is fully supported.
+* Data protection to avoid loss.
+
+## Installation Parameters
+* `/AssocSai:` - should .sai files be associated
+  - Supported values: `yes`, `no`
+  - Default value: `yes`
+* `/DesktopIcon:` - should desktop icons be created
+  - Supported values: `yes`, `no`
+  - Default value: `no`
+* `/InstallDir:` - where to install the binaries
+  - Default value: `"$env:SystemDrive\PaintToolSAI"`
+* `/Language:` - which language edition to install
+  - Supported values: `english`, `japanese`
+  - Default value: `english`
+
+### Examples
+* Install into `D:\painttoolsai` directory
+  ```
+  choco install painttoolsai --params "/InstallDir:D:\painttoolsai"
+  ```
+* Install Japanese language variant into `D:\painttoolsai`
+  ```
+  choco install painttoolsai --params "'/InstallDir:D:\painttoolsai /Language:japanese'"
+  ```
+* Install and create desktop icon
+  ```
+  choco install painttoolsai --params "/DesktopIcon:yes"
+  ```
+* Install and do not associate with .sai files
+  ```
+  choco install painttoolsai --params "/AssocSai:no"
+  ```
+    </description>
+    <releaseNotes>https://www.systemax.jp/en/sai/history_v1.txt</releaseNotes>
+    <dependencies>
+      <dependency id="autohotkey.portable" version="1.1.30.00" />
+      <dependency id="chocolatey-core.extension" version="1.1.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
