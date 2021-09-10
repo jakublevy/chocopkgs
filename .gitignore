@@ -1,4 +1,5 @@
 *.exe
+*.msi
 *.nupkg
 
 winfetch/tools/winfetch.ps1
