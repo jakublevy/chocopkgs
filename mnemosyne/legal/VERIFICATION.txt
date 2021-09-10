@@ -23,6 +23,6 @@ License text in MNEMOSYNE-LICENSE.txt file was obtained
    on 09/04/2021
    from https://github.com/mnemosyne-proj/mnemosyne/blob/master/mnemosyne/LICENSE
    
-License text in MNEMOSYNE-LICENSE.txt file was obtained 
+License text in LGPLv3.txt file was obtained 
    on 09/04/2021
    from https://github.com/mnemosyne-proj/mnemosyne/blob/master/openSM2sync/LICENSE
