@@ -1,4 +1,4 @@
-**NOTE:** This is commercial software with a trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://www.clipstudio.net).
+**NOTE:** This is commercial software with a trial period, after expiration a valid license is required. You can purchase one from [the official website](https://www.clipstudio.net).
 
 # Clip Studio Paint
 Clip Studio Paint is a software for digital creation of manga (comics), general illustrations and 2D animations. It is designed for use with a stylus and a graphics tablet or tablet computer. It has drawing tools which emulate natural media such as pencils, ink pens, and brushes, as well as patterns and decorations. It is distinguished from similar programs by features designed for creating comics: tools for creating panel layouts, perspective rulers, sketching, inking, applying tones and textures, coloring, and creating word balloons and captions. 
