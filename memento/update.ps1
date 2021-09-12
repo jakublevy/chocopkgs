@@ -4,7 +4,7 @@ function global:au_SearchReplace {
     @{
         ".\memento.nuspec" = @{
             "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
-            "(?i)(\<dependency id=""memento.portable"" version=""\[).*(""\] /\>)" = "`${1}$($Latest.Version)`${2}"
+            "(\<dependency .+?`"memento.install`" version=)`"([^`"]+)`"" = "`$1`"[$($Latest.Version)]`""
         }
     }
 }

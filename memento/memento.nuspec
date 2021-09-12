@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>memento</id>
-    <version>0.5.0.1</version>
+    <version>0.5.1</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/memento</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Memento</title>
@@ -46,11 +46,20 @@ Supports mpv configuration files such as input.conf for rebinding keys and mpv.c
 
 ### Streaming
 Supports streaming from many websites through [youtube-dl](https://community.chocolatey.org/packages/youtube-dl).
-      
+
+## Installation Parameters
+* `/InstallDir:` - where to install the binaries
+  - Default value: `"$env:ProgramFiles\Memento"`
+
+### Examples
+* Install into `D:\memento` directory
+  ```
+  choco install memento --params "/InstallDir:D:\memento"
+  ```
     </description>
-    <releaseNotes>https://github.com/ripose-jp/Memento/releases/tag/v0.5.0-1-beta</releaseNotes>
+    <releaseNotes>https://github.com/ripose-jp/Memento/releases/tag/v0.5.1-beta</releaseNotes>
     <dependencies>
-      <dependency id="memento.portable" version="[0.5.0.1]" />
+      <dependency id="memento.install" version="[0.5.1]" />
     </dependencies>
   </metadata>
   <files>

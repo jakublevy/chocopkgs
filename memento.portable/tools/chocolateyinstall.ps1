@@ -17,5 +17,5 @@ Remove-Item `
 
 New-Item `
   -Name 'youtube-dl.exe.ignore' `
-  -Path  "$toolsDir\Memento*\config" `
+  -Path  "$toolsDir\Memento*" `
   -ItemType 'file'
