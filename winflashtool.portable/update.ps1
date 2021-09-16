@@ -30,4 +30,4 @@ function global:au_AfterUpdate($pkg) {
     Set-DescriptionFromReadme $pkg
 }
 
-Update-Package -ChecksumFor None
+Update-Package -ChecksumFor None -NoCheckUrl
