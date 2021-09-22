@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>gomuks</id>
-    <version>0.2.3</version>
+    <version>0.2.4</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/gomuks</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>gomuks</title>
@@ -16,15 +16,14 @@
     <bugTrackerUrl>https://github.com/tulir/gomuks/issues</bugTrackerUrl>
     <tags>matrix client tui commandline cross-platform</tags>
     <summary>A terminal based Matrix client written in Go.</summary>
-    <description>
-# gomuks
+    <description><![CDATA[# gomuks
 A terminal Matrix client written in Go using mautrix and mauview.
 
 Basic usage is possible, but expect bugs and missing features.
 
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/gomuks/screenshot.png)
-    </description>
-<releaseNotes>https://github.com/tulir/gomuks/releases/tag/v0.2.3</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/tulir/gomuks/releases/tag/v0.2.4</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
