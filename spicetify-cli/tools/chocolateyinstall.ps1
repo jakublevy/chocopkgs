@@ -3,7 +3,7 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileFullPath64 = Join-Path $toolsDir 'spicetify-2.6.5-windows-x64.zip'
+  fileFullPath64 = Join-Path $toolsDir 'spicetify-2.6.6-windows-x64.zip'
   destination    = "$toolsDir\bin"
   validExitCodes = @(0)
 }
