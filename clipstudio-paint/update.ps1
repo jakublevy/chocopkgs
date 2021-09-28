@@ -7,13 +7,7 @@ function global:au_SearchReplace {
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
         ".\tools\install.iss"   = @{
-            "(?i)(Version=).*"         = "`${1}$($Latest.Version)"
-        }
-        ".\tools\uninstall.iss"   = @{
-            "(?i)(Version=).*"         = "`${1}$($Latest.Version)"
-        }
-        ".\tools\uninstallPaint.iss"   = @{
-            "(?i)(Version=).*"         = "`${1}$($Latest.Version)"
+            "(?i)(Version=[^v]).*"         = "`${1}$($Latest.Version)"
         }
     }
 }
@@ -56,4 +50,4 @@ function global:au_AfterUpdate($pkg) {
     Set-DescriptionFromReadme $pkg
 }
 
-Update-Package
+Update-Package -ChecksumFor 64
