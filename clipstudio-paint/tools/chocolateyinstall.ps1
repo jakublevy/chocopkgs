@@ -1,9 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$version               = '11013'
-$checksum64            = 'A9DFA795D92185F9C29E3087AE8A7E606804396AF4DAAA0A6619FD3A61257FCC'
+$version               = '1110'
+$checksum64            = '1A13A0B55D36587228E17C4F5D8E6C284D75304D6F002D779CB44ACD0459AD55'
 $issFile               = "$toolsDir\install.iss"
-$ahkFile               = "$toolsDir\install.ahk"
 $languageFilesRoot     = "$env:ProgramData\CELSYS\CLIPStudio\InstallPath"
 $languageFiles         = @("$languageFilesRoot\paint15.txt", "$languageFilesRoot\clipstudio15.txt")
 $installDir            = "$env:ProgramFiles\CELSYS"
@@ -19,7 +18,7 @@ $packageArgs = @{
   softwareName  = "Clip Studio Paint*"
   checksum64    = $checksum64
   checksumType  = 'sha256'
-  silentArgs    = "/l0x0409 /f2`"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).InstallShield.install.log`" /s /f1`"$issFile`"" #skips everything except eula, GUI still visible
+  silentArgs    = "/l0x0409 /f2`"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).InstallShield.install.log`" /s /f1`"$issFile`""
   validExitCodes= @(0)
 }
 
@@ -33,15 +32,7 @@ if($additionalArgs['InstallDir']) {
     -NewContent "szDir=$installDir"
 }
 
-$ahkProcess = Start-Process `
-                -FilePath 'AutoHotKey' `
-                -ArgumentList "`"$ahkFile`"" `
-                -PassThru
-
-Write-Host 'The installer GUI might appear, dissapear and freeze. It is still installing. Please be patient!' -ForegroundColor Cyan
 Install-ChocolateyPackage @packageArgs
-
-Stop-Process $ahkProcess -Force
 
 if($null -eq $additionalArgs['Language']) {
   $additionalArgs['Language'] = 'english'
