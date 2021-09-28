@@ -1,6 +1,6 @@
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/spicetify-cli/logo.png)
 
-A command-line tool to customize new Spotify client (v1.1.58 or later). Supports Windows, MacOS and Linux.
+A command-line tool to customize Spotify client. Supports Windows, MacOS and Linux.
 
 ## Features
 * Change colors of whole UI
