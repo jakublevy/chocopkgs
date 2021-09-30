@@ -3,7 +3,7 @@ import-module au
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
-            "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version -replace '.', '')'"
+            "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.VersionClip)'"
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
         ".\tools\install.iss"   = @{
@@ -23,6 +23,7 @@ function global:au_GetLatest {
     @{
         Url64        = "https://vd.clipstudio.net/clipcontent/paint/app/$versionOriginal/CSP_$($versionOriginal)w_setup.exe"
         Version      = $versionChoco
+        VersionClip  = $versionChoco -replace '.', ''
     }
 }
 
