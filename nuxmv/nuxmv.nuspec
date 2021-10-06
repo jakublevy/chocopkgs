@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nuxmv</id>
+    <version>2.0.0</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/nuxmv</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>nuXmv</title>
+    <authors>Fondazione Bruno Kessler</authors>
+    <projectUrl>https://nuxmv.fbk.eu</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/nuXmv.png</iconUrl>
+    <copyright>Copyright (C) 2014 Fondazione Bruno Kessler</copyright>
+    <licenseUrl>https://es-static.fbk.eu/tools/nuxmv/downloads/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://nuxmv.fbk.eu/pmwiki.php?n=Documentation.Home</docsUrl>
+    <mailingListUrl>https://nuxmv.fbk.eu/pmwiki.php?n=Faq.Faqs#faq0003</mailingListUrl>
+    <bugTrackerUrl>https://nuxmv.fbk.eu/pmwiki.php?n=Main.BugReport</bugTrackerUrl>
+    <tags>formal verification symbolic model-checker finite-state infinite-state system commandline cross-platform</tags>
+    <summary>nuXmv is a new symbolic model checker for the analysis of synchronous finite-state and infinite-state systems.</summary>
+    <description>
+# nuXmv
+nuXmv is a new symbolic model checker for the analysis of synchronous finite-state and infinite-state systems.
+
+nuXmv extends NuSMV along two main directions:
+* For the finite-state case, nuXmv features a strong verification engine based on state-of-the-art SAT-based algorithms.
+* For the infinite-state case, nuXmv features SMT-based verification techniques, implemented through a tight integration with MathSAT5. 
+
+## Additional Resources
+* Complete list of [features](https://nuxmv.fbk.eu/pmwiki.php?n=Features.Home)
+* [User Manual (pdf)](https://es.fbk.eu/tools/nuxmv/downloads/nuxmv-user-manual.pdf)
+    </description>
+    <releaseNotes>https://nuxmv.fbk.eu/pmwiki.php?n=Download.ReleaseNotes</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
