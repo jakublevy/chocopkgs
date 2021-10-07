@@ -1,4 +1,4 @@
-**NOTE:** This is commercial software with a trial period, after expiration a valid license is required. You can purchase one from [the official website](https://www.systemax.jp/en/sai).
+**NOTE:** This is commercial software with a trial period, after expiration, a valid license is required. You can purchase one from [the official website](https://www.systemax.jp/en/sai).
 
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/painttoolsai/sai_logo.png)
 
