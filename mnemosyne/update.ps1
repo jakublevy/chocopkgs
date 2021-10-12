@@ -14,9 +14,9 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://sourceforge.net/projects/mnemosyne-proj/files/mnemosyne/'
-    $relative_urls  = $download_page.links | ? href -match '/mnemosyne-\d+\.\d+(\.\d+)*/$' | select -exp href
+    $relative_urls  = $download_page.links | ? href -match '/mnemosyne-\d+\.\d+(\.\d+)*/$' | Select-Object -exp href
     $versions = $relative_urls | % { ([regex]::Match($_, '(?i)/mnemosyne-(\d+\.\d+(\.\d+)*)/')).Groups[1].Value }
-    $version = $versions | Sort-Object -Descending {[version] $_ } | select -First 1
+    $version = $versions | Sort-Object -Descending {[version] $_ } | Select-Object -First 1
     @{
         Version          = $version
         Url32            = "https://sourceforge.net/projects/mnemosyne-proj/files/mnemosyne/mnemosyne-$version/mnemosyne-$version-setup.exe"

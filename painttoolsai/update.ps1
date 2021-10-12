@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.systemax.jp/en/sai/'
-    $links = $download_page.links | ? href -match '\.exe' | select -first 1 -exp href
+    $links = $download_page.links | ? href -match '\.exe' | Select-Object -first 1 -exp href
     $version = [regex]::Match($links, '-(\d+\.\d+(\.\d+)*)-').Groups[1].Value
     @{
         Url32        = "https://www.systemax.jp/bin/sai-$version-ful-en.exe"

@@ -17,9 +17,9 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://sourceforge.net/projects/winglpk/files/winglpk/'
 
-    $relative_urls  = $download_page.links | ? href -match '.*/GLPK-\d+\.\d+(\.\d+)*/$' | select -exp href
+    $relative_urls  = $download_page.links | ? href -match '.*/GLPK-\d+\.\d+(\.\d+)*/$' | Select-Object -exp href
     $versions = $relative_urls | % { ([regex]::Match($_, '.*/GLPK-(\d+\.\d+(\.\d+)*)/$')).Groups[1].Value }
-    $version = $versions | Sort-Object -Descending {[version] $_ } | select -First 1
+    $version = $versions | Sort-Object -Descending {[version] $_ } | Select-Object -First 1
     @{
         Url32    = "https://sourceforge.net/projects/winglpk/files/winglpk/GLPK-$version/winglpk-$version.zip"
         Version  = $version

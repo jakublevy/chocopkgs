@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.netlimiter.com/'
-    $version = $download_page.links | ? href -match '/releases/' | select -exp href | % { ($_ -split '/')[3] -replace '-', '.' } | select -first 1
+    $version = $download_page.links | ? href -match '/releases/' | Select-Object -exp href | % { ($_ -split '/')[3] -replace '-', '.' } | select -first 1
     @{
         Url32        = "https://www.netlimiter.com/files/download/nl4/netlimiter-$version.exe"
         Version      = $version

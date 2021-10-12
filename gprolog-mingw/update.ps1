@@ -17,9 +17,9 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'http://www.gprolog.org'
-    $files = $download_page.links | ? href -match 'setup-gprolog-\d+\.\d+(\.\d+)*-mingw-x64\.exe' | select -exp href
+    $files = $download_page.links | ? href -match 'setup-gprolog-\d+\.\d+(\.\d+)*-mingw-x64\.exe' | Select-Object -exp href
     $versions = $files | % { [regex]::Match($_, 'setup-gprolog-(\d+\.\d+(\.\d+)*)-mingw-x64\.exe').Groups[1].Value }
-    $version = $versions | Sort-Object -Descending {[version] $_ } | select -First 1 
+    $version = $versions | Sort-Object -Descending {[version] $_ } | Select-Object -First 1 
     @{
         Version = $version
         Url32   = "http://www.gprolog.org/setup-gprolog-$version-mingw-x86.exe"

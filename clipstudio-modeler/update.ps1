@@ -20,7 +20,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.clipstudio.net/en/modeler'
-    $links = $download_page.links | ? href -match '\.exe' | select -first 1 -exp href
+    $links = $download_page.links | ? href -match '\.exe' | Select-Object -first 1 -exp href
     $versionOriginal = [regex]::Match($links, '/(\d+)/').Groups[1].Value
     $releaseNotesPage = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.clipstudio.net/modeler/en/release_note'
     $content = $releaseNotesPage.Content.Substring($releaseNotesPage.Content.IndexOf('<body'))
