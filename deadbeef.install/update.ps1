@@ -17,9 +17,9 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://sourceforge.net/projects/deadbeef/files/travis/windows'
-    $relative_urls  = $download_page.links | ? href -match ".*/\d+\.\d+(\.\d+)*/$" | select -exp href
+    $relative_urls  = $download_page.links | ? href -match ".*/\d+\.\d+(\.\d+)*/$" | Select-Object -exp href
     $versions = $relative_urls | % { ([regex]::Match($_, '.*/(\d+\.\d+(\.\d+)*)/$')).Groups[1].Value }
-    $version = $versions | Sort-Object -Descending {[version] $_ } | select -First 1
+    $version = $versions | Sort-Object -Descending {[version] $_ } | Select-Object -First 1
     @{
         FileName64   = "deadbeef-$version-windows-x86_64.exe"
         Url64        = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$version/deadbeef-$version-windows-x86_64.exe"
