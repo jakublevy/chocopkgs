@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>proficad</id>
-    <version>11.2.2</version>
+    <version>11.3.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/proficad</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ProfiCAD</title>
@@ -45,12 +45,12 @@ The non-commercial (home) edition is distributed [free of charge](https://www.pr
 ### Examples
 * Install into `D:\ProfiCAD` directory
     ```
-    choco install proficad --params "/InstallationPath:"D:\ProfiCAD""
+    choco install proficad --params "/InstallationPath:D:\ProfiCAD"
     ```
     </description>
 <releaseNotes>https://www.proficad.com/news.aspx</releaseNotes>
 <dependencies>
-  <dependency id="proficad.install" version="[11.2.2]" />
+  <dependency id="proficad.install" version="[11.3.0]" />
 </dependencies>
 </metadata>
 <files>
