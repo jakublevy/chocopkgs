@@ -13,3 +13,20 @@ All Spin software is written in ISO-standard C, and is portable across all versi
 
 ## Dependencies and related software
 To run Spin, you need a working C-compiler and a C-preprocessor, because Spin generates its model checking software as C-source files that require compilation before a verification can be performed. This guarantees fast model checking, because each model checker can be optimized to the specific model being checked. For more information see [Related software](http://spinroot.com/spin/Man/README.html#S3).
+
+## Installation Parameters
+* `/AddiSpinToStartMenu:` - adds iSpin shortcut to Start menu (for all users or for the current user only)
+    - Supported values: `allusers`, `curruser`
+    - No shortcut added to Start menu by default
+* `/CreateiSpinDesktopIcon` - creates a desktop shortcut for iSpin
+    - Not created by default
+
+### Examples
+* Install and add iSpin shortcut to Start menu for all users
+    ```
+    choco install spin --params "/AddiSpinToStartMenu:allusers"
+    ```
+* Install, create iSpin desktop shortcut and add iSpin shortcut to Start menu for the current user
+    ```
+    choco install spin --params "'/AddiSpinToStartMenu:curruser /CreateiSpinDesktopIcon'"
+    ```
