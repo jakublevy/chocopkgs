@@ -29,5 +29,5 @@ The non-commercial (home) edition is distributed [free of charge](https://www.pr
 ### Examples
 * Install into `D:\ProfiCAD` directory
     ```
-    choco install proficad --params "/InstallationPath:"D:\ProfiCAD""
+    choco install proficad --params "/InstallationPath:D:\ProfiCAD"
     ```

@@ -16,7 +16,8 @@ Remove-Item `
   -Force
 
 $shortcutArgs = @{
-  targetPath  = "$toolsDir\bin\ispin.tcl"
+  targetPath       = "$($packageArgs['destination'])\ispin.tcl"
+  workingDirectory = $packageArgs['destination']
 }
 
 $additionalArgs = Get-PackageParameters

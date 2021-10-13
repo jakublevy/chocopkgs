@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>proficad.portable</id>
-    <version>11.2.2</version>
+    <version>11.3.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/proficad.portable</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ProfiCAD (Portable)</title>
@@ -13,8 +13,7 @@
     <docsUrl>https://www.proficad.com/ProfiCAD.pdf</docsUrl>
     <tags>CAD drawing schematic diagram electronic circuit</tags>
     <summary>App designed for drawing of electrical and electronic diagrams, schematics, control circuit diagrams and can also be used for pneumatics, hydraulics and other types of technical diagrams.</summary>
-    <description>
-**NOTE:** The following text is an excerpt from [the official website](https://www.proficad.com).
+    <description><![CDATA[**NOTE:** The following text is an excerpt from [the official website](https://www.proficad.com).
 
 # ProfiCAD
 ProfiCAD is designed for drawing of [electrical and electronic diagrams](https://www.proficad.com/screenshots.aspx), schematics, control circuit diagrams and can also be used for pneumatics, hydraulics and other types of technical diagrams. 
@@ -35,7 +34,7 @@ The title block designed in accordance with ISO 7200 can be easily adapted, for 
 The program was translated into [many languages](https://gallery.proficad.com/pages/translate.aspx)​​, which will facilitate cooperation with international partners. Drawings can be [exported into the DXF](https://www.proficad.com/help/reports/export-dxf.htm) format. 
 
 The non-commercial (home) edition is distributed [free of charge](https://www.proficad.com/download.aspx) and has [some limitations](https://www.proficad.com/Editions.aspx): it does not support the bill of material, netlist, list of wires, reference grid, title block editor and some other limitations. 
-  </description>
+]]></description>
 <releaseNotes>https://www.proficad.com/news.aspx</releaseNotes>
 </metadata>
   <files>
