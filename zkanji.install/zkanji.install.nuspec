@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>zkanji.install</id>
+    <version>0.731</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/zkanji</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>zkanji (Install)</title>
+    <authors>Sólyom Zoltán</authors>
+    <projectUrl>http://zkanji.sourceforge.net</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/zkanji.png</iconUrl>
+    <copyright>Copyright (c) 2007-2013 Sólyom Zoltán</copyright>
+    <licenseUrl>http://zkanji.sourceforge.net/license.php</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://sourceforge.net/projects/zkanji/files/zkanji/v0.731/zkanjiv0731_src.zip</projectSourceUrl>
+    <docsUrl>https://sourceforge.net/p/zkanji/wiki/Home</docsUrl>
+    <bugTrackerUrl>https://sourceforge.net/projects/zkanji/support</bugTrackerUrl>
+    <tags>foss dictionary japanese kanji vocabulary sentences jmdict kanjidic flashcards srs spaced-repetition</tags>
+    <summary>zkanji is a foss study tool and dictionary of the Japanese language.</summary>
+    <description>
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/zkanji/logo.png)
+
+zkanji is a free and open-source study tool and dictionary of the Japanese language. It has several useful features for beginners and advanced students alike. Dictionary, example sentences, kanji search and information with animated stroke order diagrams, vocabulary list printing, study functions and much more.
+
+## Installation Parameters
+* `/InstallDir:` - where to install the binaries
+  - Default value:
+    - `"${env:ProgramFiles(x86)}\zkanji"` on 64-bit Windows
+    - `"$env:ProgramFiles\zkanji"` on 32-bit Windows
+* `/CreateDesktopIcon` - creates a desktop icon
+    - Not created by default
+
+### Examples
+* Install into `D:\zkanji` directory and create a desktop icon
+  ```
+  choco install zkanji --params "'/InstallDir:D:\zkanji /CreateDesktopIcon'"
+  ```
+    </description>
+    <releaseNotes>http://zkanji.sourceforge.net/page.php?|=changes.txt</releaseNotes>
+    <dependencies>
+      <dependency id="autohotkey.portable" version="1.1.30.00" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

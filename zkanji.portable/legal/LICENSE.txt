@@ -1,0 +1,90 @@
+zkanji vX.XXX Copyright (c) 2007-2013 Sólyom Zoltán
+---------------------------------------------------
+
+* Licence details *
+
+About the zkanji executable (zkanji.exe)
+===================================================
+zkanji is free software. It is licensed under the Common
+Developement And Distribution License (CDDL) v1.0
+
+zkanji comes with absolutely NO warranty and/or liability.
+
+Read the copyright.txt for more information about the
+licence.
+
+
+About the other files included with the executable
+===================================================
+
+About JMdict, KANJIDIC and RADKFILE (zdict.zkj, english.zkj)
+===================================================
+This software package (zkanji and its datafile) uses a
+compilation of JMdict, KANJIDIC and RADKFILE. The
+compilation holds the original data in an accessible binary
+format for zkanji.
+
+The original files are the property of the Electronic
+Dictionary Research and Development Group at Monash
+University, and are used in conformance with the Group's
+licence. Please read and conform to this licence if you
+distribute the main dictionary datafile included with
+zkanji.
+
+You can read more about the licence at the group's home
+page at: http://www.edrdg.org/
+
+You can get the files at:
+JMdict: http://www.csse.monash.edu.au/~jwb/j_jmdict.html
+KANJIDIC: http://www.csse.monash.edu.au/~jwb/kanjidic.html
+RADKFILE: http://www.csse.monash.edu.au/~jwb/kradinf.html
+
+
+About the new JLPT level data for words and kanji
+(in zdict.zkj)
+===================================================
+This is a modified JLPT level data from KANJIDIC and other
+free sources. The modification consist of having old 2kyuu
+items separated into N2 and N3 groups based on assumptions
+about the JLPT instead of official sources. You can use this
+data in any way you like with the only condition that
+anything resulting from its use is your own responsibility.
+
+
+About the Tanaka Corpus (in examples.zkj *optional)
+===================================================
+This example database for zkanji contains a large portion
+of the updated Tanaka Corpus. The original file was
+converted to the data that is used.
+
+The Tanaka Corpus is released under Creative Commons CC-BY
+licence.
+
+You can find more information about the original file and
+its current versions at the following location:
+http://www.edrdg.org/wiki/index.php/Tanaka_Corpus
+
+The licence can be reached through this page:
+http://creativecommons.org/licenses/by/2.0/fr/deed.en_GB
+
+More detailed information is provided in the package
+containing the datafile itself.
+
+
+About similar.txt
+===================================================
+This file is free.
+
+
+About zdict.zks
+===================================================
+zdict.zks contains the stroke order database needed to play
+the animated stroke diagrams and for the handwriting
+recognition.
+Altough this file is included with zkanji it is entirely my
+property. Contact me if you would like to use it in any
+other program.
+
+----------------------------------------------------
+home page: http://zkanji.sourceforge.net
+e-mail: z-one@freemail.hu

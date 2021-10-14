@@ -28,6 +28,13 @@ if($additionalArgs['InstallDir']) {
     -NewValue $installDir `
     -Escape
 }
+else {
+  Set-AhkVariableValue `
+    -FileName $ahkFile `
+    -Variable 'installDir' `
+    -NewValue "$env:SystemDrive\PaintToolSAI" `
+    -Escape
+}
 
 if($additionalArgs['DesktopIcon'] -eq 'yes') {
   Set-AhkVariableValue `
