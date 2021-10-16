@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kawanime</id>
-    <version>0.4.2</version>
+    <version>0.4.3</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/kawanime</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>KawAnime</title>
@@ -17,8 +17,7 @@
     <bugTrackerUrl>https://github.com/Kylart/KawAnime/issues</bugTrackerUrl>
     <tags>anime otaku kawaii weeb weeabo manage life</tags>
     <summary>Desktop app for anime fans.</summary>
-    <description>
-# KawAnime
+    <description><![CDATA[# KawAnime
 **Disclaimer**: KawAnime is built for otaku/anime-fans. The software will contain images and sounds sourced from anime. Do not try if you're not prepared.
 
 ## Features
@@ -48,8 +47,8 @@ Feel free to check the official website for [a demo of all the available feature
     ```
     choco install kawanime --params "'/InstallForAllUsers:no /InstallDir:C:\Users\Joe\kawanime'"
     ```
-    </description>
-<releaseNotes>https://github.com/Kylart/KawAnime/releases/tag/v0.4.2</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/Kylart/KawAnime/releases/tag/v0.4.3</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
