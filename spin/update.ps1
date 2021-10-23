@@ -24,7 +24,7 @@ function global:au_GetLatest {
     $fileName64 = $relative_url64.Split('/') | Select-Object -Last 1
     $fileName32 = $fileName64.Replace('windows64', 'windows32')
     $majorVerNum = $versionNoDots.ToString()[0]
-    $versionsPage = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/nimble-code/Spin/releases'
+    $versionsPage = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/nimble-code/Spin/tags'
     $possibleVersionsRelatives = $versionsPage.links | Where-Object href -match 'version-\d+\.\d+(\.\d+)*$' | Select-Object -expand href
     $possibleVersions = $possibleVersionsRelatives | % { [regex]::Match($_, 'version-(\d+\.\d+(\.\d+)*)$').Groups[1].Value }
     $version = Find-Version -OriginalVersion $versionNoDots -FoundVersions $possibleVersions
