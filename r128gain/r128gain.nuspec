@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>r128gain</id>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/r128gain</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>r128gain</title>
@@ -15,8 +15,7 @@
     <bugTrackerUrl>https://github.com/desbma/r128gain/issues</bugTrackerUrl>
     <tags>cross-platform scan tag metadata loudness audio commandline</tags>
     <summary>Fast audio loudness scanner &amp; tagger (ReplayGain v2 / R128).</summary>
-    <description>  
-# r128gain
+    <description><![CDATA[# r128gain
 Fast audio loudness scanner &amp; tagger.
 
 r128gain is a multi platform command line tool to scan your audio files and tag them with loudness metadata (ReplayGain v2 or Opus R128 gain format), to allow playback of several tracks or albums at a similar loudness level. r128gain can also be used as a Python module from other Python projects to scan and/or tag audio files.
@@ -82,8 +81,8 @@ optional arguments:
 ```
 
 ### For more information about r128gain see [README.md](https://github.com/desbma/r128gain/blob/master/README.md).
-    </description>
-    <releaseNotes>https://github.com/desbma/r128gain/releases/tag/1.0.3</releaseNotes>
+]]></description>
+    <releaseNotes>https://github.com/desbma/r128gain/releases/tag/1.0.4</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

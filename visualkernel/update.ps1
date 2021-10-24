@@ -3,7 +3,8 @@ import-module au
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
-            "(^[$]absUrl\s*=\s*)('.*')"  = "`$1'$($Latest.Url32)'"
+            "(^[$]absUrl\s*=\s*)('.*')"   = "`$1'$($Latest.Url32)'"
+            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
     }
 }
