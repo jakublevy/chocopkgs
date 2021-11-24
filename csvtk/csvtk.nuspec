@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>csvtk</id>
-    <version>0.23.0</version>
+    <version>0.24.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/csvtk</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>csvtk</title>
@@ -16,8 +16,7 @@
     <bugTrackerUrl>https://github.com/shenwei356/csvtk/issues</bugTrackerUrl>
     <tags>cross-platform efficient practical csv tsv toolkit commandline</tags>
     <summary>A cross-platform, efficient and practical CSV/TSV toolkit.</summary>
-    <description>
-# csvtk
+    <description><![CDATA[# csvtk
 `csvtk` is a cross-platform, efficient and practical CSV/TSV toolkit.
 
 ## Features
@@ -30,8 +29,8 @@
 - **Support some common plots** (see [usage](http://bioinf.shenwei.me/csvtk/usage/#plot))
 
 ### For more information about csvtk see [the official README.md](https://github.com/shenwei356/csvtk/blob/master/README.md).
-    </description>
-<releaseNotes>https://github.com/shenwei356/csvtk/releases/tag/v0.23.0</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/shenwei356/csvtk/releases/tag/v0.24.0</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
