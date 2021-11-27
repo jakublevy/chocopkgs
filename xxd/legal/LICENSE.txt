@@ -1,0 +1,3 @@
+I hereby grant permission to distribute and use xxd
+under X11-MIT or GPL-2.0 (at the user's choice)
+(See the respective files LICENSE-X11-MIT.txt or LICENSE-GPL-2.0.txt for license information.)
