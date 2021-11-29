@@ -10,15 +10,13 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-New-Item `
-  -Path "$toolsDir\bin" `
-  -ItemType Directory `
-  -Force | Out-Null
+(Get-ChildItem "$toolsDir\xxd-*_win32")[0] | % { 
+  Rename-Item `
+    -Path $_ -Force `
+    -NewName "$toolsDir\bin"
+}
 
-Move-Item `
-  -Path "$toolsDir\xxd-*_win32\xxd.exe" `
-  -Destination "$toolsDir\bin" `
+Remove-Item `
+  -Path $packageArgs['fileFullPath'] `
+  -ErrorAction SilentlyContinue `
   -Force
-
-$filesToRemove = @($packageArgs['fileFullPath'], "$toolsDir\xxd-*_win32")
-$filesToRemove | % { Remove-Item -Path $_ -ErrorAction SilentlyContinue -Force }

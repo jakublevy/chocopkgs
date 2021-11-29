@@ -10,16 +10,17 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-New-Item `
-  -Path "$toolsDir\bin" `
-  -ItemType Directory `
-  -Force | Out-Null
-
-Move-Item `
-  -Path "$toolsDir\dist\cheat-windows-amd64.exe" `
-  -Destination "$toolsDir\bin\cheat.exe" `
+Rename-Item `
+  -Path "$toolsDir\dist" `
+  -NewName "$toolsDir\bin" `
   -Force
 
-$filesToRemove = @($packageArgs['fileFullPath64'], "$toolsDir\dist")
-$filesToRemove | % { Remove-Item -Path $_ -ErrorAction SilentlyContinue -Force }
-  
+Rename-Item `
+  -Path "$toolsDir\bin\cheat-windows-amd64.exe" `
+  -NewName "$toolsDir\bin\cheat.exe" `
+  -Force
+
+Remove-Item `
+  -Path $packageArgs['fileFullPath64'] `
+  -ErrorAction SilentlyContinue `
+  -Force
