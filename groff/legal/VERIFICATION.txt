@@ -1,0 +1,24 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to https://sourceforge.net/projects/ezwinports/files/groff-1.22.4-w32-bin.zip
+
+   to download the file.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum32: 77CED0A1D378985031C0EF9F9ACE337C77D8896C2AE05D1DB3D730B2AC7E2B00
+
+License text in LICENSE.txt file was obtained 
+   on 12/02/2021
+   from https://www.gnu.org/licenses/gpl-3.0.txt
+   
+License type was determined
+   on 12/02/2021
+   from https://www.gnu.org/software/groff
