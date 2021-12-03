@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>mairix</id>
+    <version>0.22</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/mairix</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>mairix</title>
+    <authors>Richard Curnow</authors>
+    <projectUrl>https://github.com/vandry/mairix</projectUrl>
+    <copyright>Copyright (C) Richard P. Curnow 2002-2004 Copyright (C) Richard P. Curnow &amp; Kim Vandry &amp; contributors 2017-</copyright>
+    <licenseUrl>https://github.com/vandry/mairix/blob/master/COPYING</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/vandry/mairix</projectSourceUrl>
+    <docsUrl>https://github.com/vandry/mairix/blob/master/mairix.1</docsUrl>
+    <bugTrackerUrl>https://github.com/vandry/mairix/issues</bugTrackerUrl>
+    <tags>index search email mail message maildir mbox unix commandline</tags>
+    <summary>mairix is a program for indexing and searching email messages stored in Maildir, MH, MMDF or mbox folders.</summary>
+    <description>
+# mairix
+mairix is a program for indexing and searching email messages stored in Maildir, MH, MMDF or mbox folders.
+* Indexing is fast.  It runs incrementally on new messages - any particular message only gets scanned once in the lifetime of the index file.
+* The search mode populates a "virtual" folder with symlinks(*) which point to the real messages.  This folder can be opened as usual in your mail program.
+* The search mode is very fast.
+* Indexing and searching works on the basis of words.  The index file tabulates which words occur in which parts (particular headers + body) of which messages.
+  
+The program is a very useful complement to mail programs like mutt (http://www.mutt.org/, which supports Maildir, MH and mbox folders) and Sylpheed (which supports MH folders).
+    </description>
+    <releaseNotes>https://github.com/vandry/mairix/blob/master/NEWS</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
