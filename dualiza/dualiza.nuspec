@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dualiza</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/dualiza</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Dualiza</title>
+    <authors>Armin Biere</authors>
+    <projectUrl>https://github.com/arminbiere/dualiza</projectUrl>
+    <copyright>Copyright (c) 2017-2021 Armin Biere, Johannes Kepler University Linz, Austria</copyright>
+    <licenseUrl>https://github.com/arminbiere/dualiza/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/arminbiere/dualiza</projectSourceUrl>
+    <docsUrl>https://github.com/arminbiere/dualiza/tree/master/doc</docsUrl>
+    <bugTrackerUrl>https://github.com/arminbiere/dualiza/issues</bugTrackerUrl>
+    <tags>sat solver sat-solver sat-solving solver model counter enumerator cnf dimacs aiger commandline</tags>
+    <summary>Dualiza a model counter, model enumerator and SAT solver. It works with DIMACS and AIGER files as well as plain formulas.</summary>
+    <description>  
+# Dualiza
+Dualiza is a model counter, model enumerator and SAT solver. It works with DIMACS and AIGER files as well as plain formulas.
+
+## Additional resources
+* [Docs](https://github.com/arminbiere/dualiza/tree/master/doc)
+* [AIG examples](https://github.com/arminbiere/dualiza/tree/master/aigs)
+* [CNF examples](https://github.com/arminbiere/dualiza/tree/master/cnfs)
+* [Formulae examples](https://github.com/arminbiere/dualiza/tree/master/formulas)
+    </description>
+    <releaseNotes>https://github.com/jakublevy/dualiza/releases/tag/v1.0.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
