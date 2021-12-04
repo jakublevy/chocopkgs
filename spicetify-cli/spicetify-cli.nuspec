@@ -15,7 +15,7 @@
     <projectSourceUrl>https://github.com/khanhas/spicetify-cli</projectSourceUrl>
     <docsUrl>https://github.com/khanhas/spicetify-cli/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/khanhas/spicetify-cli/issues</bugTrackerUrl>
-    <tags>spotify commandline customize cross-platform</tags>
+    <tags>spotify commandline customize debloat extension cross-platform</tags>
     <summary>A command-line tool to customize Spotify client.</summary>
     <description><![CDATA[![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/spicetify-cli/logo.png)
 
