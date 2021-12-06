@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>manga-py</id>
+    <version>1.32.0</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/manga-py</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>manga-py</title>
+    <authors>yuru-yuri</authors>
+    <projectUrl>https://github.com/manga-py/manga-py</projectUrl>
+    <copyright>Copyright (c) 2017 yuru-yuri</copyright>
+    <licenseUrl>https://github.com/manga-py/manga-py/blob/stable_1.x/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/manga-py/manga-py</projectSourceUrl>
+    <docsUrl>https://github.com/manga-py/manga-py/blob/stable_1.x/README.rst</docsUrl>
+    <bugTrackerUrl>https://github.com/manga-py/manga-py/issues</bugTrackerUrl>
+    <tags>manga manga-dl comics download downloader offline reading commandline cross-platform</tags>
+    <summary>Universal manga downloader (for your offline reading)</summary>
+    <description>  
+# manga-py
+* Universal manga downloader.
+* Approximately 200+ providers are available now.
+
+## Supported resources
+* https://manga-py.com/manga-py/#resources-list
+
+## Examples
+```
+# download to ".\Manga\manga-name-here" directory
+manga-py "http://manga-url-here/manga-name"
+
+# download to ".\Manga\Manga Name" directory
+manga-py "http://manga-url-here/manga-name" --name "Manga Name"
+
+# or download to "C:\manga\destination\path\manga-name-here" directory
+manga-py "http://manga-url-here/manga-name" -d "C:\manga\destination\path"
+
+# skip 3 volumes
+manga-py --skip-volumes 3 "http://manga-url-here/manga-name"
+
+# skip 3 volumes and download 2 volumes
+manga-py --skip-volumes 3 --max-volumes 2 "http://manga-url-here/manga-name"
+
+# reverse volumes downloading (24 → 1)
+manga-py --reverse-downloading "http://manga-url-here/manga-name"
+
+# disable progressbar
+manga-py --no-progress "http://manga-url-here/manga-name"
+```
+
+## Usage
+```
+manga-py -h  # shows help
+```
+    </description>
+    <releaseNotes>https://github.com/manga-py/manga-py/releases/tag/1.32.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
