@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ddh</id>
+    <version>1.2.0</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/ddh</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>ddh</title>
+    <authors>dd86k</authors>
+    <projectUrl>https://github.com/dd86k/ddh</projectUrl>
+    <copyright>The Unlicense</copyright>
+    <licenseUrl>https://github.com/dd86k/ddh/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/dd86k/ddh</projectSourceUrl>
+    <docsUrl>https://github.com/dd86k/ddh/blob/master/man/ddh.1</docsUrl>
+    <bugTrackerUrl>https://github.com/dd86k/ddh/issues</bugTrackerUrl>
+    <tags>hash hasher checksum md5 sha1 sha2 sha3 admin commandline cross-platform</tags>
+    <summary>ddh is a generic hasher that comes with more features than built-in OS utilities.</summary>
+    <description>
+# ddh, Generic hasher
+ddh is a generic hasher available cross-platform (Windows, macOS, Linux, BSDs) and comes with more features than built-in OS utilities.
+
+## Usage
+```
+$ ddh -h
+Usage:
+  ddh page
+  ddh alias [options...] [{file|-}...]
+
+-F, --file        Input mode: Regular file (default)
+-b, --binary      File: Set binary mode (default)
+-t, --text        File: Set text mode
+-M, --mmfile      Input mode: Memory-map file
+-a, --arg         Input mode: Command-line argument text, as UTF-8
+-c, --check       Check hashes list in this file
+-C, --chunk       Set buffer size, affects file/mmfile/stdin (default=64K)
+    --shallow     Depth: Same directory (default)
+-s, --depth       Depth: Deepest directories first
+    --breadth     Depth: Sub directories first
+    --follow      Links: Follow symbolic links (default)
+    --nofollow    Links: Do not follow symbolic links
+    --tag         Create or read BSD-style hashes
+    --sri         Create or read SRI-style hashes
+    --version     Show version page and quit
+    --ver         Show version and quit
+    --license     Show license page and quit
+-h, --help        This help information.
+
+This program has actual coffee-making abilities.
+```
+    </description>
+<releaseNotes>https://github.com/dd86k/ddh/releases/tag/v1.2.0</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
