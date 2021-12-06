@@ -5,6 +5,7 @@ It also supports dumping.
 
 ## Usage
 ```
+$ ddhx -h
 ddhx - Interactive hexadecimal file viewer
   Usage: ddhx [OPTIONS] FILE
 
