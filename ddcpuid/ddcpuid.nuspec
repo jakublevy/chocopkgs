@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ddcpuid</id>
+    <version>0.19.1</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/ddcpuid</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>ddcpuid</title>
+    <authors>dd86k</authors>
+    <projectUrl>https://github.com/dd86k/ddcpuid</projectUrl>
+    <copyright>Copyright (c) 2016-2021 dd86k dd@dax.moe</copyright>
+    <licenseUrl>https://github.com/dd86k/ddcpuid/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/dd86k/ddcpuid</projectSourceUrl>
+    <docsUrl>https://dd86k.space/docs/ddcpuid-manual.pdf</docsUrl>
+    <bugTrackerUrl>https://github.com/dd86k/ddcpuid/issues</bugTrackerUrl>
+    <tags>cpu processor x86 information utility admin commandline cross-platform</tags>
+    <summary>ddcpuid is a x86 processor information tool.</summary>
+    <description>
+# ddcpuid, CPUID tool
+ddcpuid is a x86 processor information tool.
+
+Officially supports these vendors:
+* `"GenuineIntel"` - Intel Corporation
+* `"AuthenticAMD"` - Advanced Micro Devices Inc.
+* `"KVMKVMKVM\0\0\0"` - Linux built-in Kernel Virtual Machine
+* `"Microsoft Hv"` - Microsoft Hyper-V interface
+* `"VBoxVBoxVBox"` - VirtualBox Hyper-V interface
+* `"\0\0\0\0\0\0\0\0\0\0\0\0"` - VirtualBox minimal interface
+
+## Example 
+```
+$ ddcpuid
+Name:        AuthenticAMD AMD Ryzen 5 1600 Six-Core Processor
+Identifier:  Family 0x17 Model 0x8 Stepping 0x2
+Cores:       6 cores 12 threads
+Max. Memory: 256TB physical 256TB virtual
+Techs:       x86-64-v3 Core-Performance-Boost HTT
+SSE:         SSE SSE2 SSE3 SSSE3 SSE4.2 SSE4a
+AVX:         AVX AVX2
+AMX:         None
+Others:      x87/FPU +F16C MMX ExtMMX AES-NI ADX SHA BMI1 BMI2
+Mitigations: IBPB
+ParaVirt.:   Hyper-V
+Cache L1-D:  6x 32KB    (192KB)  SI
+Cache L1-I:  6x 64KB    (384KB)  SI
+Cache L2-U:  6x 512KB   (3MB)    SI CI
+Cache L3-U:  2x 8MB     (16MB)   SI NWBV
+```
+
+## Usage
+```
+$ ddcpuid
+x86/AMD64 CPUID information tool
+
+USAGE
+  ddcpuid [OPTIONS...]
+
+OPTIONS
+  -d, --details  Show detailed processor information
+  -r, --table    Show raw CPUID data in a table
+  -S             Table: Set leaf (EAX) input value
+  -s             Table: Set subleaf (ECX) input value
+  -o             Override maximum leaves to 0x20, 0x4000_0020, and 0x8000_0020
+  -l, --level    Print the processor's feature level
+
+PAGES
+  --version    Print version screen and quit
+  --ver        Print version and quit
+  -h, --help   Print this help screen and quit
+```
+    </description>
+<releaseNotes>https://github.com/dd86k/ddcpuid/releases/tag/v0.19.1</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
