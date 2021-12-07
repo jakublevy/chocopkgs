@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>strawberrymusicplayer</id>
+    <version>1.0.0</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/strawberrymusicplayer</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Strawberry Music Player</title>
+    <authors>Jonas Kvinge</authors>
+    <projectUrl>https://www.strawberrymusicplayer.org</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/strawberrymusicplayer.png</iconUrl>
+    <copyright>Copyright (C) 2018-2021 Jonas Kvinge</copyright>
+    <licenseUrl>https://github.com/strawberrymusicplayer/strawberry/blob/master/COPYING</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/strawberrymusicplayer/strawberry</projectSourceUrl>
+    <docsUrl>https://github.com/strawberrymusicplayer/strawberry/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/strawberrymusicplayer/strawberry/issues</bugTrackerUrl>
+    <tags>strawberry music audio player collection organizer audiophile stream radio cross-platform qt</tags>
+    <summary>🍓 Strawberry is a music player and music collection organizer is aimed at music collectors and audiophiles.</summary>
+    <description>
+# Strawberry Music Player
+Strawberry is a music player and music collection organizer. It is a fork of Clementine released in 2018 aimed at music collectors and audiophiles. It's written in C++ using the Qt toolkit.
+
+## Installation Parameters
+* `/InstallDir:` - where to install the binaries
+    - Default value: `"$env:ProgramFiles\Strawberry Music Player"`
+
+### Examples
+* Install into `D:\strawberry-music-player` directory
+    ```
+    choco install strawberrymusicplayer --params "/InstallDir:D:\strawberry-music-player"
+    ```
+    </description>
+<releaseNotes>https://github.com/strawberrymusicplayer/strawberry/blob/1.0.0/Changelog</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
