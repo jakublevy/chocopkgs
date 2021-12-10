@@ -10,8 +10,10 @@ The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux
 
 ## Installation Parameters
 * `/AddToUserPath:` - should `"$(Get-ToolsLocation)\deadbeef-x86_64"` be added to the User Path variable
+    - Supported values: `yes`, `no`
     - Default value: `yes`
 * `/AddToSystemPath:` - should `"$(Get-ToolsLocation)\deadbeef-x86_64"` be added to the System Path variable
+    - Supported values: `yes`, `no`
     - Default value: `no`
 
 ### Examples
