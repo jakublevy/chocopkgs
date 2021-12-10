@@ -1,27 +1,20 @@
 ﻿$ErrorActionPreference = 'Stop'
-$toolsDir       = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$binaryLocation = "$(Get-ToolsLocation)\pdftk"
+$toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
-New-Item `
-  -Path $binaryLocation `
-  -ItemType Directory `
-  -Force
-
-Rename-Item `
-  -Path "$toolsDir\pdftk-all.jar" `
-  -NewName "$toolsDir\pdftk.jar" `
-  -Force
-
-$filesToMove = @('pdftk.bat', 'pdftk.jar')
-$filesToMove | % { Move-Item -Path "$toolsDir\$_" -Destination $binaryLocation -Force }
+$binFileArgs = @{
+  name    = 'pdftk'
+  command = "`"-jar $toolsDir\pdftk-all.jar`""
+}
 
 $additionalArgs = Get-PackageParameters
-
-if($null -eq $additionalArgs['AddToSystemPath'] -or $additionalArgs['AddToSystemPath'] -ne 'no') {
-  Install-ChocolateyPath -PathToInstall $binaryLocation -PathType Machine
+if($additionalArgs['JavaExePath']) {
+  $binFileArgs['path'] = $additionalArgs['JavaExePath']
+}
+elseif ($null -ne $env:JAVA_HOME) { 
+  $binFileArgs['path'] = "$env:JAVA_HOME\bin\java.exe"
+}
+else {
+  $binFileArgs['path'] = 'java.exe'
 }
 
-if($additionalArgs['AddToUserPath'] -eq 'yes') {
-  Install-ChocolateyPath -PathToInstall $binaryLocation -PathType User
-}
-
+Install-BinFile @binFileArgs
