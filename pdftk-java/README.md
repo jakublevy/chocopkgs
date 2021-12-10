@@ -10,9 +10,10 @@ The current goals are to keep functionality as compatible with the original as i
 
 ## Installation Parameters
 * `/JavaExePath:` - Path to `java.exe`
-    - Default value: 
+    - Default value: (in the following order)
+        - `"$env:ChocolateyInstall\bin\java.exe"` if exists
         - `"$env:JAVA_HOME\bin\java.exe"` if `$env:JAVA_HOME` is defined
-        - `java.exe` otherwise
+        - `"$env:ChocolateyInstall\bin\java.exe"` otherwise
 
 ### Examples
 * Install and configure pdftk to use `C:\openjdk-11.0.13_8\bin\java.exe` as Java executable
