@@ -9,19 +9,13 @@ The current goals are to keep functionality as compatible with the original as i
 * Java Runtime ≥ 8
 
 ## Installation Parameters
-* `/AddToSystemPath:` - should `"$(Get-ToolsLocation)\pdftk"` be added to the System Path variable
-    - Supported values: `yes`, `no`
-    - Default value: `yes`
-* `/AddToUserPath:` - should `"$(Get-ToolsLocation)\pdftk"` be added to the User Path variable
-    - Supported values: `yes`, `no`
-    - Default value: `no`
+* `/JavaExePath:` - Path to `java.exe`
+    - Default value: 
+        - `"$env:JAVA_HOME\bin\java.exe"` if `$env:JAVA_HOME` is defined
+        - `java.exe` otherwise
 
 ### Examples
-* Install and add only to the User Path variable
+* Install and configure pdftk to use `C:\openjdk-11.0.13_8\bin\java.exe` as Java executable
     ```
-    choco install pdftk --params "'/AddToUserPath:yes /AddToSystemPath:no'"
-    ```
-* Install and do not add anything to environment variables
-    ```
-    choco install pdftk --params "'/AddToSystemPath:no /AddToUserPath:no'"
+    choco install pdftk --params "/JavaExePath:C:\openjdk-11.0.13_8\bin\java.exe"
     ```
