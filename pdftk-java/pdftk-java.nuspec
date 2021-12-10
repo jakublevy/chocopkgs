@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>pdftk</id>
+    <id>pdftk-java</id>
     <version>3.3.1</version>
-    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/pdftk</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/pdftk-java</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>The PDF Toolkit</title>
-    <authors>Marc Vinyals,Steward and Lee LLC.,Bruno Lowagie,Paulo Soares</authors>
+    <authors>Marc Vinyals,Steward and Lee LLC,Bruno Lowagie,Paulo Soares</authors>
     <projectUrl>https://gitlab.com/pdftk-java/pdftk</projectUrl>
     <copyright>
-Copyright (c) 2017-2018 Marc Vinyals - https://gitlab.com/pdftk-java/pdftk
-Copyright (c) 2003-2013 Steward and Lee, LLC.
+Copyright (c) 2017-2018 Marc Vinyals
+Copyright (c) 2003-2013 Steward and Lee, LLC
 pdftk includes a modified version of the iText library.
 Copyright (c) 1999-2009 Bruno Lowagie, Paulo Soares, et al.
     </copyright>
@@ -18,13 +18,13 @@ Copyright (c) 1999-2009 Bruno Lowagie, Paulo Soares, et al.
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://gitlab.com/pdftk-java/pdftk</projectSourceUrl>
     <bugTrackerUrl>https://gitlab.com/pdftk-java/pdftk/-/issues</bugTrackerUrl>
-    <tags>pdf toolkit manipulate merge shuffle concatenate rotate split page admin cross-platform commandline</tags>
+    <tags>pdftk pdf toolkit manipulate merge shuffle concatenate rotate split page admin cross-platform commandline</tags>
     <summary>PDFtk is a toolkit for manipulating PDF documents.</summary>
     <description>  
 # PDFtk
 PDFtk (short for PDF Toolkit) is a toolkit for manipulating Portable Document Format (PDF) documents.
 
-This is a port of pdftk into Java.
+**This is a port of pdftk into Java**. If you are looking for original version written in C++, it is available as [pdftk](https://community.chocolatey.org/packages/pdftk) package.
 
 The current goals are to keep functionality as compatible with the original as it is reasonable, to fix any issues present in the original (correctness takes precedence over compatibility, see the differences), and to clean up the code. New functionality may be added, but it is not a priority. So far all code has been manually translated and it passes the test suite of php-pdftk, but more testing is needed. Due to the differences between C++ and Java, it is likely that a few bugs have sneaked in with respect to the original; any help in catching them will be appreciated.
 
@@ -40,7 +40,7 @@ The current goals are to keep functionality as compatible with the original as i
 ### Examples
 * Install and configure pdftk to use `C:\openjdk-11.0.13_8\bin\java.exe` as Java executable
     ```
-    choco install pdftk --params "/JavaExePath:C:\openjdk-11.0.13_8\bin\java.exe"
+    choco install pdftk-java --params "/JavaExePath:C:\openjdk-11.0.13_8\bin\java.exe"
     ```
     </description>
     <releaseNotes>https://gitlab.com/pdftk-java/pdftk/-/blob/v3.3.1/CHANGELOG.md</releaseNotes>

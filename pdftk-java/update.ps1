@@ -6,7 +6,7 @@ function global:au_SearchReplace {
             "(?i)(\s+Go to).*"         = "`${1} $($Latest.Url32)"
             "(?i)(\s+checksum32:).*"   = "`${1} $($Latest.Checksum32)"
         }
-        ".\pdftk.nuspec" = @{
+        ".\pdftk-java.nuspec" = @{
             "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
         }
     }
