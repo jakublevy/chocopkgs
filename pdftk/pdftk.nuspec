@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>pdftk</id>
+    <version>3.3.1</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/pdftk</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>The PDF Toolkit</title>
+    <authors>Marc Vinyals,Steward and Lee LLC.,Bruno Lowagie,Paulo Soares</authors>
+    <projectUrl>https://gitlab.com/pdftk-java/pdftk</projectUrl>
+    <copyright>
+Copyright (c) 2017-2018 Marc Vinyals - https://gitlab.com/pdftk-java/pdftk
+Copyright (c) 2003-2013 Steward and Lee, LLC.
+pdftk includes a modified version of the iText library.
+Copyright (c) 1999-2009 Bruno Lowagie, Paulo Soares, et al.
+    </copyright>
+    <licenseUrl>https://gitlab.com/pdftk-java/pdftk/-/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://gitlab.com/pdftk-java/pdftk</projectSourceUrl>
+    <bugTrackerUrl>https://gitlab.com/pdftk-java/pdftk/-/issues</bugTrackerUrl>
+    <tags>pdf toolkit manipulate merge shuffle concatenate rotate split page admin cross-platform commandline</tags>
+    <summary>PDFtk is a toolkit for manipulating PDF documents.</summary>
+    <description>  
+# PDFtk
+PDFtk (short for PDF Toolkit) is a toolkit for manipulating Portable Document Format (PDF) documents.
+
+This is a port of pdftk into Java.
+
+The current goals are to keep functionality as compatible with the original as it is reasonable, to fix any issues present in the original (correctness takes precedence over compatibility, see the differences), and to clean up the code. New functionality may be added, but it is not a priority. So far all code has been manually translated and it passes the test suite of php-pdftk, but more testing is needed. Due to the differences between C++ and Java, it is likely that a few bugs have sneaked in with respect to the original; any help in catching them will be appreciated.
+
+## Dependencies
+* Java Runtime ≥ 8
+
+## Installation Parameters
+* `/AddToSystemPath:` - should `"$(Get-ToolsLocation)\pdftk"` be added to the System Path variable
+    - Supported values: `yes`, `no`
+    - Default value: `yes`
+* `/AddToUserPath:` - should `"$(Get-ToolsLocation)\pdftk"` be added to the User Path variable
+    - Supported values: `yes`, `no`
+    - Default value: `no`
+
+### Examples
+* Install and add only to the User Path variable
+    ```
+    choco install pdftk --params "'/AddToUserPath:yes /AddToSystemPath:no'"
+    ```
+* Install and do not add anything to environment variables
+    ```
+    choco install pdftk --params "'/AddToSystemPath:no /AddToUserPath:no'"
+    ```
+    </description>
+    <releaseNotes>https://gitlab.com/pdftk-java/pdftk/-/blob/v3.3.1/CHANGELOG.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

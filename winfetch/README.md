@@ -12,8 +12,10 @@ According to benchmarks done with Hyperfine, Winfetch on Windows is faster than 
 
 ## Installation Parameters
 * `/AddToSystemPath:` - should `"$(Get-ToolsLocation)\winfetch"` be added to the System Path variable
+    - Supported values: `yes`, `no`
     - Default value: `yes`
 * `/AddToUserPath:` - should `"$(Get-ToolsLocation)\winfetch"` be added to the User Path variable
+    - Supported values: `yes`, `no`
     - Default value: `no`
 
 ### Examples

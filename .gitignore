@@ -1,4 +1,5 @@
 *.exe
+*.jar
 *.msi
 *.nupkg
 

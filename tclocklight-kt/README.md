@@ -19,8 +19,10 @@ The following documents are available. (all in Japanese)
 
 ## Installation Parameters
 * `/AddToSystemStartup:` - should TClock start after bootup
+    - Supported values: `yes`, `no`
     - Default value: `yes`
 * `/AddToUserStartup:` - should TClock start after the current user logins
+    - Supported values: `yes`, `no`
     - Default value: `no`
 
 ### Examples
