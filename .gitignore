@@ -1,3 +1,7 @@
+update_all.ps1
+update_vars_default.ps1
+Update-History.md
+
 *.exe
 *.jar
 *.msi

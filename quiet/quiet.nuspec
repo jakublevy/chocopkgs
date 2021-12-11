@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>quiet</id>
+    <version>1.01.00</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/quiet</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Quiet</title>
+    <authors>Joe Richards</authors>
+    <projectUrl>https://www.joeware.net/freetools/tools/quiet/index.htm</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/quiet.png</iconUrl>
+    <copyright>Copyright (C) Joe Richards 2001-2002</copyright>
+    <licenseUrl>https://www.joeware.net/freetools/warranty.htm</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.joeware.net/freetools/tools/quiet/usage.htm</docsUrl>
+    <tags>nohup disown quiet execute process launch detach system admin commandline</tags>
+    <summary>Commandline tool to silently launch a process.</summary>
+    <description>
+# Quiet
+Command line tool to silently launch a process. Similar to `nohup cmd &amp;` on UNIX.
+
+## Usage
+```
+quiet "path" "arguments"
+
+quiet mpv "video.mkv"
+```
+    </description>
+    <releaseNotes>
+### Version history
+* Update: Version 1.00.00 - 10/20/2001 - Original Version.
+* Update: Version 1.01.00 - 04/27/2002 - Add ability to specify params
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
