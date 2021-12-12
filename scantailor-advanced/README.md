@@ -1,3 +1,5 @@
+
+
 # ScanTailor Advanced
 The ScanTailor version that merges the features of the ScanTailor Featured and ScanTailor Enhanced versions, brings new ones and fixes.
 

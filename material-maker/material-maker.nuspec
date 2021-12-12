@@ -33,6 +33,5 @@ Its user interface is based on Godot's GraphEdit node: textures and brushes are 
 </dependencies>
 </metadata>
 <files>
-  <file src="tools\**" target="tools" />
 </files>
 </package>

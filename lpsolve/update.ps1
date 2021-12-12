@@ -47,8 +47,4 @@ function global:au_BeforeUpdate {
     $global:Latest.ChecksumChm = (Get-FileHash -Path (Join-Path $toolsDir $chmFileName) -Algorithm SHA256).Hash
 }
 
-function global:au_AfterUpdate($pkg) {
-    Set-DescriptionFromReadme $pkg
-}
-
 Update-Package -ChecksumFor None

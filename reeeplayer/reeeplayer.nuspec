@@ -30,6 +30,5 @@ For more information see [README.MD (English)](https://github.com/FilippVolodin/
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
   </files>
 </package>

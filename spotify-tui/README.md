@@ -1,3 +1,5 @@
+
+
 ﻿# Spotify TUI
 A Spotify client for the terminal written in Rust.
 

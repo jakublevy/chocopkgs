@@ -1,3 +1,5 @@
+
+
 # flip
 The program converts line endings of text files between MS-DOS and UNIX formats. It detects binary files in a nearly foolproof way and leaves them alone unless you override this. It will also leave files alone that are already in the right format and preserves file timestamps. User interrupts are handled gracefully and no garbage or corrupted files left behind.
 

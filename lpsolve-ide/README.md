@@ -1,3 +1,5 @@
+
+
 ﻿# LPSolve IDE
 The LPSolve IDE (Integrated Development Interface) is a very user friendly Windows interface to the lpsolve API. All functionality of lpsolve can be accessed via a graphical and very user friendly application. 
 

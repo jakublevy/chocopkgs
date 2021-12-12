@@ -1,3 +1,5 @@
+
+
 # ddcpuid, CPUID tool
 ddcpuid is a x86 processor information tool.
 

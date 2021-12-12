@@ -1,3 +1,5 @@
+
+
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/spicetify-cli/logo.png)
 
 A command-line tool to customize Spotify client. Supports Windows, MacOS and Linux.

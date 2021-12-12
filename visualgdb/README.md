@@ -1,3 +1,5 @@
+
+
 **NOTE:** This is commercial software with 30-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://visualgdb.com).
 
 **NOTE:** VisualGDB requires Microsoft Visual Studio as a dependency, see [system requirements](https://visualgdb.com/download).

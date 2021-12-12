@@ -28,6 +28,5 @@ WinFLASHTool is a small utility that writes raw disk images to memory cards and 
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
   </files>
 </package>

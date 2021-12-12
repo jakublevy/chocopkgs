@@ -1,3 +1,5 @@
+
+
 ﻿**NOTE:** The following text is an excerpt from [the official website](https://ripose-jp.github.io/Memento).
 
 # Memento

@@ -36,8 +36,4 @@ function global:au_BeforeUpdate {
     Remove-Item $revo32Path -Force
 }
 
-function global:au_AfterUpdate($pkg) {
-    Set-DescriptionFromReadme $pkg
-}
-
 Update-Package -ChecksumFor None

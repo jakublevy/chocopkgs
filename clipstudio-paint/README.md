@@ -1,3 +1,5 @@
+
+
 **NOTE:** This is commercial software with a trial period, after expiration, a valid license is required. You can purchase one from [the official website](https://www.clipstudio.net/en).
 
 # Clip Studio Paint

@@ -7,7 +7,7 @@ function global:au_SearchReplace {
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
         ".\tools\install.iss"   = @{
-            "(?i)(Version=[^v]).*"         = "`${1}$($Latest.Version)"
+            "(?i)(Version=)[^v].*"         = "`${1}$($Latest.Version)"
         }
     }
 }
@@ -22,7 +22,7 @@ function global:au_GetLatest {
     $versionChoco = (Find-Version -OriginalVersion $versionOriginal -FoundVersions $possibleVersions)
     @{
         Version      = $versionChoco
-        VersionClip  = $versionChoco -replace '.', ''
+        VersionClip  = $versionChoco.Replace('.', '')
         Url64        = "https://vd.clipstudio.net/clipcontent/paint/app/$versionOriginal/CSP_$($versionOriginal)w_setup.exe"
     }
 }
@@ -43,10 +43,6 @@ function Find-Version {
         }
     }
     throw "No matching version found."
-}
-
-function global:au_AfterUpdate($pkg) {
-    Set-DescriptionFromReadme $pkg
 }
 
 Update-Package -ChecksumFor 64

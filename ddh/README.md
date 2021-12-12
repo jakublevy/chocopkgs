@@ -1,3 +1,5 @@
+
+
 # ddh, Generic hasher
 ddh is a generic hasher available cross-platform (Windows, macOS, Linux, BSDs) and comes with more features than built-in OS utilities.
 

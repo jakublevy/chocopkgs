@@ -3,7 +3,7 @@ import-module au
 function global:au_SearchReplace {
     @{  
         ".\proficad.nuspec" = @{
-            "(?i)(\<dependency id=""proficad.install"" version=""\[).*(""\] /\>)" = "`${1}$($Latest.Version)`${2}"
+            "(?i)(<dependency id=""proficad.install"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`${2}"
         }
     }
 }
@@ -16,10 +16,6 @@ function global:au_GetLatest {
     @{
         Version  = $version
     }
-}
-
-function global:au_AfterUpdate($pkg) {
-    Set-DescriptionFromReadme $pkg
 }
 
 Update-Package -ChecksumFor None
