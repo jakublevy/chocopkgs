@@ -1,3 +1,5 @@
+
+
 # Clip Studio Modeler
 Clip Studio Modeler is a freeware software for setting up 3D materials for use in Clip Studio Paint. It supports many widely used formats for 3D models, which can then be used as materials in Clip Studio Paint.
 

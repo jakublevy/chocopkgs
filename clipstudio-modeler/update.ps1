@@ -53,8 +53,6 @@ function Find-Version {
     throw "No matching version found."
 }
 
-function global:au_AfterUpdate($pkg) {
-    Set-DescriptionFromReadme $pkg
-}
 
-Update-Package
+
+Update-Package -ChecksumFor 64

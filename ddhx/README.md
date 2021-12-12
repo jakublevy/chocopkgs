@@ -1,3 +1,5 @@
+
+
 # ddhx, Hexadecimal File Viewer
 ddhx is a quick and dirty TUI hexadecimal file viewer.
 

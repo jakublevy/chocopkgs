@@ -1,3 +1,5 @@
+
+
 # Dualiza
 Dualiza is a model counter, model enumerator and SAT solver. It works with DIMACS and AIGER files as well as plain formulas.
 

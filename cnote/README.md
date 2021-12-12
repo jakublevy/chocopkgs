@@ -1,3 +1,5 @@
+
+
 # cnote
 `cnote` is a cross-platform command-line note app suitable for **rapidly taking and getting note** of plain text of tens of words.
 

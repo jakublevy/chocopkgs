@@ -1,8 +1,9 @@
 import-module au
 
 function global:au_SearchReplace {
-    @{  ".\amp-winoff.nuspec" = @{
-            "(?i)(\<dependency id=""amp-winoff.install"" version=""\[).*(""\] /\>)" = "`${1}$($Latest.Version)`${2}"
+    @{  
+        ".\amp-winoff.nuspec" = @{
+            "(?i)(<dependency id=""amp-winoff.install"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`${2}"
         }
     }
 }
@@ -15,8 +16,6 @@ function global:au_GetLatest {
     }
 }
 
-function global:au_AfterUpdate($pkg) {
-    Set-DescriptionFromReadme $pkg
-}
+
 
 Update-Package -ChecksumFor None

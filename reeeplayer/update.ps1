@@ -4,7 +4,7 @@ function global:au_SearchReplace {
     @{
         ".\reeeplayer.nuspec"   = @{
             "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
-            "(?i)(\<dependency id=""reeeplayer.portable"" version=""\[).*(""\] /\>)" = "`${1}$($Latest.Version)`${2}"
+            "(?i)(<dependency id=""reeeplayer.portable"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`${2}"
         }
     }
 }
@@ -17,10 +17,6 @@ function global:au_GetLatest {
         Version      = $version
         ReleaseNotes = "https://github.com/FilippVolodin/ReeePlayer/releases/tag/v$version"
     }
-}
-
-function global:au_AfterUpdate($pkg) {
-    Set-DescriptionFromReadme $pkg
 }
 
 Update-Package -ChecksumFor None

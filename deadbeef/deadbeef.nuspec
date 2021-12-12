@@ -58,6 +58,5 @@ The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
   </files>
 </package>

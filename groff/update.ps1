@@ -1,5 +1,7 @@
 import-module au
 
+# Release notes not fully automatic
+
 function global:au_SearchReplace {
     @{  
         ".\tools\chocolateyinstall.ps1"   = @{
@@ -21,10 +23,6 @@ function global:au_GetLatest {
         Version  = $version
         Url32    = "https://sourceforge.net/projects/ezwinports/files/groff-$version-w32-bin.zip"
     }
-}
-
-function global:au_AfterUpdate($pkg) {
-    Set-DescriptionFromReadme $pkg
 }
 
 Update-Package -ChecksumFor None

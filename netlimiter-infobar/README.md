@@ -1,3 +1,5 @@
+
+
 **NOTE:** The following text is for the most part an excerpt from [the official website](https://www.netlimiter.com/docs/infobar).
 
 # NetLimiter InfoBar

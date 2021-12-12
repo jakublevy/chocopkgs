@@ -28,8 +28,4 @@ function global:au_BeforeUpdate {
     Get-ChildItem -Path $dir -Filter '*.zip' | Remove-Item -Force
 }
 
-function global:au_AfterUpdate($pkg) {
-    Set-DescriptionFromReadme $pkg
-}
-
 Update-Package -ChecksumFor None

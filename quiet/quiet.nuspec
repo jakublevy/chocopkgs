@@ -26,11 +26,6 @@ quiet "path" "arguments"
 quiet mpv "video.mkv"
 ```
     </description>
-    <releaseNotes>
-### Version history
-* Update: Version 1.00.00 - 10/20/2001 - Original Version.
-* Update: Version 1.01.00 - 04/27/2002 - Add ability to specify params
-    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

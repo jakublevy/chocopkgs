@@ -59,14 +59,6 @@ For more information visit: [revoSleep board](https://revosleep.bboard.de).
   choco install revosleep --params "/InstallDir:D:\revosleep"
   ```
     </description>
-    <releaseNotes>
-Several bugs have been fixed. The major changes are:
-- You can now specify lock settings for each hard disk. To do this, click on "Show Details" in the user interface and you can choose whether the volume should only be taken offline or additionally deactivated.
-- You can now properly send hard disks to sleep on Windows 10. To do this, uncheck the "Deactivate" option for the hard disk that you want to send to sleep. So please only use the "Offline" setting together with the "Sleep" setting to avoid waking up a hard disk immediately.
-- Revosleep will now install correctly on x86 operating systems. Also the setup should now contain all necessary dependencies (you still need .NET of course but e.g. you don't need Visual C++ Redistributable anymore)
-- The command line parameter handling has been updated in order to reflect the specific lock settings
-- The user interface has been improved (e.g. scrolling) and some minor bugs have been fixed 
-    </releaseNotes>
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.1.0" />
     </dependencies>

@@ -1,3 +1,5 @@
+
+
 **NOTE:** The following text is an excerpt from [the official website](http://lpsolve.sourceforge.net).
 
 # lp_solve

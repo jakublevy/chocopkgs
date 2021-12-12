@@ -1,3 +1,5 @@
+
+
 ﻿**NOTE:** The following text is for the most part an excerpt from [the official website](http://www.ampsoft.net/utilities/WinOFF.php).
 
 # AMP WinOFF 

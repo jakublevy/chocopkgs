@@ -35,8 +35,4 @@ function global:au_BeforeUpdate {
     $global:Latest.Checksum64 = (Get-FileHash (Join-Path $toolsDir $Latest.FileName64) -Algorithm SHA256).Hash
 }
 
-function global:au_AfterUpdate($pkg) {
-    Set-DescriptionFromReadme $pkg
-}
-
 Update-Package -ChecksumFor None

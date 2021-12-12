@@ -41,12 +41,6 @@ $ xxd -l 120 -ps -c 20 xxd.1
 204e7567656e74203c746f6e79407363746e7567
 ```
     </description>
-    <releaseNotes>
-This version is based on V1.10 27oct98 by Juergen Weigert.
-Between 2000 and 2011 it accumulated patches by the Vim team and
-others. In 2013 it was pulled out of the Vim tree, had a couple
-of features added and was pronounced version 1.11.
-    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

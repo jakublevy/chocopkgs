@@ -54,6 +54,5 @@ The non-commercial (home) edition is distributed [free of charge](https://www.pr
 </dependencies>
 </metadata>
 <files>
-  <file src="tools\**" target="tools" />
 </files>
 </package>
