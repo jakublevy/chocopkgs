@@ -44,11 +44,13 @@ Remove-Item `
   -Force
 
 spicetify config custom_apps spicetify-marketplace
+spicetify backup apply
 
-Start-Process `
+$spicetify = Start-Process `
   -FilePath 'spicetify' `
   -ArgumentList 'apply' `
-  -NoNewWindow
+  -NoNewWindow `
+  -PassThru
 
 if(-not $spotify -And $spotifyInstalled) {
   $sw = [System.Diagnostics.Stopwatch]::StartNew()
@@ -60,3 +62,7 @@ if(-not $spotify -And $spotifyInstalled) {
     }
   }
 }
+
+Wait-Process `
+  -Id $spicetify.Id `
+  -ErrorAction SilentlyContinue
