@@ -10,9 +10,17 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
-# Based on official installer: https://github.com/CharlieS1103/spicetify-marketplace/blob/main/install.ps1
+# Based on the official installer: https://github.com/CharlieS1103/spicetify-marketplace/blob/main/install.ps1
 
+$spotifyInstalled = $true
 $spotify = Get-Process -Name 'spotify' -ErrorAction SilentlyContinue
+if(-not $spotify) {
+  $spotifyInstalled = $null -ne (Get-AppInstallLocation 'spotify')
+}
+
+if(-not $spotifyInstalled) {
+  Write-Warning 'Spotify installation not detected!'
+}
 
 if (-not (Test-Path $customAppsDir)) {
   Write-Host "Making a CustomApps folder..."
@@ -42,9 +50,9 @@ Start-Process `
   -ArgumentList 'apply' `
   -NoNewWindow
 
-if(-not $spotify) {
+if(-not $spotify -And $spotifyInstalled) {
   $sw = [System.Diagnostics.Stopwatch]::StartNew()
-  while($sw.ElapsedMilliseconds -lt 10000) {
+  while($sw.ElapsedMilliseconds -lt 5000) {
     $spotify = Get-Process 'spotify' -ErrorAction SilentlyContinue
     if($spotify) {
       Stop-Process $spotify -Force
