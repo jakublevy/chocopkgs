@@ -17,3 +17,7 @@ A command-line tool to customize Spotify client. Supports Windows, MacOS and Lin
 * [Extensions](https://github.com/khanhas/spicetify-cli/wiki/Extensions)
 * [Custom Apps](https://github.com/khanhas/spicetify-cli/wiki/Custom-Apps)
 * [Wiki](https://github.com/khanhas/spicetify-cli/wiki)
+
+## Screenshot
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/spicetify-cli/preview.png)
