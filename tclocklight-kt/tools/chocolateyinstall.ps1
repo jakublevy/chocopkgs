@@ -22,7 +22,7 @@ if($additionalArgs['AddToUserStartup'] -eq 'yes') {
     -ShortcutFilePath "$env:AppData\Microsoft\Windows\Start Menu\Programs\Startup\$shortcut" `
     -TargetPath $targetBin
 
-  Write-Output 'TClock Light kt is automatically started on this user login.'
+  Write-Host 'TClock Light kt is automatically started on this user login.'
 }
 
 if($null -eq $additionalArgs['AddToSystemStartup'] -or $additionalArgs['AddToSystemStartup'] -ne 'no') {
@@ -30,7 +30,7 @@ if($null -eq $additionalArgs['AddToSystemStartup'] -or $additionalArgs['AddToSys
     -ShortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\$shortcut" `
     -TargetPath $targetBin
 
-    Write-Output 'TClock Light kt is automatically started after bootup.'
+    Write-Host 'TClock Light kt is automatically started after bootup.'
 }
 
 $shimArgs = @{
@@ -44,4 +44,4 @@ $ignoreBinaries | % { New-Item -Name "$_.ignore" @shimArgs }
 
 
 & $targetBin
-Write-Output 'TClock Light kt is now running.'
+Write-Host 'TClock Light kt is now running.'

@@ -22,5 +22,5 @@ if(Test-Path -Path $userStartupPath) {
 }
 
 if($existsStartup) {
-  Write-Output 'TClock Light automatic start is now removed.'
+  Write-Host 'TClock Light automatic start is now removed.'
 }
