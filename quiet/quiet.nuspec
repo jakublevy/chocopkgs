@@ -13,7 +13,7 @@
     <licenseUrl>https://www.joeware.net/freetools/warranty.htm</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://www.joeware.net/freetools/tools/quiet/usage.htm</docsUrl>
-    <tags>nohup disown quiet execute process launch detach system admin commandline</tags>
+    <tags>nohup disown quiet execute process launch detach system admin joeware commandline</tags>
     <summary>Commandline tool to silently launch a process.</summary>
     <description>
 # Quiet
