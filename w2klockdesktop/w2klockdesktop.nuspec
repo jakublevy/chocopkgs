@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>w2klockdesktop</id>
+    <version>1.00.00</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/w2klockdesktop</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>W2KLockDesktop</title>
+    <authors>Joe Richards</authors>
+    <projectUrl>https://www.joeware.net/freetools/tools/w2klockdesktop/index.htm</projectUrl>
+    <copyright>Copyright (C) Joe Richards 2001</copyright>
+    <licenseUrl>https://www.joeware.net/freetools/warranty.htm</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.joeware.net/freetools/tools/w2klockdesktop/usage.htm</docsUrl>
+    <tags>lock desktop immediately system admin joeware commandline</tags>
+    <summary>Commandline tool to lock the desktop immediately.</summary>
+    <description>
+# W2KLockDesktop
+Commandline tool to lock the desktop immediately.
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
