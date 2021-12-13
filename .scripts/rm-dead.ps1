@@ -1,0 +1,32 @@
+$dead = @(
+    'grap',
+    'flip',
+    'xxd',
+    'dualiza',
+    'quiet',
+    'getuserinfo',
+    'mairix',
+    'amp-winoff',
+    'amp-winoff.install',
+    'amp-winoff.portable',
+    'kindle-comic-converter',
+    'glucose',
+    'winflashtool',
+    'winflashtool.portable',
+    'scantailor-advanced',
+    'mp3infpu',
+    'pdfcrack',
+    'tclocklight-kt',
+    'painttoolsai',
+    'vlna',
+    'zkanji',
+    'zkanji.install',
+    'zkanji.portable',
+    'undark',
+    'revosleep',
+    'showdate',
+    'reeeplayer',
+    'reeeplayer.portable'
+)
+
+Get-ChildItem | ? { $dead.Contains($_.Name) } | % { Remove-Item -Path "$($_.FullName)\update.ps1" -Force }

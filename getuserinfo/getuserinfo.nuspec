@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>getuserinfo</id>
+    <version>2.07.00</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/getuserinfo</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>GetUserInfo</title>
+    <authors>Joe Richards</authors>
+    <projectUrl>https://www.joeware.net/freetools/tools/getuserinfo/index.htm</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/quiet.png</iconUrl>
+    <copyright>Copyright (C) Joe Richards 2000-2003</copyright>
+    <licenseUrl>https://www.joeware.net/freetools/warranty.htm</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.joeware.net/freetools/tools/getuserinfo/usage.htm</docsUrl>
+    <tags>extract user info domain tool system admin joeware commandline</tags>
+    <summary>Commandline tool to extract user info from a domain or computer.</summary>
+    <description>
+# GetUserInfo
+Command line tool to extract user info from a domain or computer.
+
+## Usage
+```
+GetUserInfo [(domain)(\\servername)\]userid [/p]
+
+    domain          Domain to execute command against
+    server          Server to execute command against
+    userid          Userid to get info for.
+    /p              Displays primary group info.
+
+    If domain/server not specifed uses local machine
+    If . specified for userid, enumerate all local/global accounts
+
+Ex:
+    getuserinfo .
+        Enumerates accounts on local machine
+
+    getuserinfo \\server\.
+        Enumerates accounts on machine named server
+
+    getuserinfo domain\.
+        Enumerates accounts on domain named domain
+
+    getuserinfo username
+        Displays info for local userid named username
+
+    getuserinfo \\server\username
+        Displays info for userid on machine server named username
+
+    getuserinfo domain\username
+        Displays info for userid on domain named domain for user named username
+```
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
