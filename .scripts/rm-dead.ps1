@@ -5,6 +5,7 @@ $dead = @(
     'dualiza',
     'quiet',
     'getuserinfo',
+    'w2klockdesktop',
     'mairix',
     'amp-winoff',
     'amp-winoff.install',
