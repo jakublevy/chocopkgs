@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>clipstudio-paint</id>
-    <version>1.11.4</version>
+    <version>1.11.6</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/clipstudio-paint</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Clip Studio Paint</title>
@@ -16,8 +16,7 @@
     <bugTrackerUrl>https://support.clip-studio.com</bugTrackerUrl>
     <tags>art manga comics illustration animation draw drawing paint painting tablet pen graphics design celsys trial</tags>
     <summary>A software for digital creation of manga (comics), general illustrations and 2D animations.</summary>
-    <description>
-**NOTE:** This is commercial software with a trial period, after expiration, a valid license is required. You can purchase one from [the official website](https://www.clipstudio.net/en).
+    <description><![CDATA[**NOTE:** This is commercial software with a trial period, after expiration, a valid license is required. You can purchase one from [the official website](https://www.clipstudio.net/en).
 
 # Clip Studio Paint
 Clip Studio Paint is a software for digital creation of manga (comics), general illustrations and 2D animations. It is designed for use with a stylus and a graphics tablet or tablet computer. It has drawing tools which emulate natural media such as pencils, ink pens, and brushes, as well as patterns and decorations. It is distinguished from similar programs by features designed for creating comics: tools for creating panel layouts, perspective rulers, sketching, inking, applying tones and textures, coloring, and creating word balloons and captions. 
@@ -48,8 +47,8 @@ Clip Studio Paint is a software for digital creation of manga (comics), general 
 * Install and create desktop icons
   ```
   choco install clipstudio-paint --params "/DesktopIcon:yes"
-  ```  
-    </description>
+  ```
+]]></description>
     <releaseNotes>https://www.clipstudio.net/en/dl/release_note</releaseNotes>
   </metadata>
   <files>

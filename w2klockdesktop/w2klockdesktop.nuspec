@@ -11,7 +11,6 @@
     <copyright>Copyright (C) Joe Richards 2001</copyright>
     <licenseUrl>https://www.joeware.net/freetools/warranty.htm</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://www.joeware.net/freetools/tools/w2klockdesktop/usage.htm</docsUrl>
     <tags>lock desktop immediately system admin joeware commandline</tags>
     <summary>Commandline tool to lock the desktop immediately.</summary>
     <description>
