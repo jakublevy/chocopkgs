@@ -7,13 +7,13 @@
     <owners>Jakub Levý</owners>
     <title>Spicetify</title>
     <authors>khanhas</authors>
-    <projectUrl>https://github.com/khanhas/spicetify-cli</projectUrl>
+    <projectUrl>https://spicetify.app</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/spicetify-cli.png</iconUrl>
     <copyright>Copyright (c) 2018-2021 khanhas</copyright>
     <licenseUrl>https://github.com/khanhas/spicetify-cli/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/khanhas/spicetify-cli</projectSourceUrl>
-    <docsUrl>https://github.com/khanhas/spicetify-cli/wiki</docsUrl>
+    <docsUrl>https://spicetify.app/docs/getting-started/installation</docsUrl>
     <bugTrackerUrl>https://github.com/khanhas/spicetify-cli/issues</bugTrackerUrl>
     <tags>spotify commandline customize debloat extension cross-platform</tags>
     <summary>A command-line tool to customize Spotify client.</summary>
@@ -29,11 +29,12 @@ A command-line tool to customize Spotify client. Supports Windows, MacOS and Lin
 * Remove bloated components to improve performance
 
 ## Additional Resources
-* [Basic Usage](https://github.com/khanhas/spicetify-cli/wiki/Basic-Usage)
-* [Customization](https://github.com/khanhas/spicetify-cli/wiki/Customization)
-* [Extensions](https://github.com/khanhas/spicetify-cli/wiki/Extensions)
-* [Custom Apps](https://github.com/khanhas/spicetify-cli/wiki/Custom-Apps)
-* [Wiki](https://github.com/khanhas/spicetify-cli/wiki)
+* [Installation](https://spicetify.app/docs/getting-started/installation)
+* [Basic Usage](https://spicetify.app/docs/getting-started/basic-usage)
+* [Customization](https://spicetify.app/docs/development/customization)
+* [Extensions](https://spicetify.app/docs/getting-started/extensions)
+* [Custom Apps](https://spicetify.app/docs/getting-started/custom-apps)
+* [FAQ](https://spicetify.app/docs/faq)
 ]]></description>
 <releaseNotes>https://github.com/khanhas/spicetify-cli/releases/tag/v2.8.3</releaseNotes>
 </metadata>
