@@ -15,11 +15,6 @@ $packageArgs['destination']    = "$toolsDir\bin"
 Get-ChocolateyUnzip @packageArgs
 
 Remove-Item `
-  -Path "$toolsDir\*.tar" `
-  -ErrorAction SilentlyContinue `
-  -Force
-
-Remove-Item `
-  -Path "$toolsDir\*.gz" `
+  -Path "$toolsDir\*.tar", "$toolsDir\*.gz" `
   -ErrorAction SilentlyContinue `
   -Force

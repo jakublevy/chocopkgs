@@ -11,5 +11,7 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-$filesToRemove = @($packageArgs['fileFullPath'], $packageArgs['fileFullPath64'])
-$filesToRemove | % { Remove-Item -Path $_ -ErrorAction SilentlyContinue -Force }
+Remove-Item `
+  -Path $packageArgs['fileFullPath'], $packageArgs['fileFullPath64'] `
+  -ErrorAction SilentlyContinue `
+  -Force
