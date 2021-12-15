@@ -33,5 +33,7 @@ $packageArgs['silentArgs'] += " /TASKS=`"$($tasks -join ' ')`""
 
 Install-ChocolateyInstallPackage @packageArgs
 
-$filesToRemove = @($packageArgs['file'], $packageArgs['file64'])
-$filesToRemove | % { Remove-Item -Path $_ -ErrorAction SilentlyContinue -Force }
+Remove-Item `
+  -Path $packageArgs['file'], $packageArgs['file64'] `
+  -ErrorAction SilentlyContinue `
+  -Force 

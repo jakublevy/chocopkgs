@@ -5,7 +5,9 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://github.com/shenwei356/brename/releases/download/v2.11.1/brename_windows_amd64.exe.tar.gz
+1. Go to
+   x86: https://github.com/shenwei356/brename/releases/download/v2.11.1/brename_windows_386.exe.tar.gz
+   x64: https://github.com/shenwei356/brename/releases/download/v2.11.1/brename_windows_amd64.exe.tar.gz
 
    to download the installer.
 
@@ -13,6 +15,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
+   checksum32: 5F119254C2F6B4AB746131E666C3C52C5F96D657C202E91C42EDCF22F8D2FD43
    checksum64: 84105628C4FCA4A7FA9637D6DC16282378C71D545558C1B54988BE2ECFE0C1F5
 
 License text in LICENSE.txt file was obtained 

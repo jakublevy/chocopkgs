@@ -37,5 +37,7 @@ Install-ChocolateyShortcut `
   -TargetPath "$targetDir\scantailor.exe"
 
 # Remove unnecessary installers
-$filesToRemove = @($packageArgs['file'], $packageArgs['file64'])
-$filesToRemove | % { Remove-Item -Path $_ -ErrorAction SilentlyContinue -Force }
+Remove-Item `
+  -Path $packageArgs['file'], $packageArgs['file64'] `
+  -ErrorAction SilentlyContinue `
+  -Force
