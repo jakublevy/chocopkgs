@@ -3,7 +3,7 @@ import-module au
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
-            "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
+            "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.VersionOriginal)'"
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
         ".\wacom-drivers.nuspec"   = @{
@@ -18,9 +18,10 @@ function global:au_GetLatest {
     $chocoVersion = $originalVersion.Replace('-', '.')
     $versionAfterDashRemoved = $originalVersion.Split('-')[0]
     @{
-        Url64        = "https://cdn.wacom.com/u/productsupport/drivers/win/professional/WacomTablet_$originalVersion.exe"
-        Version      = $chocoVersion
-        ReleaseNotes = "https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/Windows_$versionAfterDashRemoved.html"
+        Url64           = "https://cdn.wacom.com/u/productsupport/drivers/win/professional/WacomTablet_$originalVersion.exe"
+        Version         = $chocoVersion
+        VersionOriginal = $originalVersion
+        ReleaseNotes    = "https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/Windows_$versionAfterDashRemoved.html"
     }
 }
 
