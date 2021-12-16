@@ -23,7 +23,7 @@ function global:au_BeforeUpdate {
     $toolsDir = Join-Path $dir "tools"
     $global:Latest.FileName32 = "Quiet.zip"
     $postParams = @{download = 'Quiet.zip'; B1 = 'Download+Now'}
-    Invoke-WebRequest -UseBasicParsing -Uri 'https://www.joeware.net/downloads/dl.php' -Method 'POST' -OutFile "$dir\Quiet.zip" -Body $postParams
+    Invoke-WebRequest -UseBasicParsing -Uri 'https://www.joeware.net/downloads/dl.php' -Method 'POST' -OutFile (Join-Path $dir 'Quiet.zip') -Body $postParams
     $global:Latest.Checksum32 = (Get-FileHash (Join-Path $toolsDir $Latest.FileName32) -Algorithm SHA256).Hash
     Get-ChildItem -Path $dir -Filter '*.zip' | Remove-Item -Force
 }
