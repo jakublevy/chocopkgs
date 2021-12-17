@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>anki</id>
+    <version>2.1.49</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/anki</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>The Anki Flashcard Program</title>
+    <authors>Damien Elmes</authors>
+    <projectUrl>https://apps.ankiweb.net</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/anki.png</iconUrl>
+    <copyright>
+      Copyright (c) 2006-Present Damien Elmes
+      Copyright (c) 2010-Present contributors https://github.com/ankitects/anki/blob/main/CONTRIBUTORS
+    </copyright>
+    <licenseUrl>https://github.com/ankitects/anki/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/ankitects/anki</projectSourceUrl>
+    <docsUrl>https://docs.ankiweb.net</docsUrl>
+    <bugTrackerUrl>https://github.com/ankitects/anki/issues</bugTrackerUrl>
+    <tags>learning education flashcards efficient memory language-learning language remember spaced-repetition srs</tags>
+    <summary>Powerful, intelligent flash cards. Remembering things just became much easier.</summary>
+    <description>
+# Anki
+Anki is a program which makes remembering things easy. Because it's a lot more efficient than traditional study methods, you can either greatly decrease your time spent studying, or greatly increase the amount you learn. 
+
+Anyone who needs to remember things in their daily life can benefit from Anki. Since it is content-agnostic and supports images, audio, videos and scientific markup (via LaTeX), the possibilities are endless.
+For example:
+* Learning a language
+* Studying for medical and law exams
+* Memorizing people's names and faces
+* Brushing up on geography
+* Mastering long poems
+* Even practicing guitar chords!
+
+## Installation Parameters
+* `/CreateDesktopIcon` - creates a desktop icon
+    - Not created by default
+* `/InstallDir:` - where to install the binaries
+  - Default value: `"$env:ProgramFiles\Anki"`
+
+### Examples
+* Install into `D:\anki` directory
+  ```
+  choco install anki --params "/InstallDir:D:\anki"
+  ```
+* Install and create desktop icon
+  ```
+  choco install anki --params "/CreateDesktopIcon"
+  ```
+* Install into `D:\anki` directory and create a desktop icon
+  ```
+  choco install anki --params "'/CreateDesktopIcon /InstallDir:D:\anki'"
+  ```
+    </description>
+    <releaseNotes>https://github.com/ankitects/anki/releases/tag/2.1.49</releaseNotes>
+    <dependencies>
+      <dependency id="autohotkey.portable" version="1.1.30.00" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

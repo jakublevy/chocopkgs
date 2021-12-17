@@ -16,3 +16,8 @@ if($additionalArgs['InstallDir']) {
 }
 
 Install-ChocolateyPackage @packageArgs
+
+Remove-Item `
+  -Path $packageArgs['file64'] `
+  -ErrorAction SilentlyContinue `
+  -Force
