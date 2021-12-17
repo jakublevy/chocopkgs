@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ggf</id>
+    <version>0.2.2</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/ggf</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>ggf</title>
+    <authors>dd86k</authors>
+    <projectUrl>https://github.com/dd86k/ggf</projectUrl>
+    <copyright>Copyright (c) 2017-2020 dd86k</copyright>
+    <licenseUrl>https://github.com/dd86k/ggf/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/dd86k/ggf</projectSourceUrl>
+    <docsUrl>https://github.com/dd86k/ggf/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/dd86k/ggf/issues</bugTrackerUrl>
+    <tags>df du disk usage info information utility admin commandline</tags>
+    <summary>ggf is a small, lazily-written, df-like Windows disk information tool.</summary>
+    <description>
+# ggf - Windows disk information tool
+A small, lazily-written, df-like, Windows disk information tool.
+
+## Examples
+```
+ggf
+DRIVE  TYPE            USED       FREE      TOTAL  TYPE    NAME
+C:     Fixed       207.66 G    24.59 G   232.25 G  NTFS    OS
+D:     Fixed       813.38 G   118.13 G   931.51 G  NTFS    Data
+G:     Optical
+Z:     Network       6.48 G     8.16 G    14.64 G  FUSE-SSHFS
+```
+
+```
+ggf -P
+DRIVE  USAGE
+C:     [============================================================                      ] 72.7%
+D:     [===================================================                               ] 62.0%
+E:     [==========================                                                        ] 32.9%
+G:
+K:     [====================================================================              ] 81.9%
+```
+
+```
+ggf -M
+DRIVE  SERIAL     MAX PATH
+C:     ACBB-235D       255
+D:     666C-A820       255
+G:
+Y:     A9EE-3156       255
+Z:     0090-0458       255
+```
+
+## Usage
+```
+ggf -h
+Get disk(s) information.
+  Usage: ggf [OPTIONS] [DRIVE]
+          ggf {-h|-v|-?}
+
+By default, view disk usage by size.
+
+OPTIONS
+-P      View usage by progress-bar style
+-F      View features
+-M      View misc. features (serial, MAX_PATH)
+-b      Use base10 size formatting
+-n      Remove header
+```
+    </description>
+<releaseNotes>https://github.com/dd86k/ggf/releases/tag/v0.2.2</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
