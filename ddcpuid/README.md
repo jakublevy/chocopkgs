@@ -33,7 +33,7 @@ Cache L3-U:  2x 8MB     (16MB)   SI NWBV
 
 ## Usage
 ```
-$ ddcpuid
+$ ddcpuid -h
 x86/AMD64 CPUID information tool
 
 USAGE
