@@ -1,25 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+<?xml version="1.0"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <metadata>
     <id>anki</id>
-    <version>2.1.49</version>
-    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/anki</packageSourceUrl>
-    <owners>Jakub Levý</owners>
     <title>The Anki Flashcard Program</title>
+    <version>2.1.49</version>
     <authors>Damien Elmes</authors>
-    <projectUrl>https://apps.ankiweb.net</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/anki.png</iconUrl>
     <copyright>
       Copyright (c) 2006-Present Damien Elmes
-      Copyright (c) 2010-Present contributors https://github.com/ankitects/anki/blob/main/CONTRIBUTORS
+      Copyright (c) 2010-Present contributors
     </copyright>
-    <licenseUrl>https://github.com/ankitects/anki/blob/main/LICENSE</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/ankitects/anki</projectSourceUrl>
-    <docsUrl>https://docs.ankiweb.net</docsUrl>
-    <bugTrackerUrl>https://github.com/ankitects/anki/issues</bugTrackerUrl>
-    <tags>learning education flashcards efficient memory language-learning language remember spaced-repetition srs cross-platform</tags>
-    <summary>Powerful, intelligent flash cards. Remembering things just became much easier.</summary>
+    <owners>rlpowell,Lite</owners>
+    <summary>Anki is a friendly, intelligent flashcard program which makes remembering things easy.</summary>
     <description>
 # Anki
 Anki is a program which makes remembering things easy. Because it's a lot more efficient than traditional study methods, you can either greatly decrease your time spent studying, or greatly increase the amount you learn. 
@@ -52,14 +43,22 @@ For example:
   ```
   choco install anki --params "'/CreateDesktopIcon /InstallDir:D:\anki'"
   ```
-    </description>
+  </description>
+    <projectUrl>https://apps.ankiweb.net</projectUrl>
+    <tags>learning education flashcards efficient memory language-learning language remember spaced-repetition srs admin cross-platform</tags>
+    <licenseUrl>https://github.com/ankitects/anki/blob/main/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <iconUrl>https://cdn.rawgit.com/Litee/chocolatey-packages/master/automatic/anki/anki.png</iconUrl>
+    <packageSourceUrl>https://github.com/Litee/chocolatey-packages/tree/master/automatic/anki</packageSourceUrl>
     <releaseNotes>https://github.com/ankitects/anki/releases/tag/2.1.49</releaseNotes>
+    <docsUrl>https://docs.ankiweb.net</docsUrl>
+    <bugTrackerUrl>https://github.com/ankitects/anki/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/ankitects/anki</projectSourceUrl>
     <dependencies>
       <dependency id="autohotkey.portable" version="1.1.30.00" />
     </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>
