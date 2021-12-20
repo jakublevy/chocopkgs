@@ -16,7 +16,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://gitlab.com/pdftk-java/pdftk/-/raw/master/CHANGELOG.md'
     $download_links = Invoke-WebRequest -UseBasicParsing -Uri 'https://gitlab.com/pdftk-java/pdftk/-/raw/master/README.md'
     $version = ([regex]::Match($download_page.Content, '\[(\d+\.\d+(\.\d+)*)\]')).Groups[1].Value
-    $download_link = ([regex]::Match($download_links.Content, '(https://gitlab.com/pdftk-java/pdftk/-/jobs/\d+/artifacts/raw/build/libs/pdftk-all.jar)')).Groups[1].Value
+    $download_link = ([regex]::Match($download_links.Content, "(https://gitlab.com/api/v4/projects/\d+/packages/generic/pdftk-java/v$version/pdftk-all.jar)")).Groups[1].Value
     @{
         Url32        = $download_link
         Version      = $version

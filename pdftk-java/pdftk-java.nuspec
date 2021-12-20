@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pdftk-java</id>
-    <version>3.3.1</version>
+    <version>3.3.2</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/pdftk-java</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>The PDF Toolkit</title>
@@ -20,8 +20,7 @@
     <bugTrackerUrl>https://gitlab.com/pdftk-java/pdftk/-/issues</bugTrackerUrl>
     <tags>pdftk pdf toolkit manipulate merge shuffle concatenate rotate split page admin cross-platform commandline</tags>
     <summary>PDFtk is a toolkit for manipulating PDF documents.</summary>
-    <description>  
-# PDFtk
+    <description><![CDATA[# PDFtk
 PDFtk (short for PDF Toolkit) is a toolkit for manipulating Portable Document Format (PDF) documents.
 
 **This is a port of pdftk into Java**. If you are looking for original version written in C++, it is available as [pdftk](https://community.chocolatey.org/packages/pdftk) package.
@@ -48,8 +47,8 @@ The current goals are to keep functionality as compatible with the original as i
     ```
     choco install pdftk-java --params "'/AddToSystemPath:no /AddToUserPath:no'"
     ```
-    </description>
-    <releaseNotes>https://gitlab.com/pdftk-java/pdftk/-/blob/v3.3.1/CHANGELOG.md</releaseNotes>
+]]></description>
+    <releaseNotes>https://gitlab.com/pdftk-java/pdftk/-/blob/v3.3.2/CHANGELOG.md</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
