@@ -11,10 +11,5 @@ WinWait, % winTitle
 IfWinExist, % winTitle
 {
    WinActivate, % winTitle
-   Loop
-   {
-      ControlSend,, {Enter}, % winTitle,,, NA ; OK
-      Sleep, 150
-      ControlGet, isVisible, Visible,, Button1, % winTitle,,, NA
-   } Until isVisible
+   ControlSend,, {Enter}, % winTitle,,, NA ; OK
 }
