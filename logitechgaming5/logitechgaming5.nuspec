@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>logitechgaming5</id>
+    <version>5.10.127</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/logitechgaming5</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Logitech Gaming Software 5</title>
+    <authors>Logitech International S.A.</authors>
+    <projectUrl>https://support.logi.com/hc/en-us/articles/360024689694--Downloads-Cordless-Rumblepad-2</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/logitechgaming5.png</iconUrl>
+    <copyright>Copyright (c) 2004-2010 Logitech</copyright>
+    <licenseUrl>https://www.logitech.com/en-us/legal/eula.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <bugTrackerUrl>https://logitech.com/support</bugTrackerUrl>
+    <tags>logitech drivers profiler gaming software rumblepad gamepad joystick wheel</tags>
+    <summary>Drivers &amp; Logitech Profiler for older Logitech devices.</summary>
+    <description>
+# Logitech Gaming Software 5
+Drivers and Logitech Profiler software for older Logitech devices, for supported devices see [the compatibility list](https://support.logi.com/hc/en-us/articles/360023375193-Logitech-game-devices-compatible-with-Logitech-Gaming-Software-5-10).
+
+If you have a more recent Logitech device, you may need the newest version of Logitech Gaming provided in [logitechgaming](https://community.chocolatey.org/packages/logitechgaming), or [lghub](https://community.chocolatey.org/packages/lghub).
+
+## Installation Parameters
+* `/Language:` - which language edition to install
+  - Supported values: `da`, `de`, `en`, `el`, `es`, `fi`, `fr`, `it`, `ko`, `nl`, `no`, `pt`, `sv`, `zh-CN`, `zh-TW`
+  - Default value: `en`
+
+### Examples
+* Install French language variant
+  ```
+  choco install logitechgaming5 --params "/Language:fr"
+  ```
+* Install Traditional Chinese language variant
+  ```
+  choco install logitechgaming5 --params "/Language:zh-TW"
+    </description>
+    <dependencies>
+      <dependency id="autohotkey.portable" version="1.1.30.00" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
