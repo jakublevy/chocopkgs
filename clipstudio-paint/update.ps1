@@ -55,4 +55,4 @@ function Find-Version {
     throw "No matching version found."
 }
 
-Update-Package -ChecksumFor 64
+Update-Package -ChecksumFor 64 -NoCheckChocoVersion
