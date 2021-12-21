@@ -20,12 +20,12 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/dd86k/ddh/releases'
-    $relative_url  = $download_page.links | Where-Object href -match '/dd86k/ddh/releases/download/v\d+\.\d+(\.\d+)*/ddh-windows-x86_64\.zip' | Select-Object -First 1 -expand href
+    $relative_url  = $download_page.links | Where-Object href -match '/dd86k/ddh/releases/download/v\d+\.\d+(\.\d+)*/ddh-\d+\.\d+(\.\d+)*-windows-msvc-x86_64\.zip' | Select-Object -First 1 -expand href
     $version = ([regex]::Match($relative_url, 'v(\d+\.\d+(\.\d+)*)')).Groups[1].Value
     @{
         Version      = $version
-        Url32        = "https://github.com/dd86k/ddh/releases/download/v$version/ddh-windows-x86.zip"
-        Url64        = "https://github.com/dd86k/ddh/releases/download/v$version/ddh-windows-x86_64.zip"
+        Url32        = "https://github.com/dd86k/ddh/releases/download/v$version/ddh-$version-windows-msvc-x86.zip"
+        Url64        = "https://github.com/dd86k/ddh/releases/download/v$version/ddh-$version-windows-msvc-x86_64.zip"
         ReleaseNotes = "https://github.com/dd86k/ddh/releases/tag/v$version"
     }
 }
