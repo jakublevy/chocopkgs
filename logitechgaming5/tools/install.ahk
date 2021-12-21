@@ -75,7 +75,7 @@ IfWinExist, % installerWindow
    ControlClick, Button7, % installerWindow,,,, NA ; Install
 
    ; Software Setup
-   WinWait, % setupWindow,, 6
+   WinWait, % setupWindow
    IfWinExist, % setupWindow 
    {
       WinActivate, % setupWindow
