@@ -13,17 +13,14 @@ $packageArgs = @{
 
 $requestParams = @{
   useBasicParsing = $true
-  uri             = 'https://www.joeware.net/downloads/dl.php'
+  uri             = 'https://www.joeware.net/downloads/dl2.php'
   method          = 'POST'
   outFile         = "$toolsDir\Quiet.zip"
-  timeoutSec      = 180
   body            = @{
     download = 'Quiet.zip'
     B1       = 'Download+Now'
   }
 }
-
-Write-Host "Please be patient when installing this package, it can take up to 3 minutes due to a slow response of the download server." -ForegroundColor Cyan
 
 Invoke-WebRequest @requestParams
 

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>quiet</id>
-    <version>1.01.00</version>
+    <version>1.01.00.20211221</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/quiet</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Quiet</title>
