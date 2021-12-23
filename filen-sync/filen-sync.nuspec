@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>filen-sync</id>
+    <version>1.6.2</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/filen-sync</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Filen Sync</title>
+    <authors>Filen Cloud Dienste UG</authors>
+    <projectUrl>https://filen.io</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/filen-sync.png</iconUrl>
+    <copyright>Copyright © 2021 Filen Cloud Dienste UG (haftungsbeschränkt)</copyright>
+    <licenseUrl>https://github.com/FilenCloudDienste/filen-desktop/blob/master/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/FilenCloudDienste/filen-desktop</projectSourceUrl>
+    <docsUrl>https://github.com/FilenCloudDienste/filen-desktop/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/FilenCloudDienste/filen-desktop/issues</bugTrackerUrl>
+    <tags>filen.io end-to-end encrypted secure cloud storage open-source desktop client electron cross-platform</tags>
+    <summary>Cross-platform desktop client for filen.io</summary>
+    <description><![CDATA[# Filen Sync
+Cross-platform desktop client for [filen.io](https://filen.io).
+
+## Installation Parameters
+* `/InstallDir:` - where to install the binaries
+  - Default value: `"$env:localappdata\Programs\filen-desktop-client"`
+
+### Examples
+* Install into `"C:\Users\joe\filen-sync"` directory
+  ```
+  choco install filen-sync --params "/InstallDir:C:\Users\joe\filen-sync"
+  ```
+]]></description>
+    <releaseNotes>https://github.com/FilenCloudDienste/filen-desktop/releases/tag/1.6.2</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

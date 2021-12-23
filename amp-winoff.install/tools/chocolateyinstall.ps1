@@ -8,7 +8,7 @@ $packageArgs = @{
   softwareName  = 'AMP WinOFF*'
   checksum      = $checksum
   checksumType  = 'sha256'
-  silentArgs    = "/S"
+  silentArgs    = '/S'
   validExitCodes= @(0)
 }
 
