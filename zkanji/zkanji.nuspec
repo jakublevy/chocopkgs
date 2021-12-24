@@ -42,6 +42,5 @@ zkanji is a free and open-source study tool and dictionary of the Japanese langu
     </dependencies>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
   </files>
 </package>
