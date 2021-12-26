@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>ugrep</id>
+    <version>3.4.0</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/ugrep</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>ugrep</title>
+    <authors>Robert van Engelen, Genivia Inc.</authors>
+    <projectUrl>https://github.com/Genivia/ugrep</projectUrl>
+    <copyright>Copyright (c) 2019, Robert van Engelen, Genivia Inc.</copyright>
+    <licenseUrl>https://github.com/Genivia/ugrep/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Genivia/ugrep</projectSourceUrl>
+    <docsUrl>https://github.com/Genivia/ugrep/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/Genivia/ugrep/issues</bugTrackerUrl>
+    <tags>grep search vim interactive regex fuzzy-search code-search commandline</tags>
+    <summary>🔍Ultra fast grep with interactive query UI and fuzzy search.</summary>
+    <description>  
+# ugrep
+Ultra fast grep with interactive query UI and fuzzy search: search file systems, source code, text, binary files, archives (cpio/tar/pax/zip), compressed files (gz/Z/bz2/lzma/xz/lz4/zstd), documents and more. A faster, user-friendly and compatible grep replacement. 
+* Supports all GNU/BSD grep standard options; a compatible replacement for GNU/BSD grep
+* Matches Unicode patterns by default in UTF-8, UTF-16, UTF-32 encoded files
+* Ultra fast with new match algorithms and features beating grep, ripgrep, silver searcher, ack, sift, etc.
+* Written in clean and efficient C++11 for advanced features and speed, thoroughly tested
+* Portable (Linux, Unix, MacOS, Windows, etc)
+* ...
+
+### For more information about ugrep see [README.md](https://github.com/Genivia/ugrep/blob/master/README.md).
+    </description>
+    <releaseNotes>https://github.com/Genivia/ugrep/releases/tag/v3.4.0</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
