@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 function get-changelog($version) {
     $changelog_url = "https://raw.githubusercontent.com/file/file/FILE$($version -replace '\.','_')/ChangeLog"
 
-    $full_changelog = iwr $changelog_url | %{ $_.content -split "`n" } | ?{ $_ -match '^\s+\*' } | %{ $_ -replace '^\s+','' } | select -skip 1
+    $full_changelog = iwr $changelog_url | %{ $_.content -split "`n" } | ?{ $_ -match '^\s+\*' } | %{ $_ -replace '^\s+','' } | Select-Object -skip 1
 
     foreach ($entry in $full_changelog) {
         if ($entry -match '\* release ') {
@@ -38,26 +38,31 @@ function global:au_GetLatest {
 }
 
 function global:au_BeforeUpdate {
-    set-alias 7z $env:chocolateyInstall/tools/7z.exe
+    if($IsWindows) {
+        set-alias 7z $env:chocolateyInstall/tools/7z.exe
+    }
+    else {
+        set-alias 7z $(which 7z)
+    }
 
-    mkdir $psscriptroot/tools -ea ignore | out-null
+    New-Item $psscriptroot/tools -ea ignore -ItemType Directory | out-null
 
     pushd $psscriptroot/tools
 
-    ri -recurse -force * -ea ignore
+    Remove-Item -recurse -force * -ea ignore
 
-    mkdir x64,x86 -ea ignore | out-null
+    New-Item x64,x86 -ea ignore -ItemType Directory | out-null
 
     iwr $Latest.Url64 -outfile file-x86_64.7z
     iwr $Latest.Url32 -outfile file-x86_32.7z
 
     7z x file-x86_64.7z | out-null
-    mi file.exe x64
+    Move-Item file.exe x64
 
     7z x file-x86_32.7z | out-null
-    mi file.exe x86
+    Move-Item file.exe x86
 
-    ri *.7z
+    Remove-Item *.7z
 
     $Latest.Checksum64 = get-filehash x64/file.exe | % hash
     $Latest.Checksum32 = get-filehash x86/file.exe | % hash
@@ -70,10 +75,15 @@ function global:au_AfterUpdate($package) {
 
 # Update README.md with file.exe --help.
     $skip = $false
-    gc README.md | %{
+    Get-Content README.md | %{
         if (-not $skip) { $_ }
         if ($_ -match '^\$ file --help$') {
-            tools/x86/file.exe --help
+            if($IsWindows) {
+                tools/x86/file.exe --help
+            }
+            else {
+                wine tools/x86/file.exe --help 2> /dev/null
+            }
             $skip = $true
         }
         elseif ($skip -and ($_ -match '^```$')) {
@@ -81,7 +91,7 @@ function global:au_AfterUpdate($package) {
             $skip = $false
         }
     } > new.README
-    mi -force new.README README.md
+    Move-Item -force new.README README.md
 
     popd
 
@@ -91,7 +101,7 @@ function global:au_AfterUpdate($package) {
 
 # Update <releaseNotes> in .nuspec.
     $skip = $false
-    gc file.nuspec | %{
+    Get-Content file.nuspec | %{
         if (-not $skip) { $_ }
         if ($_ -match '<releaseNotes>') {
             $Latest.ReleaseNotes
@@ -102,7 +112,7 @@ function global:au_AfterUpdate($package) {
             $skip = $false
         }
     } > new.nuspec
-    mi -force new.nuspec file.nuspec
+    Move-Item -force new.nuspec file.nuspec
 
     popd
 }
