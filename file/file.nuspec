@@ -99,7 +99,7 @@ Report bugs to https://bugs.astron.com/
 * count the total bytes found not the total byte positions
     </releaseNotes>
     <dependencies>
-      <dependency id="vcredist140" />
+      <dependency id="vcredist140" version="14.16.27024.1" />
     </dependencies>
   </metadata>
   <files>
