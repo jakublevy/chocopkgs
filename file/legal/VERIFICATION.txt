@@ -9,7 +9,7 @@ Package can be verified like this:
    x86: https://github.com/rkitover/file-windows/releases/download/v5.41/file_5.41-x86_32.7z
    x64: https://github.com/rkitover/file-windows/releases/download/v5.41/file_5.41-x86_64.7z
 
-   to download the installer.
+   to download the archive.
 
 2. You can use one of the following methods to obtain the SHA256 checksum:
    - Use powershell function 'Get-FileHash'
@@ -17,7 +17,9 @@ Package can be verified like this:
 
    checksum32: A90787EE4863618A5AF8DD335518B3F4BBD9009153222AC33E01042AE05A2391
    checksum64: 1D54B67436C8DC280B124B882C7335CC6658163675CDB61A6B5F49D00753BEA9
-
+	
+   The checksum matches file.exe inside the archive.
+	
 License text in LICENSE.txt file was obtained 
    on 12/26/2021
    from https://raw.githubusercontent.com/file/file/FILE5_41/COPYING
