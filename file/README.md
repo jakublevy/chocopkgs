@@ -34,6 +34,7 @@ Determine type of FILEs.
                                apptype, ascii, cdf, compress, csv, elf,
                                encoding, soft, tar, json, text,
                                tokens
+      --exclude-quiet TEST         like exclude, but ignore unknown tests
   -f, --files-from FILE      read the filenames to be examined from FILE
   -F, --separator STRING     use string as separator instead of `:'
   -i, --mime                 output MIME type strings (--mime-type and
@@ -48,11 +49,14 @@ Determine type of FILEs.
   -N, --no-pad               do not pad output
   -0, --print0               terminate filenames with ASCII NUL
   -P, --parameter            set file engine parameter limits
-                               indir        15 recursion limit for indirection
-                               name         30 use limit for name/use magic
-                               elf_notes   256 max ELF notes processed
-                               elf_phnum   128 max ELF prog sections processed
-                               elf_shnum 32768 max ELF sections processed
+                                   bytes 1048576 max bytes to look inside file
+                               elf_notes     256 max ELF notes processed
+                               elf_phnum    2048 max ELF prog sections processed
+                               elf_shnum   32768 max ELF sections processed
+                                encoding   65536 max bytes to scan for encoding
+                                   indir      50 recursion limit for indirection
+                                    name      50 use limit for name/use magic
+                                   regex    8192 length limit for REGEX searches
   -r, --raw                  don't translate unprintable chars to \ooo
   -s, --special-files        treat special (block/char devices) files as
                              ordinary ones
