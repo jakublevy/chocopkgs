@@ -8,7 +8,7 @@
     <title>file</title>
     <authors>Ian F. Darwin,others</authors>
     <projectUrl>http://www.darwinsys.com/file/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/rkitover/file-windows/89e4b76cc0beb2fe7db0911974b1b632f035ddbf/data/filelogo.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/file.png</iconUrl>
     <copyright>1986-1999 Ian F. Darwin</copyright>
     <licenseUrl>https://raw.githubusercontent.com/file/file/FILE5_41/COPYING</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
