@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>logicoolgaming5</id>
+    <version>5.10.127</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/logicoolgaming5</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Logicool Gaming Software 5</title>
+    <authors>Logicool Co Ltd.</authors>
+    <projectUrl>https://support.logi.com/hc/ja/articles/360024703714</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/logitechgaming5.png</iconUrl>
+    <copyright>Copyright (c) 2004-2010 Logicool</copyright>
+    <licenseUrl>https://www.logicool.co.jp/ja-jp/legal/eula.html</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <bugTrackerUrl>https://support.logi.com/hc/ja</bugTrackerUrl>
+    <tags>logicool logitech drivers profiler gaming software rumblepad gamepad joystick wheel</tags>
+    <summary>Drivers &amp; Logicool Profiler for older Logicool devices.</summary>
+    <description>
+# Logicool Gaming Software 5
+Drivers and Logicool Profiler software for older Logicool devices, for supported devices see [the compatibility list](https://support.logi.com/hc/en-us/articles/360023375193-Logitech-game-devices-compatible-with-Logitech-Gaming-Software-5-10).
+
+**This is a Japanese version of Logitech Gaming 5**, if you are looking for international version, it is provided in [logitechgaming5](https://community.chocolatey.org/packages/logitechgaming5).
+
+If you have a more recent Logitech/Logicool device, you may need the newest version of Logitech/Logicool Gaming provided in:
+* [logitechgaming](https://community.chocolatey.org/packages/logitechgaming) (International version)
+* [logicoolgaming](https://community.chocolatey.org/packages/logicoolgaming) (Japanese version)
+
+If you device is a new product, you might need [lghub](https://community.chocolatey.org/packages/lghub).
+
+## Installation Parameters
+* `/Language:` - which language edition to install
+  - Supported values: `en`, `ja`
+  - Default value: `ja`
+
+### Examples
+* Install English language variant
+  ```
+  choco install logicoolgaming5 --params "/Language:en"
+  ```
+    </description>
+    <dependencies>
+      <dependency id="autohotkey.portable" version="1.1.30.00" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
