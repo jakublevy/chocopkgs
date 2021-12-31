@@ -15,8 +15,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://apps.ankiweb.net/'
 
-    $url = $download_page.links | Where-Object href -match 'https://github.com/ankitects/anki/releases/download/\d+\.\d+\.\d+/anki-\d+\.\d+\.\d+-windows.exe' | Select-Object -First 1 -expand href
-    $version = ([regex]::Match($url, '(\d+\.\d+\.\d+)-windows.exe')).Groups[1].Value
+    $url = $download_page.links | Where-Object href -match 'https://github.com/ankitects/anki/releases/download/\d+\.\d+(\.\d+)*/anki-\d+\.\d+(\.\d+)*-windows.exe' | Select-Object -First 1 -expand href
+    $version = ([regex]::Match($url, '(\d+\.\d+(\.\d+)*)-windows.exe')).Groups[1].Value
 
     @{
         URL32        = $url
