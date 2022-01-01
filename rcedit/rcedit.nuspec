@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>rcedit</id>
+    <version>1.1.1</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/rcedit</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>rcedit</title>
+    <authors>GitHub Inc.</authors>
+    <projectUrl>https://github.com/electron/rcedit</projectUrl>
+    <copyright>Copyright (c) 2013 GitHub Inc.</copyright>
+    <licenseUrl>https://github.com/electron/rcedit/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/electron/rcedit</projectSourceUrl>
+    <docsUrl>https://github.com/electron/rcedit#docs</docsUrl>
+    <bugTrackerUrl>https://github.com/electron/rcedit/issues</bugTrackerUrl>
+    <tags>edit resources exe executable dll library commandline</tags>
+    <summary>Command line tool to edit resources of exe file on Windows.</summary>
+    <description>
+# rcedit
+Command line tool to edit resources of exe file on Windows.
+
+## Examples
+Show help:
+```
+$ rcedit -h
+```
+Set version string:
+```
+$ rcedit "path-to-exe-or-dll" --set-version-string "Comments" "This is an exe"
+```
+Set icon:
+```
+$ rcedit "path-to-exe-or-dll" --set-icon "path-to-ico"
+```
+Set application manifest:
+```
+$ rcedit "path-to-exe-or-dll" --application-manifest ./path/to/manifest/file
+```
+Get version string:
+```
+$ rcedit "path-to-exe-or-dll" --get-version-string "property"
+```
+
+### For more information about rcedit see [README.md#Docs](https://github.com/electron/rcedit#docs).
+    </description>
+    <releaseNotes>https://github.com/electron/rcedit/releases/tag/v1.1.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
