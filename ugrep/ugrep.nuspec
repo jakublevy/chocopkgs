@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ugrep</id>
-    <version>3.4.0</version>
+    <version>3.5.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/ugrep</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ugrep</title>
@@ -16,8 +16,7 @@
     <bugTrackerUrl>https://github.com/Genivia/ugrep/issues</bugTrackerUrl>
     <tags>grep search vim interactive regex fuzzy-search code-search commandline</tags>
     <summary>🔍Ultra fast grep with interactive query UI and fuzzy search.</summary>
-    <description>  
-# ugrep
+    <description><![CDATA[# ugrep
 Ultra fast grep with interactive query UI and fuzzy search: search file systems, source code, text, binary files, archives (cpio/tar/pax/zip), compressed files (gz/Z/bz2/lzma/xz/lz4/zstd), documents and more. A faster, user-friendly and compatible grep replacement. 
 * Supports all GNU/BSD grep standard options; a compatible replacement for GNU/BSD grep
 * Matches Unicode patterns by default in UTF-8, UTF-16, UTF-32 encoded files
@@ -27,8 +26,8 @@ Ultra fast grep with interactive query UI and fuzzy search: search file systems,
 * ...
 
 ### For more information about ugrep see [README.md](https://github.com/Genivia/ugrep/blob/master/README.md).
-    </description>
-    <releaseNotes>https://github.com/Genivia/ugrep/releases/tag/v3.4.0</releaseNotes>
+]]></description>
+    <releaseNotes>https://github.com/Genivia/ugrep/releases/tag/v3.5.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

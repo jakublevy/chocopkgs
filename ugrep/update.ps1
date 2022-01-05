@@ -6,6 +6,9 @@ function global:au_SearchReplace {
             "(?i)(\s+Go to).*"         = "`${1} $($Latest.Url64)"
             "(?i)(\s+checksum64:).*"   = "`${1} $($Latest.Checksum64)"
         }
+        ".\ugrep.nuspec" = @{
+            "(?i)(<releaseNotes>).*(</releaseNotes>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
+        }
     }
 }
 
@@ -16,6 +19,7 @@ function global:au_GetLatest {
     @{
         Url64        = "https://github.com/Genivia/ugrep/releases/download/v$version/ugrep.exe"
         Version      = $version
+        ReleaseNotes = "https://github.com/Genivia/ugrep/releases/tag/v$version"
     }
 }
 function global:au_BeforeUpdate {
