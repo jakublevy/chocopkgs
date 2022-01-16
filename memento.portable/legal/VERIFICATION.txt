@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://github.com/ripose-jp/Memento/releases/download/v0.5.3-beta/Memento_Windows_x86_64.zip
+1. Go to https://github.com/ripose-jp/Memento/releases/download/v0.5.4-beta/Memento_Windows_x86_64.zip
 
    to download the installer.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 0908D33D897F258C503B6837956A12BB808B0030B8C60C79DD3DCF2000184FC3
+   checksum64: B2535A7BB6CDFA37AED20E0C778E69029544D0951C21B0A22B90160BB34D77D0
 
 License text in LICENSE.txt file was obtained
    on 08/17/2021
