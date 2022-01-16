@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>strawberrymusicplayer</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/strawberrymusicplayer</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Strawberry Music Player</title>
@@ -17,8 +17,7 @@
     <bugTrackerUrl>https://github.com/strawberrymusicplayer/strawberry/issues</bugTrackerUrl>
     <tags>strawberry music audio player collection organizer audiophile stream radio cross-platform qt</tags>
     <summary>🍓 Strawberry is a music player and music collection organizer is aimed at music collectors and audiophiles.</summary>
-    <description>
-# Strawberry Music Player
+    <description><![CDATA[# Strawberry Music Player
 Strawberry is a music player and music collection organizer. It is a fork of Clementine released in 2018 aimed at music collectors and audiophiles. It's written in C++ using the Qt toolkit.
 
 ## Installation Parameters
@@ -30,8 +29,8 @@ Strawberry is a music player and music collection organizer. It is a fork of Cle
     ```
     choco install strawberrymusicplayer --params "/InstallDir:D:\strawberry-music-player"
     ```
-    </description>
-<releaseNotes>https://github.com/strawberrymusicplayer/strawberry/blob/1.0.0/Changelog</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/strawberrymusicplayer/strawberry/blob/1.0.1/Changelog</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
