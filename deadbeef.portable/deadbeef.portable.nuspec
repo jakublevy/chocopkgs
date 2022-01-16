@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>deadbeef.portable</id>
-    <version>1.8.8</version>
+    <version>1.9.0-beta1</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/deadbeef.portable</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>DeaDBeeF (Portable)</title>
@@ -17,8 +17,7 @@
     <bugTrackerUrl>https://github.com/DeaDBeeF-Player/deadbeef/issues</bugTrackerUrl>
     <tags>audio player media flac mp3 gtk</tags>
     <summary>♫ DeaDBeeF (as in 0xDEADBEEF) is a modular audio player.</summary>
-    <description>
-**NOTE:** The following text is for the most part an excerpt from [the official website](https://deadbeef.sourceforge.io).
+    <description><![CDATA[**NOTE:** The following text is for the most part an excerpt from [the official website](https://deadbeef.sourceforge.io).
 
 # DeaDBeeF
 DeaDBeeF (as in [0xDEADBEEF](http://en.wikipedia.org/wiki/Hexspeak)) is a modular multiple-platform audio player for desktop operating systems.
@@ -45,8 +44,8 @@ The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux
     ```
     choco install deadbeef.portable --params "'/AddToSystemPath:no /AddToUserPath:no'"
     ```
-    </description>
-    <releaseNotes>https://github.com/DeaDBeeF-Player/deadbeef/blob/1.8.8/ChangeLog</releaseNotes>
+]]></description>
+    <releaseNotes>https://github.com/DeaDBeeF-Player/deadbeef/blob/1.9/ChangeLog</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

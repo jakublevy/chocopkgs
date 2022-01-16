@@ -3,7 +3,7 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  fileFullPath64= Join-Path $toolsDir 'deadbeef-1.8.8-windows-x86_64.zip'
+  fileFullPath64= Join-Path $toolsDir 'deadbeef-1.9.0-beta1-windows-x86_64.zip'
   destination   = Get-ToolsLocation
   validExitCodes= @(0)
 }
