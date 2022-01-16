@@ -20,6 +20,11 @@ function global:au_GetLatest {
     $relative_urls  = $download_page.links | ? href -match ".*/\d+\.\d+(\.\d+)*/$" | Select-Object -exp href
     $versions = $relative_urls | % { ([regex]::Match($_, '.*/(\d+\.\d+(\.\d+)*)/$')).Groups[1].Value }
     $version = $versions | Sort-Object -Descending {[version] $_ } | Select-Object -First 1
+    $files_page = Invoke-WebRequest -UseBasicParsing -Uri "https://sourceforge.net/projects/deadbeef/files/travis/windows/$version"
+    $matched_files = $files_page.links | ? href -match "deadbeef-$version(\.0)?-windows-x86_64\.zip"
+    if(-not $matched_files) {
+        $version = $versions | Sort-Object -Descending {[version] $_ } | Select-Object -First 2 | Select-Object -Last 1
+    }
     @{
         Url64        = "https://sourceforge.net/projects/deadbeef/files/travis/windows/$version/deadbeef-$version-windows-x86_64.zip"
         Version      = $version
