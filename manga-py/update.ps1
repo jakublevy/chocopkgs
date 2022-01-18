@@ -21,7 +21,7 @@ function global:au_GetLatest {
     $version = ([regex]::Match($relative_url, '(\d+\.\d+(\.\d+)*)\.zip')).Groups[1].Value
     @{
         Version      = $version
-        Url64        = "https://github.com/jakublevy/manga-py-win/releases/download/v$version/manga_py-$version-win-x64.zip"
+        Url64        = "https://github.com/manga-py/manga-py-win/releases/download/$version/manga_py-$version-win-x64.zip"
         ReleaseNotes = "https://github.com/manga-py/manga-py/releases/tag/$version"
     }
 }
