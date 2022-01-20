@@ -14,7 +14,8 @@
     <bugTrackerUrl>https://sysprogs.com/support</bugTrackerUrl>
     <tags>visual studio VS cross-platform gdb linux c c++ native dev IOT sysprogs trial</tags>
     <summary>Serious Cross-Platform for Visual Studio!</summary>
-    <description><![CDATA[**NOTE:** This is commercial software with 30-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://visualgdb.com).
+    <description>
+**NOTE:** This is commercial software with 30-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://visualgdb.com).
 
 **NOTE:** VisualGDB requires Microsoft Visual Studio as a dependency, see [system requirements](https://visualgdb.com/download).
 
@@ -24,7 +25,7 @@ VisualGDB integrates the GNU toolchain (GCC/GDB) into Visual Studio. With Visual
 ## Installation Parameters
 * `/InstallDir:` - where to install the binaries
   - Default value:
-    - `"${env:ProgramFiles(x86)}\Sysprogs\VisualGDB"` on 64-bit Windows
+    - `"$env:ProgramFiles(x86)\Sysprogs\VisualGDB"` on 64-bit Windows
     - `"$env:ProgramFiles\Sysprogs\VisualGDB"` on 32-bit Windows
 
 ### Examples
@@ -32,7 +33,7 @@ VisualGDB integrates the GNU toolchain (GCC/GDB) into Visual Studio. With Visual
   ```
   choco install visualgdb --params "/InstallDir:D:\visualgdb"
   ```
-]]></description>
+    </description>
     <releaseNotes>https://visualgdb.com/history</releaseNotes>
   </metadata>
   <files>
