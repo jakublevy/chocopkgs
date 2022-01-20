@@ -7,7 +7,7 @@ zkanji is a free and open-source study tool and dictionary of the Japanese langu
 ## Installation Parameters
 * `/InstallDir:` - where to install the binaries
   - Default value:
-    - `"${env:ProgramFiles(x86)}\zkanji"` on 64-bit Windows
+    - `"$env:ProgramFiles(x86)\zkanji"` on 64-bit Windows
     - `"$env:ProgramFiles\zkanji"` on 32-bit Windows
 * `/CreateDesktopIcon` - creates a desktop icon
     - Not created by default

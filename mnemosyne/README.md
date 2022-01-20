@@ -15,7 +15,7 @@ Mnemosyne aims to be a user-friendly flash card program, with a clean, deceptive
 ## Installation Parameters
 * `/InstallDir:` - where to install the binaries
     - Default value: 
-        - `"${env:ProgramFiles(x86)}\Mnemosyne"` on 64-bit Windows
+        - `"$env:ProgramFiles(x86)\Mnemosyne"` on 64-bit Windows
         - `"$env:ProgramFiles\Mnemosyne"` on 32-bit Windows
 
 ### Examples

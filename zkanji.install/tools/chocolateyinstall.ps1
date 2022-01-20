@@ -25,7 +25,7 @@ elseif(Get-OSArchitectureWidth -Compare 64) {
   Set-AhkVariableValue `
     -FileName $ahkFile `
     -Variable 'installDir' `
-    -NewValue "${env:ProgramFiles(x86)}\zkanji" `
+    -NewValue "$env:ProgramFiles(x86)\zkanji" `
     -Escape
 }
 else { #32-bit

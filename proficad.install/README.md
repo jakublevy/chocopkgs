@@ -25,7 +25,7 @@ The non-commercial (home) edition is distributed [free of charge](https://www.pr
 ## Installation Parameters
 * `/InstallationPath:` - where to install the binaries
     - Default value: 
-        - `"${env:ProgramFiles(x86)}\ProfiCAD"` on 64-bit Windows
+        - `"$env:ProgramFiles(x86)\ProfiCAD"` on 64-bit Windows
         - `"$env:ProgramFiles\ProfiCAD"` on 32-bit Windows
 
 ### Examples

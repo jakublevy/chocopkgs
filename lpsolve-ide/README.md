@@ -25,7 +25,7 @@ The LPSolve IDE (Integrated Development Interface) is a very user friendly Windo
 ## Installation Parameters
 * `/DIR:` - where to install the binaries
     - Default value: 
-        - `"${env:ProgramFiles(x86)}\LPSolve IDE"` on 64-bit Windows
+        - `"$env:ProgramFiles(x86)\LPSolve IDE"` on 64-bit Windows
         - `"$env:ProgramFiles\LPSolve IDE"` on 32-bit Windows
 * `/Tasks:` - passes values to `/MERGETASKS=""` (all tasks are enabled by default)
     - desktopicon
