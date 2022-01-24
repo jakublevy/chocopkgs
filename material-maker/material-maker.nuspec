@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>material-maker</id>
-    <version>0.97</version>
+    <version>0.98</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/material-maker.portable</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Material Maker</title>
@@ -17,7 +17,9 @@
     <bugTrackerUrl>https://github.com/RodZill4/material-maker/issues</bugTrackerUrl>
     <tags>procedural-generation glsl godotengine godot-engine painting textures texture-synthesis</tags>
     <summary>A procedural textures authoring and 3D model painting tool based on the Godot game engine.</summary>
-    <description><![CDATA[
+    <description><![CDATA[# Material Maker
+This is a tool based on [Godot Engine](https://godotengine.org) that can be used to create textures procedurally and paint 3D models.
+
 Its user interface is based on Godot's GraphEdit node: textures and brushes are described as interconnected nodes.
 
 ## Community
@@ -27,9 +29,9 @@ Its user interface is based on Godot's GraphEdit node: textures and brushes are 
 ## Screenshot
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/material-maker.portable/screenshot.png)
 ]]></description>
-<releaseNotes>https://github.com/RodZill4/material-maker/releases/tag/0.97</releaseNotes>
+<releaseNotes>https://github.com/RodZill4/material-maker/releases/tag/0.98</releaseNotes>
 <dependencies>
-  <dependency id="material-maker.portable" version="[0.97]" />
+  <dependency id="material-maker.portable" version="[0.98]" />
 </dependencies>
 </metadata>
 <files>

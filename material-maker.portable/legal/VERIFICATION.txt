@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://github.com/RodZill4/material-maker/releases/download/0.97/material_maker_0_97_windows.zip
+1. Go to https://github.com/RodZill4/material-maker/releases/download/0.98/material_maker_0_98_windows.zip
 
    to download the installer.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 049F446650560FF7A149E39202D6F977360691975C25F07BECD833399BD6485D
+   checksum64: A4782370F6C3E22E916E4B37418967844F43DA946DE73050B8099E131E5A2DBD
 
 License text in LICENSE.txt file was obtained 
    on 08/28/2021
