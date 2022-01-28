@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>visualgdb</id>
-    <version>5.6.3</version>
+    <version>5.6.4</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/visualgdb</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>VisualGDB</title>
@@ -14,8 +14,7 @@
     <bugTrackerUrl>https://sysprogs.com/support</bugTrackerUrl>
     <tags>visual studio VS cross-platform gdb linux c c++ native dev IOT sysprogs trial</tags>
     <summary>Serious Cross-Platform for Visual Studio!</summary>
-    <description>
-**NOTE:** This is commercial software with 30-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://visualgdb.com).
+    <description><![CDATA[**NOTE:** This is commercial software with 30-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://visualgdb.com).
 
 **NOTE:** VisualGDB requires Microsoft Visual Studio as a dependency, see [system requirements](https://visualgdb.com/download).
 
@@ -33,7 +32,7 @@ VisualGDB integrates the GNU toolchain (GCC/GDB) into Visual Studio. With Visual
   ```
   choco install visualgdb --params "/InstallDir:D:\visualgdb"
   ```
-    </description>
+]]></description>
     <releaseNotes>https://visualgdb.com/history</releaseNotes>
   </metadata>
   <files>
