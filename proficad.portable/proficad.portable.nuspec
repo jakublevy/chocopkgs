@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>proficad.portable</id>
-    <version>11.3.0</version>
+    <version>11.4.1</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/proficad.portable</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ProfiCAD (Portable)</title>
@@ -13,7 +13,7 @@
     <docsUrl>https://www.proficad.com/ProfiCAD.pdf</docsUrl>
     <tags>CAD drawing schematic diagram electronic circuit</tags>
     <summary>App designed for drawing of electrical and electronic diagrams, schematics, control circuit diagrams and can also be used for pneumatics, hydraulics and other types of technical diagrams.</summary>
-    <description><![CDATA[**NOTE:** The following text is an excerpt from [the official website](https://www.proficad.com).
+    <description><![CDATA[﻿**NOTE:** The following text is an excerpt from [the official website](https://www.proficad.com).
 
 # ProfiCAD
 ProfiCAD is designed for drawing of [electrical and electronic diagrams](https://www.proficad.com/screenshots.aspx), schematics, control circuit diagrams and can also be used for pneumatics, hydraulics and other types of technical diagrams. 
