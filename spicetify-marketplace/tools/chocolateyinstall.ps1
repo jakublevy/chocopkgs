@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path -parent $MyInvocation.MyCommand.Definition
 $customAppsDir         = "$env:userprofile\.spicetify\CustomApps"
-$archiveName           = 'spicetify-marketplace-0.3.1-alpha.zip'
+$archiveName           = 'spicetify-marketplace-0.1-beta.zip'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName

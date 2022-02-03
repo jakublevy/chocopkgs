@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>spicetify-marketplace</id>
-    <version>0.3.1</version>
+    <version>0.3.2</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/spicetify-marketplace</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Spicetify Marketplace</title>
@@ -32,7 +32,7 @@ This project is a work-in-progress and is not finished, polished, or guaranteed 
 ## Screenshot
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/spicetify-marketplace/screenshot.png)
     </description>
-<releaseNotes>https://github.com/CharlieS1103/spicetify-marketplace/releases/tag/v0.3.1-alpha</releaseNotes>
+<releaseNotes>https://github.com/CharlieS1103/spicetify-marketplace/releases/tag/v0.1-beta</releaseNotes>
 <dependencies>
   <dependency id="spicetify-cli" version="2.8.0" />
   <dependency id="chocolatey-core.extension" version="1.1.0" />
