@@ -10,6 +10,13 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
+$xhFolder = $packageArgs['fileFullPath64'].Replace('.zip', '')
+
+Copy-Item `
+  -Path "$xhFolder\xh.exe" `
+  -Destination "$xhFolder\xhs.exe" `
+  -Force
+
 Remove-Item `
   -Path $packageArgs['fileFullPath64'] `
   -ErrorAction SilentlyContinue `
