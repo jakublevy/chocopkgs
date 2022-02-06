@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>sshs</id>
+    <version>1.4.1</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/sshs</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>sshs</title>
+    <authors>Nathanael Demacon</authors>
+    <projectUrl>https://github.com/quantumsheep/sshs</projectUrl>
+    <copyright>Copyright (c) 2022 Nathanael Demacon</copyright>
+    <licenseUrl>https://github.com/quantumsheep/sshs/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/quantumsheep/sshs</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/quantumsheep/sshs/issues</bugTrackerUrl>
+    <tags>ssh tui cross-platform commandline</tags>
+    <summary>Terminal user interface for SSH.</summary>
+    <description>
+# sshs
+Terminal user interface for SSH.
+
+It uses `$env:UserProfile\.ssh\config` to list and connect to hosts.
+
+## Dependencies
+You need to have `ssh` installed and accessible from your terminal.
+
+## Screenshot
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/sshs/screenshot.png)
+    </description>
+    <releaseNotes>https://github.com/quantumsheep/sshs/releases/tag/1.4.1</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
