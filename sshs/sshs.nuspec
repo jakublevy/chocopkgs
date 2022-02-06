@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sshs</id>
-    <version>1.4.1</version>
+    <version>1.4.2</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/sshs</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>sshs</title>
@@ -15,8 +15,7 @@
     <bugTrackerUrl>https://github.com/quantumsheep/sshs/issues</bugTrackerUrl>
     <tags>ssh tui cross-platform commandline</tags>
     <summary>Terminal user interface for SSH.</summary>
-    <description>
-# sshs
+    <description><![CDATA[# sshs
 Terminal user interface for SSH.
 
 It uses `$env:UserProfile\.ssh\config` to list and connect to hosts.
@@ -26,8 +25,8 @@ You need to have `ssh` installed and accessible from your terminal.
 
 ## Screenshot
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/sshs/screenshot.png)
-    </description>
-    <releaseNotes>https://github.com/quantumsheep/sshs/releases/tag/1.4.1</releaseNotes>
+]]></description>
+    <releaseNotes>https://github.com/quantumsheep/sshs/releases/tag/v1.4.2</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
