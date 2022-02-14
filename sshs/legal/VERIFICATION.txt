@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://github.com/quantumsheep/sshs/releases/download/1.5.0/sshs-windows-amd64.exe
+1. Go to https://github.com/quantumsheep/sshs/releases/download/2.0.0/sshs-windows-amd64.exe
 
    to download the binary.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: AF462EB5AD9EDB5E2F356018629B564A6286F516F9B4D9E73150FBC5C3945D13
+   checksum64: AE26BA24DB966A313C8EDA501684C7437CB4EAE6AC9EFD172344106E4B80A32C
 
 License text in LICENSE.txt file was obtained 
    on 02/06/2022
