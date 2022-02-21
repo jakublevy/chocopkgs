@@ -16,13 +16,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/CharlieS1103/spicetify-marketplace/releases'
-    $relative_url  = $download_page.links | Where-Object href -match '/CharlieS1103/spicetify-marketplace/archive/refs/tags/v\d+\.\d+(\.\d+)*(-alpha|-beta)?.zip' | Select-Object -First 1 -expand href
+    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/spicetify/spicetify-marketplace/releases'
+    $relative_url  = $download_page.links | Where-Object href -match '/spicetify/spicetify-marketplace/archive/refs/tags/v\d+\.\d+(\.\d+)*(-alpha|-beta)?\.zip' | Select-Object -First 1 -expand href
     $version = ([regex]::Match($relative_url, 'v(\d+\.\d+(\.\d+)*(-alpha|-beta)?)')).Groups[1].Value
     @{
         Version      = $version.Split('-')[0]
-        Url32        = "https://github.com/CharlieS1103/spicetify-marketplace/archive/refs/tags/v$version.zip"
-        ReleaseNotes = "https://github.com/CharlieS1103/spicetify-marketplace/releases/tag/v$version"
+        Url32        = "https://github.com/spicetify/spicetify-marketplace/archive/refs/tags/v$version.zip"
+        ReleaseNotes = "https://github.com/spicetify/spicetify-marketplace/releases/tag/v$version"
     }
 }
 

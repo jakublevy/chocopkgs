@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>spicetify-marketplace</id>
-    <version>0.3.2</version>
+    <version>0.4.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/spicetify-marketplace</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Spicetify Marketplace</title>
@@ -16,8 +16,7 @@
     <bugTrackerUrl>https://github.com/CharlieS1103/spicetify-marketplace/issues</bugTrackerUrl>
     <tags>spotify spicetify extensions themes customize market marketplace cross-platform</tags>
     <summary>Download extensions and themes directly from within Spicetify.</summary>
-    <description>
-# Spicetify Marketplace
+    <description><![CDATA[# Spicetify Marketplace
 
 Download Extensions and Themes Directly from within [Spicetify](https://community.chocolatey.org/packages/spicetify-cli). 
 
@@ -25,14 +24,15 @@ Based on the [reddit Custom App](https://github.com/khanhas/spicetify-cli/wiki/C
 
 ## Disclaimer
 All extensions are from community. They might contain unwanted code. Be careful what you install, or review the code before use. We hold no responsibility for these extensions or anything installed via this custom app. If you find a malicious extension, please [submit an issue](https://github.com/CharlieS1103/spicetify-marketplace/issues/new?template=malicious-extension-report.md) and we can add it to the [blacklist](https://github.com/CharlieS1103/spicetify-marketplace/blob/main/blacklist.json).
-
+    
 ## Notes: 
 This project is a work-in-progress and is not finished, polished, or guaranteed to work. Use at your own risk. 
 
 ## Screenshot
+
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/spicetify-marketplace/screenshot.png)
-    </description>
-<releaseNotes>https://github.com/CharlieS1103/spicetify-marketplace/releases/tag/v0.1-beta</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/spicetify/spicetify-marketplace/releases/tag/v0.4.0-beta</releaseNotes>
 <dependencies>
   <dependency id="spicetify-cli" version="2.8.0" />
   <dependency id="chocolatey-core.extension" version="1.1.0" />

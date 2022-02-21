@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path -parent $MyInvocation.MyCommand.Definition
 $customAppsDir         = "$env:userprofile\.spicetify\CustomApps"
-$archiveName           = 'spicetify-marketplace-0.1-beta.zip'
+$archiveName           = 'v0.4.0-beta.zip'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -10,7 +10,7 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
-# Based on the official installer: https://github.com/CharlieS1103/spicetify-marketplace/blob/main/install.ps1
+# Based on the official installer: https://github.com/spicetify/spicetify-marketplace/blob/main/install.ps1
 
 $spotifyInstalled = $true
 $spotify = Get-Process -Name 'spotify' -ErrorAction SilentlyContinue
@@ -34,7 +34,7 @@ elseif(Test-Path "$customAppsDir\spicetify-marketplace") {
 Get-ChocolateyUnzip @packageArgs
 
 Rename-Item `
-  -Path "$customAppsDir\$($archiveName.Replace('.zip', ''))" `
+  -Path "$customAppsDir\spicetify-marketplace-$($archiveName.Substring(1,$archiveName.Length - 5))" `
   -NewName 'spicetify-marketplace' `
   -Force
 
