@@ -7,13 +7,13 @@
     <owners>Jakub Levý</owners>
     <title>Spicetify Marketplace</title>
     <authors>CharlieS1103,theRealPadster</authors>
-    <projectUrl>https://github.com/CharlieS1103/spicetify-marketplace</projectUrl>
+    <projectUrl>https://github.com/spicetify/spicetify-marketplace</projectUrl>
     <copyright>Copyright (c) 2021 CharlieS1103</copyright>
-    <licenseUrl>https://github.com/CharlieS1103/spicetify-marketplace/blob/main/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/spicetify/spicetify-marketplace/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/CharlieS1103/spicetify-marketplace</projectSourceUrl>
-    <docsUrl>https://github.com/CharlieS1103/spicetify-marketplace/blob/main/README.md</docsUrl>
-    <bugTrackerUrl>https://github.com/CharlieS1103/spicetify-marketplace/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/spicetify/spicetify-marketplace</projectSourceUrl>
+    <docsUrl>https://github.com/spicetify/spicetify-marketplace/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/spicetify/spicetify-marketplace/issues</bugTrackerUrl>
     <tags>spotify spicetify extensions themes customize market marketplace cross-platform</tags>
     <summary>Download extensions and themes directly from within Spicetify.</summary>
     <description><![CDATA[# Spicetify Marketplace
@@ -23,7 +23,7 @@ Download Extensions and Themes Directly from within [Spicetify](https://communit
 Based on the [reddit Custom App](https://github.com/khanhas/spicetify-cli/wiki/Custom-Apps#reddit).
 
 ## Disclaimer
-All extensions are from community. They might contain unwanted code. Be careful what you install, or review the code before use. We hold no responsibility for these extensions or anything installed via this custom app. If you find a malicious extension, please [submit an issue](https://github.com/CharlieS1103/spicetify-marketplace/issues/new?template=malicious-extension-report.md) and we can add it to the [blacklist](https://github.com/CharlieS1103/spicetify-marketplace/blob/main/blacklist.json).
+All extensions are from community. They might contain unwanted code. Be careful what you install, or review the code before use. We hold no responsibility for these extensions or anything installed via this custom app. If you find a malicious extension, please [submit an issue](https://github.com/spicetify/spicetify-marketplace/issues/new?template=malicious-extension-report.md) and we can add it to the [blacklist](https://github.com/spicetify/spicetify-marketplace/blob/main/blacklist.json).
     
 ## Notes: 
 This project is a work-in-progress and is not finished, polished, or guaranteed to work. Use at your own risk. 
