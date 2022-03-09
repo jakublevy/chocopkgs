@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>steghide</id>
+    <version>0.5.1</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/steghide</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Steghide</title>
+    <authors>Stefan Hetzl</authors>
+    <projectUrl>http://steghide.sourceforge.net</projectUrl>
+    <copyright>Copyright (c) by Stefan Hetzl</copyright>
+    <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://sourceforge.net/projects/steghide/files/steghide/0.5.1/steghide-0.5.1.tar.gz</projectSourceUrl>
+    <docsUrl>http://steghide.sourceforge.net/documentation.php</docsUrl>
+    <bugTrackerUrl>https://sourceforge.net/p/steghide/bugs</bugTrackerUrl>
+    <mailingListUrl>https://sourceforge.net/projects/steghide/lists/steghide-devel</mailingListUrl>
+    <tags>steganography hide embed data image audio file commandline</tags>
+    <summary>Steghide is a steganography program that is able to hide data in various kinds of image and audio files.</summary>
+    <description>
+# Steghide
+Steghide is a steganography program that is able to hide data in various kinds of image- and audio-files. The color- respectivly sample-frequencies are not changed thus making the embedding resistant against first-order statistical tests.
+
+### Features
+* compression of embedded data
+* encryption of embedded data
+* embedding of a checksum to verify the integrity of the extraced data
+* support for JPEG, BMP, WAV and AU files    
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
