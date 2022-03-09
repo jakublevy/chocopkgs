@@ -15,7 +15,7 @@
     <docsUrl>http://steghide.sourceforge.net/documentation.php</docsUrl>
     <bugTrackerUrl>https://sourceforge.net/p/steghide/bugs</bugTrackerUrl>
     <mailingListUrl>https://sourceforge.net/projects/steghide/lists/steghide-devel</mailingListUrl>
-    <tags>steganography hide embed data image audio file commandline</tags>
+    <tags>steganography hide embed data image audio file cross-platform commandline</tags>
     <summary>Steghide is a steganography program that is able to hide data in various kinds of image and audio files.</summary>
     <description>
 # Steghide
