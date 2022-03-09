@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>z3</id>
+    <version>4.8.14</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/z3</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>Z3 Theorem Prover</title>
+    <authors>Microsoft Research</authors>
+    <projectUrl>https://github.com/Z3Prover/z3</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/z3.png</iconUrl>
+    <copyright>Copyright (c) Microsoft Corporation All rights reserved.</copyright>
+    <licenseUrl>https://github.com/Z3Prover/z3/blob/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Z3Prover/z3</projectSourceUrl>
+    <docsUrl>https://github.com/Z3Prover/z3/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/Z3Prover/z3/issues</bugTrackerUrl>
+    <tags>theorem prover constraint sat smt smtlib verification theory satisfy logic commandline cross-platform</tags>
+    <summary>Z3 is a theorem prover from Microsoft Research.</summary>
+    <description>
+# Z3 Theorem Prover
+Z3, also known as the Z3 Theorem Prover is a high-performance, cross-platform satisfiability modulo theories (SMT) solver by Microsoft Research.
+
+If you are not familiar with Z3, you can start [here](https://github.com/Z3Prover/z3/wiki#background).
+    </description>
+<releaseNotes>https://github.com/Z3Prover/z3/releases/tag/z3-4.8.14</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
