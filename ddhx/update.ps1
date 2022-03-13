@@ -20,12 +20,12 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/dd86k/ddhx/releases'
-    $relative_url  = $download_page.links | Where-Object href -match '/dd86k/ddhx/releases/download/v\d+\.\d+(\.\d+)*/ddhx-\d+\.\d+(\.\d+)*-windows-msvcrt-x86_64\.zip' | Select-Object -First 1 -expand href
+    $relative_url  = $download_page.links | Where-Object href -match '/dd86k/ddhx/releases/download/v\d+\.\d+(\.\d+)*/ddhx-\d+\.\d+(\.\d+)*-windows-x86_64-msvc\.zip' | Select-Object -First 1 -expand href
     $version = ([regex]::Match($relative_url, 'v(\d+\.\d+(\.\d+)*)')).Groups[1].Value
     @{
         Version      = $version
-        Url32        = "https://github.com/dd86k/ddhx/releases/download/v$version/ddhx-$version-windows-msvcrt-x86.zip"
-        Url64        = "https://github.com/dd86k/ddhx/releases/download/v$version/ddhx-$version-windows-msvcrt-x86_64.zip"
+        Url32        = "https://github.com/dd86k/ddhx/releases/download/v$version/ddhx-$version-windows-x86-msvc.zip"
+        Url64        = "https://github.com/dd86k/ddhx/releases/download/v$version/ddhx-$version-windows-x86_64-msvc.zip"
         ReleaseNotes = "https://github.com/dd86k/ddhx/releases/tag/v$version"
     }
 }
