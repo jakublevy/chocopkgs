@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ddhx</id>
-    <version>0.3.3</version>
+    <version>0.4.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/ddhx</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ddhx</title>
@@ -16,8 +16,7 @@
     <bugTrackerUrl>https://github.com/dd86k/ddhx/issues</bugTrackerUrl>
     <tags>hex file view dump utility admin commandline cross-platform</tags>
     <summary>ddhx is a quick and dirty TUI hexadecimal file viewer.</summary>
-    <description>
-# ddhx, Hexadecimal File Viewer
+    <description><![CDATA[# ddhx, Hexadecimal File Viewer
 ddhx is a quick and dirty TUI hexadecimal file viewer.
 
 It also supports dumping.
@@ -41,8 +40,8 @@ ddhx - Interactive hexadecimal file viewer
     --ver          Print only the version and exit
 -h, --help         Print this help screen and exit
 ```
-    </description>
-<releaseNotes>https://github.com/dd86k/ddhx/releases/tag/v0.3.3</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/dd86k/ddhx/releases/tag/v0.4.0</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
