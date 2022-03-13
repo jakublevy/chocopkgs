@@ -12,7 +12,7 @@
     <licenseUrl>https://github.com/dd86k/ddhx/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/dd86k/ddhx</projectSourceUrl>
-    <docsUrl>https://github.com/dd86k/ddhx/tree/master/docs</docsUrl>
+    <docsUrl>https://github.com/dd86k/ddhx/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/dd86k/ddhx/issues</bugTrackerUrl>
     <tags>hex file view dump utility admin commandline cross-platform</tags>
     <summary>ddhx is a quick and dirty TUI hexadecimal file viewer.</summary>
