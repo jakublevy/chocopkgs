@@ -19,6 +19,9 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/manga-py/manga-py/releases'
     $relative_url  = $download_page.links | Where-Object href -match '/manga-py/manga-py/archive/refs/tags/\d+\.\d+(\.\d+)\.zip' | Select-Object -First 1 -expand href
     $version = ([regex]::Match($relative_url, '(\d+\.\d+(\.\d+)*)\.zip')).Groups[1].Value
+    $req = Invoke-WebRequest -UseBasicParsing -Uri 'https://api.github.com/repos/manga-py/manga-py/releases'
+    $json = ConvertFrom-Json $req.Content
+    if($json[0].prerelease) { $version = $json[1].tag_name }
     @{
         Version      = $version
         Url64        = "https://github.com/manga-py/manga-py-win/releases/download/$version/manga_py-$version-win-x64.zip"
