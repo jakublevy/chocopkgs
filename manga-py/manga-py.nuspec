@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>manga-py</id>
-    <version>1.32.0</version>
+    <version>1.33.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/manga-py</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>manga-py</title>
@@ -16,8 +16,7 @@
     <bugTrackerUrl>https://github.com/manga-py/manga-py/issues</bugTrackerUrl>
     <tags>manga manga-dl comics download downloader offline reading commandline cross-platform</tags>
     <summary>Universal manga downloader (for your offline reading)</summary>
-    <description>  
-# manga-py
+    <description><![CDATA[# manga-py
 * Universal manga downloader.
 * Approximately 200+ providers are available now.
 
@@ -41,7 +40,7 @@ manga-py --skip-volumes 3 "http://manga-url-here/manga-name"
 # skip 3 volumes and download 2 volumes
 manga-py --skip-volumes 3 --max-volumes 2 "http://manga-url-here/manga-name"
 
-# reverse volumes downloading (24 → 1)
+# reverse volumes downloading (24 -> 1)
 manga-py --reverse-downloading "http://manga-url-here/manga-name"
 
 # disable progressbar
@@ -52,8 +51,8 @@ manga-py --no-progress "http://manga-url-here/manga-name"
 ```
 manga-py -h  # shows help
 ```
-    </description>
-    <releaseNotes>https://github.com/manga-py/manga-py/releases/tag/1.32.0</releaseNotes>
+]]></description>
+    <releaseNotes>https://github.com/manga-py/manga-py/releases/tag/1.33.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
