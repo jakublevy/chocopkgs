@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>manga-py</id>
-    <version>1.33.0</version>
+    <version>1.33.1</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/manga-py</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>manga-py</title>
@@ -53,7 +53,7 @@ manga-py --no-progress "http://manga-url-here/manga-name"
 manga-py -h  # shows help
 ```
 ]]></description>
-    <releaseNotes>https://github.com/manga-py/manga-py/releases/tag/1.33.0</releaseNotes>
+    <releaseNotes>https://github.com/manga-py/manga-py/releases/tag/1.33.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
