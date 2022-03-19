@@ -24,7 +24,7 @@ manga-py --skip-volumes 3 "http://manga-url-here/manga-name"
 # skip 3 volumes and download 2 volumes
 manga-py --skip-volumes 3 --max-volumes 2 "http://manga-url-here/manga-name"
 
-# reverse volumes downloading (24 -> 1)
+# reverse volumes downloading (24 → 1)
 manga-py --reverse-downloading "http://manga-url-here/manga-name"
 
 # disable progressbar
