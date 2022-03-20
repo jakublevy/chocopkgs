@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>z3</id>
-    <version>4.8.14</version>
+    <version>4.8.15</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/z3</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Z3 Theorem Prover</title>
@@ -17,13 +17,12 @@
     <bugTrackerUrl>https://github.com/Z3Prover/z3/issues</bugTrackerUrl>
     <tags>theorem prover constraint sat smt smtlib verification theory satisfy logic commandline cross-platform</tags>
     <summary>Z3 is a theorem prover from Microsoft Research.</summary>
-    <description>
-# Z3 Theorem Prover
+    <description><![CDATA[# Z3 Theorem Prover
 Z3, also known as the Z3 Theorem Prover is a high-performance, cross-platform satisfiability modulo theories (SMT) solver by Microsoft Research.
 
 If you are not familiar with Z3, you can start [here](https://github.com/Z3Prover/z3/wiki#background).
-    </description>
-<releaseNotes>https://github.com/Z3Prover/z3/releases/tag/z3-4.8.14</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/Z3Prover/z3/releases/tag/z3-4.8.15</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
