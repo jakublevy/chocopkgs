@@ -11,7 +11,13 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-Get-ChildItem "$toolsDir\z3-*-win" | Rename-Item  -NewName 'bin' -Force
+Remove-Item `
+  -Path "$toolsDir\bin" `
+  -Recurse `
+  -Force `
+  -ErrorAction SilentlyContinue
+
+Get-ChildItem "$toolsDir\z3-*-win" | % { Rename-Item -Path $_ -NewName 'bin' -Force }
 
 Remove-Item `
   -Path $packageArgs['fileFullPath'], $packageArgs['fileFullPath64'] `

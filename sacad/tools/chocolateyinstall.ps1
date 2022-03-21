@@ -11,7 +11,13 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-Get-ChildItem "$toolsDir\sacad-win*" | Rename-Item  -NewName 'bin' -Force
+Remove-Item `
+  -Path "$toolsDir\bin" `
+  -Recurse `
+  -Force `
+  -ErrorAction SilentlyContinue
+
+Move-Item -Path "$toolsDir\sacad-win*" -Destination "$toolsDir\bin" -Force
 
 Remove-Item `
   -Path $packageArgs['fileFullPath'], $packageArgs['fileFullPath64'] `

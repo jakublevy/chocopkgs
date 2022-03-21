@@ -13,6 +13,11 @@ Remove-Item `
   -ErrorAction SilentlyContinue `
   -Force
 
+Remove-Item `
+  -Path "$toolsDir\rcedit.exe" `
+  -Force `
+  -ErrorAction SilentlyContinue
+
 Rename-Item `
   -Path $renameFile `
   -NewName 'rcedit.exe' `

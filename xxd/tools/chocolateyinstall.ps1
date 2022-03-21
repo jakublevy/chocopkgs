@@ -10,6 +10,12 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
+Remove-Item `
+  -Path "$toolsDir\bin" `
+  -Recurse `
+  -Force `
+  -ErrorAction SilentlyContinue
+
 (Get-ChildItem "$toolsDir\xxd-*_win32")[0] | % { 
   Rename-Item `
     -Path $_ -Force `

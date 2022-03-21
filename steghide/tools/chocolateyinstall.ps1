@@ -10,6 +10,12 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
+Remove-Item `
+  -Path "$toolsDir\bin" `
+  -Recurse `
+  -Force `
+  -ErrorAction SilentlyContinue
+
 Rename-Item `
   -Path "$toolsDir\steghide" `
   -NewName 'bin' `
