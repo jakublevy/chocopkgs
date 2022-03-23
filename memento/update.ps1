@@ -21,4 +21,4 @@ function global:au_GetLatest {
     }
 }
 
-Update-Package -ChecksumFor None
+Update-Package -ChecksumFor None 
