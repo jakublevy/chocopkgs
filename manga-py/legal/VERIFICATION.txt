@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://github.com/manga-py/manga-py-win/releases/download/1.33.1/manga_py-1.33.1-win-x64.zip
+1. Go to https://github.com/manga-py/manga-py-win/releases/download/1.33.2/manga_py-1.33.2-win-x64.zip
 
    to download the file.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 44F89235C4635CC52D5BDF763819C88179EB2701041449763682920EB9703236
+   checksum64: 6BEF38B96BF2A5B89501782DF6E302FDFC2C15F0CA7159A2449EAC241306A58A
 
 License text in LICENSE.txt file was obtained 
    on 12/06/2021
