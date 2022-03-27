@@ -3,8 +3,8 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileFullPath   = Join-Path $toolsDir 'ddcpuid-0.19.1-windows-msvc-x86.zip'
-  fileFullPath64 = Join-Path $toolsDir 'ddcpuid-0.19.1-windows-msvc-x86_64.zip'
+  fileFullPath   = Join-Path $toolsDir 'ddcpuid-0.20.0-windows-msvc-x86.zip'
+  fileFullPath64 = Join-Path $toolsDir 'ddcpuid-0.20.0-windows-msvc-x86_64.zip'
   destination    = "$toolsDir\bin"
   validExitCodes = @(0)
 }

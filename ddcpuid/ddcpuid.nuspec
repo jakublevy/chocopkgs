@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ddcpuid</id>
-    <version>0.19.1</version>
+    <version>0.20.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/ddcpuid</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ddcpuid</title>
@@ -16,8 +16,7 @@
     <bugTrackerUrl>https://github.com/dd86k/ddcpuid/issues</bugTrackerUrl>
     <tags>cpu processor x86 information utility admin commandline cross-platform</tags>
     <summary>ddcpuid is a x86 processor information tool.</summary>
-    <description>
-# ddcpuid, CPUID tool
+    <description><![CDATA[# ddcpuid, CPUID tool
 ddcpuid is a x86 processor information tool.
 
 Officially supports these vendors:
@@ -54,23 +53,23 @@ $ ddcpuid -h
 x86/AMD64 CPUID information tool
 
 USAGE
-  ddcpuid [OPTIONS...]
+ ddcpuid [OPTIONS...]
 
 OPTIONS
-  -d, --details  Show detailed processor information
-  -r, --table    Show raw CPUID data in a table
-  -S             Table: Set leaf (EAX) input value
-  -s             Table: Set subleaf (ECX) input value
-  -o             Override maximum leaves to 0x20, 0x4000_0020, and 0x8000_0020
-  -l, --level    Print the processor's feature level
+ -d, --details  Show detailed processor information
+ -r, --table    Show raw CPUID data in a table
+ -S             Table: Set leaf (EAX) input value
+ -s             Table: Set subleaf (ECX) input value
+ -o             Override maximum leaves to 0x20, 0x4000_0020, and 0x8000_0020
+ -l, --level    Print the processor's feature level
 
 PAGES
-  --version    Print version screen and quit
-  --ver        Print version and quit
-  -h, --help   Print this help screen and quit
+ --version    Print version screen and quit
+ --ver        Print version and quit
+ -h, --help   Print this help screen and quit
 ```
-    </description>
-<releaseNotes>https://github.com/dd86k/ddcpuid/releases/tag/v0.19.1</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/dd86k/ddcpuid/releases/tag/v0.20.0</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
