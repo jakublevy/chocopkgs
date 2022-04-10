@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>material-maker.portable</id>
-    <version>0.98</version>
+    <version>0.99</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/material-maker.portable</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Material Maker (Portable)</title>
@@ -29,7 +29,7 @@ Its user interface is based on Godot's GraphEdit node: textures and brushes are 
 ## Screenshot
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/material-maker/screenshot.png)
 ]]></description>
-<releaseNotes>https://github.com/RodZill4/material-maker/releases/tag/0.98</releaseNotes>
+<releaseNotes>https://github.com/RodZill4/material-maker/releases/tag/0.99</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
