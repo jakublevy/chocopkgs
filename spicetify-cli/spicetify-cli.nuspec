@@ -13,7 +13,7 @@
     <licenseUrl>https://github.com/spicetify/spicetify-cli/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/spicetify/spicetify-cli</projectSourceUrl>
-    <docsUrl>https://spicetify.app/docs/getting-started/simple-installation</docsUrl>
+    <docsUrl>https://spicetify.app/docs/getting-started</docsUrl>
     <bugTrackerUrl>https://github.com/spicetify/spicetify-cli/issues</bugTrackerUrl>
     <tags>spotify commandline customize debloat extension cross-platform</tags>
     <summary>A command-line tool to customize Spotify client.</summary>
