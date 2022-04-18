@@ -1,28 +1,17 @@
 ﻿$ErrorActionPreference = 'Stop'
-$toolsDir              = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$ahkFile               = "$toolsDir\uninstall.ahk"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'Anki*'
   fileType      = 'EXE'
-  silentArgs    = '/S' # One dialog still appears
+  silentArgs    = '/S'
   validExitCodes= @(0)
 }
 
 [array]$keys = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
 if ($keys.Count -eq 1) {
-  $packageArgs['file'] = $keys[0].UninstallString
-  
-  $ahkProcess = Start-Process `
-                  -FilePath 'AutoHotKey' `
-                  -ArgumentList "`"$ahkFile`"" `
-                  -PassThru
-
+    $packageArgs['file'] = $keys[0].UninstallString
     Uninstall-ChocolateyPackage @packageArgs
-
-    Stop-Process $ahkProcess -Force
-
 } elseif ($keys.Count -eq 0) {
   Write-Warning "$($packageArgs['packageName']) has already been uninstalled by other means."
 } elseif ($keys.Count -gt 1) {
