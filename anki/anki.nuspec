@@ -20,7 +20,8 @@
     <bugTrackerUrl>https://github.com/ankitects/anki/issues</bugTrackerUrl>
     <tags>learning education flashcards efficient memory language-learning language remember spaced-repetition srs cross-platform</tags>
     <summary>Powerful, intelligent flash cards. Remembering things just became much easier.</summary>
-    <description><![CDATA[# Anki
+    <description>
+# Anki
 Anki is a program which makes remembering things easy. Because it's a lot more efficient than traditional study methods, you can either greatly decrease your time spent studying, or greatly increase the amount you learn. 
 
 Anyone who needs to remember things in their daily life can benefit from Anki. Since it is content-agnostic and supports images, audio, videos and scientific markup (via LaTeX), the possibilities are endless.
@@ -37,6 +38,8 @@ For example:
     - Not created by default
 * `/InstallDir:` - where to install the binaries
   - Default value: `"$env:ProgramFiles\Anki"`
+* `/Qt5` - installs Anki with Qt 5
+    - By default (without this parameter) Qt 6 is used
 
 ### Examples
 * Install into `D:\anki` directory
@@ -51,11 +54,14 @@ For example:
   ```
   choco install anki --params "'/CreateDesktopIcon /InstallDir:D:\anki'"
   ```
-]]></description>
+* Install with Qt 5
+  ```
+  choco install anki --params "/Qt5"
+  ```
+    </description>
     <releaseNotes>https://github.com/ankitects/anki/releases/tag/2.1.51</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>
