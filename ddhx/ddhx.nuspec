@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ddhx</id>
-    <version>0.4.1</version>
+    <version>0.4.2</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/ddhx</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ddhx</title>
@@ -41,7 +41,7 @@ ddhx - Interactive hexadecimal file viewer
 -h, --help         Print this help screen and exit
 ```
 ]]></description>
-<releaseNotes>https://github.com/dd86k/ddhx/releases/tag/v0.4.1</releaseNotes>
+<releaseNotes>https://github.com/dd86k/ddhx/releases/tag/v0.4.2</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />

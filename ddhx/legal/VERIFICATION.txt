@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to 
-   x86: https://github.com/dd86k/ddhx/releases/download/v0.4.1/ddhx-0.4.1-windows-msvc-x86.zip
-   x64: https://github.com/dd86k/ddhx/releases/download/v0.4.1/ddhx-0.4.1-windows-msvc-x86_64.zip
+   x86: https://github.com/dd86k/ddhx/releases/download/v0.4.2/ddhx-0.4.2-windows-msvc-x86.zip
+   x64: https://github.com/dd86k/ddhx/releases/download/v0.4.2/ddhx-0.4.2-windows-msvc-x86_64.zip
 
    to download the installer.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: B9D05FF24E9747BB4DE97B73DB138EDD24180F7629918075EB0994420286441F
-   checksum64: FA19BC0F56A97B15F123D8567BB1D341DAF9323453115BA8DEE6900E2A1FD0CB
+   checksum32: 7BBDB8263D3F03E5D6F20288EE86E21C6A9DED86400CD34C7678643D1EF2C1E3
+   checksum64: 519A688C253B93BED5CDDFB024E962F0B90E0E0FD2151601B7EE456F17CB4881
 
 License text in LICENSE.txt file was obtained 
    on 12/06/2021
