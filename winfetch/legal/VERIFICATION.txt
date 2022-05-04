@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://raw.githubusercontent.com/kiedtl/winfetch/v2.4.0/winfetch.ps1
+1. Go to https://raw.githubusercontent.com/kiedtl/winfetch/v2.4.1/winfetch.ps1
 
    to download the script.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 6E9966D8EA675AA71B3A511BCCC6DC4089C8D5F7455C6FB904BC25D6E2F14346
+   checksum32: 53682D71A1885B966E3DD69130F41E7CEC008E558D6933BE4BAB58471DE083FD
 
 License text in LICENSE.txt file was obtained 
    on 03/20/2021
