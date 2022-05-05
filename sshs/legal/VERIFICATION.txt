@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to
-   x86: https://github.com/quantumsheep/sshs/releases/download/3.1.0/sshs-windows-386.exe
-   x64: https://github.com/quantumsheep/sshs/releases/download/3.1.0/sshs-windows-amd64.exe
+   x86: https://github.com/quantumsheep/sshs/releases/download/3.2.0/sshs-windows-386.exe
+   x64: https://github.com/quantumsheep/sshs/releases/download/3.2.0/sshs-windows-amd64.exe
 
    to download the binary.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 972C101B84676FECF86CE9A1CB142EA4BD52F052126C8F5DC591CB18166684EB
-   checksum64: CE887F772A5B8FC1B8C6C31D283EC02559B26494DF16147D28B892B5A1DF9A8C
+   checksum32: 18D3D27FBF774DBBD1739D48C1668674EDDB03F228AE5C96E1D27CF95CB0E889
+   checksum64: 2FEE9B34B90D357CD021118F01DDDBC5E7A7944F6AC73BEC7A944B84C2B98254
 
 License text in LICENSE.txt file was obtained 
    on 02/06/2022
