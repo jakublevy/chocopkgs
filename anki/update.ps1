@@ -4,8 +4,8 @@ function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
             "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
-            "(^[$]checksumQt5\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-            "(^[$]checksumQt6\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+            "(^[$]checksumQt5\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+            "(^[$]checksumQt6\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
         ".\anki.nuspec" = @{
             "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
