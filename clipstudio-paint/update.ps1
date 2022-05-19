@@ -18,12 +18,19 @@ function global:au_GetLatest {
     # $versionOriginal = [regex]::Match($links, '/(\d+)/').Groups[1].Value
     $releaseNotesPage = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.clipstudio.net/en/dl/release_note'
     $content = $releaseNotesPage.Content.Substring($releaseNotesPage.Content.IndexOf('<h1'))
-    $versionChoco = [regex]::Matches($content, '(\d+\.\d+(\.\d+)*)') | ? { $_.Success } | % { $_.Groups[1].Value } | Select-Object -First 1
-    $versionNoDot =  $versionChoco.Replace('.', '')
-    @{
-        Version      = $versionChoco
-        VersionClip  = $versionNoDot
-        Url64        = "https://vd.clipstudio.net/clipcontent/paint/app/$versionNoDot/CSP_$($versionNoDot)w_setup.exe"
+    $versionsChoco = [regex]::Matches($content, '(\d+\.\d+(\.\d+)*)') | ? { $_.Success } | % { $_.Groups[1].Value }
+    foreach($v in $versionsChoco) {
+        $versionNoDot =  $v.Replace('.', '')
+        $url = "https://vd.clipstudio.net/clipcontent/paint/app/$versionNoDot/CSP_$($versionNoDot)w_setup.exe"
+        try {
+            Invoke-WebRequest -UseBasicParsing -Uri $url -Method Head
+            return @{
+                Version      = $v
+                VersionClip  = $versionNoDot
+                Url64        = $url
+            }
+        }
+        catch { }
     }
 }
 
