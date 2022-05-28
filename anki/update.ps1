@@ -24,8 +24,5 @@ function global:au_GetLatest {
         ReleaseNotes = "https://github.com/ankitects/anki/releases/tag/$version"
     }
 }
-function global:au_BeforeUpdate {
-    Get-RemoteFiles -Purge -NoSuffix
-}
 
 Update-Package
