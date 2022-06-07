@@ -21,4 +21,4 @@ function global:au_GetLatest {
     }
 }
 
-Update-Package -NoCheckUrl
+Update-Package -ChecksumFor 32
