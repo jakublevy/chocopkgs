@@ -10,7 +10,7 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
-# Based on the official installer: https://github.com/spicetify/spicetify-marketplace/blob/main/install.ps1
+# Based on the official installer: https://github.com/spicetify/spicetify-marketplace/blob/main/resources/install.ps1
 
 $spotifyInstalled = $true
 $spotify = Get-Process -Name 'spotify' -ErrorAction SilentlyContinue
