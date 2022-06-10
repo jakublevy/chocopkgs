@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path -parent $MyInvocation.MyCommand.Definition
 $customAppsDir         = "$env:userprofile\.spicetify\CustomApps"
-$archiveName           = 'v0.5.0-beta.zip'
+$archiveName           = 'spicetify-marketplace-dist.zip'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -34,7 +34,7 @@ elseif(Test-Path "$customAppsDir\spicetify-marketplace") {
 Get-ChocolateyUnzip @packageArgs
 
 Rename-Item `
-  -Path "$customAppsDir\spicetify-marketplace-$($archiveName.Substring(1,$archiveName.Length - 5))" `
+  -Path "$customAppsDir\spicetify-marketplace-dist" `
   -NewName 'spicetify-marketplace' `
   -Force
 

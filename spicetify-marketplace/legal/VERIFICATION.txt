@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://github.com/spicetify/spicetify-marketplace/archive/refs/tags/v0.5.0-beta.zip
+1. Go to https://github.com/spicetify/spicetify-marketplace/releases/download/v0.5.0-beta/spicetify-marketplace-dist.zip
 
    to download the file.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 0CE16F14E5DD6730DFDAE0B758D4D666FB7DE134C3D55BDC0EF188FBCBC02E8E
+   checksum32: 4E7FB2E49E3C4B71FE57FDCFEF5E698105F37E12355B9896E4F93F8C6C9BC3EC
    
 License text in LICENSE.txt file was obtained 
    on 12/12/2021

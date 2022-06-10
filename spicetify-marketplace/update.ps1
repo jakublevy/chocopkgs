@@ -21,7 +21,7 @@ function global:au_GetLatest {
     $version = ([regex]::Match($relative_url, 'v(\d+\.\d+(\.\d+)*(-alpha|-beta)?)')).Groups[1].Value
     @{
         Version      = $version.Split('-')[0]
-        Url32        = "https://github.com/spicetify/spicetify-marketplace/archive/refs/tags/v$version.zip"
+        Url32        = "https://github.com/spicetify/spicetify-marketplace/releases/download/v$version/spicetify-marketplace-dist.zip"
         ReleaseNotes = "https://github.com/spicetify/spicetify-marketplace/releases/tag/v$version"
     }
 }
