@@ -12,6 +12,7 @@ winfetch/tools/winfetch.ps1
 *.gz
 *.rar
 *.tar
+*.tgz
 *.xz
 *.zip
 *.zstd
