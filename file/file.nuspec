@@ -98,9 +98,6 @@ Report bugs to https://bugs.astron.com/
 * PR/259: aleksandr.v.novichkov: mime printing through indirect magic
 * count the total bytes found not the total byte positions
     </releaseNotes>
-    <dependencies>
-      <dependency id="vcredist140" version="14.16.27024.1" />
-    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
