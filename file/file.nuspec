@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>file</id>
-    <version>5.41</version>
+    <version>5.42</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/file</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>file</title>
@@ -86,17 +86,15 @@ Report bugs to https://bugs.astron.com/
 ```
 ]]></description>
     <releaseNotes>
-* Avinash Sonawane: Fix tzname detection
-* Fix relationship tests with "search" magic, don't short circuit
-* Fix memory leak in compile mode
-* PR/272: kiefermat: Only set returnval = 1 when we printed something
-* PR/270: Don't translate unprintable characters in %s magic formats
-* PR/269: Avoid undefined behavior with clang (adding offset to NULL)
-* Add a new flag (f) that requires that the match is a full word,
-* Add varint types (unused)
-* PR/256: mutableVoid: If the file is less than 3 bytes, use the file
-* PR/259: aleksandr.v.novichkov: mime printing through indirect magic
-* count the total bytes found not the total byte positions
+* PR/348: add missing cases to prevent file from aborting on
+* PR/351: octalify filenames when not raw before printing.
+* fix regex cacheing bug (Dirk Mueller)
+* merge file_regcomp and file_regerror() to simplify the code
+* cache regex (Dirk Mueller)
+* detect filesystem full by flushing output (Dirk Mueller)
+* implement running decompressor programs using
+* Add support for msdos dates and times
+* use the system byte swapping functions if available (Werner Fink)
     </releaseNotes>
   </metadata>
   <files>

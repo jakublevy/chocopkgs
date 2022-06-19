@@ -1,6 +1,6 @@
 
 
-﻿# The Mnemosyne Project
+# The Mnemosyne Project
 The Mnemosyne Project consists of two parts:
 * A free flash-card tool which optimizes your learning process.
 * A research project into the nature of long-term memory.
