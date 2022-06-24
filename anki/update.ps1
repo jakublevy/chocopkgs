@@ -1,5 +1,7 @@
 import-module au
 
+$dir = Split-Path -parent $MyInvocation.MyCommand.Definition
+
 function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
@@ -25,4 +27,15 @@ function global:au_GetLatest {
     }
 }
 
-Update-Package
+function global:au_BeforeUpdate {
+    $toolsDir = Join-Path $dir "tools"
+    $global:Latest.FileName32 = "anki-$($Latest.Version)-windows-qt6.exe"
+    $global:Latest.FileName64 = "anki-$($Latest.Version)-windows-qt5.exe"
+    Invoke-WebRequest -UseBasicParsing -Uri $Latest.Url64 -OutFile (Join-Path $toolsDir $Latest.FileName64)
+    Invoke-WebRequest -UseBasicParsing -Uri $Latest.Url32 -OutFile (Join-Path $toolsDir $Latest.FileName32)
+    $global:Latest.Checksum64 = (Get-FileHash (Join-Path $toolsDir $Latest.FileName64) -Algorithm SHA256).Hash
+    $global:Latest.Checksum32 = (Get-FileHash (Join-Path $toolsDir $Latest.FileName32) -Algorithm SHA256).Hash
+    Get-ChildItem -Path $toolsDir -Filter '*.exe' | Remove-Item -Force
+}
+
+Update-Package -ChecksumFor none
