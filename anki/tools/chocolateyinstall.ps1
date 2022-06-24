@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $installDir            = "$env:ProgramFiles\Anki"
 $version               = '2.1.54'
-$checksumQt5           = 'f42ad7a5d8135e184350dcc7373f54f326a42960a65072424d39cca04bd702e4'
+$checksumQt5           = 'c4cae099c01cb4b00944aa17fce42f57ba204df62f9899304eff61c654921c1b'
 $checksumQt6           = 'f42ad7a5d8135e184350dcc7373f54f326a42960a65072424d39cca04bd702e4'
 
 $packageArgs = @{
