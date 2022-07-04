@@ -10,20 +10,9 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-Remove-Item `
-  -Path "$toolsDir\bin" `
-  -Recurse `
-  -Force `
-  -ErrorAction SilentlyContinue
-
 Rename-Item `
-  -Path "$toolsDir\dist" `
-  -NewName "$toolsDir\bin" `
-  -Force
-
-Rename-Item `
-  -Path "$toolsDir\bin\cheat-windows-amd64.exe" `
-  -NewName "$toolsDir\bin\cheat.exe" `
+  -Path "$toolsDir\cheat-windows-amd64.exe" `
+  -NewName "$toolsDir\cheat.exe" `
   -Force
 
 Remove-Item `
