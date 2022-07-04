@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cheat</id>
-    <version>4.2.3</version>
+    <version>4.2.4</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/cheat</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>cheat</title>
@@ -15,8 +15,7 @@
     <bugTrackerUrl>https://github.com/cheat/cheat/issues</bugTrackerUrl>
     <tags>cheatsheets unix remember commands admin commandline</tags>
     <summary>cheat allows you to create and view interactive cheatsheets on the commandline.</summary>
-    <description>  
-# cheat
+    <description><![CDATA[# cheat
 `cheat` allows you to create and view interactive cheatsheets on the command-line. It was designed to help remind UNIX system administrators of options for commands that they use frequently, but not frequently enough to remember.
 
 Use cheat with [cheatsheets](https://github.com/cheat/cheatsheets).
@@ -45,7 +44,7 @@ tar -cjvf '/path/to/foo.tgz' '/path/to/foo/'
 ```
 
 ### For more information about cheat see [README.md](https://github.com/cheat/cheat/blob/master/README.md).
-    </description>
+]]></description>
     <releaseNotes>https://github.com/cheat/cheat/releases/tag/4.2.3</releaseNotes>
   </metadata>
   <files>
