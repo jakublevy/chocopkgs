@@ -18,6 +18,7 @@ function global:au_GetLatest {
     $version = ([regex]::Match($relative_url, '/(\d+\.\d+(\.\d+)*)/')).Groups[1].Value
     @{
         Url64        = "https://github.com/cheat/cheat/releases/download/$version/cheat-windows-amd64.exe.zip"
+        ReleaseNotes = "https://github.com/cheat/cheat/releases/tag/$version"
         Version      = $version
     }
 }

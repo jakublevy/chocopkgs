@@ -45,7 +45,7 @@ tar -cjvf '/path/to/foo.tgz' '/path/to/foo/'
 
 ### For more information about cheat see [README.md](https://github.com/cheat/cheat/blob/master/README.md).
 ]]></description>
-    <releaseNotes>https://github.com/cheat/cheat/releases/tag/4.2.3</releaseNotes>
+    <releaseNotes>https://github.com/cheat/cheat/releases/tag/4.2.5</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
