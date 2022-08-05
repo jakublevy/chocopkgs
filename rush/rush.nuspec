@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rush</id>
-    <version>0.4.2</version>
+    <version>0.5.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/rush</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>rush</title>
@@ -16,15 +16,14 @@
     <bugTrackerUrl>https://github.com/shenwei356/rush/issues</bugTrackerUrl>
     <tags>cross-platform parallel execute job commandline</tags>
     <summary>A cross-platform command-line tool for executing jobs in parallel.</summary>
-    <description>
-# rush
+    <description><![CDATA[# rush
 A cross-platform command-line tool for executing jobs in parallel.
 
 `rush` is a tool similar to [GNU parallel](https://www.gnu.org/software/parallel) and [gargs](https://github.com/brentp/gargs). `rush` borrows some idea from them and has some unique features, e.g., supporting custom defined variables, resuming multi-line commands, more advanced embeded replacement strings.
 
 ### For more information about rush see [the official README.md](https://github.com/shenwei356/rush/blob/master/README.md).
-    </description>
-<releaseNotes>https://github.com/shenwei356/rush/releases/tag/v0.4.2</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/shenwei356/rush/releases/tag/v0.5.0</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />

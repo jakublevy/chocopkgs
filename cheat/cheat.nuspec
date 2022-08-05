@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>cheat</id>
-    <version>4.2.6</version>
+    <version>4.2.7</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/cheat</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>cheat</title>
