@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://github.com/cheat/cheat/releases/download/4.2.7/cheat-windows-amd64.exe.zip
+1. Go to https://github.com/cheat/cheat/releases/download/4.3.0/cheat-windows-amd64.exe.zip
 
    to download the binary.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 715EDF018AD8E4F560A115399C77E18BDC6915C61C3F51CB656F197FB269B927
+   checksum64: 9FE16E8E4C89D954E9E6FBE0ED959D8E87C78385F508EF85B5B8215175C5DD1B
 
 License text in LICENSE.txt file was obtained 
    on 11/28/2021
