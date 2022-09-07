@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: C791B14CBB93CEA8DAFED168FAB0116FECA17A5858188309A637C5E33D4BCA33
+   checksum32: 188B6A3C77ECB6CA30FD85B326F783EC3508816E5F17F9B9FE52F8E2034B5F53
    
 License text in LICENSE.txt file was obtained 
    on 12/12/2021
