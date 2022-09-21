@@ -5,7 +5,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = "DeaDBeeF*"
   fileType      = 'EXE'
-  file64        = Join-Path $toolsDir 'deadbeef-1.9.1-windows-x86_64.exe'
+  file64        = Join-Path $toolsDir 'deadbeef-1.9.2-windows-x86_64.exe'
   silentArgs    = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
   validExitCodes= @(0)
 }

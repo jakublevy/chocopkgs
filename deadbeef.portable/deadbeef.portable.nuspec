@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>deadbeef.portable</id>
-    <version>1.9.1</version>
+    <version>1.9.2</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/deadbeef.portable</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>DeaDBeeF (Portable)</title>
@@ -45,7 +45,7 @@ The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux
     choco install deadbeef.portable --params "'/AddToSystemPath:no /AddToUserPath:no'"
     ```
 ]]></description>
-    <releaseNotes>https://github.com/DeaDBeeF-Player/deadbeef/blob/1.9.1/ChangeLog</releaseNotes>
+    <releaseNotes>https://github.com/DeaDBeeF-Player/deadbeef/blob/1.9.2/ChangeLog</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
