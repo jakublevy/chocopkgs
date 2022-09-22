@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>pdftk-java</id>
-    <version>3.3.2</version>
+    <version>3.3.3</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/pdftk-java</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>The PDF Toolkit</title>
@@ -48,7 +48,7 @@ The current goals are to keep functionality as compatible with the original as i
     choco install pdftk-java --params "'/AddToSystemPath:no /AddToUserPath:no'"
     ```
 ]]></description>
-    <releaseNotes>https://gitlab.com/pdftk-java/pdftk/-/blob/v3.3.2/CHANGELOG.md</releaseNotes>
+    <releaseNotes>https://gitlab.com/pdftk-java/pdftk/-/blob/v3.3.3/CHANGELOG.md</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
