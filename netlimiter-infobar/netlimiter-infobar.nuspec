@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>netlimiter-infobar</id>
-    <version>1.2</version>
+    <version>1.30</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/netlimiter-infobar</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>NetLimiter InfoBar</title>
@@ -15,8 +15,7 @@
     <docsUrl>https://www.netlimiter.com/docs/netlimiter-overview</docsUrl>
     <tags>netlimiter infobar info information taskbar overview display</tags>
     <summary>NetLimiter InfoBar is free of charge tool for NetLimiter users, which's purpose is to display most important NetLimiter information directly on system's Taskbar.</summary>
-    <description>
-**NOTE:** The following text is for the most part an excerpt from [the official website](https://www.netlimiter.com/docs/infobar).
+    <description><![CDATA[**NOTE:** The following text is for the most part an excerpt from [the official website](https://www.netlimiter.com/docs/infobar).
 
 # NetLimiter InfoBar
 NetLimiter InfoBar is free of charge tool for NetLimiter users, which's purpose is to display most important NetLimiter information directly on system's Taskbar.
@@ -51,8 +50,8 @@ With *InfoBar* users can keep [NetLimiter client](https://www.netlimiter.com/doc
 * It displays current **transfer rates** for selected [Zone](https://www.netlimiter.com/docs/basic-concepts/zones).
 * In case of any problem it shows **an alert**.
 * It alerts user when any Blocker request needs his attention.
-* Using a **context menu** user can open [NetLimiter client](https://www.netlimiter.com/docs/user-gui-client) or quickly **enable/disable** [Limiter](https://www.netlimiter.com/docs/basic-concepts/limits), [Blocker](https://www.netlimiter.com/docs/basic-concepts/blocker) or [Priorities](https://www.netlimiter.com/docs/basic-concepts/priorities).     
-    </description>
+* Using a **context menu** user can open [NetLimiter client](https://www.netlimiter.com/docs/user-gui-client) or quickly **enable/disable** [Limiter](https://www.netlimiter.com/docs/basic-concepts/limits), [Blocker](https://www.netlimiter.com/docs/basic-concepts/blocker) or [Priorities](https://www.netlimiter.com/docs/basic-concepts/priorities).
+]]></description>
     <dependencies>
       <dependency id="netlimiter" version="4.1.7.0" />
     </dependencies>

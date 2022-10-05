@@ -1,4 +1,6 @@
 import-module au
+. $([System.IO.Path]::Combine((Split-Path -Parent $PSScriptRoot), '.scripts', 'Get-GithubLatestReleaseLinks.ps1'))
+
 
 function global:au_SearchReplace {
     @{
@@ -14,8 +16,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/kiedtl/winfetch/releases/'
-    $relative_url  = $download_page.links | Where-Object href -match '/kiedtl/winfetch/archive/refs/tags/v\d+\.\d+(\.\d+)*\.zip' | Select-Object -First 1 -expand href
+    $rel = (Get-GitHubLatestReleaseLinks -user 'kiedtl' -repository 'winfetch').Links | % href
+    $relative_url  = $rel | Where-Object { $_ -match '/kiedtl/winfetch/archive/refs/tags/v\d+\.\d+(\.\d+)*\.zip' } | Select-Object -First 1
     $version = ([regex]::Match($relative_url, '(\d+\.\d+(\.\d+)*)\.zip')).Groups[1].Value
     @{
         Version      = $version

@@ -1,4 +1,6 @@
 import-module au
+. $([System.IO.Path]::Combine((Split-Path -Parent $PSScriptRoot), '.scripts', 'Get-GithubLatestReleaseLinks.ps1'))
+
 
 function global:au_SearchReplace {
     @{
@@ -16,8 +18,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/shazow/ssh-chat/releases'
-    $relative_url  = $download_page.links | Where-Object href -match '/shazow/ssh-chat/releases/download/v\d+\.\d+(\.\d+)*/ssh-chat-windows_386.tgz' | Select-Object -First 1 -expand href
+    $rel = (Get-GitHubLatestReleaseLinks -user 'shazow' -repository 'ssh-chat').Links | % href
+    $relative_url  = $rel | Where-Object { $_ -match '/shazow/ssh-chat/releases/download/v\d+\.\d+(\.\d+)*/ssh-chat-windows_386.tgz' } | Select-Object -First 1
     $version = ([regex]::Match($relative_url, '/releases/download/v(\d+\.\d+(\.\d+)*)/ssh-chat-windows_386.tgz')).Groups[1].Value
     @{
         Url32        = "https://github.com/shazow/ssh-chat/releases/download/v$version/ssh-chat-windows_386.tgz"

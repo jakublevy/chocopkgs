@@ -1,11 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop'
-$checksum64            = 'e15c67ad45b1492e79d809c7b6342cb60f3c71101b216a78a8ded16e3523711b'
-$version               = '1.6.2'
+$checksum64            = 'acd621eaf21c3f0763ca44cc9d31cb2e1c7782eab3ec298d8e0dd5d040e0bd84'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
-  url64         = "https://github.com/FilenCloudDienste/filen-desktop/releases/download/$version/filen-setup.exe"
+  url64         = 'https://cdn.filen.io/desktop/release/filen_x64.exe'
   softwareName  = 'Filen Sync*'
   checksum64    = $checksum64
   checksumType64= 'sha256'

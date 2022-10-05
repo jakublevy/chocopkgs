@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ddcpuid</id>
-    <version>0.20.0</version>
+    <version>0.21.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/ddcpuid</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ddcpuid</title>
@@ -69,7 +69,7 @@ PAGES
  -h, --help   Print this help screen and quit
 ```
 ]]></description>
-<releaseNotes>https://github.com/dd86k/ddcpuid/releases/tag/v0.20.0</releaseNotes>
+<releaseNotes>https://github.com/dd86k/ddcpuid/releases/tag/v0.21.0</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />

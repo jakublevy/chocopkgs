@@ -4,7 +4,7 @@ function global:au_SearchReplace {
     @{
         ".\tools\chocolateyinstall.ps1"   = @{
             "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
     }
 }
@@ -15,11 +15,11 @@ function global:au_GetLatest {
     $versions = $links | % { ([regex]::Match($_, '.*NLInfoBar-(\d+\.\d+(\.\d+)*)\.exe$')).Groups[1].Value }
     $version = $versions | Sort-Object -Descending {[version] $_ } | Select-Object -First 1
     @{
-        Url32        = "https://www.netlimiter.com/files/download/nl4/NLInfoBar-$version.exe"
+        Url64        = "https://www.netlimiter.com/files/download/nl4/NLInfoBar-$version.exe"
         Version      = $version
     }
 }
 
 
 
-Update-Package -ChecksumFor 32
+Update-Package -ChecksumFor 64

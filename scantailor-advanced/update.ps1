@@ -1,4 +1,6 @@
 import-module au
+. $([System.IO.Path]::Combine((Split-Path -Parent $PSScriptRoot), '.scripts', 'Get-GithubLatestReleaseLinks.ps1'))
+
 
 function global:au_SearchReplace {
     @{
@@ -19,9 +21,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/4lex4/scantailor-advanced/releases'
-    $relative_url  = $download_page.links | Where-Object href -match '/4lex4/scantailor-advanced/releases/download/\d+\.\d+(\.\d+)*(_EA)?/scantailor-advanced-\d+\.\d+(\.\d+)*-win64\.exe' | Select-Object -First 1 -expand href
-    $versionOriginal = ([regex]::Match($relative_url, '/(\d+\.\d+(\.\d+)*(_EA)?)/')).Groups[1].Value
+    $rel = (Get-GitHubLatestReleaseLinks -user '4lex4' -repository 'scantailor-advanced').Links | % href
+    $relative_url  = $rel | Where-Object {$_ -match '/4lex4/scantailor-advanced/releases/tag/\d+\.\d+(\.\d+)*(_EA)?' } | Select-Object -First 1
+    $versionOriginal = ([regex]::Match($relative_url, '/(\d+\.\d+(\.\d+)*(_EA)?)')).Groups[1].Value
     $version = ([regex]::Match($versionOriginal, '(\d+\.\d+(\.\d+)*)')).Groups[1].Value
     @{
         Version      = $version

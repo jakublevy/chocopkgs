@@ -1,4 +1,6 @@
 import-module au
+. $([System.IO.Path]::Combine((Split-Path -Parent $PSScriptRoot), '.scripts', 'Get-GithubLatestReleaseLinks.ps1'))
+
 
 function global:au_SearchReplace {
     @{
@@ -25,8 +27,8 @@ function get-changelog($version) {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/rkitover/file-windows/releases'
-    $relative_url  = $download_page.links | Where-Object href -match '/file_[\d.]+-x86_64\.7z' | Select-Object -First 1 -expand href
+    $rel = (Get-GitHubLatestReleaseLinks -user 'rkitover' -repository 'file-windows').Links | % href
+    $relative_url  = $rel | Where-Object { $_ -match '/file_[\d.]+-x86_64\.7z' } | Select-Object -First 1
     $relative32 = $relative_url.Replace('x86_64', 'x86_32')
     $version = ([regex]::Match($relative_url, '/v(\d+\.\d+(\.\d+)*)/')).Groups[1].Value
     @{

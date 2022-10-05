@@ -1,4 +1,6 @@
 import-module au
+. $([System.IO.Path]::Combine((Split-Path -Parent $PSScriptRoot), '.scripts', 'Get-GithubLatestReleaseLinks.ps1'))
+
 
 function global:au_SearchReplace {
     @{
@@ -15,8 +17,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/quantumsheep/sshs/releases'
-    $relative_url  = $download_page.links | Where-Object href -match '/quantumsheep/sshs/releases/download/\d+\.\d+(\.\d+)*/sshs-windows-amd64\.exe' | Select-Object -First 1 -expand href
+    $rel = (Get-GitHubLatestReleaseLinks -user 'quantumsheep' -repository 'sshs').Links | % href
+    $relative_url  = $rel | Where-Object { $_ -match '/quantumsheep/sshs/releases/download/\d+\.\d+(\.\d+)*/sshs-windows-amd64\.exe' } | Select-Object -First 1
     $version = ([regex]::Match($relative_url, '/(\d+\.\d+(\.\d+)*)/')).Groups[1].Value
     @{
         Url32        = "https://github.com/quantumsheep/sshs/releases/download/$version/sshs-windows-386.exe"

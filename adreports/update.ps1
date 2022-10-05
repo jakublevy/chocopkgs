@@ -1,4 +1,5 @@
 import-module au
+. $([System.IO.Path]::Combine((Split-Path -Parent $PSScriptRoot), '.scripts', 'Get-GithubLatestReleaseLinks.ps1'))
 
 function global:au_SearchReplace {
     @{
@@ -19,9 +20,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://github.com/brechtsanders/ADReports/releases'
-    $relative_url  = $download_page.links | Where-Object href -match '/brechtsanders/ADReports/releases/download/\d+\.\d+(\.\d+)*/adreports-\d+\.\d+(\.\d+)*-win64\.zip' | Select-Object -First 1 -expand href
-    $version     = ([regex]::Match($relative_url, '/adreports-(\d+\.\d+(\.\d+)*)-win64\.zip')).Groups[1].Value
+    $rel = (Get-GitHubLatestReleaseLinks -user 'brechtsanders' -repository 'ADReports').Links | % href
+    $relative_url  = $rel | Where-Object { $_ -match '/brechtsanders/ADReports/releases/download/\d+\.\d+(\.\d+)*/adreports-\d+\.\d+(\.\d+)*-win64\.zip' } | Select-Object -First 1
+    $version       = ([regex]::Match($relative_url, '/adreports-(\d+\.\d+(\.\d+)*)-win64\.zip')).Groups[1].Value
     @{
         Version      = $version
         Url32        = "https://github.com/brechtsanders/ADReports/releases/download/$version/adreports-$version-win32.zip"

@@ -16,10 +16,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.labri.fr/perso/lsimon/glucose/'
-    $links = $download_page.links | Where-Object href -match 'glucose' | Select-Object -exp href
-    $versions = ([regex]::Matches($links, '(\d+\.\d+(\.\d+)*)')).Groups | ? success | Select-Object -exp value | Get-Unique
-    $version = $versions | Sort-Object -Descending {[version] $_ } | Select-Object -First 1
+    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.labri.fr/perso/lsimon/research/glucose/'
+    $links = $download_page.links | Where-Object href -match '/glucose-' | Select-Object -exp href
+    $version = ([regex]::Matches($links, '(\d+\.\d+(\.\d+)*)')).Groups[1].Value
     @{
         Url64        = "https://github.com/jakublevy/glucose-win/releases/download/v$version/glucose-$version-win-x64.zip"
         Version      = $version
