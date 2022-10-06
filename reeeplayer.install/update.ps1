@@ -4,9 +4,12 @@ import-module au
 
 function global:au_SearchReplace {
     @{
-        ".\reeeplayer.nuspec"   = @{
+        ".\tools\chocolateyinstall.ps1"   = @{
+            "(^[$]version\s*=\s*)('.*')"  = "`$1'$($Latest.Version)'"
+            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+        }
+        ".\reeeplayer.install.nuspec"   = @{
             "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
-            "(?i)(<dependency id=""reeeplayer.install"" version=""\[).*(\]"" />)" = "`${1}$($Latest.Version)`${2}"
         }
     }
 }
@@ -21,4 +24,4 @@ function global:au_GetLatest {
     }
 }
 
-Update-Package -ChecksumFor None
+Update-Package -ChecksumFor 64

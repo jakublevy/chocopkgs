@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
-    <id>reeeplayer</id>
+    <id>reeeplayer.install</id>
     <version>0.4</version>
-    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/reeeplayer</packageSourceUrl>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/reeeplayer.install</packageSourceUrl>
     <owners>Jakub Levý</owners>
-    <title>ReeePlayer</title>
+    <title>ReeePlayer (Install)</title>
     <authors>Filipp Volodin</authors>
     <projectUrl>https://github.com/FilippVolodin/ReeePlayer</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/reeeplayer.png</iconUrl>
@@ -35,10 +35,8 @@ For more information see [README.MD (English)](https://github.com/FilippVolodin/
   ```
 ]]></description>
     <releaseNotes>https://github.com/FilippVolodin/ReeePlayer/releases/tag/v0.4</releaseNotes>
-    <dependencies>
-      <dependency id="reeeplayer.install" version="[0.4]" />
-    </dependencies>
   </metadata>
   <files>
+    <file src="tools\**" target="tools" />
   </files>
 </package>

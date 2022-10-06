@@ -1,6 +1,6 @@
 
 
-﻿# ReeePlayer
+# ReeePlayer
 The ReeePlayer application is designed for spaced repetition of fragments (clips) of video and audio files with similar principle as in Anki.
 
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/reeeplayer/watching.png)
