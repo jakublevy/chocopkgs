@@ -16,13 +16,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $rel = (Get-GitHubLatestReleaseLinks -user 'kiedtl' -repository 'winfetch').Links | % href
-    $relative_url  = $rel | Where-Object { $_ -match '/kiedtl/winfetch/archive/refs/tags/v\d+\.\d+(\.\d+)*\.zip' } | Select-Object -First 1
+    $rel = (Get-GitHubLatestReleaseLinks -user 'lptstr' -repository 'winfetch').Links | % href
+    $relative_url  = $rel | Where-Object { $_ -match '/lptstr/winfetch/archive/refs/tags/v\d+\.\d+(\.\d+)*\.zip' } | Select-Object -First 1
     $version = ([regex]::Match($relative_url, '(\d+\.\d+(\.\d+)*)\.zip')).Groups[1].Value
     @{
         Version      = $version
-        Url32        = "https://raw.githubusercontent.com/kiedtl/winfetch/v$version/winfetch.ps1"
-        ReleaseNotes = "https://github.com/kiedtl/winfetch/releases/tag/v$version"
+        Url32        = "https://raw.githubusercontent.com/lptstr/winfetch/v$version/winfetch.ps1"
+        ReleaseNotes = "https://github.com/lptstr/winfetch/releases/tag/v$version"
     }
 }
 

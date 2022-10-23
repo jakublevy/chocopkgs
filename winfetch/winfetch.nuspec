@@ -7,14 +7,14 @@
     <owners>Jakub Levý</owners>
     <title>winfetch</title>
     <authors>Kiëd Llaentenn,contributors</authors>
-    <projectUrl>https://github.com/kiedtl/winfetch</projectUrl>
+    <projectUrl>https://github.com/lptstr/winfetch</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/winfetch.png</iconUrl>
     <copyright>Copyright (c) 2019-2021 Kiëd Llaentenn and contributors</copyright>
-    <licenseUrl>https://github.com/kiedtl/winfetch/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/lptstr/winfetch/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/kiedtl/winfetch</projectSourceUrl>
-    <docsUrl>https://github.com/kiedtl/winfetch/wiki</docsUrl>
-    <bugTrackerUrl>https://github.com/kiedtl/winfetch/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/lptstr/winfetch</projectSourceUrl>
+    <docsUrl>https://github.com/lptstr/winfetch/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/lptstr/winfetch/issues</bugTrackerUrl>
     <tags>neofetch screenfetch commandline cli systeminfo info screenshot</tags>
     <summary>🛠 A command-line system information utility written in PowerShell. Like Neofetch, but for Windows.</summary>
     <description><![CDATA[![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/winfetch/logo.png)
@@ -47,7 +47,7 @@ According to benchmarks done with Hyperfine, Winfetch on Windows is faster than 
     choco install winfetch --params "'/AddToSystemPath:no /AddToUserPath:no'"
     ```
 ]]></description>
-<releaseNotes>https://github.com/kiedtl/winfetch/releases/tag/v2.4.1</releaseNotes>
+<releaseNotes>https://github.com/lptstr/winfetch/releases/tag/v2.4.1</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
