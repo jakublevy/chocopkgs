@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ddh</id>
-    <version>1.4.0</version>
+    <version>2.0.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/ddh</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ddh</title>
@@ -54,7 +54,7 @@ Options
 This program has actual coffee-making abilities.
 ```
 ]]></description>
-<releaseNotes>https://github.com/dd86k/ddh/releases/tag/v1.4.0</releaseNotes>
+<releaseNotes>https://github.com/dd86k/ddh/releases/tag/v2.0.0</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
