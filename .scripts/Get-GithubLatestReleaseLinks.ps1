@@ -1,3 +1,7 @@
+# Author: TheCakeIsNaOH
+# License: Apache License 2.0
+# Source repo: https://github.com/TheCakeIsNaOH/chocolatey-packages
+
 function Get-GitHubLatestReleaseLinks() {
     param(
       [parameter(Mandatory=$true)][string]$user,
