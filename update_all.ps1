@@ -119,7 +119,7 @@ $Options = [ordered]@{
                 Password   = $Env:mail_pass
                 Port       = $Env:mail_port
                 EnableSsl  = $Env:mail_enablessl -eq 'true'
-                Attachment = Join-Path $PSScriptRoot 'Update-AUPackages.md'
+          #      Attachment = Join-Path $PSScriptRoot 'Update-AUPackages.md'
                 UserMessage = 'chocopkgs'
                 SendAlways  = $false                      #Send notifications every time
              }
