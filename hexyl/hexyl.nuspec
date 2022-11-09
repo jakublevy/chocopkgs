@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>hexyl</id>
+    <version>0.10.0</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/hexyl</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>hexyl</title>
+    <authors>David Peter</authors>
+    <projectUrl>https://github.com/sharkdp/hexyl</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/hexyl.png</iconUrl>
+    <copyright>Copyright (c) 2018-2022 David Peter</copyright>
+    <licenseUrl>https://github.com/sharkdp/hexyl#license</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/sharkdp/hexyl</projectSourceUrl>
+    <docsUrl>https://github.com/sharkdp/hexyl/blob/master/doc/hexyl.1.md</docsUrl>
+    <bugTrackerUrl>https://github.com/sharkdp/hexyl/issues</bugTrackerUrl>
+    <tags>hex hexdump hexview terminal cli ascii decode input binary file utility commandline cross-platform</tags>
+    <summary>hexyl is a simple hex viewer for the terminal. It uses a colored output to distinguish different categories of bytes.</summary>
+    <description>
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/hexyl.png)
+
+`hexyl` is a simple hex viewer for the terminal. It uses a colored output to distinguish different categories of bytes (NULL bytes, printable ASCII characters, ASCII whitespace characters, other ASCII characters and non-ASCII).
+
+## Preview
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/hexyl/preview1.png)
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/hexyl/preview2.png)
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/hexyl/preview3.png)
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/hexyl/preview4.png)
+    </description>
+<releaseNotes>https://github.com/sharkdp/hexyl/releases/tag/v0.10.0</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

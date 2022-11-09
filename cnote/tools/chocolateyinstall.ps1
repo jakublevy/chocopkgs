@@ -13,9 +13,9 @@ Get-ChocolateyUnzip @packageArgs
 
 $binary = (Get-ChildItem "$toolsDir\bin")[0].FullName
 
-Rename-Item `
+Move-Item `
   -Path $binary `
-  -NewName 'cnote.exe' `
+  -Destination 'cnote.exe' `
   -Force
 
 $filesToRemove = @($packageArgs['fileFullPath'], $packageArgs['fileFullPath64'])
