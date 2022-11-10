@@ -1,0 +1,23 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to 
+   x86: https://github.com/sharkdp/insect/releases/download/v5.7.0/insect-windows-x86.exe
+   x64: https://github.com/sharkdp/insect/releases/download/v5.7.0/insect-windows-x64.exe
+
+   to download the file.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum32: 084F4A4DC477C4A269D08A4536B2C3F1DE20DAF086085440A6D0280ADFF36791
+   checksum64: 7EB863A95F494C3F263D8D68A1A0E45D4AD44E3601D85FA2F20885EFFA9B0180
+
+License text in LICENSE.txt file was obtained 
+   on 11/10/2022
+   from https://github.com/sharkdp/insect/blob/master/LICENSE

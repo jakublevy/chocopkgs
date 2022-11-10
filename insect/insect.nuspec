@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>insect</id>
+    <version>5.7.0</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/insect</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>insect</title>
+    <authors>David Peter</authors>
+    <projectUrl>https://github.com/sharkdp/insect</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/insect.png</iconUrl>
+    <copyright>Copyright (c) 2018 David Peter</copyright>
+    <licenseUrl>https://github.com/sharkdp/insect/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/sharkdp/insect</projectSourceUrl>
+    <docsUrl>https://github.com/sharkdp/insect/tree/master/docs</docsUrl>
+    <bugTrackerUrl>https://github.com/sharkdp/insect/issues</bugTrackerUrl>
+    <tags>calculator scientific science math physics physical unit conversion expression variable function terminal cli utility commandline cross-platform</tags>
+    <summary>`insect` is a high precision scientific calculator with full support for physical units.</summary>
+    <description>
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/insect.png)
+
+`insect` is a a high precision scientific calculator with full support for physical units.
+
+**Try the web version here**: https://insect.sh
+
+### For more information about insect see [README.md](https://github.com/sharkdp/insect/blob/master/README.md).
+    </description>
+<releaseNotes>https://github.com/sharkdp/insect/releases/tag/v5.7.0</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
