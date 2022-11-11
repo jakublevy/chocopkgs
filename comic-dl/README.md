@@ -1,0 +1,67 @@
+
+
+# comic-dl
+
+![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/comic-dl.png)
+
+Comic-dl is a command line tool to download Comics and Manga from various Manga and Comic sites easily. You can search Manga from this tool as well. Idea from [youtube-dl](https://community.chocolatey.org/packages/youtube-dl).
+
+## Dependencies
+* [nodejs](https://community.chocolatey.org/packages/nodejs) or [nodejs-lts](https://community.chocolatey.org/packages/nodejs-lts)
+
+## Usage
+```
+comic_dl -h
+usage: comic_dl.exe [-h] [--version] [-s SORTING] [-a] [-c] [-dd DOWNLOAD_DIRECTORY] [-rn RANGE] [--convert CONVERT]
+                    [--keep KEEP] [--quality QUALITY] [-i INPUT] [-cookie COOKIE] [--comic]
+                    [-comic-search SEARCH_COMIC] [-comic-info COMIC_INFO] [--update UPDATE] [--print-index]
+                    [-find SEARCH] [-ml MANGA_LANGUAGE] [-sc SKIP_CACHE] [-cid CHAPTER_ID] [-pid PAGE_ID] [-fd]
+                    [-p PASSWORD] [-u USERNAME] [-v]
+
+Comic_dl is a command line tool to download comics and manga from various such sites.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --version             Shows version and exits.
+  -s SORTING, --sorting SORTING
+                        Decides downloading order of chapters.
+  -a, --auto            Download new chapters automatically (needs config file!)
+  -c, --config          Generates config file for autodownload function
+  -dd DOWNLOAD_DIRECTORY, --download-directory DOWNLOAD_DIRECTORY
+                        Decides the download directory of the comics/manga.
+  -rn RANGE, --range RANGE
+                        Specifies the range of chapters to download.
+  --convert CONVERT     Tells the script to convert the downloaded Images to PDF or anything else.
+  --keep KEEP           Tells the script whether to keep the files after conversion or not.
+  --quality QUALITY     Tells the script which Quality of image to download (High/Low).
+  -i INPUT, --input INPUT
+                        Inputs the URL to comic.
+  -cookie COOKIE, --cookie COOKIE
+                        Passes cookie (text format) to be used throughout the session.
+  --comic               Add this after -i if you are inputting a comic id or the EXACT comic name.
+  -comic-search SEARCH_COMIC, --search-comic SEARCH_COMIC
+                        Searches for a comic through the gathered data from ReadComicOnline.to
+  -comic-info COMIC_INFO, --comic-info COMIC_INFO
+                        List all informations for the queried comic.
+  --update UPDATE       USAGE: --update {COMIC_LINK OR COMIC_NAME}... Updates the comic database for the given
+                        argument.
+  --print-index         prints the range index for links in the input URL
+  -find SEARCH, --search SEARCH
+                        Searches for a manga through the Manga Eden Database.
+  -ml MANGA_LANGUAGE, --manga-language MANGA_LANGUAGE
+                        Selects the language for manga.
+  -sc SKIP_CACHE, --skip-cache SKIP_CACHE
+                        Forces to skip cache checking.
+  -cid CHAPTER_ID, --chapter-id CHAPTER_ID
+                        Takes the Chapter ID to list all the chapters in a Manga.
+  -pid PAGE_ID, --page-id PAGE_ID
+                        Takes the Page ID to download a particular "chapter number" of a manga.
+  -fd, --force-download
+                        Forces download of chapters, when using comic-dl's search function.
+  -p PASSWORD, --password PASSWORD
+                        Takes Password used to log into a website, along with a username/email.
+  -u USERNAME, --username USERNAME
+                        Takes username/email used to log into a website, along with a password.
+  -v, --verbose         Prints important debugging messages on screen.
+```
+### For more information about comic-dl see [README.md](https://github.com/Xonshiz/comic-dl/blob/master/ReadMe.md).
