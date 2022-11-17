@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dnsproxy</id>
+    <version>0.46.2</version>
+    <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/dnsproxy</packageSourceUrl>
+    <owners>Jakub Levý</owners>
+    <title>DNS Proxy</title>
+    <authors>AdguardTeam</authors>
+    <projectUrl>https://github.com/AdguardTeam/dnsproxy</projectUrl>
+    <copyright>Copyright 2020 Adguard Software Ltd</copyright>
+    <licenseUrl>https://github.com/AdguardTeam/dnsproxy/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/AdguardTeam/dnsproxy</projectSourceUrl>
+    <docsUrl>https://github.com/AdguardTeam/dnsproxy/blob/master/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/AdguardTeam/dnsproxy/issues</bugTrackerUrl>
+    <tags>dns proxy dns-over-quic dns-over-https dns-over-tls dnscrypt commandline cross-platform</tags>
+    <summary>A simple DNS proxy server that supports all existing DNS protocols including DNS-over-TLS, DNS-over-HTTPS, DNSCrypt, and DNS-over-QUIC</summary>
+    <description>
+# DNS Proxy
+A simple DNS proxy server that supports all existing DNS protocols including `DNS-over-TLS`, `DNS-over-HTTPS`, `DNSCrypt`, and `DNS-over-QUIC`. Moreover, it can work as a `DNS-over-HTTPS`, `DNS-over-TLS` or `DNS-over-QUIC` server.
+
+### For more information about dnsproxy see [README.md](https://github.com/AdguardTeam/dnsproxy/blob/master/README.md).
+    </description>
+<releaseNotes>https://github.com/AdguardTeam/dnsproxy/releases/tag/v0.46.2</releaseNotes>
+</metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
