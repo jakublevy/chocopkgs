@@ -4,7 +4,7 @@ import-module au
 
 function global:au_SearchReplace {
     @{
-        ".\tools\chocolateyInstall.ps1" = @{
+        ".\tools\chocolateyinstall.ps1" = @{
             "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
         }
         ".\filen-sync.nuspec" = @{
