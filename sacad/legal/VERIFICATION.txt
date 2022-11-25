@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to 
-   x86: https://github.com/desbma/sacad/releases/download/2.7.0/sacad_win32.7z
-   x64: https://github.com/desbma/sacad/releases/download/2.7.0/sacad_win64.7z
+   x86: https://github.com/desbma/sacad/releases/download/2.7.1/sacad_win32.7z
+   x64: https://github.com/desbma/sacad/releases/download/2.7.1/sacad_win64.7z
 
    to download the file.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: E7F9E76E34456F48CB7458C7769567C095B3CEC835C97560C57B1AB7CBDEEB0E
-   checksum64: 212ED170F360BF3C1D14B7B8B8300C02A9585C189D03C1F45C3A4C4E8B3B395D
+   checksum32: B8C469781F44DDB3BDF94AF93B786FF64DF200F9997B85E6E6C9EE96A2AE7C51
+   checksum64: 652632AB3C2C2C1673BE718566874A998B963E9312D28110521AFC5F0BD1B777
 
 License text in LICENSE.txt file was obtained 
    on 03/09/2022
