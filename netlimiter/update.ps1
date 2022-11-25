@@ -13,12 +13,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.netlimiter.com/'
-    $version = $download_page.links | ? href -match '/releases/' | Select-Object -exp href | % { ($_ -split '/')[3] -replace '-', '.' } | select -first 1
+    $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.netlimiter.com/download'
+    $relative_url = $download_page.links | ? href -match '/download/nl/' | Select-Object -exp href | Select-Object -first 1
+    $version = ([regex]::Match($relative_url, 'netlimiter-(\d+\.\d+(\.\d+)*)')).Groups[1].Value
     @{
-        Url32        = "https://www.netlimiter.com/files/download/nl4/netlimiter-$version.exe"
+        Url32        = "https://www.netlimiter.com/download/nl/netlimiter-$version.exe"
         Version      = $version
-        ReleaseNotes = "https://www.netlimiter.com/releases/nl4/$($version -replace '\.', '-')"
+        ReleaseNotes = "https://www.netlimiter.com/releases/$($version -replace '\.', '-')"
     }
 }
 
