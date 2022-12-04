@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>netlimiter-infobar</id>
-    <version>1.30</version>
+    <version>1.42.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/netlimiter-infobar</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>NetLimiter InfoBar</title>
