@@ -12,8 +12,9 @@ $packageArgs = @{
 Get-ChocolateyUnzip @packageArgs
 
 Remove-Item `
-  -Path $packageArgs['fileFullPath'], $packageArgs['fileFullPath64'] `
+  -Path $packageArgs['fileFullPath'], $packageArgs['fileFullPath64'], "$toolsDir\bin" `
   -ErrorAction SilentlyContinue `
+  -Recurse `
   -Force
 
 Move-Item `
