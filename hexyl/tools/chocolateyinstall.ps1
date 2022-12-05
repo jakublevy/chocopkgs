@@ -3,8 +3,8 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileFullPath   = Join-Path $toolsDir 'hexyl-v0.10.0-i686-pc-windows-msvc.zip'
-  fileFullPath64 = Join-Path $toolsDir 'hexyl-v0.10.0-x86_64-pc-windows-msvc.zip'
+  fileFullPath   = Join-Path $toolsDir 'hexyl-v0.11.0-i686-pc-windows-msvc.zip'
+  fileFullPath64 = Join-Path $toolsDir 'hexyl-v0.11.0-x86_64-pc-windows-msvc.zip'
   destination    = $toolsDir
   validExitCodes = @(0)
 }
