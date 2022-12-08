@@ -14,6 +14,6 @@ Get-ChocolateyUnzip @packageArgs
 Remove-Item `
   -Path $packageArgs['fileFullPath'], $packageArgs['fileFullPath64'], "$toolsDir\bin" `
   -ErrorAction SilentlyContinue `
-  -Force
+  -Force -Recurse
 
 Get-ChildItem $toolsDir | Where-Object name -match 'hexyl' | Rename-Item -NewName 'bin' -Force

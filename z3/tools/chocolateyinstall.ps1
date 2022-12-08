@@ -13,8 +13,7 @@ Get-ChocolateyUnzip @packageArgs
 
 Remove-Item `
   -Path "$toolsDir\bin" `
-  -Recurse `
-  -Force `
+  -Recurse -Force `
   -ErrorAction SilentlyContinue
 
 Get-ChildItem "$toolsDir\z3-*-win" | % { Rename-Item -Path $_ -NewName 'bin' -Force }

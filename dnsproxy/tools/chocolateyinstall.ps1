@@ -14,8 +14,7 @@ Get-ChocolateyUnzip @packageArgs
 Remove-Item `
   -Path $packageArgs['fileFullPath'], $packageArgs['fileFullPath64'], "$toolsDir\bin" `
   -ErrorAction SilentlyContinue `
-  -Recurse `
-  -Force
+  -Recurse -Force
 
 Move-Item `
   -Path "$toolsDir\windows-*" `
