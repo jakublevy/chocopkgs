@@ -15,7 +15,7 @@ function global:au_GetLatest {
     $versions = $links | % { ([regex]::Match($_, '.*NLInfoBar-(\d+\.\d+(\.\d+)*)\.exe$')).Groups[1].Value }
     $version = $versions | Sort-Object -Descending {[version] $_ } | Select-Object -First 1
     @{
-        Url64        = "https://www.netlimiter.com/files/download/nl4/NLInfoBar-$version.exe"
+        Url64        = "https://www.netlimiter.com/files/download/nl/NLInfoBar-$version.exe"
         Version      = $version
     }
 }
