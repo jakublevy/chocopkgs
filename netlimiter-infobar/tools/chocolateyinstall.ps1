@@ -13,11 +13,6 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
-if((Get-OSArchitectureWidth -Compare 32) -or $env:ChocolateyForceX86) {
-  Write-Warning 'Currently, only Windows 10 64-bit systems are supported.'
-  Write-Error '32-bit is not supported.'
-}
-
 $winVersion = [Environment]::OsVersion.Version
 if($winVersion.Major -ne 10) {
   Write-Warning 'Currently, only Windows 10 64-bit systems are supported.'
