@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>file</id>
-    <version>5.42</version>
+    <version>5.43</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/file</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>file</title>
@@ -86,15 +86,15 @@ Report bugs to https://bugs.astron.com/
 ```
 ]]></description>
     <releaseNotes>
-* PR/348: add missing cases to prevent file from aborting on
-* PR/351: octalify filenames when not raw before printing.
-* fix regex cacheing bug (Dirk Mueller)
-* merge file_regcomp and file_regerror() to simplify the code
-* cache regex (Dirk Mueller)
-* detect filesystem full by flushing output (Dirk Mueller)
-* implement running decompressor programs using
-* Add support for msdos dates and times
-* use the system byte swapping functions if available (Werner Fink)
+* Add octal indirect magic (Michal Gorny)
+* PR/374: avoid infinite loop in non-wide code (piru)
+* PR/373: Obey MAGIC_CONTINUE with multiple magic files (vismarli)
+* Fix bug with large flist (Florian Weimer)
+* PR/364: Detect non-nul-terminated core filenames from QEMU
+* PR/359: Add support for http://ndjson.org/ (darose)
+* PR/362: Fix wide printing (ro-ee)
+* PR/358: Fix width for -f - (jpalus)
+* PR/356: Fix JSON constant parsing (davewhite)
     </releaseNotes>
   </metadata>
   <files>

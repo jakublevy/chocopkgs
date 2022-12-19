@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to
-   x86: https://github.com/rkitover/file-windows/releases/download/v5.42/file_5.42-x86_32.7z
-   x64: https://github.com/rkitover/file-windows/releases/download/v5.42/file_5.42-x86_64.7z
+   x86: https://github.com/rkitover/file-windows/releases/download/v5.43/file_5.43-x86_32.7z
+   x64: https://github.com/rkitover/file-windows/releases/download/v5.43/file_5.43-x86_64.7z
 
    to download the archive.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 2DDB2CA5818447CBFD0522BEC3DF55292CF3EE2E1BBDFFDD99A5BF93670DAB24
-   checksum64: 5362E1C07031E87887E77D1B41BEC4D920D5C51BF62BEB95770EAAE0A6683075
+   checksum32: 5C4092AF90C7CF9C7BA10AC0FB6C74B8E4AB626C3A54E3A1CD100424CC3D05C0
+   checksum64: 0B87EBFDE08ED0B5F0019E72E4A04ABD20AAB2AF3E3F11859FDADAFFE64C90F0
 	
    The checksum matches file.exe inside the archive.
 	
