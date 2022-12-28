@@ -23,7 +23,12 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $rel = (Get-GitHubLatestReleaseLinks -user 'sharkdp' -repository 'insect').Links | % href
     $relative_url  = $rel | Where-Object { $_ -match '/sharkdp/insect/releases/download/v\d+\.\d+(\.\d+)*/insect-windows-x64\.exe' | Select-Object -First 1 }
-    $version = ([regex]::Match($relative_url, 'v(\d+\.\d+(\.\d+)*)')).Groups[1].Value
+    if($null -eq $relative_url) {
+        $version = '5.7.0'
+    }
+    else {
+        $version = ([regex]::Match($relative_url, 'v(\d+\.\d+(\.\d+)*)')).Groups[1].Value
+    }
     @{
         Version      = $version
         Url32        = "https://github.com/sharkdp/insect/releases/download/v$version/insect-windows-x86.exe"
