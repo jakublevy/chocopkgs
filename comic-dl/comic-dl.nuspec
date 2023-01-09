@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>comic-dl</id>
-    <version>2022.04.23</version>
+    <version>2023.01.08.2</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/comic-dl</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>comic-dl</title>
@@ -17,8 +17,7 @@
     <bugTrackerUrl>https://github.com/Xonshiz/comic-dl/issues</bugTrackerUrl>
     <tags>manga manga-dl comics comic-dl download downloader offline reading commandline cross-platform</tags>
     <summary>Comic-dl is a command line tool to search and download Comics and Manga easily.</summary>
-    <description>
-# comic-dl
+    <description><![CDATA[# comic-dl
 
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/comic-dl.png)
 
@@ -83,8 +82,8 @@ optional arguments:
   -v, --verbose         Prints important debugging messages on screen.
 ```
 ### For more information about comic-dl see [README.md](https://github.com/Xonshiz/comic-dl/blob/master/ReadMe.md).
-    </description>
-    <releaseNotes>https://github.com/Xonshiz/comic-dl/releases/tag/2022.04.23</releaseNotes>
+]]></description>
+    <releaseNotes>https://github.com/Xonshiz/comic-dl/releases/tag/2023.01.08.2</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
