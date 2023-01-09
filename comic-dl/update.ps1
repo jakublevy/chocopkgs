@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $rel = (Get-GitHubLatestReleaseLinks -user 'Xonshiz' -repository 'comic-dl').Links | % href
-    $relative_url  = $rel | Where-Object { $_ -match '/Xonshiz/comic-dl/releases/download/\d+\.\d+(\.\d+)/comic_dl\.exe' } | Select-Object -First 1
+    $relative_url  = $rel | Where-Object { $_ -match '/Xonshiz/comic-dl/releases/download/\d+\.\d+(\.\d+)*/comic_dl\.exe' } | Select-Object -First 1
     $version = ([regex]::Match($relative_url, '/(\d+\.\d+(\.\d+)*)/')).Groups[1].Value
     @{
         Version      = $version
