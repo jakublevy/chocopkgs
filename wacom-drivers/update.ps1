@@ -21,7 +21,7 @@ function global:au_GetLatest {
         Url64           = "https://cdn.wacom.com/u/productsupport/drivers/win/professional/WacomTablet_$originalVersion.exe"
         Version         = $chocoVersion
         VersionOriginal = $originalVersion
-        ReleaseNotes    = "https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/Windows_$versionAfterDashRemoved.html"
+        ReleaseNotes    = "https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/Windows_$originalVersion.html"
     }
 }
 

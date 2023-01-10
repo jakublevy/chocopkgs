@@ -18,7 +18,7 @@
     <summary>Drivers for Wacom devices.</summary>
     <description><![CDATA[Windows drivers for [Wacom](https://www.wacom.com) tablet devices. See release notes for compatible products.
 ]]></description>
-    <releaseNotes>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/Windows_6.4.1.html</releaseNotes>
+    <releaseNotes>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/Windows_6.4.1-2.html</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" version="14.16.27024.1" />
       <dependency id="dotnetfx" version="4.5.2.0" />
