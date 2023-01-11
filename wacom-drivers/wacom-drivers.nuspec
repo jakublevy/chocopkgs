@@ -10,7 +10,7 @@
     <projectUrl>https://www.wacom.com/en-us/support/product-support/drivers</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/wacom.png</iconUrl>
     <copyright>Copyright (c) 2021 Wacom Co., Ltd. All rights reserved.</copyright>
-    <licenseUrl>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/eulas/en.pdf</licenseUrl>
+    <licenseUrl>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/eulas/2020/en.pdf</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://developer-docs.wacom.com/faqs/docs/q-tablet/tablet-driver</docsUrl>
     <bugTrackerUrl>https://support.wacom.com/hc</bugTrackerUrl>
