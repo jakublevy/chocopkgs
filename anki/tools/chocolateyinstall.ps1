@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 $installDir            = "$env:ProgramFiles\Anki"
-$version               = '2.1.56'
-$checksumQt5           = '727FE3613A9708D4D24ABB1E13FC207D83CC2DDE553786287CEB16CE1B98EBE6'
-$checksumQt6           = '3D4D6B83998CC5FF09435FB7E1BD105A0AE749423B1655BBDDB2F557F689A961'
+$version               = '2.1.57'
+$checksumQt5           = 'C9BAD54A790419927CF97619D67AF186C28F343F2571DF35DC28E58C03BED9F3'
+$checksumQt6           = 'CF8E89D1AD186B48580429D832D36E2391779C2054DD5A2FFDB9E6322E18873D'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
