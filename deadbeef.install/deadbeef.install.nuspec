@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>deadbeef.install</id>
-    <version>1.9.4</version>
+    <version>1.9.5</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/deadbeef.install</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>DeaDBeeF (Install)</title>
@@ -51,7 +51,7 @@ The screenshot above demonstrates a highly customized DeaDBeeF, running on Linux
   choco install deadbeef --params "'/AssociateAudioFiles /CreateDesktopIcon'"
   ```
 ]]></description>
-    <releaseNotes>https://github.com/DeaDBeeF-Player/deadbeef/blob/1.9.4/ChangeLog</releaseNotes>
+    <releaseNotes>https://github.com/DeaDBeeF-Player/deadbeef/blob/1.9.5/ChangeLog</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
