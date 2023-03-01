@@ -19,13 +19,14 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $rel = (Get-GitHubLatestReleaseLinks -user 'RodZill4' -repository 'material-maker').Links | % href
-    $relative_url  = $rel | Where-Object { $_ -match '/RodZill4/material-maker/releases/download/\d+\.\d+(\.\d+)*/.*windows\.zip' } | Select-Object -First 1
-    $version = ([regex]::Match($relative_url, '(\d+\.\d+(\.\d+)*)')).Groups[1].Value
+    $relative_url  = $rel | Where-Object { $_ -match '/RodZill4/material-maker/releases/download/\d+\.\d+(\.\d+)*(p\d+)?/.*windows\.zip' } | Select-Object -First 1
+    $version_original = ([regex]::Match($relative_url, '(\d+\.\d+(\.\d+)*(p\d+)?)')).Groups[1].Value
+    $version = $version_original -replace 'p', '.'
     $file_name = ([regex]::Match($relative_url, '/(material[^/]+windows\.zip)')).Groups[1].Value
     @{
         Version      = $version
-        Url64        = "https://github.com/RodZill4/material-maker/releases/download/$version/$file_name"
-        ReleaseNotes = "https://github.com/RodZill4/material-maker/releases/tag/$version"
+        Url64        = "https://github.com/RodZill4/material-maker/releases/download/$version_original/$file_name"
+        ReleaseNotes = "https://github.com/RodZill4/material-maker/releases/tag/$version_original"
     }
 }
 
