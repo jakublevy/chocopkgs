@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>visualkernel</id>
-    <version>3.1.9</version>
+    <version>4.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/visualkernel</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>VisualKernel</title>
@@ -14,8 +14,7 @@
     <bugTrackerUrl>https://sysprogs.com/support</bugTrackerUrl>
     <tags>visual studio VS cross-platform debug linux kernel space c dev sysprogs trial</tags>
     <summary>VisualKernel integrates Linux kernel debugging into Visual Studio.</summary>
-    <description> 
-**NOTE:** This is commercial software with 30-day trial period, after expiration, a valid license key is required. You can purchase one from [the official website](https://sysprogs.com/VisualKernel).
+    <description><![CDATA[**NOTE:** This is commercial software with 30-day trial period, after expiration a valid license key is required. You can purchase one from [the official website](https://sysprogs.com/VisualKernel).
 
 **NOTE:** VisualKernel requires Microsoft Visual Studio as a dependency, see [system requirements](https://sysprogs.com/VisualKernel/download).
 
@@ -39,7 +38,7 @@ VisualKernel integrates Linux kernel debugging into Visual Studio.
   ```
   choco install visualkernel --params "/InstallDir:D:\visualkernel"
   ```
-    </description>
+]]></description>
     <releaseNotes>https://sysprogs.com/VisualKernel/history</releaseNotes>
   </metadata>
   <files>

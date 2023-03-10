@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
-$absUrl   = 'https://sysprogs.com/getfile/1526/VisualKernel-3.1r9-trial.msi'
-$checksum = '5B7988E4E32E22001539F5799546AABD8C8E805956C2CC8F7D2B9B6BC8D36F71'
+$absUrl   = 'https://sysprogs.com/getfile/2002/VisualKernel-4.0-trial.msi'
+$checksum = '92c6fe674e3c52de194d2e547bb3c6ea5be9611ae0b55cd225ab964423c508fb'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
