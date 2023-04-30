@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>proficad</id>
-    <version>12.2.3</version>
+    <version>12.2.4</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/proficad</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ProfiCAD</title>
@@ -49,7 +49,7 @@ The non-commercial (home) edition is distributed [free of charge](https://www.pr
 ]]></description>
 <releaseNotes>https://www.proficad.com/news.aspx</releaseNotes>
 <dependencies>
-  <dependency id="proficad.install" version="[12.2.3]" />
+  <dependency id="proficad.install" version="[12.2.4]" />
 </dependencies>
 </metadata>
 <files>
