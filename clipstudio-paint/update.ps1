@@ -16,9 +16,9 @@ function global:au_GetLatest {
     # $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.clipstudio.net/en/purchase/trial'
     # $links = $download_page.links | ? href -match '\.exe' | Select-Object -first 1 -exp href
     # $versionOriginal = [regex]::Match($links, '/(\d+)/').Groups[1].Value
-    $releaseNotesPage = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.clipstudio.net/en/dl/release_note'
+    $releaseNotesPage = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.clipstudio.net/en/dl/release_note/v2/'
     $content = $releaseNotesPage.Content.Substring($releaseNotesPage.Content.IndexOf('<h1'))
-    $versionsChoco = [regex]::Matches($content, '(\d+\.\d+(\.\d+)*)') | ? { $_.Success } | % { $_.Groups[1].Value }
+    $versionsChoco = [regex]::Matches($content, '(\d+\.\d+(\.\d+)*)') | ? { $_.Success } | % { $_.Groups[1].Value } | Sort-Object -Descending [version]
     foreach($v in $versionsChoco) {
         $versionNoDot =  $v.Replace('.', '')
         $url = "https://vd.clipstudio.net/clipcontent/paint/app/$versionNoDot/CSP_$($versionNoDot)w_setup.exe"
