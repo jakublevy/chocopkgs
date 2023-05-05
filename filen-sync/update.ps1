@@ -16,7 +16,12 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $rel = (Get-GitHubLatestReleaseLinks -user 'FilenCloudDienste' -repository 'filen-desktop').Links | % href
     $relative_url = $rel | Where-Object { $_ -match '/FilenCloudDienste/filen-desktop/archive/refs/tags/\d+\.\d+(\.\d+)*\.zip' } | Select-Object -First 1
-    $version = ([regex]::Match($relative_url, '(\d+\.\d+(\.\d+)*)')).Groups[1].Value
+    if($null -eq $relative_url) {
+        $version = '2.0.16'
+    }
+    else {
+        $version = ([regex]::Match($relative_url, '(\d+\.\d+(\.\d+)*)')).Groups[1].Value
+    }
 
     @{
         Url64        = 'https://cdn.filen.io/desktop/release/filen_x64.exe'
