@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to 
-   x86: https://github.com/sharkdp/hexyl/releases/download/v0.12.0/hexyl-v0.12.0-i686-pc-windows-msvc.zip
-   x64: https://github.com/sharkdp/hexyl/releases/download/v0.12.0/hexyl-v0.12.0-x86_64-pc-windows-msvc.zip
+   x86: https://github.com/sharkdp/hexyl/releases/download/v0.13.0/hexyl-v0.13.0-i686-pc-windows-msvc.zip
+   x64: https://github.com/sharkdp/hexyl/releases/download/v0.13.0/hexyl-v0.13.0-x86_64-pc-windows-msvc.zip
 
    to download the file.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 9DE5E964519F4EBA797063B75BC970A350E9EC98FA7B44F6FFD13F81A73E588E
-   checksum64: ADBFD61777A88342CC7D58D0DF9A7482DB34F97F8702079D3719ACA9F4EC490C
+   checksum32: FBE019BA80ACDC6E68817F6C55F1F1D429BF3B573849F3960CD1052B571B7109
+   checksum64: FEEF91710F9C400A767AC7E62077057A42EEC7C81DEAC36398517BFB10437D5C
 
 License text in LICENSE.txt file was obtained 
    on 11/09/2022
