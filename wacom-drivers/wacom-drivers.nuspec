@@ -12,7 +12,7 @@
     <copyright>Copyright (c) 2021 Wacom Co., Ltd. All rights reserved.</copyright>
     <licenseUrl>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/eulas/2020/en.pdf</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://developer-docs.wacom.com/faqs/docs/q-tablet/tablet-driver</docsUrl>
+    <docsUrl>https://developer-docs.wacom.com/intuos-cintiq-business-tablets/docs/icbt-intro</docsUrl>
     <bugTrackerUrl>https://support.wacom.com/hc</bugTrackerUrl>
     <tags>wacom tablet art drawing painting pen graphics design drivers</tags>
     <summary>Drivers for Wacom devices.</summary>
