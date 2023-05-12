@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to 
-   x86: https://github.com/Z3Prover/z3/releases/download/z3-4.12.1/z3-4.12.1-x86-win.zip
-   x64: https://github.com/Z3Prover/z3/releases/download/z3-4.12.1/z3-4.12.1-x64-win.zip
+   x86: https://github.com/Z3Prover/z3/releases/download/z3-4.12.2/z3-4.12.2-x86-win.zip
+   x64: https://github.com/Z3Prover/z3/releases/download/z3-4.12.2/z3-4.12.2-x64-win.zip
 
    to download the installer.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 1FBE8E2A87F42CA6F3348B8C48A1FFCD8FC376AC3144C9B588A5452DE01CA2EF
-   checksum64: CE2D658D007C4F5873D2279BD031D4E72500B388E1EF2D716BD5F86AF19B20D2
+   checksum32: 39C5F72EB7FCB4CDF6D5019FB22D13B40EFC1C90CFC36C7F92ADC9D1774091BD
+   checksum64: EA33132E4531DBDC2C98B5F3C01257CA2F954E0F9C9115E63EA4E2530550E1D4
 
 License text in LICENSE.txt file was obtained 
    on 03/09/2022
