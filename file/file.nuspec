@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>file</id>
-    <version>5.43</version>
+    <version>5.44</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/file</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>file</title>
@@ -52,7 +52,7 @@ Determine type of FILEs.
                                apptype, ascii, cdf, compress, csv, elf,
                                encoding, soft, tar, json, text,
                                tokens
-      --exclude-quiet TEST         like exclude, but ignore unknown tests
+      --exclude-quiet TEST   like exclude, but ignore unknown tests
   -f, --files-from FILE      read the filenames to be examined from FILE
   -F, --separator STRING     use string as separator instead of `:'
   -i, --mime                 output MIME type strings (--mime-type and
@@ -67,7 +67,7 @@ Determine type of FILEs.
   -N, --no-pad               do not pad output
   -0, --print0               terminate filenames with ASCII NUL
   -P, --parameter            set file engine parameter limits
-                                   bytes 1048576 max bytes to look inside file
+                                   bytes 7340032 max bytes to look inside file
                                elf_notes     256 max ELF notes processed
                                elf_phnum    2048 max ELF prog sections processed
                                elf_shnum   32768 max ELF sections processed
@@ -86,15 +86,13 @@ Report bugs to https://bugs.astron.com/
 ```
 ]]></description>
     <releaseNotes>
-* Add octal indirect magic (Michal Gorny)
-* PR/374: avoid infinite loop in non-wide code (piru)
-* PR/373: Obey MAGIC_CONTINUE with multiple magic files (vismarli)
-* Fix bug with large flist (Florian Weimer)
-* PR/364: Detect non-nul-terminated core filenames from QEMU
-* PR/359: Add support for http://ndjson.org/ (darose)
-* PR/362: Fix wide printing (ro-ee)
-* PR/358: Fix width for -f - (jpalus)
-* PR/356: Fix JSON constant parsing (davewhite)
+* Handle nan's so that we don't get internal floating point exceptions
+* PR/397: Restore the ability to process files from stdin immediately.
+* fixed various clustefuzz issues
+* Fix error detection for decompression code (Vincent Mihalkovic)
+* Add MAGIC_NO_COMPRESS_FORK and use it to produce a more
+* Add built-in lzip decompression support (Michal Gorny)
+* Add built-in zstd decompression support (Martin Rodriguez Reboredo)
     </releaseNotes>
   </metadata>
   <files>
