@@ -15,6 +15,7 @@ $dead = @(
     'kindle-comic-converter',
     'mairix',
     'mp3infpu',
+    'nuxmv'
     'painttoolsai',
     'pdfcrack',
     'quiet',

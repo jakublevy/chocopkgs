@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kindle-comic-converter</id>
-    <version>5.5.2.20210830</version>
+    <version>5.6.2</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/kindle-comic-converter</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Kindle Comic Converter</title>
@@ -17,8 +17,7 @@
     <bugTrackerUrl>https://github.com/ciromattia/kcc/wiki/Known-issues</bugTrackerUrl>
     <tags>kindle ebook manga convert cbz epub mobi kindlegen</tags>
     <summary>App to convert comic/manga files to EPUB, Panel View MOBI or E-Ink optimized CBZ.</summary>
-    <description>
-**NOTE:** The following text is for the most part an excerpt from the official [README.md](https://github.com/ciromattia/kcc/blob/master/README.md).
+    <description><![CDATA[﻿**NOTE:** The following text is for the most part an excerpt from the official [README.md](https://github.com/ciromattia/kcc/blob/master/README.md).
 
 # Kindle Comic Converter
 Kindle Comic Converter (KCC) is a Python app to convert comic/manga files to EPUB, Panel View MOBI or E-Ink optimized CBZ. It was initially developed for Kindle but since version 4.6 outputs valid EPUB 3.0 so despite its name, KCC is actually a comic/manga to EPUB converter that every e-reader owner can happily use. It can also optionally optimize images by applying a number of transformations.
@@ -43,38 +42,30 @@ KCC can understand and convert from, at the moment, the following input types:
 Support for MOBI files is provided by [kindlegen](https://community.chocolatey.org/packages/kindlegen) dependency.
 
 ## Installation Parameters
-* `/InstallationPath:` - where to install the binaries
-    - Default value: `"$env:ProgramFiles\Kindle Comic Converter"`
-* `/CreateDesktopIcon` - creates a desktop icon
-    - Not created by default
-* `/CBZassociation` - associates KCC as the default app for *.cbz files
-    - Not associated by default
-* `/CBRassociation` - associates KCC as the default app for *.cbr files
-    - Not associated by default
-* `/CB7association` - associates KCC as the default app for *.cb7 files
-    - Not associated by default
+* `/AddToStartMenu:` - adds Kindle Comic Converter shortcut to Start menu (for all users or for the current user only)
+    - Supported values: `allusers`, `curruser`, `no`
+    - Default value: `allusers`
 
 ### Examples
-* Install into `D:\KCC` directory
+* Install and add a shortcut to Start Menu for all users
     ```
-    choco install kindle-comic-converter --params "/InstallationPath:D:\KCC"
+    choco install kindle-comic-converter
     ```
-* Install with all file associations
+* Install and add a shortcut to Start Menu for the current user only
     ```
-    choco install kindle-comic-converter --params "'/CBZassociation /CBRassociation /CB7association'"
+    choco install kindle-comic-converter --params "/AddToStartMenu:curruser"
     ```
-* Install and create desktop icon
+* Install and do not add any shortcut to Start Menu
     ```
-    choco install kindle-comic-converter --params "/CreateDesktopIcon"
+    choco install kindle-comic-converter --params "/AddToStartMenu:no"
     ```
-    </description>
-<releaseNotes>https://github.com/ciromattia/kcc/blob/5.5.2/CHANGELOG.md</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/ciromattia/kcc/blob/v5.6.2/CHANGELOG.md</releaseNotes>
 <dependencies>
     <dependency id="kindlegen" version="2.9.0.20210511" />
   </dependencies>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>

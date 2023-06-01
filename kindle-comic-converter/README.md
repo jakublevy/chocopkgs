@@ -25,27 +25,20 @@ KCC can understand and convert from, at the moment, the following input types:
 Support for MOBI files is provided by [kindlegen](https://community.chocolatey.org/packages/kindlegen) dependency.
 
 ## Installation Parameters
-* `/InstallationPath:` - where to install the binaries
-    - Default value: `"$env:ProgramFiles\Kindle Comic Converter"`
-* `/CreateDesktopIcon` - creates a desktop icon
-    - Not created by default
-* `/CBZassociation` - associates KCC as the default app for *.cbz files
-    - Not associated by default
-* `/CBRassociation` - associates KCC as the default app for *.cbr files
-    - Not associated by default
-* `/CB7association` - associates KCC as the default app for *.cb7 files
-    - Not associated by default
+* `/AddToStartMenu:` - adds Kindle Comic Converter shortcut to Start menu (for all users or for the current user only)
+    - Supported values: `allusers`, `curruser`, `no`
+    - Default value: `allusers`
 
 ### Examples
-* Install into `D:\KCC` directory
+* Install and add a shortcut to Start Menu for all users
     ```
-    choco install kindle-comic-converter --params "/InstallationPath:D:\KCC"
+    choco install kindle-comic-converter
     ```
-* Install with all file associations
+* Install and add a shortcut to Start Menu for the current user only
     ```
-    choco install kindle-comic-converter --params "'/CBZassociation /CBRassociation /CB7association'"
+    choco install kindle-comic-converter --params "/AddToStartMenu:curruser"
     ```
-* Install and create desktop icon
-   ```
-   choco install kindle-comic-converter --params "/CreateDesktopIcon"
-   ```
+* Install and do not add any shortcut to Start Menu
+    ```
+    choco install kindle-comic-converter --params "/AddToStartMenu:no"
+    ```
