@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$installDir            = "$env:ProgramFiles\Anki"
+$installDir            = "$env:localappdata\Programs\Anki"
 $version               = '2.1.64'
 $checksumQt5           = 'D3B5C1957B032F129B57CC38A01E81A1B393723A62EEC933365BE0CAA6AC5B06'
 $checksumQt6           = '9FC5DD1143AEBDDC0B9F9CA3E433DC47810989D6DD6A8C82B4784CAACE3F03ED'
@@ -35,14 +35,3 @@ if(!$additionalArgs['CreateDesktopIcon']) {
     -Force `
     -ErrorAction SilentlyContinue
 }
-
-# Fix bugged start menu icon
-Remove-Item `
-  -Path "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Anki.lnk" `
-  -Force `
-  -ErrorAction SilentlyContinue
-
-Install-ChocolateyShortcut `
-  -ShortcutFilePath "$env:ProgramData\Microsoft\Windows\Start Menu\Programs\Anki.lnk" `
-  -TargetPath "$installDir\anki.exe" `
-  -WorkingDirectory $installDir
