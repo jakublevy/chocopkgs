@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
-$version  = '5.2.5.0'
-$checksum = 'ec113d22ce8ad01f2de663acaf8751a0105bb8428ed55a78e6cb70298b259891'
+$version  = '5.2.6.0'
+$checksum = '08f798f8933a06da4d0668c38ef71afaf0f8f9a9858d59fa5e1f6966a140fe27'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
