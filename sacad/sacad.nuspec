@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sacad</id>
-    <version>2.7.3</version>
+    <version>2.7.5</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/sacad</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>SACAD</title>
@@ -52,7 +52,7 @@ Two tools are provided: `sacad` to search and download one cover, and `sacad_r` 
 
 Run `sacad -h` / `sacad_r -h` to get full command line reference.
 ]]></description>
-<releaseNotes>https://github.com/desbma/sacad/releases/tag/2.7.3</releaseNotes>
+<releaseNotes>https://github.com/desbma/sacad/releases/tag/2.7.5</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
