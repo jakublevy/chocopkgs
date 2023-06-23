@@ -12,7 +12,6 @@ $dead = @(
     'ggf',
     'glucose',
     'grap',
-    'kindle-comic-converter',
     'mairix',
     'mp3infpu',
     'nuxmv'
