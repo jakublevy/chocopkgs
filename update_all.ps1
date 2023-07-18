@@ -23,6 +23,7 @@ $dead = @(
     'reeeplayer.portable',
     'scantailor-advanced',
     'showdate',
+    'spin',
     'tclocklight-kt',
     'undark',
     'vlna',
