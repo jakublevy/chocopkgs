@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>hexyl</id>
-    <version>0.13.0</version>
+    <version>0.13.1</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/hexyl</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>hexyl</title>
@@ -31,7 +31,7 @@
 
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/hexyl/preview4.png)
 ]]></description>
-<releaseNotes>https://github.com/sharkdp/hexyl/releases/tag/v0.13.0</releaseNotes>
+<releaseNotes>https://github.com/sharkdp/hexyl/releases/tag/v0.13.1</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
