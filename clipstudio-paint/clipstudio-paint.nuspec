@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>clipstudio-paint</id>
-    <version>2.1.2</version>
+    <version>2.1.3</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/clipstudio-paint</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Clip Studio Paint</title>
