@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kindle-comic-converter</id>
-    <version>5.6.3</version>
+    <version>5.6.3.20231006</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/kindle-comic-converter</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Kindle Comic Converter</title>
