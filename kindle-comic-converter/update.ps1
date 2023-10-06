@@ -9,6 +9,7 @@ function global:au_SearchReplace {
             "(^[$]checksum_kcc\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumKcc)'"
             "(^[$]checksum_c2e\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumC2e)'"
             "(^[$]checksum_c2p\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumC2p)'"
+            "(^[$]version\s*=\s*)('.*')" = "`$1'$($Latest.Version)'"
         }
         ".\kindle-comic-converter.nuspec"   = @{
             "(?i)(\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
@@ -42,4 +43,4 @@ function global:au_BeforeUpdate {
     Get-ChildItem -Path $toolsDir -Filter '*.exe' | Remove-Item -Force
 }
 
-Update-Package -ChecksumFor None -NoCheckChocoVersion
+Update-Package -ChecksumFor None

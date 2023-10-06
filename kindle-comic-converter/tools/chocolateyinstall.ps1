@@ -3,7 +3,7 @@ $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 $checksum_kcc = 'C750578A161152C2909812FE872F7791AE9C14B522A0B20E3CD78C13A8C3464D'
 $checksum_c2e = 'F0B3EB8E834042C6848E4BBB6758FA28CBEBFE4045975A0627F7454A71B94A59'
 $checksum_c2p = 'C05D2372E55B06E261568E30A04158F54B58B45F03EBA53C655D54911BD751AC'
-$version = '5.6.2'
+$version = '5.6.3'
 
 $packageArgsCommon = @{
   packageName   = $env:ChocolateyPackageName
