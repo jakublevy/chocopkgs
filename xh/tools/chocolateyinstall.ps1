@@ -3,7 +3,7 @@ $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  fileFullPath64= Join-Path $toolsDir 'xh-v0.19.3-x86_64-pc-windows-msvc.zip'
+  fileFullPath64= Join-Path $toolsDir 'xh-v0.19.4-x86_64-pc-windows-msvc.zip'
   destination   = $toolsDir
   validExitCodes= @(0)
 }
