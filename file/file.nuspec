@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>file</id>
-    <version>5.44</version>
+    <version>5.45</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/file</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>file</title>
@@ -50,8 +50,8 @@ Determine type of FILEs.
   -e, --exclude TEST         exclude TEST from the list of test to be
                                performed for file. Valid tests are:
                                apptype, ascii, cdf, compress, csv, elf,
-                               encoding, soft, tar, json, text,
-                               tokens
+                               encoding, soft, tar, json, simh,
+                               text, tokens
       --exclude-quiet TEST   like exclude, but ignore unknown tests
   -f, --files-from FILE      read the filenames to be examined from FILE
   -F, --separator STRING     use string as separator instead of `:'
@@ -71,6 +71,7 @@ Determine type of FILEs.
                                elf_notes     256 max ELF notes processed
                                elf_phnum    2048 max ELF prog sections processed
                                elf_shnum   32768 max ELF sections processed
+                               elf_shsize 134217728 max ELF section size
                                 encoding   65536 max bytes to scan for encoding
                                    indir      50 recursion limit for indirection
                                     name      50 use limit for name/use magic
@@ -86,13 +87,12 @@ Report bugs to https://bugs.astron.com/
 ```
 ]]></description>
     <releaseNotes>
-* Handle nan's so that we don't get internal floating point exceptions
-* PR/397: Restore the ability to process files from stdin immediately.
-* fixed various clustefuzz issues
-* Fix error detection for decompression code (Vincent Mihalkovic)
-* Add MAGIC_NO_COMPRESS_FORK and use it to produce a more
-* Add built-in lzip decompression support (Michal Gorny)
-* Add built-in zstd decompression support (Martin Rodriguez Reboredo)
+* PR/465: psrok1: Avoid muslc asctime_r crash
+* add SIMH tape format support
+* bump the max size of the elf section notes to be read to 128K
+* PR/415: Fix decompression with program returning empty
+* PR/408: fix -p with seccomp
+* PR/412: fix MinGW compilation
     </releaseNotes>
   </metadata>
   <files>

@@ -32,8 +32,8 @@ Determine type of FILEs.
   -e, --exclude TEST         exclude TEST from the list of test to be
                                performed for file. Valid tests are:
                                apptype, ascii, cdf, compress, csv, elf,
-                               encoding, soft, tar, json, text,
-                               tokens
+                               encoding, soft, tar, json, simh,
+                               text, tokens
       --exclude-quiet TEST   like exclude, but ignore unknown tests
   -f, --files-from FILE      read the filenames to be examined from FILE
   -F, --separator STRING     use string as separator instead of `:'
@@ -53,6 +53,7 @@ Determine type of FILEs.
                                elf_notes     256 max ELF notes processed
                                elf_phnum    2048 max ELF prog sections processed
                                elf_shnum   32768 max ELF sections processed
+                               elf_shsize 134217728 max ELF section size
                                 encoding   65536 max bytes to scan for encoding
                                    indir      50 recursion limit for indirection
                                     name      50 use limit for name/use magic
