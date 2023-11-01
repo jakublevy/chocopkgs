@@ -5,9 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to 
-   x86: https://github.com/dd86k/ddcpuid/releases/download/v0.21.0/ddcpuid-0.21.0-windows-msvc-x86.zip
-   x64: https://github.com/dd86k/ddcpuid/releases/download/v0.21.0/ddcpuid-0.21.0-windows-msvc-x86_64.zip
+1. Go to https://github.com/dd86k/ddcpuid/releases/download/v0.21.1/ddcpuid-0.21.1-x86_64-windows.zip
 
    to download the installer.
 
@@ -16,7 +14,7 @@ Package can be verified like this:
    - Use Chocolatey utility 'checksum.exe'
 
    checksum32: 8F350CBA878BE04B8F293AD67CD7A54FB8C84B95E07BDFDF2AC7AF46A3C25A83
-   checksum64: CC02F1127048F60E7996213C3F42D595166053515379A3AB4F02F1DD5AE4A803
+   checksum64: AC921A11DAE2492CF4A6A2BE13C6ABFD9B0815DFD559F23058D162F76D1F0318
 
 License text in LICENSE.txt file was obtained 
    on 12/06/2021
