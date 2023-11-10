@@ -3,7 +3,7 @@ $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  fileFullPath  = Join-Path $toolsDir 'winglpk-4.65.zip'
+  fileFullPath  = Join-Path $toolsDir 'winglpk-5.00.rar'
   destination   = $toolsDir
   validExitCodes= @(0)
 }
