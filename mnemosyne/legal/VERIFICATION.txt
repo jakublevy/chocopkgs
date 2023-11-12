@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://sourceforge.net/projects/mnemosyne-proj/files/mnemosyne/mnemosyne-2.10.1/mnemosyne-2.10.1-setup.exe
+1. Go to https://sourceforge.net/projects/mnemosyne-proj/files/mnemosyne/mnemosyne-2.11/mnemosyne-2.11-setup.exe
 
    to download the installer.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: F006060B8C4A544C6CADD27255FC2B5CF2594F0138BA76415BE29750F0A2CDBB
+   checksum32: 03B6AA0A8BA20FBDA6157FA9546B3D7DBB74E05ED5A1A777BA34B0551250232F
 
 License text in PROJECT-LICENSE.txt file was obtained 
    on 09/04/2021

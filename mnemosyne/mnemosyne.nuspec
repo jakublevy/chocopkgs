@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>mnemosyne</id>
-    <version>2.10.1</version>
+    <version>2.11</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/mnemosyne</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>The Mnemosyne Project</title>
