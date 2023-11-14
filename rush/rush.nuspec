@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rush</id>
-    <version>0.5.3</version>
+    <version>0.5.4</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/rush</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>rush</title>
@@ -23,7 +23,7 @@ A cross-platform command-line tool for executing jobs in parallel.
 
 ### For more information about rush see [the official README.md](https://github.com/shenwei356/rush/blob/master/README.md).
 ]]></description>
-<releaseNotes>https://github.com/shenwei356/rush/releases/tag/v0.5.3</releaseNotes>
+<releaseNotes>https://github.com/shenwei356/rush/releases/tag/v0.5.4</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
