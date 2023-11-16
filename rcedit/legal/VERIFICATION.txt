@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to
-   x86: https://github.com/electron/rcedit/releases/download/v1.1.1/rcedit-x86.exe
-   x64: https://github.com/electron/rcedit/releases/download/v1.1.1/rcedit-x64.exe
+   x86: https://github.com/electron/rcedit/releases/download/v2.0.0/rcedit-x86.exe
+   x64: https://github.com/electron/rcedit/releases/download/v2.0.0/rcedit-x64.exe
 
    to download the installer.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 1733E4B7E532C99B6A4DDECA1B9FFF7BB1C5FD0BA7DBEB5F3520B6DA03A5284F
-   checksum64: 02E8E8C5D430D8B768980F517B62D7792D690982B9BA0F7E04163CBC1A6E7915
+   checksum32: 38FB5E935D7CB58D7A98B4ED8F876C83F5DB032BCD0329B0A4DE4E4A1DE876B6
+   checksum64: 3E7801DB1A5EDBEC91B49A24A094AAD776CB4515488EA5A4CA2289C400EADE2A
 
 License text in LICENSE.txt file was obtained 
    on 01/01/2022

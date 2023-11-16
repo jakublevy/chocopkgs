@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rcedit</id>
-    <version>1.1.1</version>
+    <version>2.0.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/rcedit</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>rcedit</title>
@@ -16,8 +16,7 @@
     <bugTrackerUrl>https://github.com/electron/rcedit/issues</bugTrackerUrl>
     <tags>edit resources exe executable dll library commandline</tags>
     <summary>Command line tool to edit resources of exe file on Windows.</summary>
-    <description>
-# rcedit
+    <description><![CDATA[# rcedit
 Command line tool to edit resources of exe file on Windows.
 
 ## Examples
@@ -43,8 +42,8 @@ $ rcedit "path-to-exe-or-dll" --get-version-string "property"
 ```
 
 ### For more information about rcedit see [README.md#Docs](https://github.com/electron/rcedit#docs).
-    </description>
-    <releaseNotes>https://github.com/electron/rcedit/releases/tag/v1.1.1</releaseNotes>
+]]></description>
+    <releaseNotes>https://github.com/electron/rcedit/releases/tag/v2.0.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
