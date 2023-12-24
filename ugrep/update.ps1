@@ -16,10 +16,10 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $rel = (Get-GitHubLatestReleaseLinks -user 'Genivia' -repository 'ugrep').Links | % href
-    $relative_url  = $rel | Where-Object { $_ -match '/Genivia/ugrep/releases/download/v\d+\.\d+(\.\d+)*/ugrep\.exe' } | Select-Object -First 1
+    $relative_url  = $rel | Where-Object { $_ -match '/Genivia/ugrep/releases/download/v\d+\.\d+(\.\d+)*/ugrep-windows-x64\.zip' } | Select-Object -First 1
     $version = ([regex]::Match($relative_url, '/v(\d+\.\d+(\.\d+)*)/')).Groups[1].Value
     @{
-        Url64        = "https://github.com/Genivia/ugrep/releases/download/v$version/ugrep.exe"
+        Url64        = "https://github.com/Genivia/ugrep/releases/download/v$version/ugrep-windows-x64.zip"
         Version      = $version
         ReleaseNotes = "https://github.com/Genivia/ugrep/releases/tag/v$version"
     }
