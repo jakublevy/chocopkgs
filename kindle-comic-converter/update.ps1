@@ -34,10 +34,10 @@ function global:au_BeforeUpdate {
     Invoke-WebRequest -UseBasicParsing -Uri "https://github.com/ciromattia/kcc/releases/download/v$($Latest.Version)/kcc_$($Latest.Version).exe" -OutFile (Join-Path $toolsDir 'kcc.exe')
     $global:Latest.ChecksumKcc = (Get-FileHash (Join-Path $toolsDir 'kcc.exe') -Algorithm SHA256).Hash
 
-    Invoke-WebRequest -UseBasicParsing -Uri "https://github.com/ciromattia/kcc/releases/download/v$($Latest.Version)/kcc-c2e_$($Latest.Version).exe" -OutFile (Join-Path $toolsDir 'kcc-c2e.exe')
+    Invoke-WebRequest -UseBasicParsing -Uri "https://github.com/ciromattia/kcc/releases/download/v$($Latest.Version)/kcc_c2e_$($Latest.Version).exe" -OutFile (Join-Path $toolsDir 'kcc-c2e.exe')
     $global:Latest.ChecksumC2e = (Get-FileHash (Join-Path $toolsDir 'kcc-c2e.exe') -Algorithm SHA256).Hash
 
-    Invoke-WebRequest -UseBasicParsing -Uri "https://github.com/ciromattia/kcc/releases/download/v$($Latest.Version)/kcc-c2p_$($Latest.Version).exe" -OutFile (Join-Path $toolsDir 'kcc-c2p.exe')
+    Invoke-WebRequest -UseBasicParsing -Uri "https://github.com/ciromattia/kcc/releases/download/v$($Latest.Version)/kcc_c2p_$($Latest.Version).exe" -OutFile (Join-Path $toolsDir 'kcc-c2p.exe')
     $global:Latest.ChecksumC2p = (Get-FileHash (Join-Path $toolsDir 'kcc-c2p.exe') -Algorithm SHA256).Hash
 
     Get-ChildItem -Path $toolsDir -Filter '*.exe' | Remove-Item -Force

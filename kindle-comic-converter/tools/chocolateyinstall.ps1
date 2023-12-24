@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$checksum_kcc = '656049D926389F350F8D7D197FA2295E50A91972A950B9277A01EF4057F2A7AD'
-$checksum_c2e = '7F0D8B76BE62932900C79BFAB4541BA3311D1F96B8EEB545D0B37EE33BF746DF'
-$checksum_c2p = '542611244299925405DDD88549329C28CD871C044B7D626430A012FD3595064C'
-$version = '5.6.3'
+$checksum_kcc = '8C469B07DE3E58D87C47497658052DECF22EFED3756A178C15D6EC3220A2A9E7'
+$checksum_c2e = '98333B331C7097430C79D00D3175754E85D05D31829A65DE6A899B71C55BF4F0'
+$checksum_c2p = '3FBA0B9771D3BDD1A3DDAC3F148F3906AA9A834DE766A9DCD84B1863724CA935'
+$version = '5.6.5'
 
 $packageArgsCommon = @{
   packageName   = $env:ChocolateyPackageName
@@ -22,13 +22,13 @@ $kccArgs = @{
 }
 
 $c2eArgs = @{
-  url64        = "https://github.com/ciromattia/kcc/releases/download/v$version/kcc-c2e_$version.exe"
+  url64        = "https://github.com/ciromattia/kcc/releases/download/v$version/kcc_c2e_$version.exe"
   fileFullPath = "$toolsDir\bin\kcc-c2e.exe"
   checksum64   = $checksum_c2e
 }
 
 $c2pArgs = @{
-  url64        = "https://github.com/ciromattia/kcc/releases/download/v$version/kcc-c2p_$version.exe"
+  url64        = "https://github.com/ciromattia/kcc/releases/download/v$version/kcc_c2p_$version.exe"
   fileFullPath = "$toolsDir\bin\kcc-c2p.exe"
   checksum64   = $checksum_c2p
 }
