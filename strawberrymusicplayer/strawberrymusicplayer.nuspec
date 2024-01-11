@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>strawberrymusicplayer</id>
-    <version>1.0.22</version>
+    <version>1.0.23</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/strawberrymusicplayer</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Strawberry Music Player</title>
@@ -30,7 +30,7 @@ Strawberry is a music player and music collection organizer. It is a fork of Cle
     choco install strawberrymusicplayer --params "/InstallDir:D:\strawberry-music-player"
     ```
 ]]></description>
-<releaseNotes>https://github.com/strawberrymusicplayer/strawberry/blob/1.0.22/Changelog</releaseNotes>
+<releaseNotes>https://github.com/strawberrymusicplayer/strawberry/blob/1.0.23/Changelog</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
