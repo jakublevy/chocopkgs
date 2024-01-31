@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>clipstudio-paint</id>
-    <version>2.3.2</version>
+    <version>2.3.4</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/clipstudio-paint</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Clip Studio Paint</title>
@@ -10,7 +10,7 @@
     <projectUrl>https://www.clipstudio.net/en</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/icons/clipstudio-paint.png</iconUrl>
     <copyright>Copyright (c) CELSYS, Inc. All Rights Reserved.</copyright>
-    <licenseUrl>https://www.celsys.co.jp/en/information/csp</licenseUrl>
+    <licenseUrl>https://www.celsys.com/en/information/csp/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://www.clipstudio.net/en/manuals</docsUrl>
     <bugTrackerUrl>https://support.clip-studio.com</bugTrackerUrl>

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>z3</id>
-    <version>4.12.4</version>
+    <version>4.12.5</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/z3</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Z3 Theorem Prover</title>
@@ -22,7 +22,7 @@ Z3, also known as the Z3 Theorem Prover is a high-performance, cross-platform sa
 
 If you are not familiar with Z3, you can start [here](https://github.com/Z3Prover/z3/wiki#background).
 ]]></description>
-<releaseNotes>https://github.com/Z3Prover/z3/releases/tag/z3-4.12.4</releaseNotes>
+<releaseNotes>https://github.com/Z3Prover/z3/releases/tag/z3-4.12.5</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
