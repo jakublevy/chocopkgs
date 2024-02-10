@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://github.com/Xonshiz/comic-dl/releases/download/2023.01.08.2/comic_dl.exe
+1. Go to https://github.com/Xonshiz/comic-dl/releases/download/2024.02.10/comic_dl.exe
 
    to download the file.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: A6EE403350B119ADB476A762BC97D6B9E203FB8ADD9AF5AB13DB7954DC0E66E0
+   checksum64: C68EEB977F070DCF4C025EBAA3C31A0D10E129589490189291465325E00FB9B7
 
 License text in LICENSE.txt file was obtained 
    on 11/11/2022

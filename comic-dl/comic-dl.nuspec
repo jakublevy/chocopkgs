@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>comic-dl</id>
-    <version>2023.01.08.2</version>
+    <version>2024.02.10</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/comic-dl</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>comic-dl</title>
@@ -83,7 +83,7 @@ optional arguments:
 ```
 ### For more information about comic-dl see [README.md](https://github.com/Xonshiz/comic-dl/blob/master/ReadMe.md).
 ]]></description>
-    <releaseNotes>https://github.com/Xonshiz/comic-dl/releases/tag/2023.01.08.2</releaseNotes>
+    <releaseNotes>https://github.com/Xonshiz/comic-dl/releases/tag/2024.02.10</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
