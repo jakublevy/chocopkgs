@@ -3,8 +3,8 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileFullPath   = Join-Path $toolsDir 'z3-4.12.6-x86-win.zip'
-  fileFullPath64 = Join-Path $toolsDir 'z3-4.12.6-x64-win.zip'
+  fileFullPath   = Join-Path $toolsDir 'z3-4.13.0-x86-win.zip'
+  fileFullPath64 = Join-Path $toolsDir 'z3-4.13.0-x64-win.zip'
   destination    = $toolsDir
   validExitCodes = @(0)
 }
