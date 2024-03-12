@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>sshs</id>
-    <version>4.2.1</version>
+    <version>4.3.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/sshs</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>sshs</title>
@@ -26,7 +26,7 @@ You need to have `ssh` installed and accessible from your terminal.
 ## Screenshot
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/sshs/screenshot.png)
 ]]></description>
-    <releaseNotes>https://github.com/quantumsheep/sshs/releases/tag/v4.2.1</releaseNotes>
+    <releaseNotes>https://github.com/quantumsheep/sshs/releases/tag/v4.3.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
