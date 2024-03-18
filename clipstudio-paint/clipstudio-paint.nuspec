@@ -49,7 +49,7 @@ Clip Studio Paint is a software for digital creation of manga (comics), general 
   choco install clipstudio-paint --params "/DesktopIcon:yes"
   ```
 ]]></description>
-    <releaseNotes>https://www.clipstudio.net/en/dl/release_note/v2</releaseNotes>
+    <releaseNotes>https://www.clipstudio.net/en/dl/release_note/latest/</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
