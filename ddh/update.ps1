@@ -22,13 +22,13 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $rel = (Get-GitHubLatestReleaseLinks -user 'dd86k' -repository 'ddh').Links | % href
-    $relative_url  = $rel | Where-Object { $_ -match '/dd86k/ddh/releases/download/v\d+\.\d+(\.\d+)*/ddh-\d+\.\d+(\.\d+)*-windows-mscoff-x86_64\.zip' } | Select-Object -First 1
+    $relative_url  = $rel | Where-Object { $_ -match '/dd86k/ddgst/releases/download/v\d+\.\d+(\.\d+)*/ddh-\d+\.\d+(\.\d+)*-windows-mscoff-x86_64\.zip' } | Select-Object -First 1
     $version = ([regex]::Match($relative_url, 'v(\d+\.\d+(\.\d+)*)')).Groups[1].Value
     @{
         Version      = $version
-        Url32        = "https://github.com/dd86k/ddh/releases/download/v$version/ddh-$version-windows-mscoff-x86.zip"
-        Url64        = "https://github.com/dd86k/ddh/releases/download/v$version/ddh-$version-windows-mscoff-x86_64.zip"
-        ReleaseNotes = "https://github.com/dd86k/ddh/releases/tag/v$version"
+        Url32        = "https://github.com/dd86k/ddgst/releases/download/v$version/ddh-$version-windows-mscoff-x86.zip"
+        Url64        = "https://github.com/dd86k/ddgst/releases/download/v$version/ddh-$version-windows-mscoff-x86_64.zip"
+        ReleaseNotes = "https://github.com/dd86k/ddgst/releases/tag/v$version"
     }
 }
 

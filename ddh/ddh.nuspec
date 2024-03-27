@@ -7,13 +7,13 @@
     <owners>Jakub Levý</owners>
     <title>ddh</title>
     <authors>dd86k</authors>
-    <projectUrl>https://github.com/dd86k/ddh</projectUrl>
+    <projectUrl>https://github.com/dd86k/ddgst</projectUrl>
     <copyright>The Unlicense</copyright>
     <licenseUrl>https://github.com/dd86k/ddh/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/dd86k/ddh</projectSourceUrl>
-    <docsUrl>https://github.com/dd86k/ddh/blob/master/man/ddh.1</docsUrl>
-    <bugTrackerUrl>https://github.com/dd86k/ddh/issues</bugTrackerUrl>
+    <docsUrl>https://github.com/dd86k/ddgst/blob/master/man/ddh.1</docsUrl>
+    <bugTrackerUrl>https://github.com/dd86k/ddgst/issues</bugTrackerUrl>
     <tags>hash hasher checksum md5 sha1 sha2 sha3 blake2 admin commandline cross-platform</tags>
     <summary>ddh is a generic hasher that comes with more features than built-in OS utilities.</summary>
     <description><![CDATA[# ddh, Generic hasher
@@ -55,7 +55,7 @@ Options
 This program has actual coffee-making abilities.
 ```
 ]]></description>
-<releaseNotes>https://github.com/dd86k/ddh/releases/tag/v2.0.2</releaseNotes>
+<releaseNotes>https://github.com/dd86k/ddgst/releases/tag/v2.0.2</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
