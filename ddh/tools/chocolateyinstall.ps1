@@ -3,8 +3,7 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileFullPath   = Join-Path $toolsDir 'ddh-2.0.2-windows-mscoff-x86.zip'
-  fileFullPath64 = Join-Path $toolsDir 'ddh-2.0.2-windows-mscoff-x86_64.zip'
+  fileFullPath64 = Join-Path $toolsDir 'ddgst-3.0-x86_64-windows-msvc.zip'
   destination    = "$toolsDir\bin"
   validExitCodes = @(0)
 }
@@ -12,6 +11,6 @@ $packageArgs = @{
 Get-ChocolateyUnzip @packageArgs
 
 Remove-Item `
-  -Path $packageArgs['fileFullPath'], $packageArgs['fileFullPath64'] `
+  -Path $packageArgs['fileFullPath64'] `
   -ErrorAction SilentlyContinue `
   -Force
