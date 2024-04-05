@@ -5,13 +5,13 @@ Jetbrains IDE for Rust.
 See [https://www.jetbrains.com/rust/](https://www.jetbrains.com/rust/) for more information.
 
 ## Installation Parameters
-* `/DesktopIcon` - whether to create desktop shortcut
-  - Not used by default
 * `/AddBinToPath` - whether to add "bin" folder to PATH
   - Not used by default
 * `/AddToContextMenu` - whether to add "Open Folder as Project" into the context menu
   - Not used by default
 * `/CreateFileAssoc` - whether to associate with .rs files
+  - Not used by default
+* `/DesktopIcon` - whether to create desktop shortcut
   - Not used by default
 * `/InstallDir` - where to install binaries
   - Default value: `"$env:ProgramFiles\JetBrains\RustRover [VERSION]"`

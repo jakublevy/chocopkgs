@@ -14,7 +14,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <docsUrl>https://www.jetbrains.com/help/rust/</docsUrl>
     <bugTrackerUrl>https://youtrack.jetbrains.com/issues/RUST</bugTrackerUrl>
-    <tags>rust ide jetbrains trial subscription admin</tags>
+    <tags>rust ide jetbrains admin</tags>
     <summary>JetBrains IDE for Rust</summary>
     <description>
 Jetbrains IDE for Rust.
@@ -22,13 +22,13 @@ Jetbrains IDE for Rust.
 See [https://www.jetbrains.com/rust/](https://www.jetbrains.com/rust/) for more information.
 
 ## Installation Parameters
-* `/DesktopIcon` - whether to create desktop shortcut
-  - Not used by default
 * `/AddBinToPath` - whether to add "bin" folder to PATH
   - Not used by default
 * `/AddToContextMenu` - whether to add "Open Folder as Project" into the context menu
   - Not used by default
 * `/CreateFileAssoc` - whether to associate with .rs files
+  - Not used by default
+* `/DesktopIcon` - whether to create desktop shortcut
   - Not used by default
 * `/InstallDir` - where to install binaries
   - Default value: `"$env:ProgramFiles\JetBrains\RustRover [VERSION]"`
@@ -56,6 +56,9 @@ See [https://www.jetbrains.com/rust/](https://www.jetbrains.com/rust/) for more 
   ```
     </description>
     <releaseNotes>https://youtrack.jetbrains.com/articles/RUST-A-5/Release-Notes</releaseNotes>
+    <dependencies>
+      <dependency id="autohotkey.portable" version="2.0.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
