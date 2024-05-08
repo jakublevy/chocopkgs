@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to 
-   x86: https://github.com/spicetify/spicetify-cli/releases/download/v2.36.10/spicetify-2.36.10-windows-x32.zip
-   x64: https://github.com/spicetify/spicetify-cli/releases/download/v2.36.10/spicetify-2.36.10-windows-x64.zip
+   x86: https://github.com/spicetify/spicetify-cli/releases/download/v2.36.11/spicetify-2.36.11-windows-x32.zip
+   x64: https://github.com/spicetify/spicetify-cli/releases/download/v2.36.11/spicetify-2.36.11-windows-x64.zip
 
    to download the installer.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 81043370A67693D198ABB8228DE88F4FDE2947166C07A288BCB5A04955494694
-   checksum64: A6441FF8244B163E9A007480A86EAAFF8E6BC57E4D13EFDC79DB145A4ED76918
+   checksum32: 1117A254E58CBF674277B653B47925947D85C84EF5211A90EF20B5DCE7FF93B1
+   checksum64: F365956B3ADA587FB1B66BD7213B94FB3D37EFA11040EE7D950642BA6EA74D39
 
 License text in LICENSE.txt file was obtained 
    on 09/01/2021
