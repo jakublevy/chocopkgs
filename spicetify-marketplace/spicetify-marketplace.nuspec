@@ -7,13 +7,13 @@
     <owners>Jakub Levý</owners>
     <title>Spicetify Marketplace</title>
     <authors>CharlieS1103,theRealPadster</authors>
-    <projectUrl>https://github.com/spicetify/spicetify-marketplace</projectUrl>
+    <projectUrl>https://github.com/spicetify/marketplace</projectUrl>
     <copyright>Copyright (c) 2021 CharlieS1103</copyright>
-    <licenseUrl>https://github.com/spicetify/spicetify-marketplace/blob/main/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/spicetify/marketplace/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/spicetify/spicetify-marketplace</projectSourceUrl>
-    <docsUrl>https://github.com/spicetify/spicetify-marketplace/blob/main/README.md</docsUrl>
-    <bugTrackerUrl>https://github.com/spicetify/spicetify-marketplace/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/spicetify/marketplace</projectSourceUrl>
+    <docsUrl>https://github.com/spicetify/marketplace/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/spicetify/marketplace/issues</bugTrackerUrl>
     <tags>spotify spicetify extensions themes customize market marketplace cross-platform</tags>
     <summary>Download extensions and themes directly from within Spicetify.</summary>
     <description><![CDATA[# Spicetify Marketplace
@@ -32,7 +32,7 @@ This project is a work-in-progress and is not finished, polished, or guaranteed 
 
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/spicetify-marketplace/screenshot.png)
 ]]></description>
-<releaseNotes>https://github.com/spicetify/spicetify-marketplace/releases/tag/v1.0.2</releaseNotes>
+<releaseNotes>https://github.com/spicetify/marketplace/releases/tag/v1.0.2</releaseNotes>
 <dependencies>
   <dependency id="spicetify-cli" version="2.8.0" />
   <dependency id="chocolatey-core.extension" version="1.1.0" />

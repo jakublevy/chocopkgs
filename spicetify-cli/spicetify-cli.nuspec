@@ -12,9 +12,9 @@
     <copyright>Copyright (c) 2018-2021 khanhas</copyright>
     <licenseUrl>https://github.com/spicetify/spicetify-cli/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/spicetify/spicetify-cli</projectSourceUrl>
+    <projectSourceUrl>https://github.com/spicetify/cli</projectSourceUrl>
     <docsUrl>https://spicetify.app/docs/getting-started</docsUrl>
-    <bugTrackerUrl>https://github.com/spicetify/spicetify-cli/issues</bugTrackerUrl>
+    <bugTrackerUrl>https://github.com/spicetify/cli/issues</bugTrackerUrl>
     <tags>spotify commandline customize debloat extension cross-platform</tags>
     <summary>A command-line tool to customize Spotify client.</summary>
     <description><![CDATA[![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/spicetify-cli/logo.png)
@@ -40,7 +40,7 @@ A command-line tool to customize Spotify client. Supports Windows, MacOS and Lin
 
 ![](https://cdn.jsdelivr.net/gh/jakublevy/chocopkgs/spicetify-cli/preview.png)
 ]]></description>
-<releaseNotes>https://github.com/spicetify/spicetify-cli/releases/tag/v2.36.11</releaseNotes>
+<releaseNotes>https://github.com/spicetify/cli/releases/tag/v2.36.11</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />

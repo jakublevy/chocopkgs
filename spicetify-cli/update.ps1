@@ -22,13 +22,13 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $rel = (Get-GitHubLatestReleaseLinks -user 'spicetify' -repository 'spicetify-cli').Links | % href
-    $relative_url  = $rel | Where-Object { $_ -match '/spicetify/spicetify-cli/releases/download/v\d+\.\d+(\.\d+)*/spicetify-\d+\.\d+(\.\d+)*-windows-x64\.zip' } | Select-Object -First 1
+    $relative_url  = $rel | Where-Object { $_ -match '/spicetify/cli/releases/download/v\d+\.\d+(\.\d+)*/spicetify-\d+\.\d+(\.\d+)*-windows-x64\.zip' } | Select-Object -First 1
     $version = ([regex]::Match($relative_url, 'v(\d+\.\d+(\.\d+)*)')).Groups[1].Value
     @{
         Version      = $version
-        Url32        = "https://github.com/spicetify/spicetify-cli/releases/download/v$version/spicetify-$version-windows-x32.zip"
-        Url64        = "https://github.com/spicetify/spicetify-cli/releases/download/v$version/spicetify-$version-windows-x64.zip"
-        ReleaseNotes = "https://github.com/spicetify/spicetify-cli/releases/tag/v$version"
+        Url32        = "https://github.com/spicetify/cli/releases/download/v$version/spicetify-$version-windows-x32.zip"
+        Url64        = "https://github.com/spicetify/cli/releases/download/v$version/spicetify-$version-windows-x64.zip"
+        ReleaseNotes = "https://github.com/spicetify/cli/releases/tag/v$version"
     }
 }
 

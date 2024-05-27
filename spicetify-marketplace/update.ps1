@@ -18,13 +18,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $rel = (Get-GitHubLatestReleaseLinks -user 'spicetify' -repository 'spicetify-marketplace').Links | % href
-    $relative_url  = $rel | Where-Object { $_ -match '/spicetify/spicetify-marketplace/releases/download/v\d+\.\d+(\.\d+)*(-alpha|-beta)?' } | Select-Object -First 1
+    $rel = (Get-GitHubLatestReleaseLinks -user 'spicetify' -repository 'marketplace').Links | % href
+    $relative_url  = $rel | Where-Object { $_ -match '/spicetify/marketplace/releases/download/v\d+\.\d+(\.\d+)*(-alpha|-beta)?' } | Select-Object -First 1
     $version = ([regex]::Match($relative_url, 'v(\d+\.\d+(\.\d+)*(-alpha|-beta)?)')).Groups[1].Value
     @{
         Version      = $version.Split('-')[0]
-        Url32        = "https://github.com/spicetify/spicetify-marketplace/releases/download/v$version/spicetify-marketplace.zip"
-        ReleaseNotes = "https://github.com/spicetify/spicetify-marketplace/releases/tag/v$version"
+        Url32        = "https://github.com/spicetify/marketplace/releases/download/v$version/spicetify-marketplace.zip"
+        ReleaseNotes = "https://github.com/spicetify/marketplace/releases/tag/v$version"
     }
 }
 
