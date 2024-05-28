@@ -21,7 +21,7 @@ Result=1
 Result=1
 [Application]
 Name=CLIP STUDIO PAINT
-Version=3.0.2
+Version=3.0.4
 Company=CELSYS
 Lang=0409
 [{1E4572D2-28BC-4BC9-B743-13DC6CFD71DB}-SdFinish-0]
