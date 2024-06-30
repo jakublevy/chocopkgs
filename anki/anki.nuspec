@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>anki</id>
-    <version>24.06.2</version>
+    <version>24.06.3</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/anki</packageSourceUrl>
     <owners>rlpowell,Lite</owners>
     <title>The Anki Flashcard Program</title>
@@ -58,7 +58,7 @@ For example:
   choco install anki --params "/Qt5"
   ```
 ]]></description>
-    <releaseNotes>https://github.com/ankitects/anki/releases/tag/24.06.2</releaseNotes>
+    <releaseNotes>https://github.com/ankitects/anki/releases/tag/24.06.3</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
