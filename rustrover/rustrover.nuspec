@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rustrover</id>
-    <version>2024.1.2</version>
+    <version>2024.1.4</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/rustrover</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>RustRover</title>
@@ -16,8 +16,7 @@
     <bugTrackerUrl>https://youtrack.jetbrains.com/issues/RUST</bugTrackerUrl>
     <tags>rust ide jetbrains admin</tags>
     <summary>JetBrains IDE for Rust</summary>
-    <description>
-Jetbrains IDE for Rust.
+    <description><![CDATA[Jetbrains IDE for Rust.
 
 See [https://www.jetbrains.com/rust/](https://www.jetbrains.com/rust/) for more information.
 
@@ -54,7 +53,7 @@ See [https://www.jetbrains.com/rust/](https://www.jetbrains.com/rust/) for more 
   ```
   choco uninstall rustrover --params "'/DeleteCache /DeleteSettings'"
   ```
-    </description>
+]]></description>
     <releaseNotes>https://youtrack.jetbrains.com/articles/RUST-A-5/Release-Notes</releaseNotes>
     <dependencies>
       <dependency id="autohotkey.portable" version="2.0.0" />
