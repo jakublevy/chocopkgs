@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to 
-   x86: https://github.com/AdguardTeam/dnsproxy/releases/download/v0.72.2/dnsproxy-windows-386-v0.72.2.zip
-   x64: https://github.com/AdguardTeam/dnsproxy/releases/download/v0.72.2/dnsproxy-windows-amd64-v0.72.2.zip
+   x86: https://github.com/AdguardTeam/dnsproxy/releases/download/v0.72.3/dnsproxy-windows-386-v0.72.3.zip
+   x64: https://github.com/AdguardTeam/dnsproxy/releases/download/v0.72.3/dnsproxy-windows-amd64-v0.72.3.zip
 
    to download the file.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 46CB4CB26A7390DA1FF0A264C628C4A9BF667428D8077B964DDEC1DEF099B2EC
-   checksum64: 5738F785BDDBBC21AD77F0D6CE028AD85829D5B7CF2ED7165BD851F3689FA96F
+   checksum32: 48D9CBD493A9E5D5E2AC0AFB26B1F118644EAED104A4BAEA47B637F992C224B9
+   checksum64: 73142C30B5AE9F5E17D49C9843690581D7CDEBA01EAACE2D87DE0C9390AACC48
 
 License text in LICENSE.txt file was obtained 
    on 11/17/2022
