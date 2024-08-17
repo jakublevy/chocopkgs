@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dirsize</id>
-    <version>1.1</version>
+    <version>1.2.1</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/dirsize</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>dirsize</title>
@@ -16,8 +16,7 @@
     <bugTrackerUrl>https://github.com/shenwei356/dirsize/issues</bugTrackerUrl>
     <tags>cross-platform summarize size directory file commandline</tags>
     <summary>A cross-platform command-line tool for summarizing size of directories and files in directories.</summary>
-    <description>
-# dirsize
+    <description><![CDATA[# dirsize
 `dirsize` is a command-line tool for summarizing size of directories and files in directories.
 
 ## Usage
@@ -34,8 +33,8 @@ OPTION:
 ```
 
 ### For more information about dirsize see [the official README.md](https://github.com/shenwei356/dirsize/blob/master/README.md).
-    </description>
-<releaseNotes>https://github.com/shenwei356/dirsize/releases/tag/v1.1</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/shenwei356/dirsize/releases/tag/v1.2.1</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
