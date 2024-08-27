@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to
-   x86: https://github.com/shenwei356/rush/releases/download/v0.5.4/rush_windows_386.exe.tar.gz
-   x64: https://github.com/shenwei356/rush/releases/download/v0.5.4/rush_windows_amd64.exe.tar.gz
+   x86: https://github.com/shenwei356/rush/releases/download/v0.5.5/rush_windows_386.exe.tar.gz
+   x64: https://github.com/shenwei356/rush/releases/download/v0.5.5/rush_windows_amd64.exe.tar.gz
 
    to download the installer.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: D81261376AE2F868257D4DD824F0D8DC004816804565858FE6D28362D5D80F49
-   checksum64: 190A864A12CEF6C9A1E983587A0C4BBCB7A6CE5A66C5308C900B1AA4DE38A6A8
+   checksum32: 07F1AD7EA946E22FC0EE0E0C5E5B1884F769A5A6D8A2AA805751A14204285B8F
+   checksum64: FDB75499C489AE986492B263CA34DF87DC0BD329241FD621D19DEDE578712ADD
 
 License text in LICENSE.txt file was obtained 
    on 08/24/2021
