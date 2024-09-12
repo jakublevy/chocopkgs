@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>proficad.install</id>
-    <version>12.4.5</version>
+    <version>12.4.6</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/proficad.install</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ProfiCAD (Install)</title>
