@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>dnsproxy</id>
-    <version>0.73.2</version>
+    <version>0.73.3</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/dnsproxy</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>DNS Proxy</title>
@@ -21,7 +21,7 @@ A simple DNS proxy server that supports all existing DNS protocols including `DN
 
 ### For more information about dnsproxy see [README.md](https://github.com/AdguardTeam/dnsproxy/blob/master/README.md).
 ]]></description>
-<releaseNotes>https://github.com/AdguardTeam/dnsproxy/releases/tag/v0.73.2</releaseNotes>
+<releaseNotes>https://github.com/AdguardTeam/dnsproxy/releases/tag/v0.73.3</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
