@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>csvtk</id>
-    <version>0.31.1</version>
+    <version>0.32.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/csvtk</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>csvtk</title>
@@ -30,7 +30,7 @@
 
 ### For more information about csvtk see [the official README.md](https://github.com/shenwei356/csvtk/blob/master/README.md).
 ]]></description>
-<releaseNotes>https://github.com/shenwei356/csvtk/releases/tag/v0.31.1</releaseNotes>
+<releaseNotes>https://github.com/shenwei356/csvtk/releases/tag/v0.32.0</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
