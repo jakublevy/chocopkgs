@@ -3,8 +3,8 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileFullPath   = Join-Path $toolsDir 'dnsproxy-windows-386-v0.74.0.zip'
-  fileFullPath64 = Join-Path $toolsDir 'dnsproxy-windows-amd64-v0.74.0.zip'
+  fileFullPath   = Join-Path $toolsDir 'dnsproxy-windows-386-v0.74.1.zip'
+  fileFullPath64 = Join-Path $toolsDir 'dnsproxy-windows-amd64-v0.74.1.zip'
   destination    = $toolsDir
   validExitCodes = @(0)
 }
