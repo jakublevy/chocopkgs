@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to 
-   x86: https://github.com/sharkdp/diskus/releases/download/v0.7.0/diskus-v0.7.0-i686-pc-windows-msvc.zip
-   x64: https://github.com/sharkdp/diskus/releases/download/v0.7.0/diskus-v0.7.0-x86_64-pc-windows-msvc.zip
+   x86: https://github.com/sharkdp/diskus/releases/download/v0.8.0/diskus-v0.8.0-i686-pc-windows-msvc.zip
+   x64: https://github.com/sharkdp/diskus/releases/download/v0.8.0/diskus-v0.8.0-x86_64-pc-windows-msvc.zip
 
    to download the file.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: E64E8B11940DCE63DE708F100B66BE0C85C11AF2D0244DFD6A0DA0E1F649DC5A
-   checksum64: DAB2686D044213EBB710B8496FA2B73F49AE825EFCE7942531FE3AB97291338E
+   checksum32: 0DBEAA394B8E9ED5587961ECF011DBA0FA9E8D9FCF5DA1C0900D10DF2CB9282B
+   checksum64: 1C0FEA553776CA10D1E46660E76E7405F57C5A8353B57F91911F4B17FF7A3D3C
 
 License text in LICENSE.txt file was obtained 
    on 11/09/2022

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>diskus</id>
-    <version>0.7.0</version>
+    <version>0.8.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/diskus</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>diskus</title>
@@ -16,8 +16,7 @@
     <bugTrackerUrl>https://github.com/sharkdp/diskus/issues</bugTrackerUrl>
     <tags>disk usage parallel space free directory du terminal cli file utility commandline cross-platform</tags>
     <summary>A minimal, fast alternative to `du -sh`.</summary>
-    <description>
-# diskus
+    <description><![CDATA[# diskus
 A minimal, fast alternative to `du -sh`.
 
 `diskus` is a very simple program that computes the total size of the current directory. It is a parallelized version of `du -sh`. On my 8-core laptop, it is about ten times faster than `du` with a cold disk cache and more than three times faster with a warm disk cache.
@@ -33,8 +32,8 @@ Windows-internal tools such as Powershell, Explorer or `dir` are not respecting 
 junction points when determining the size of a directory. `diskus` does the same and counts
 such entries multiple times (on Unix systems, multiple hardlinks to a single file are counted
 just once).
-   </description>
-<releaseNotes>https://github.com/sharkdp/diskus/releases/tag/v0.7.0</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/sharkdp/diskus/releases/tag/v0.8.0</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
