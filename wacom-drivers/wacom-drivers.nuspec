@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>wacom-drivers</id>
-    <version>6.4.8.3</version>
+    <version>6.4.8.5</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/wacom-drivers</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Wacom Drivers</title>
@@ -18,7 +18,7 @@
     <summary>Drivers for Wacom devices.</summary>
     <description><![CDATA[Windows drivers for [Wacom](https://www.wacom.com) tablet devices. See release notes for compatible products.
 ]]></description>
-    <releaseNotes>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/Windows_6.4.8-3.html</releaseNotes>
+    <releaseNotes>https://cdn.wacom.com/u/productsupport/drivers/win/professional/releasenotes/Windows_6.4.8-5.html</releaseNotes>
     <dependencies>
       <dependency id="vcredist140" version="14.16.27024.1" />
       <dependency id="dotnetfx" version="4.5.2.0" />
