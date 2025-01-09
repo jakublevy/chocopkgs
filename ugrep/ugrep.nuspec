@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>ugrep</id>
-    <version>7.1.2</version>
+    <version>7.1.3</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/ugrep</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ugrep</title>
@@ -27,7 +27,7 @@ Ultra fast grep with interactive query UI and fuzzy search: search file systems,
 
 ### For more information about ugrep see [README.md](https://github.com/Genivia/ugrep/blob/master/README.md).
 ]]></description>
-    <releaseNotes>https://github.com/Genivia/ugrep/releases/tag/v7.1.2</releaseNotes>
+    <releaseNotes>https://github.com/Genivia/ugrep/releases/tag/v7.1.3</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
