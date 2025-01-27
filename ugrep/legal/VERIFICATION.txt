@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://github.com/Genivia/ugrep/releases/download/v7.2.0/ugrep-windows-x64.zip
+1. Go to https://github.com/Genivia/ugrep/releases/download/v7.2.1/ugrep-windows-x64.zip
 
    to download the binary.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 409CCF234D6F901783C8A2274C650A2F39CF547C9D6CE7CA61D2FFD51C50F8E4
+   checksum64: 59A4D2157CE365BCD6EEAF712A5F832ED9347EBEA58B9C19D4AC922B140C66EC
 
 License text in LICENSE.txt file was obtained 
    on 12/26/2021
