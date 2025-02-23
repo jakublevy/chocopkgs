@@ -17,8 +17,6 @@ For example:
     - Not created by default
 * `/InstallDir:` - where to install the binaries
   - Default value: `"$env:ProgramFiles\Anki"`
-* `/Qt5` - installs Anki with Qt 5
-    - By default (without this parameter) Qt 6 is used
 
 ### Examples
 * Install into `D:\anki` directory
@@ -32,8 +30,4 @@ For example:
 * Install into `D:\anki` directory and create a desktop icon
   ```
   choco install anki --params "'/CreateDesktopIcon /InstallDir:D:\anki'"
-  ```
-* Install with Qt 5
-  ```
-  choco install anki --params "/Qt5"
   ```

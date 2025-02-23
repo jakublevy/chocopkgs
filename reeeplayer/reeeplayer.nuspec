@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>reeeplayer</id>
-    <version>0.5</version>
+    <version>0.5.1</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/reeeplayer</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>ReeePlayer</title>
@@ -34,9 +34,9 @@ For more information see [README.MD (English)](https://github.com/FilippVolodin/
   choco install reeeplayer --params "/InstallationPath:D:\reeeplayer"
   ```
 ]]></description>
-    <releaseNotes>https://github.com/FilippVolodin/ReeePlayer/releases/tag/v0.5</releaseNotes>
+    <releaseNotes>https://github.com/FilippVolodin/ReeePlayer/releases/tag/v0.5.1</releaseNotes>
     <dependencies>
-      <dependency id="reeeplayer.install" version="[0.5]" />
+      <dependency id="reeeplayer.install" version="[0.5.1]" />
     </dependencies>
   </metadata>
   <files>

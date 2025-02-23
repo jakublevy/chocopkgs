@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>spin</id>
-    <version>6.5.1</version>
+    <version>6.5.2</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/spin</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Spin</title>
@@ -17,8 +17,7 @@
     <bugTrackerUrl>https://spinroot.com/spin/old.html#C</bugTrackerUrl>
     <tags>formal verification verify model-checker commandline cross-platform</tags>
     <summary>SPIN is a state-of-the-art open-source software verification tool.</summary>
-    <description>
-# Spin
+    <description><![CDATA[# Spin
 Spin is a widely used open-source software verification tool. The tool can be used for the formal verification of multi-threaded software applications. The tool was developed at [Bell Labs](https://www.bell-labs.com) in the Unix group of the Computing Sciences Research Center, starting in 1980, and has been available freely since 1991. Spin continues to evolve to keep pace with new developments in the field. In April 2002 the tool was awarded the ACM [System Software Award](https://awards.acm.org/software_system).	
 
 ## Main usage
@@ -50,8 +49,8 @@ To run Spin, you need a working C-compiler and a C-preprocessor, because Spin ge
     ```
     choco install spin --params "'/AddiSpinToStartMenu:curruser /CreateiSpinDesktopIcon'"
     ```
-    </description>
-<releaseNotes>http://spinroot.com/spin/Doc/V6.Updates</releaseNotes>
+]]></description>
+<releaseNotes>https://spinroot.com/spin/Doc/V6.Updates</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />

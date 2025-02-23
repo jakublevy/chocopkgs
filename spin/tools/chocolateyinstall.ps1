@@ -3,7 +3,7 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileFullPath64 = Join-Path $toolsDir 'pc_spin651.zip'
+  fileFullPath64 = Join-Path $toolsDir 'spin652_windows64.exe.gz'
   destination    = "$toolsDir\bin"
   validExitCodes = @(0)
 }

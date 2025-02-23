@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://spinroot.com/spin/Src/pc_spin651.zip
+1. Go to https://raw.githubusercontent.com/nimble-code/Spin/master/Bin/spin652_windows64.exe.gz
 
    to download the installer.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: CBD0EB7EA3A6DC2488BE7D23B050F75AC9860CF47AE2662E725BC0B6DA84ECDF
+   checksum64: 8B411C23D2D05DB8C26FDDC30729E021977B0411D8FA4F0E8115EA9A7B9C9B70
 
 License text in LICENSE.txt file was obtained 
    on 10/06/2021

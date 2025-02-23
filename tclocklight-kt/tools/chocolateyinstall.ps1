@@ -3,8 +3,8 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileFullPath   = Join-Path $toolsDir 'tclocklight-kt180904-x86.zip'
-  fileFullPath64 = Join-Path $toolsDir 'tclocklight-kt180904-x64.zip'
+  fileFullPath   = Join-Path $toolsDir 'tclocklight-kt240522-x86.zip'
+  fileFullPath64 = Join-Path $toolsDir 'tclocklight-kt240522-x64.zip'
   destination    = "$toolsDir\bin"
   validExitCodes = @(0)
 }

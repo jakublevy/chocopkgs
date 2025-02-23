@@ -1,8 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>tclocklight-kt</id>
-    <version>18.09.04</version>
+    <version>24.05.22</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/tclocklight-kt</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>TClock Light kt</title>
@@ -17,8 +17,7 @@
     <bugTrackerUrl>https://github.com/k-takata/TClockLight/issues</bugTrackerUrl>
     <tags>t-clock tclock clock calendar taskbar display clock alarm alarm-clock date time k-takata</tags>
     <summary>TClock Light kt is a modified version of TClock Light by K.Takata.</summary>
-    <description>
-# TClock Light kt
+    <description><![CDATA[# TClock Light kt
 
 TClock Light kt is a modified version of TClock Light by [K.Takata](https://github.com/k-takata).
 
@@ -54,8 +53,8 @@ The following documents are available. (all in Japanese)
     ```
     choco install tclocklight-kt --params "'/AddToSystemStartup:no /AddToUserStartup:no'"
     ```
-    </description>
-<releaseNotes>https://github.com/k-takata/TClockLight/releases/tag/tclocklight-kt180904</releaseNotes>
+]]></description>
+<releaseNotes>https://github.com/k-takata/TClockLight/releases/tag/tclocklight-kt240522</releaseNotes>
 </metadata>
   <files>
     <file src="tools\**" target="tools" />
