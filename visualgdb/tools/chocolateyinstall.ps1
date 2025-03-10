@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
-$absUrl   = 'http://eu.cdn.sysprogs.com/2318/VisualGDB-6.0r7-trial.msi'
-$checksum = 'd4b6ad9d317cc52099645488c62bf82d780e6337e3a55af9b0b3715a9cd96f62'
+$absUrl   = 'http://eu.cdn.sysprogs.com/2326/VisualGDB-6.0r8-trial.msi'
+$checksum = 'a6e7d831e1299d576d08e80888350930a53d8051da7c93a7417483414f847a1f'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
