@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to
-   x86: https://github.com/shenwei356/csvtk/releases/download/v0.32.0/csvtk_windows_386.exe.tar.gz
-   x64: https://github.com/shenwei356/csvtk/releases/download/v0.32.0/csvtk_windows_amd64.exe.tar.gz
+   x86: https://github.com/shenwei356/csvtk/releases/download/v0.33.0/csvtk_windows_386.exe.tar.gz
+   x64: https://github.com/shenwei356/csvtk/releases/download/v0.33.0/csvtk_windows_amd64.exe.tar.gz
 
    to download the installer.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 2293B46E452265309B3584CBE573DB88980D17DDD4AE02F28B3DE04E2C1C7A3C
-   checksum64: A99FC057766AD8AF664F8AF390D72B6529B8E28224E76B5AABCBA37DEC437E92
+   checksum32: 350337075DBAF620DD7B5239246ED8F1C84E9C989ECEE7DF946BDFD00C70A917
+   checksum64: 1B4C296E5AA6B6C7B6231FC47FDB1A2E6B7775825908064DADC485C2E2CEA989
 
 License text in LICENSE.txt file was obtained 
    on 08/24/2021
