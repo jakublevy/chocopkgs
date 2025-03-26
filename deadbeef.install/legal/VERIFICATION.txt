@@ -5,7 +5,7 @@ in verifying that this package's contents are trustworthy.
 
 Package can be verified like this:
 
-1. Go to https://sourceforge.net/projects/deadbeef/files/travis/windows/1.9.6/deadbeef-1.9.6-windows-x86_64.exe
+1. Go to https://sourceforge.net/projects/deadbeef/files/travis/windows/1.10.0/deadbeef-1.10.0-windows-x86_64.exe
 
    to download the installer.
 
@@ -13,7 +13,7 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: AB917D78CD31E1325E142427D436D782D5D9D211D137FE713AB5A14BBF41A8B3
+   checksum64: A97DE1941145DAAE62695782F60821FE15A09260E3654044FC42944BC185BFBC
 
 License text in LICENSE.txt file was obtained 
    on 08/17/2021
