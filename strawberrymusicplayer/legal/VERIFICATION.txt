@@ -6,8 +6,8 @@ in verifying that this package's contents are trustworthy.
 Package can be verified like this:
 
 1. Go to 
-   x86: https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.23/StrawberrySetup-1.0.23-msvc-x86.exe
-   x64: https://github.com/strawberrymusicplayer/strawberry/releases/download/1.0.23/StrawberrySetup-1.0.23-msvc-x64.exe
+   x86: https://codeberg.org/WetOtter44/StrawberryMusicPlayer/releases/download/1.2.10/StrawberrySetup-1.2.10-msvc-x86.exe
+   x64: https://codeberg.org/WetOtter44/StrawberryMusicPlayer/releases/download/1.2.10/StrawberrySetup-1.2.10-msvc-x64.exe
 
    to download the installer.
 
@@ -15,8 +15,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 6703DEE6158769D0C08AB9DE24C442BCC799C4629E0224C4EE1BA344D533480A
-   checksum64: 15DF0B8A1F714AF4664A26DCB70F867A469A06D8CF12F131645B7C8AC1F766D9
+   checksum32: 8428B01718C2361F1D6A10BDB08CBE49E8DCA83952A68A7B503748C03F50323F
+   checksum64: 8A7C1C388C57EC70E953E623541CCC8FB5DA3EB92095A7CAE39B3B20F4F61B85
 
 License text in LICENSE.txt file was obtained 
    on 12/07/2021
