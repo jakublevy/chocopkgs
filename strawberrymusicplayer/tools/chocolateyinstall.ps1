@@ -4,6 +4,7 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'EXE'
+  file          = Join-Path $toolsDir 'StrawberrySetup-1.0.23-msvc-x86.exe'
   file64        = Join-Path $toolsDir 'StrawberrySetup-1.0.23-msvc-x64.exe'
   softwareName  = 'Strawberry Music Player*'
   silentArgs    = "/S"
@@ -19,6 +20,6 @@ if($additionalArgs['InstallDir']) {
 Install-ChocolateyInstallPackage @packageArgs
 
 Remove-Item `
-  -Path $packageArgs['file64'] `
+  -Path $packageArgs['file'], $packageArgs['file64'] `
   -ErrorAction SilentlyContinue `
   -Force
