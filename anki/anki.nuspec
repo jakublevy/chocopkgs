@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>anki</id>
-    <version>25.02.6</version>
+    <version>25.02.7</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/anki</packageSourceUrl>
     <owners>rlpowell,Lite</owners>
     <title>The Anki Flashcard Program</title>
@@ -52,7 +52,7 @@ For example:
   choco install anki --params "'/CreateDesktopIcon /InstallDir:D:\anki'"
   ```
 ]]></description>
-    <releaseNotes>https://github.com/ankitects/anki/releases/tag/25.02.6</releaseNotes>
+    <releaseNotes>https://github.com/ankitects/anki/releases/tag/25.02.7</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
