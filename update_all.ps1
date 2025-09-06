@@ -6,6 +6,7 @@ $dead = @(
     'amp-winoff',
     'amp-winoff.install',
     'amp-winoff.portable',
+    'clipstudio-modeler'
     'dualiza',
     'flip',
     'getuserinfo',

@@ -18,10 +18,10 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $rel = (Get-GitHubLatestReleaseLinks -user 'ankitects' -repository 'anki').Links | % href
 
-    $relative_url  = $rel | Where-Object { $_ -match '/ankitects/anki/releases/download/\d+\.\d+(\.\d+)*/anki-\d+\.\d+(\.\d+)*-windows-qt6\.exe' } | Select-Object -First 1
-    $version = ([regex]::Match($relative_url, 'download/(\d+\.\d+(\.\d+)*)/anki-\d+\.\d+(\.\d+)*-windows-qt6\.exe')).Groups[1].Value
+    $relative_url  = $rel | Where-Object { $_ -match '/ankitects/anki/releases/download/\d+\.\d+(\.\d+)*/anki-launcher-\d+\.\d+(\.\d+)*-windows\.exe' } | Select-Object -First 1
+    $version = ([regex]::Match($relative_url, 'download/(\d+\.\d+(\.\d+)*)/anki-launcher-\d+\.\d+(\.\d+)*-windows\.exe')).Groups[1].Value
     @{
-        Url64        = "https://github.com/ankitects/anki/releases/download/$version/anki-$version-windows-qt6.exe"
+        Url64        = "https://github.com/ankitects/anki/releases/download/$version/anki-launcher-$version-windows.exe"
         Version      = $version
         ReleaseNotes = "https://github.com/ankitects/anki/releases/tag/$version"
     }
@@ -29,7 +29,7 @@ function global:au_GetLatest {
 
 function global:au_BeforeUpdate {
     $toolsDir = Join-Path $dir "tools"
-    $global:Latest.FileName64 = "anki-$($Latest.Version)-windows-qt6.exe"
+    $global:Latest.FileName64 = "anki-launcher-$($Latest.Version)-windows.exe"
     Invoke-WebRequest -UseBasicParsing -Uri $Latest.Url64 -OutFile (Join-Path $toolsDir $Latest.FileName64)
     $global:Latest.Checksum64 = (Get-FileHash (Join-Path $toolsDir $Latest.FileName64) -Algorithm SHA256).Hash
     Get-ChildItem -Path $toolsDir -Filter '*.exe' | Remove-Item -Force

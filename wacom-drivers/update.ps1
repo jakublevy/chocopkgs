@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.wacom.com/en-us/support/product-support/drivers#latest'
-    $originalVersion = [regex]::Match($download_page.Content, 'Driver (\d+\.\d+(\.\d+)*(-\d+)?) \(Windows').Groups[1].Value
+    $originalVersion = [regex]::Match($download_page.Content, 'Windows Driver (\d+\.\d+(\.\d+)*(-\d+)?)').Groups[1].Value
     $chocoVersion = $originalVersion.Replace('-', '.')
     $versionAfterDashRemoved = $originalVersion.Split('-')[0]
     @{

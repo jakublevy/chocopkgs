@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir              = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$version               = '403'
-$checksum64            = 'b304a3de3eb13b9e8b40f866e50a8e34c6798b79b8e4c70fc7bc9e0c2665e8d0'
+$version               = '414'
+$checksum64            = 'e6afd5cb3bf6227c4822f76d2182f06bfb876150f694be1e3c726288737996c3'
 $issFile               = "$toolsDir\install.iss"
 $languageFilesRoot     = "$env:ProgramData\CELSYS\CLIPStudio\InstallPath"
 $languageFiles         = @("$languageFilesRoot\paint15.txt", "$languageFilesRoot\clipstudio15.txt")
