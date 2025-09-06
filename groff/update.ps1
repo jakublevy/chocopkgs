@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 # Release notes not fully automatic
 

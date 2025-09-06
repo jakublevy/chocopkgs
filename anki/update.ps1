@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 . $([System.IO.Path]::Combine((Split-Path -Parent $PSScriptRoot), '.scripts', 'Get-GithubLatestReleaseLinks.ps1'))
 
 $dir = Split-Path -parent $MyInvocation.MyCommand.Definition

@@ -1,4 +1,4 @@
-import-module au
+import-module chocolatey-au
 
 $dir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
