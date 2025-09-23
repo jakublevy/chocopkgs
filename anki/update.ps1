@@ -16,10 +16,10 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $rel = (Get-GitHubLatestReleaseLinks -user 'ankitects' -repository 'anki').Links | % href
+    $p = Invoke-WebRequest -UseBasicParsing -Uri 'https://apps.ankiweb.net'
+    $links = $p.Links.Href | ? { $_ -match '/releases/download/\d+\.\d+(\.\d+)*/anki-launcher-\d+\.\d+(\.\d+)*-windows\.exe' }
 
-    $relative_url  = $rel | Where-Object { $_ -match '/ankitects/anki/releases/download/\d+\.\d+(\.\d+)*/anki-launcher-\d+\.\d+(\.\d+)*-windows\.exe' } | Select-Object -First 1
-    $version = ([regex]::Match($relative_url, 'download/(\d+\.\d+(\.\d+)*)/anki-launcher-\d+\.\d+(\.\d+)*-windows\.exe')).Groups[1].Value
+    $version = ([regex]::Match($links, '/releases/download/(\d+\.\d+(\.\d+)*)/anki-launcher-\d+\.\d+(\.\d+)*-windows\.exe')).Groups[1].Value
     @{
         Url64        = "https://github.com/ankitects/anki/releases/download/$version/anki-launcher-$version-windows.exe"
         Version      = $version

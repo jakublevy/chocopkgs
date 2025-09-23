@@ -11,8 +11,11 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $response    = Invoke-WebRequest -UseBasicParsing -Uri 'https://www.proficad.com/download.aspx'
-    $response    = $response.Content.Substring($response.Content.IndexOf('class="hint'))
-    $version     = ([regex]::Match($response, '(\d+\.\d+(\.\d+)*)')).Groups[1].Value
+    $links = $response.Links | ? { $_ -match 'setup_full.exe' }
+    $versions = [regex]::Matches($links.OuterHTML, '(?is)version[ \r\n]*(\d+\.\d+(\.\d+)*)').Groups[1].Value
+
+    $version = $versions | % { [version]$_ } | Sort-Object -Descending | Select-Object -First 1
+    $version = $version.ToString()
     @{
         Url32    = "https://www.proficad.com/down/$($version.Split('.')[0])/proficad_portable_en.zip"
         Version  = $version

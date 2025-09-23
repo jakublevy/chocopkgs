@@ -13,6 +13,7 @@ $dead = @(
     'ggf',
     'glucose',
     'grap',
+    'kawanime',
     'mairix',
     'mp3infpu',
     'nuxmv'

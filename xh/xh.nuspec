@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>xh</id>
-    <version>0.24.1</version>
+    <version>0.25.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/xh</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>xh</title>
@@ -45,7 +45,7 @@ xh httpbin.org/get user-agent:foobar
 
 ### For more information about xh see [README.md](https://github.com/ducaale/xh/blob/master/README.md).
 ]]></description>
-    <releaseNotes>https://github.com/ducaale/xh/releases/tag/v0.24.1</releaseNotes>
+    <releaseNotes>https://github.com/ducaale/xh/releases/tag/v0.25.0</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

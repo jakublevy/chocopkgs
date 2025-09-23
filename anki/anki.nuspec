@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>anki</id>
-    <version>25.09</version>
+    <version>25.09.20250923</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/anki</packageSourceUrl>
     <owners>rlpowell,Lite</owners>
     <title>The Anki Flashcard Program</title>
@@ -20,7 +20,8 @@
     <bugTrackerUrl>https://github.com/ankitects/anki/issues</bugTrackerUrl>
     <tags>learning education flashcards efficient memory language-learning language remember spaced-repetition srs cross-platform</tags>
     <summary>Powerful, intelligent flash cards. Remembering things just became much easier.</summary>
-    <description><![CDATA[# Anki
+    <description><![CDATA[
+# Anki
 Anki is a program which makes remembering things easy. Because it's a lot more efficient than traditional study methods, you can either greatly decrease your time spent studying, or greatly increase the amount you learn. 
 
 Anyone who needs to remember things in their daily life can benefit from Anki. Since it is content-agnostic and supports images, audio, videos and scientific markup (via LaTeX), the possibilities are endless.
@@ -38,6 +39,10 @@ For example:
 * `/InstallDir:` - where to install the binaries
   - Default value: `"$env:ProgramFiles\Anki"`
 
+## Uninstallation Parameters
+* `/RemoveProfiles` - whether to remove all profiles/cards
+    - Not removed by default
+
 ### Examples
 * Install into `D:\anki` directory
   ```
@@ -51,8 +56,15 @@ For example:
   ```
   choco install anki --params "'/CreateDesktopIcon /InstallDir:D:\anki'"
   ```
+* Uninstall and remove all profiles with cards
+  ```
+  choco uninstall anki --params "/RemoveProfiles"
+  ```
 ]]></description>
     <releaseNotes>https://github.com/ankitects/anki/releases/tag/25.09</releaseNotes>
+    <dependencies>
+      <dependency id="autohotkey.portable" version="2.0.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

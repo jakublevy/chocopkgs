@@ -18,6 +18,10 @@ For example:
 * `/InstallDir:` - where to install the binaries
   - Default value: `"$env:ProgramFiles\Anki"`
 
+## Uninstallation Parameters
+* `/RemoveProfiles` - whether to remove all profiles/cards
+    - Not removed by default
+
 ### Examples
 * Install into `D:\anki` directory
   ```
@@ -30,4 +34,8 @@ For example:
 * Install into `D:\anki` directory and create a desktop icon
   ```
   choco install anki --params "'/CreateDesktopIcon /InstallDir:D:\anki'"
+  ```
+* Uninstall and remove all profiles with cards
+  ```
+  choco uninstall anki --params "/RemoveProfiles"
   ```
