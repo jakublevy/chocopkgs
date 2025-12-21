@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>kindle-comic-converter</id>
-    <version>9.2.2</version>
+    <version>9.3.6</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/kindle-comic-converter</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Kindle Comic Converter</title>
@@ -60,7 +60,7 @@ Support for MOBI files is provided by [kindlegen](https://community.chocolatey.o
     choco install kindle-comic-converter --params "/AddToStartMenu:no"
     ```
 ]]></description>
-<releaseNotes>https://github.com/ciromattia/kcc/blob/v9.2.2/CHANGELOG.md</releaseNotes>
+<releaseNotes>https://github.com/ciromattia/kcc/blob/v9.3.6/CHANGELOG.md</releaseNotes>
 <dependencies>
     <dependency id="kindlegen" version="2.9.0.20210511" />
   </dependencies>
