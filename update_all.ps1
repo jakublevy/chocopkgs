@@ -6,7 +6,7 @@ $dead = @(
     'amp-winoff',
     'amp-winoff.install',
     'amp-winoff.portable',
-    'clipstudio-modeler'
+    'clipstudio-modeler',
     'dualiza',
     'flip',
     'getuserinfo',
@@ -16,7 +16,7 @@ $dead = @(
     'kawanime',
     'mairix',
     'mp3infpu',
-    'nuxmv'
+    'nuxmv',
     'painttoolsai',
     'pdfcrack',
     'quiet',
