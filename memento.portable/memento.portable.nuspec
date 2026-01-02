@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>memento.portable</id>
-    <version>1.6.0</version>
+    <version>1.7.0</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/memento.portable</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Memento (Portable)</title>
@@ -46,7 +46,7 @@ Supports mpv configuration files such as input.conf for rebinding keys and mpv.c
 ### Streaming
 Supports streaming from many websites through [youtube-dl](https://community.chocolatey.org/packages/youtube-dl).
 ]]></description>
-    <releaseNotes>https://github.com/ripose-jp/Memento/releases/tag/v1.6.0</releaseNotes>
+    <releaseNotes>https://github.com/ripose-jp/Memento/releases/tag/v1.7.0</releaseNotes>
     <dependencies>
       <dependency id="vcredist2010" version="10.0.40219.325" />
     </dependencies>
