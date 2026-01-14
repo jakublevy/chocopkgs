@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>rustrover</id>
-    <version>2025.3.1</version>
+    <version>2025.3.2</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/rustrover</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>RustRover</title>
