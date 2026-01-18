@@ -3,7 +3,7 @@ $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  fileFullPath64 = Join-Path $toolsDir 'material_maker_1_4_windows.zip'
+  fileFullPath64 = Join-Path $toolsDir 'material_maker_1_5_windows.zip'
   destination    = $toolsDir
   validExitCodes = @(0)
 }
