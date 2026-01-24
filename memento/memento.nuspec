@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>memento</id>
-    <version>1.7.0</version>
+    <version>1.7.1</version>
     <packageSourceUrl>https://github.com/jakublevy/chocopkgs/tree/master/memento</packageSourceUrl>
     <owners>Jakub Levý</owners>
     <title>Memento</title>
@@ -56,9 +56,9 @@ Supports streaming from many websites through [youtube-dl](https://community.cho
   choco install memento --params "/InstallDir:D:\memento"
   ```
 ]]></description>
-    <releaseNotes>https://github.com/ripose-jp/Memento/releases/tag/v1.7.0</releaseNotes>
+    <releaseNotes>https://github.com/ripose-jp/Memento/releases/tag/v1.7.1</releaseNotes>
     <dependencies>
-      <dependency id="memento.install" version="[1.7.0]" />
+      <dependency id="memento.install" version="[1.7.1]" />
     </dependencies>
   </metadata>
   <files>
