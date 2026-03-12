@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$absUrl   = 'http://eu.cdn.sysprogs.com/2593/VisualGDB-6.1r2-trial.msi'
+$absUrl   = 'http://eu.cdn.sysprogs.com/2610/VisualGDB-6.1r3-trial.msi'
 $checksum = ''
 
 $packageArgs = @{
