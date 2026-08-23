@@ -17,11 +17,11 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $p = Invoke-WebRequest -UseBasicParsing -Uri 'https://apps.ankiweb.net'
-    $links = $p.Links.Href | ? { $_ -match '/releases/download/\d+\.\d+(\.\d+)*/anki-launcher-\d+\.\d+(\.\d+)*-windows\.exe' }
+    $links = $p.Links.Href | ? { $_ -match '/releases/download/(\d+\.\d+(\.\d+)*)/anki-\d+\.\d+(\.\d+)*-win-x64\.msi' }
 
-    $version = ([regex]::Match($links, '/releases/download/(\d+\.\d+(\.\d+)*)/anki-launcher-\d+\.\d+(\.\d+)*-windows\.exe')).Groups[1].Value
+    $version = ([regex]::Match($links, '/releases/download/(\d+\.\d+(\.\d+)*)/anki-\d+\.\d+(\.\d+)*-win-x64\.msi')).Groups[1].Value
     @{
-        Url64        = "https://github.com/ankitects/anki/releases/download/$version/anki-launcher-$version-windows.exe"
+        Url64        = "https://github.com/ankitects/anki/releases/download/$version/anki-$version-win-x64.msi"
         Version      = $version
         ReleaseNotes = "https://github.com/ankitects/anki/releases/tag/$version"
     }
@@ -29,10 +29,10 @@ function global:au_GetLatest {
 
 function global:au_BeforeUpdate {
     $toolsDir = Join-Path $dir "tools"
-    $global:Latest.FileName64 = "anki-launcher-$($Latest.Version)-windows.exe"
+    $global:Latest.FileName64 = "anki-$($Latest.Version)-win-x64.msi"
     Invoke-WebRequest -UseBasicParsing -Uri $Latest.Url64 -OutFile (Join-Path $toolsDir $Latest.FileName64)
     $global:Latest.Checksum64 = (Get-FileHash (Join-Path $toolsDir $Latest.FileName64) -Algorithm SHA256).Hash
-    Get-ChildItem -Path $toolsDir -Filter '*.exe' | Remove-Item -Force
+    Get-ChildItem -Path $toolsDir -Filter '*.msi' | Remove-Item -Force
 }
 
 Update-Package -ChecksumFor none

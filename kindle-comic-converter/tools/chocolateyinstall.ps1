@@ -16,7 +16,7 @@ $shortcutArgs = @{
 }
 
 $kccArgs = @{
-  url64        = "https://github.com/ciromattia/kcc/releases/download/v$version/kcc_$version.exe"
+  url64        = "https://github.com/ciromattia/kcc/releases/download/v$version/KCC_$version.exe"
   fileFullPath = "$toolsDir\bin\kcc.exe"
   checksum64   = $checksum_kcc
 }

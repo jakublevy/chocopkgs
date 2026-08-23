@@ -1,36 +1,26 @@
 ﻿$ErrorActionPreference = 'Stop'
 $installDir            = "$env:localappdata\Programs\Anki"
-$version               = '25.09'
-$checksum              = '398F690A8208BD381DC2D4220720A82F6D2249C1FD1B38F46A90DB356CB7C69E'
+$version               = '26.08.1'
+$checksum              = 'D79170C3CD2E6225F9C2BA33212117A8FE70C10735C3F0E5A2864E2F0CCF7C8C'
 $toolsDir              = Split-Path -parent $MyInvocation.MyCommand.Definition
-$ahkFile               = "$toolsDir\install.ahk"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  fileType      = 'EXE'
-  url           = "https://github.com/ankitects/anki/releases/download/$version/anki-launcher-$version-windows.exe"
+  fileType      = 'MSI'
+  url           = "https://github.com/ankitects/anki/releases/download/$version/anki-$version-win-x64.msi"
   checksum      = $checksum
   checksumType  = 'sha256'
   softwareName  = 'Anki*'
-  silentArgs    = ""
-  validExitCodes= @(0,2)
+  silentArgs    = "ALLUSERS=1 /qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+  validExitCodes= @(0, 3010, 1641)
 }
 
 $additionalArgs = Get-PackageParameters
-
 if($additionalArgs['InstallDir']) {
-  $installDir = $additionalArgs['InstallDir']
-  $packageArgs['silentArgs'] += " /D=$installDir"
+  $packageArgs['silentArgs'] += " INSTALLFOLDER=`"$($additionalArgs['InstallDir'])`""
 }
 
-$ahkProcess = Start-Process `
-                -FilePath 'AutoHotKey' `
-                -ArgumentList "`"$ahkFile`"" `
-                -PassThru
-
 Install-ChocolateyPackage @packageArgs
-
-Stop-Process $ahkProcess -Force
 
 if(!$additionalArgs['CreateDesktopIcon']) {
   Remove-Item `
