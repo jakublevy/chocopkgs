@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$version  = '2026.2.1'
-$checksum64 = '98090ea876fa3168f6ebf6c6a8ada2fcf8d62c90cd1cb92f6cb2b4208be0654a'
+$version  = '2026.2.2'
+$checksum64 = ''
 
 $silentConfig = "$toolsDir\silent.config"
 $packageArgs = @{
