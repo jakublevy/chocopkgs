@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $installDir            = "$env:localappdata\Programs\Anki"
-$version               = '26.09'
-$checksum              = '6490598460FE65C501CAC19AD987A54457CCD49FEB5706BE0C0A0F7B0C0656A3'
+$version               = '26.09.2'
+$checksum              = '91E211DB3D9F61E6A7DFED966966D677C9FB580CB8B1A97891A4F7BCDD8629B5'
 $toolsDir              = Split-Path -parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
