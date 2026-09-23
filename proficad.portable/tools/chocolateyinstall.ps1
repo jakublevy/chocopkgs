@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$version = '14.0.4'
+$version = '14.1.1'
 $checksum = ''
 
 $packageArgs = @{
