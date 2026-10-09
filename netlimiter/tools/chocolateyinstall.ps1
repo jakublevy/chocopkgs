@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop'
-$version  = '5.3.27.0'
+$version  = '5.3.28.0'
 $checksum = ''
 
 $packageArgs = @{
